@@ -1,0 +1,114 @@
+%---------------------------------------------------------
+\section{Background}
+\label{sec:background}
+
+Functional Data Analysis (FDA) treats each observed trajectory---rather than
+each individual measurement---as the fundamental unit of statistical
+analysis. A discretely sampled time series is first converted into a
+continuous function by expressing it as a linear combination of basis
+elements, and all subsequent analysis (smoothing, principal component
+analysis, regression) is carried out on these functional objects
+\cite{ramsay2005}. This basis-expansion step is not a neutral
+preprocessing choice: the basis system determines which features of the
+underlying process are preserved, which are treated as noise and
+suppressed, and which patterns become visible to downstream methods such as
+Functional Principal Component Analysis (FPCA).
+
+Most applications of FDA to macroeconomic time series adopt smooth,
+globally supported bases---typically B-splines or truncated Fourier
+series---implicitly assuming that the underlying trajectories belong to a
+Sobolev space of functions with bounded, uniformly distributed roughness
+\cite{ramsay2005}. This approach is applied by \cite{padilla2020} to
+annual GDP growth rates of Latin American economies, representing each country's
+growth trajectory with a B-spline basis before conducting FPCA to study
+cross-country modes of variation. This choice is reasonable for economies
+whose growth process evolves smoothly, but Latin American GDP growth
+series are also punctuated by abrupt, localized shocks---the 1982 debt
+crisis, the 1999 regional currency crises, the 2008 global financial
+crisis, and the 2020 COVID-19 contraction---whose magnitude and timing
+differ sharply across countries.
+
+An alternative to globally smooth bases is provided by wavelets, which
+form an unconditional basis for Besov spaces
+$B^{s}_{p,q}$---function classes that, unlike Sobolev spaces, tolerate
+spatially inhomogeneous regularity, i.e.\ functions that are smooth over
+most of their domain but exhibit sharp, localized transitions elsewhere
+\cite{donoho1998}. Because wavelets localize simultaneously in time and
+frequency, they can in principle represent a smooth trend and a sharp
+crisis episode within the same trajectory without forcing a single
+global smoothness parameter to compromise between the two. This
+theoretical property motivates a systematic empirical comparison between
+globally smooth bases (B-splines, Fourier) and a multiresolution basis
+(wavelets) for representing volatile economic series.
+
+\section{Problem statement}
+\label{sec:problem_statement}
+
+The choice of functional basis in FDA applications to economic time
+series is rarely treated as an object of empirical scrutiny in its own
+right: a single basis system---most often B-splines---is selected on
+convenience or precedent, fitted, and used as the input to FPCA or other
+downstream analyses, without assessing whether its underlying smoothness
+assumptions are appropriate for the data at hand. This is problematic for
+series such as GDP growth in volatile emerging economies, where
+country-level heterogeneity in volatility (from Guatemala's comparatively
+stable trajectory to Venezuela's crisis-dominated one) and time-varying,
+crisis-driven variance call into question the adequacy of a single global
+smoothness criterion applied uniformly across countries.
+
+Two consequences follow when this choice is left unexamined. First, a
+basis that over-smooths may achieve a favorable reconstruction error while
+silently discarding the crisis episodes that are often the most
+economically meaningful features of the series, so that low error is
+mistaken for a faithful representation. Second, because FPCA is computed
+directly on the fitted functional objects, any distortion introduced at
+the basis-expansion stage propagates into the estimated modes of
+variation, so that the resulting principal components may reflect
+artifacts of the smoothing choice rather than genuine cross-country
+structure. Existing work extending the study of \cite{padilla2020} has not
+systematically compared alternative basis families under a common,
+fair evaluation protocol that jointly considers reconstruction fidelity,
+coefficient economy (sparsity), and the interpretability of the resulting
+FPCA. This thesis addresses that gap by comparing B-spline, Fourier, and
+wavelet basis expansions on an extended panel of Latin American GDP growth
+series (1960--2024).
+
+\section{Objectives}
+\label{sec:objectives}
+
+\subsection{General Objective}
+
+To comparatively evaluate B-spline, Fourier, and wavelet basis expansions
+for representing the GDP growth trajectories of volatile Latin American
+economies, in terms of reconstruction fidelity, coefficient economy, and
+their effect on the interpretability of the resulting functional
+principal component analysis.
+
+\subsection{Specific Objectives}
+
+\begin{enumerate}
+    \item To extend the annual GDP growth dataset of \cite{padilla2020}
+    for 20 Latin American countries through 2024, incorporating the
+    COVID-19 contraction and subsequent recovery period.
+
+    \item To implement three families of functional basis expansions
+    for the resulting panel---B-spline, Fourier, and wavelet (Haar, DB2,
+    Sym4)---under a common, reproducible computational pipeline.
+
+    \item To define and compute comparison metrics---reconstruction
+    error (RMSE), sparsity, and FPCA variance explained---that allow the
+    three basis families to be evaluated at matched levels of
+    reconstruction quality.
+
+    \item To assess, for each basis family, the extent to which crisis
+    episodes and country-specific volatility structure are preserved or
+    suppressed in the functional reconstruction.
+
+    \item To characterize how the choice of basis affects the parsimony
+    and economic interpretability of the resulting FPCA modes of
+    variation, relative to the original results of \cite{padilla2020}.
+\end{enumerate}
+
+%---------------------------------------------------------
+
+%\section{Justification}

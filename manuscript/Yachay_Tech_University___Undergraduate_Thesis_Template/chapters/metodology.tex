@@ -1,0 +1,239 @@
+% ============================================================
+% Chapter 4: Methodology
+% File: chapters/metodology.tex
+% ============================================================
+
+\section{Data}
+\label{sec:data}
+
+The dataset consists of annual GDP growth rates (expressed as percentage points)
+for 20 Latin American countries over the period 1960--2024, sourced from the World
+Bank Open Data repository. The countries included are: Argentina, Bolivia, Brazil,
+Chile, Colombia, Costa Rica, Cuba, Dominican Republic, Ecuador, El Salvador,
+Guatemala, Haiti, Honduras, Mexico, Nicaragua, Panama, Paraguay, Peru, Uruguay,
+and Venezuela. This extends the dataset of \cite{padilla2020} by six additional
+years (2019--2024), incorporating both the COVID-19 contraction of 2020 and the
+heterogeneous post-pandemic recovery trajectories across the region.
+
+Missing values are present for the year 1960 across most countries, and
+additionally for El Salvador (1960--1965) and Cuba (1960--1971). All missing
+values are handled prior to basis expansion via linear interpolation between
+adjacent observed values, followed by forward-fill and backward-fill to address
+leading and trailing gaps. This imputation is applied exclusively for the purpose
+of constructing the functional representation; all reconstruction quality metrics
+are evaluated only on observed, non-imputed data points.
+
+\section{Basis Expansion Methods}
+\label{sec:bases}
+
+Functional Data Analysis requires that discrete observations
+$\{(t_j,\, y_i(t_j))\}_{j=1}^{T}$ for each country $i$ be converted into a
+continuous functional object $X_i(t)$ defined over
+$\mathcal{T} = [1960,\, 2024]$. This is achieved by expressing each function
+as a linear combination of basis elements:
+\begin{equation}
+    X_i(t) \;\approx\; \sum_{k=1}^{K} c_{ik}\,\phi_k(t),
+    \label{eq:basis_expansion}
+\end{equation}
+where $\{\phi_k\}_{k=1}^{K}$ is the chosen basis system and $c_{ik}$ are the
+estimated coefficients. The choice of basis is the central object of study of
+this thesis. Three families are compared.
+
+\subsection{B-spline Basis (Baseline)}
+\label{subsec:bspline}
+
+B-splines are piecewise polynomial functions of degree $p$ joined at interior
+points called knots, with global continuity up to order $p-1$. They are the
+standard basis in FDA for non-periodic data \cite{ramsay2005} and serve as
+the baseline for comparison, replicating the approach of \cite{padilla2020}.
+
+GDP growth trajectories are assumed to belong to the Sobolev space
+$W_2^m(\mathcal{T})$, which requires that derivatives up to order $m$ be
+square-integrable. The smoothing spline is obtained by minimizing:
+\begin{equation}
+    \sum_{j=1}^{T}\bigl(y_i(t_j) - X_i(t_j)\bigr)^2
+    \;+\;
+    \lambda\int_{\mathcal{T}}\bigl[X_i^{(m)}(t)\bigr]^2\,dt,
+    \label{eq:smoothing_spline}
+\end{equation}
+where the smoothing parameter $\lambda$ controls the bias-variance tradeoff.
+In this work $\lambda$ is chosen adaptively per country via a robust noise
+estimate $\hat{\sigma}$, computed from the vector of first differences $\Delta y$
+as:
+\begin{equation}
+    \hat{\sigma} \;=\;
+    \frac{\mathrm{median}\!\left(|\Delta y - \mathrm{median}(\Delta y)|\right)}
+         {0.6745\,\sqrt{2}},
+    \label{eq:sigma_est}
+\end{equation}
+and the smoothing parameter is set to $\lambda = n\,\hat{\sigma}^2$, where $n$
+is the number of observed points. This data-driven choice ensures that the
+smoothing level is proportional to each country's intrinsic volatility rather
+than fixed globally.
+
+\subsection{Fourier Basis}
+\label{subsec:fourier}
+
+The Fourier basis consists of sinusoidal functions of increasing frequency and
+is optimal for functions in $L^2(\mathcal{T})$ that exhibit periodic or
+quasi-periodic behaviour. A Fourier approximation retaining $K$ frequency
+components is:
+\begin{equation}
+    X_i(t) \;=\; a_0
+    \;+\;\sum_{k=1}^{K}
+    \Bigl[a_k\cos\!\Bigl(\tfrac{2\pi k\,t}{T}\Bigr)
+    +\; b_k\sin\!\Bigl(\tfrac{2\pi k\,t}{T}\Bigr)\Bigr],
+    \label{eq:fourier}
+\end{equation}
+implemented via the Discrete Fourier Transform (DFT) by retaining the $K$
+lowest-frequency components and zeroing the remainder. Three levels are
+compared: $K \in \{5,\,10,\,15\}$.
+
+A known limitation of the Fourier basis for economic data is the
+\emph{Gibbs phenomenon}: near discontinuities or structural breaks---such as
+the 1982 Latin American Debt Crisis or the 2020 COVID-19 contraction---a
+finite Fourier truncation produces spurious oscillations in the neighbourhood
+of the jump. This is examined empirically in Chapter~\ref{chap:results}.
+
+\subsection{Wavelet Basis}
+\label{subsec:wavelets}
+
+Wavelets provide an unconditional basis for Besov spaces
+$B_{p,q}^{s}(\mathcal{T})$, which measure regularity in a way that tolerates
+spatial inhomogeneity---that is, functions that are smooth over some time
+intervals yet exhibit sharp transitions in others \cite{donoho1998}. A function
+with a sparse wavelet representation belongs to a Besov ball of high regularity,
+whereas a function requiring many wavelet coefficients to represent accurately
+does not admit efficient approximation in either Sobolev or Fourier bases.
+
+A multi-level discrete wavelet transform (DWT) decomposes a signal $y$ into
+approximation and detail coefficients:
+\begin{equation}
+    y \;=\;
+    \sum_{k} a_{J,k}\,\phi_{J,k}(t)
+    \;+\;
+    \sum_{j=1}^{J}\sum_{k} d_{j,k}\,\psi_{j,k}(t),
+    \label{eq:dwt}
+\end{equation}
+where $\phi_{J,k}$ and $\psi_{j,k}$ are translates of the scaling function and
+the mother wavelet at decomposition level $j$ and translation $k$, $J=4$ is the
+number of decomposition levels used throughout, $a_{J,k}$ are the approximation
+coefficients at the coarsest scale, and $d_{j,k}$ are the detail coefficients at
+scale $j$.
+
+The DWT is implemented as an explicit orthogonal matrix $\mathbf{W}$ constructed
+with circular (periodic) boundary conditions, so that
+$\mathbf{W}\mathbf{W}^{\!\top} = \mathbf{I}$ exactly. The inverse transform is
+then $\mathbf{W}^{\!\top}$, guaranteeing machine-precision round-trip fidelity
+independent of signal length. Three wavelet families of increasing smoothness
+order are compared:
+
+\begin{itemize}
+    \item \textbf{Haar}: the simplest orthogonal wavelet, piecewise constant,
+          with one vanishing moment. Suitable for detecting level shifts.
+    \item \textbf{Daubechies~2 (DB2)}: the shortest smooth orthogonal wavelet,
+          filter length 4, with one vanishing moment. Balances time and
+          frequency localisation.
+    \item \textbf{Symlet~4 (Sym4)}: a nearly symmetric variant of Daubechies
+          wavelets, filter length 8, with three vanishing moments. Provides
+          smoother reconstructions while maintaining compact support.
+\end{itemize}
+
+Denoising is achieved via \emph{soft thresholding} of the detail coefficients
+following \cite{donoho1998}:
+\begin{equation}
+    \hat{d}_{j,k}
+    \;=\;
+    \mathrm{sgn}(d_{j,k})\,\max\!\bigl(|d_{j,k}| - \lambda,\;0\bigr),
+    \label{eq:soft_threshold}
+\end{equation}
+where $\lambda \geq 0$ is the threshold parameter. The approximation
+coefficients $a_{J,k}$ are never thresholded. Setting $\lambda = 0$ yields
+lossless reconstruction; increasing $\lambda$ progressively removes fine-scale
+detail, interpolating continuously between the raw-data representation and a
+smooth approximation.
+
+\section{Comparison Metrics}
+\label{sec:metrics}
+
+Three metrics are used to compare basis performance, each addressing a distinct
+aspect of approximation quality.
+
+\subsection{Reconstruction Error}
+\label{subsec:rmse}
+
+The root mean squared error (RMSE) between the observed values and the functional
+reconstruction, evaluated exclusively on non-imputed observed time points:
+\begin{equation}
+    \mathrm{RMSE}_i
+    \;=\;
+    \sqrt{\frac{1}{|\mathcal{O}_i|}
+    \sum_{t\,\in\,\mathcal{O}_i}
+    \bigl(y_i(t) - \hat{X}_i(t)\bigr)^2},
+    \label{eq:rmse}
+\end{equation}
+where $\mathcal{O}_i$ denotes the set of observed (non-missing) time points
+for country $i$.
+
+Because wavelets admit lossless reconstruction at $\lambda = 0$
+(giving $\mathrm{RMSE} = 0$), a direct RMSE comparison across bases is only
+meaningful at equivalent smoothing levels. The fair comparison strategy adopted
+here is: for each country, find the wavelet threshold $\lambda^*$ such that
+$\mathrm{RMSE}_i^{\mathrm{wav}}(\lambda^*) \approx \mathrm{RMSE}_i^{\mathrm{bsp}}$,
+and then count the number of nonzero coefficients required. This directly tests
+the Besov space hypothesis: at equivalent reconstruction quality, a sparser basis
+requires fewer nonzero coefficients.
+
+\subsection{Sparsity}
+\label{subsec:sparsity_metric}
+
+The compression ratio under soft thresholding, defined as the fraction of wavelet
+coefficients set to zero:
+\begin{equation}
+    \mathrm{Sparsity}(\lambda)
+    \;=\;
+    1 - \frac{\|\hat{\mathbf{d}}(\lambda)\|_0}{|\mathbf{d}|},
+    \label{eq:sparsity}
+\end{equation}
+where $|\mathbf{d}|$ denotes the total number of wavelet coefficients across all
+decomposition levels.
+
+\subsection{FPCA Variance Explained}
+\label{subsec:fpca_metric}
+
+Functional Principal Component Analysis (FPCA) is applied to the matrix of
+functional reconstructions $\mathbf{X} \in \mathbb{R}^{N \times T}$
+(where $N = 20$ countries and $T = 65$ time points). The centred matrix
+$\widetilde{\mathbf{X}} = \mathbf{X} - \mathbf{1}\bar{X}^{\!\top}$ is
+decomposed via the Singular Value Decomposition (SVD):
+\begin{equation}
+    \widetilde{\mathbf{X}} \;=\; \mathbf{U}\,\mathbf{S}\,\mathbf{V}^{\!\top},
+    \label{eq:svd}
+\end{equation}
+where the columns of $\mathbf{V}$ are the functional principal components
+(eigenfunctions of the empirical covariance operator), the diagonal entries of
+$\mathbf{S}^2$ are proportional to the eigenvalues, and the rows of
+$\mathbf{U}\mathbf{S}$ are the PC scores per country.
+
+The percentage of variance explained by the $k$-th FPC is:
+\begin{equation}
+    \mathrm{VE}_k
+    \;=\;
+    \frac{s_k^2}{\displaystyle\sum_{j} s_j^2}
+    \;\times\; 100\%,
+    \label{eq:var_explained}
+\end{equation}
+and the number of FPCs required to reach 80\% cumulative variance is recorded
+as $n_{80}$. A smaller $n_{80}$ indicates a more parsimonious functional
+representation of the cross-country variation structure.
+
+\section{Computational Implementation}
+\label{sec:implementation}
+
+All analyses are implemented in Python~3.12. B-spline fitting uses
+\texttt{scipy.interpolate.UnivariateSpline}; Fourier expansions use
+\texttt{scipy.fft}; wavelet transforms are implemented from first principles
+using explicit orthogonal matrices, without relying on external wavelet
+libraries, to ensure full transparency and reproducibility of the reconstruction
+pipeline. Visualisations are produced with \texttt{matplotlib} and
+\texttt{seaborn}. Complete source code is provided in Appendix~A.

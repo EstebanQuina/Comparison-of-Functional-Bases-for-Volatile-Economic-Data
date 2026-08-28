@@ -1,0 +1,32 @@
+# ============================================================
+# Thesis Project: Functional Bases for Volatile Economic Series
+# Python Dependencies
+# ============================================================
+
+# Core data handling
+pandas>=2.0.0
+numpy>=1.26.0
+
+# Scientific computing & signal processing
+scipy>=1.11.0
+
+# Functional Data Analysis
+scikit-fda>=0.9.0
+
+# Wavelet analysis
+PyWavelets>=1.4.0
+
+# Machine learning (clustering, PCA comparison)
+scikit-learn>=1.3.0
+
+# Statistical modeling
+statsmodels>=0.14.0
+
+# Visualization
+matplotlib>=3.7.0
+seaborn>=0.12.0
+
+# Jupyter environment
+jupyter>=1.0.0
+notebook>=7.0.0
+ipykernel>=6.0.0
