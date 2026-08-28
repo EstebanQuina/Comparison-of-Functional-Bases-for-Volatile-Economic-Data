@@ -3,7 +3,7 @@
 **Protocolo de referencia:** `protocolo_estado_del_arte.md`, §5
 **Criterios de elegibilidad:** `criterios_elegibilidad.md`
 **Fuentes de información:** `fuentes_informacion.md`
-**Estado:** v1.2 — C1 congelada en Scopus (871 resultados); C2–C7 pendientes
+**Estado:** v1.3 — C1 congelada en Scopus (871 resultados); C2 congelada (473); C3–C7 pendientes
 
 ## 5.1 Conjunto oro (*gold standard set*)
 
@@ -33,7 +33,7 @@ Bloques conceptuales combinados con `AND`, sinónimos internos con `OR`:
 
 - **Bloque A (dominio):** `"functional data analysis"` OR `"functional data"` OR `"functional principal component*"` OR FPCA
 - **Bloque B (base):** `"basis function*"` OR `"basis system"` OR `"basis expansion"` OR `"basis selection"` OR `B-spline*` OR `"P-spline*"` OR `spline*` OR `Fourier` OR `wavelet*`
-- **Bloque C (suavizado):** `smoothing` OR `"roughness penalty"` OR `"penalized"` OR `"knot selection"` OR `"generalized cross-validation"` OR GCV
+- **Bloque C (suavizado):** `smoothing` OR `"roughness penalty"` OR `penalized` OR `penalised` OR `"knot selection"` OR `"generalized cross-validation"` OR `"generalised cross-validation"` OR GCV OR `"cross-validation"` OR `"threshold selection"` OR `"wavelet threshold*"` OR `"dimension selection"` OR `"number of basis functions"` OR `regulari?ation`
 - **Bloque D (aplicación):** `econom*` OR `financ*` OR `GDP` OR `"gross domestic product"` OR `volatil*` OR `"time series"`
 - **Bloque E (región):** `"Latin America*"` OR Ecuador OR `"South America*"`
 
@@ -87,10 +87,12 @@ recuperación para esta base de datos.
 | #3 | No (confirmado) | — | fuera de alcance (Scopus) |
 | #4 | No | — | fuera de alcance (Scopus) |
 | #5 | Sí | C5, C6 (obra general) | pendiente de probar |
-| #6 | Sí | C1, C2, C3, C4 | ✅ recuperado por C1 |
+| #6 | Sí | C1, C3, C4 | ✅ recuperado por C1 |
 | #7 | No | — | fuera de alcance (Scopus) |
 | #8 | Sí | C5, C6 | pendiente de probar |
-| #9a–c | Sí | C1, C2, C4 | ✅ recuperados por C1 (3/3) |
+| #9a | Sí | C1 | ✅ recuperado por C1 |
+| #9b | Sí | C1, C2, C4 | ✅ recuperado por C1 y C2 |
+| #9c | Sí | C1 | ✅ recuperado por C1 |
 | #10 | Sí | C7 | pendiente de probar en C7 |
 
 **Resultado de calibración de C1 (PR1, PR2):** subconjunto relevante = {#6,
@@ -100,6 +102,23 @@ necesidad de ampliar el Bloque B.
 **C1 congelada (2026-08-28) en 871 resultados** — sintaxis exacta y
 filtros aplicados en `cadenas_scopus.md`. Ver `bitacora_busqueda.numbers`
 para el historial completo de calibración (1243 → 876 → 871).
+
+**Resultado de calibración de C2 (PR3):** el mapeo inicial asignaba {#6,
+#9a, #9b, #9c} a C2, pero la ejecución real mostró que solo #9b trata
+efectivamente sobre criterios de selección de suavizado/dimensión de base
+(#6, #9a y #9c son, respectivamente, un panorama general de wavelets, un
+problema de homogeneidad en la expansión, y un estudio de FPCA — ninguno
+centrado en PR3). Ampliar el Bloque C con vocabulario de umbral
+wavelet/selección de dimensión (402 → 473 resultados) no cambió la
+recuperación de los otros tres, confirmando que su ausencia no era un
+problema de sinónimos sino de asignación. Subconjunto relevante corregido =
+{#9b} → 1/1 recuperado = 100%, tanto en la versión estrecha como en la
+ampliada. Se conserva el Bloque C ampliado por su cobertura conceptual más
+completa de PR3, aunque no haya sido necesario para esta calibración.
+
+**C2 congelada (2026-08-28) en 473 resultados** — sintaxis exacta y
+filtros en `cadenas_scopus.md`. Ver `bitacora_busqueda.numbers` para el
+historial de calibración (402 → 473).
 
 ## Cambios respecto al borrador del protocolo
 
@@ -120,3 +139,4 @@ para el historial completo de calibración (1243 → 876 → 871).
 | 1.0 | 2026-08-28 | Versión inicial: conjunto oro reducido de 12 a 10 candidatos; verificación de venue para #8 | Consistencia con los criterios de elegibilidad de la Fase 1 |
 | 1.1 | 2026-08-28 | C1 ejecutada en Scopus (1243 resultados); #3 confirmado no indexado; #9 reemplazado por tres anclas verificadas (14 documentos del cluster Aguilera/Aguilera-Morillo); #10 confirmado indexado pero fuera del alcance de C1; añadido §5.5 con mapeo cadena→ítem y calibración de C1 (100% sobre su subconjunto relevante) | Calibración real contra la primera ejecución en Scopus |
 | 1.2 | 2026-08-28 | C1 congelada en 871 resultados (área temática + tipo de documento), pese a superar el umbral orientativo de ~600 | Recall 100% confirmado dos veces; el recorte adicional se delega al cribado de la Fase 5 |
+| 1.3 | 2026-08-28 | Bloque C ampliado con vocabulario de umbral/dimensión; corregido el mapeo §5.5 de C2 de {#6, #9a-c} a {#9b}; C2 congelada en 473 resultados | Ampliar sinónimos no cambió la recuperación de #6/#9a/#9c, evidenciando un error de asignación en el mapeo inicial, no un vacío de vocabulario |

@@ -29,11 +29,20 @@ del conjunto (A AND B, sin restricción adicional). El recorte adicional se
 delega al cribado título/resumen de la Fase 5. Ver `bitacora_busqueda.numbers`
 filas 1–3 para el detalle completo.
 
-## C2 — PR3
+## C2 — PR3 — ✅ CONGELADA (2026-08-28, 473 resultados)
 
 ```
-TITLE-ABS-KEY(("functional data analysis" OR "functional data" OR "functional principal component*" OR FPCA) AND ("basis function*" OR "basis system" OR "basis expansion" OR "basis selection" OR "B-spline*" OR "P-spline*" OR spline* OR Fourier OR wavelet*) AND (smoothing OR "roughness penalty" OR penalized OR "knot selection" OR "generalized cross-validation" OR GCV)) AND PUBYEAR > 1996 AND PUBYEAR < 2027
+TITLE-ABS-KEY(("functional data analysis" OR "functional data" OR "functional principal component*" OR FPCA) AND ("basis function*" OR "basis system" OR "basis expansion" OR "basis selection" OR "B-spline*" OR "P-spline*" OR spline* OR Fourier OR wavelet*) AND (smoothing OR "roughness penalty" OR penalized OR penalised OR "knot selection" OR "generalized cross-validation" OR "generalised cross-validation" OR GCV OR "cross-validation" OR "threshold selection" OR "wavelet threshold*" OR "dimension selection" OR "number of basis functions" OR regulari?ation)) AND PUBYEAR > 1996 AND PUBYEAR < 2027
 ```
+
+**Historial de calibración:** 402 (Bloque C original) → 473 (Bloque C
+ampliado con vocabulario de umbral wavelet/selección de dimensión). Ninguna
+versión superó el umbral de 600, así que no se aplicaron filtros
+adicionales de área temática o tipo de documento. Recuperación del
+subconjunto relevante corregido del conjunto oro (#9b, ver
+`cadenas_busqueda.md` §5.5): 100% en ambas versiones. Se congela la
+versión ampliada por su mejor cobertura conceptual de PR3. Ver
+`bitacora_busqueda.numbers` filas correspondientes para el detalle.
 
 ## C3 — PR4
 
