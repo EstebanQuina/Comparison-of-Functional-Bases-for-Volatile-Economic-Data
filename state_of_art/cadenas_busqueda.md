@@ -3,7 +3,7 @@
 **Protocolo de referencia:** `protocolo_estado_del_arte.md`, §5
 **Criterios de elegibilidad:** `criterios_elegibilidad.md`
 **Fuentes de información:** `fuentes_informacion.md`
-**Estado:** v1.1 — conjunto oro verificado contra ejecución real de C1 en Scopus
+**Estado:** v1.2 — C1 congelada en Scopus (871 resultados); C2–C7 pendientes
 
 ## 5.1 Conjunto oro (*gold standard set*)
 
@@ -97,6 +97,10 @@ recuperación para esta base de datos.
 #9a, #9b, #9c} → 4/4 recuperados = 100%. C1 queda calibrada y congelada sin
 necesidad de ampliar el Bloque B.
 
+**C1 congelada (2026-08-28) en 871 resultados** — sintaxis exacta y
+filtros aplicados en `cadenas_scopus.md`. Ver `bitacora_busqueda.numbers`
+para el historial completo de calibración (1243 → 876 → 871).
+
 ## Cambios respecto al borrador del protocolo
 
 - **§5.1**: se eliminaron dos candidatos del conjunto oro por caer fuera de
@@ -115,3 +119,4 @@ necesidad de ampliar el Bloque B.
 |---|---|---|---|
 | 1.0 | 2026-08-28 | Versión inicial: conjunto oro reducido de 12 a 10 candidatos; verificación de venue para #8 | Consistencia con los criterios de elegibilidad de la Fase 1 |
 | 1.1 | 2026-08-28 | C1 ejecutada en Scopus (1243 resultados); #3 confirmado no indexado; #9 reemplazado por tres anclas verificadas (14 documentos del cluster Aguilera/Aguilera-Morillo); #10 confirmado indexado pero fuera del alcance de C1; añadido §5.5 con mapeo cadena→ítem y calibración de C1 (100% sobre su subconjunto relevante) | Calibración real contra la primera ejecución en Scopus |
+| 1.2 | 2026-08-28 | C1 congelada en 871 resultados (área temática + tipo de documento), pese a superar el umbral orientativo de ~600 | Recall 100% confirmado dos veces; el recorte adicional se delega al cribado de la Fase 5 |

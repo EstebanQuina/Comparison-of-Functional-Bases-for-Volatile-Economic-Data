@@ -9,11 +9,25 @@ Scopus Advanced Search (`TITLE-ABS-KEY`), listas para pegar. Todas incluyen
 el filtro de ventana temporal 1997–2026 (`criterios_elegibilidad.md`, I3,
 sin excepciones).
 
-## C1 — PR1, PR2
+## C1 — PR1, PR2 — ✅ CONGELADA (2026-08-28, 871 resultados)
 
 ```
 TITLE-ABS-KEY(("functional data analysis" OR "functional data" OR "functional principal component*" OR FPCA) AND ("basis function*" OR "basis system" OR "basis expansion" OR "basis selection" OR "B-spline*" OR "P-spline*" OR spline* OR Fourier OR wavelet*)) AND PUBYEAR > 1996 AND PUBYEAR < 2027
 ```
+
+**Filtros adicionales aplicados en Scopus (fuera de la cadena de texto):**
+- Subject area: Mathematics; Economics, Econometrics and Finance; Decision Sciences
+- Document type: Article, Review, Conference Paper, Book Chapter, Book
+
+**Historial de calibración:** 1243 (sin filtros) → 876 (+ área temática) → 871
+(+ tipo de documento). Recuperación del subconjunto relevante del conjunto
+oro (#6, #9a–c) confirmada al 100% en las dos primeras ejecuciones. Se
+acepta 871 pese a superar el umbral orientativo de ~600 (§5.4): el filtro
+de tipo de documento solo retiró 5 registros, señal de que el volumen no
+es ruido editorial sino el alcance real y esperado de la cadena más amplia
+del conjunto (A AND B, sin restricción adicional). El recorte adicional se
+delega al cribado título/resumen de la Fase 5. Ver `bitacora_busqueda.numbers`
+filas 1–3 para el detalle completo.
 
 ## C2 — PR3
 
@@ -60,8 +74,11 @@ TITLE-ABS-KEY(("functional time series" OR "functional ARCH" OR "functional GARC
 3. Si una cadena devuelve más de ~600 resultados, restringe por área
    temática en el panel lateral de Scopus (el campo de búsqueda ya está
    limitado a título/resumen/palabras clave por `TITLE-ABS-KEY`).
-4. Exporta los resultados en formato RIS de inmediato (botón "Export" →
-   RIS), hacia Zotero o un archivo `.ris` local.
+4. Exporta en formato RIS (botón "Export" → RIS, **no** "Citation" ni
+   "Plain text") únicamente la **versión congelada** de cada cadena — las
+   ejecuciones de calibración (sin filtro, con filtros parciales) no se
+   exportan, solo se registran en la bitácora para dejar constancia del
+   proceso de calibración.
 5. Registra cada ejecución en `bitacora_busqueda.numbers`: cadena exacta
    pegada, campo (`TITLE-ABS-KEY`), filtros aplicados, número de
    resultados, número exportado, y el nombre del archivo RIS generado.
