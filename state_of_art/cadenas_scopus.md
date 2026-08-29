@@ -44,11 +44,20 @@ subconjunto relevante corregido del conjunto oro (#9b, ver
 versión ampliada por su mejor cobertura conceptual de PR3. Ver
 `bitacora_busqueda.numbers` filas correspondientes para el detalle.
 
-## C3 — PR4
+## C3 — PR4 — ✅ CONGELADA (2026-08-28, 33 resultados)
 
 ```
-TITLE-ABS-KEY(("functional data analysis" OR "functional data" OR "functional principal component*" OR FPCA) AND (wavelet* OR "wavelet basis") AND (nonstationary OR "non-stationary" OR rough OR discontinu*)) AND PUBYEAR > 1996 AND PUBYEAR < 2027
+TITLE-ABS-KEY(("functional data analysis" OR "functional data" OR "functional principal component*" OR FPCA) AND (wavelet* OR "wavelet basis") AND (nonstationary OR "non-stationary" OR rough OR discontinu* OR "structural break*" OR "non-smooth" OR nonsmooth OR irregular* OR jump* OR singularit* OR heterogeneous OR "local feature*" OR "abrupt change*" OR "regime change*" OR shock* OR spike* OR anomal*)) AND PUBYEAR > 1996 AND PUBYEAR < 2027
 ```
+
+**Historial de calibración:** 9 (bloque original) → 32 (+ umbral
+estadístico/dimensión) → 33 (+ disrupción aplicada: `abrupt change*`,
+`regime change*`, `shock*`, `spike*`, `anomal*`). Sin ancla en el conjunto
+oro (#6 se retiró del mapeo esperado, ver `cadenas_busqueda.md` §5.5) —
+validada por revisión manual: los 33 títulos muestran perfil coherente con
+PR4 (wavelets aplicados a señales con transiciones/irregularidades: voz,
+EEG epiléptico, datos dispersos). Sin filtro de volumen, muy por debajo de
+600.
 
 ## C4 — PR2, PR4
 

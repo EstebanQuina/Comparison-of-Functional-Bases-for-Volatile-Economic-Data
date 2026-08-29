@@ -3,7 +3,7 @@
 **Protocolo de referencia:** `protocolo_estado_del_arte.md`, §5
 **Criterios de elegibilidad:** `criterios_elegibilidad.md`
 **Fuentes de información:** `fuentes_informacion.md`
-**Estado:** v1.3 — C1 congelada en Scopus (871 resultados); C2 congelada (473); C3–C7 pendientes
+**Estado:** v1.4 — C1 congelada en Scopus (871); C2 congelada (473); C3 congelada (33); C4–C7 pendientes
 
 ## 5.1 Conjunto oro (*gold standard set*)
 
@@ -87,7 +87,7 @@ recuperación para esta base de datos.
 | #3 | No (confirmado) | — | fuera de alcance (Scopus) |
 | #4 | No | — | fuera de alcance (Scopus) |
 | #5 | Sí | C5, C6 (obra general) | pendiente de probar |
-| #6 | Sí | C1, C3, C4 | ✅ recuperado por C1 |
+| #6 | Sí | C1, C4 | ✅ recuperado por C1 |
 | #7 | No | — | fuera de alcance (Scopus) |
 | #8 | Sí | C5, C6 | pendiente de probar |
 | #9a | Sí | C1 | ✅ recuperado por C1 |
@@ -120,6 +120,25 @@ completa de PR3, aunque no haya sido necesario para esta calibración.
 filtros en `cadenas_scopus.md`. Ver `bitacora_busqueda.numbers` para el
 historial de calibración (402 → 473).
 
+**Resultado de calibración de C3 (PR4):** el mapeo inicial asignaba #6 a
+C3, pero dos rondas de ampliación del bloque de irregularidad (9 → 32 → 33
+resultados, agregando vocabulario de umbral estadístico y luego de
+disrupción aplicada: `abrupt change*`, `regime change*`, `shock*`,
+`spike*`, `anomal*`) no lo recuperaron. Igual que con C2, se concluye que
+es un error de asignación, no un vacío de vocabulario: el libro de
+Morettin et al. es un panorama general, no un trabajo centrado en procesos
+irregulares. Se retira #6 del subconjunto esperado de C3, que queda **sin
+ancla propia en el conjunto oro**. Validación sustituta: revisión manual
+de los 33 títulos, que muestran perfil temático coherente con PR4 (p. ej.
+*"Adaptive Wavelets for Sparse Representations of Scattered Data"*,
+*"Time normalization of voice signals using functional data analysis"*,
+*"Wavelet power spectral domain functional principal component analysis
+for feature extraction of epileptic EEGs"*).
+
+**C3 congelada (2026-08-28) en 33 resultados** — sintaxis exacta en
+`cadenas_scopus.md`. Sin filtro de volumen (muy por debajo de 600). Ver
+`bitacora_busqueda.numbers` para el historial de calibración (9 → 32 → 33).
+
 ## Cambios respecto al borrador del protocolo
 
 - **§5.1**: se eliminaron dos candidatos del conjunto oro por caer fuera de
@@ -140,3 +159,4 @@ historial de calibración (402 → 473).
 | 1.1 | 2026-08-28 | C1 ejecutada en Scopus (1243 resultados); #3 confirmado no indexado; #9 reemplazado por tres anclas verificadas (14 documentos del cluster Aguilera/Aguilera-Morillo); #10 confirmado indexado pero fuera del alcance de C1; añadido §5.5 con mapeo cadena→ítem y calibración de C1 (100% sobre su subconjunto relevante) | Calibración real contra la primera ejecución en Scopus |
 | 1.2 | 2026-08-28 | C1 congelada en 871 resultados (área temática + tipo de documento), pese a superar el umbral orientativo de ~600 | Recall 100% confirmado dos veces; el recorte adicional se delega al cribado de la Fase 5 |
 | 1.3 | 2026-08-28 | Bloque C ampliado con vocabulario de umbral/dimensión; corregido el mapeo §5.5 de C2 de {#6, #9a-c} a {#9b}; C2 congelada en 473 resultados | Ampliar sinónimos no cambió la recuperación de #6/#9a/#9c, evidenciando un error de asignación en el mapeo inicial, no un vacío de vocabulario |
+| 1.4 | 2026-08-28 | Tercer bloque de C3 ampliado en dos rondas (9→32→33); corregido el mapeo §5.5 retirando #6 de C3; C3 congelada en 33 resultados, validada por revisión manual de títulos en vez de conjunto oro | Mismo patrón que C2: ampliar vocabulario no recuperó #6, confirmando error de asignación; C3 queda sin ancla propia |
