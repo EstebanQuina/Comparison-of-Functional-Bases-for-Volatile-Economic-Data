@@ -22,12 +22,19 @@ REDACTED = "zbMATH Open Web Interface contents unavailable due to conflicting li
 DT_MAP = {"j": "JOUR", "b": "BOOK", "a": "CHAP", "p": "UNPB"}
 
 
-def fetch_page(search_string, page, per_page=100):
+def fetch_page(search_string, page, per_page=100, retries=4):
     url = API + "?" + urllib.parse.urlencode(
         {"search_string": search_string, "page": page, "results_per_page": per_page}
     )
-    with urllib.request.urlopen(url, timeout=60) as r:
-        return json.load(r)
+    last_err = None
+    for attempt in range(retries):
+        try:
+            with urllib.request.urlopen(url, timeout=60) as r:
+                return json.load(r)
+        except Exception as e:
+            last_err = e
+            time.sleep(2 * (attempt + 1))
+    raise last_err
 
 
 def get_doi(doc):
