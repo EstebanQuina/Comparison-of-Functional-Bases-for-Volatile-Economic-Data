@@ -52,7 +52,25 @@ de los resultados por autor. Sin filtro de volumen (bajo 600). Exportado
 vía `scripts/arxiv_export.py`: 298 total, todos con metadatos completos
 (sin restricciones de licencia, a diferencia de zbMATH).
 
-## C2–C7
+## C2 — PR3 — ✅ CONGELADA (2026-08-29, 137 resultados)
+
+```
+(all:"functional data analysis" OR all:"functional data" OR all:"functional principal component" OR all:FPCA) AND (all:basis OR all:spline OR all:Fourier OR all:wavelet) AND (all:smoothing OR all:"roughness penalty" OR all:penalized OR all:penalised OR all:"knot selection" OR all:"cross-validation" OR all:GCV OR all:"threshold selection" OR all:"dimension selection" OR all:regularization OR all:regularisation) AND submittedDate:[19970101000000 TO 20261231235959]
+```
+
+**Sin ancla en el conjunto oro**: se verificó directamente que **#9b no
+está indexado en arXiv** (0 resultados en búsqueda por título exacto,
+independiente de la cadena) — parece que ese trabajo de 2013 nunca se
+subió a ningún repositorio. Validado por revisión manual de una muestra
+de 15 títulos: perfil temático fuerte y coherente con PR3 (*"Fast
+Bayesian Basis Selection for Functional Data Representation with
+Correlated Errors"*, *"...allowing for dimension selection"*,
+*"Semiparametric Functional Factor Models with Bayesian Rank Selection"*,
+*"Trend Filtering for Functional Data"*). Sin filtro de volumen (bajo
+600). Exportado vía `scripts/arxiv_export.py`: 137 registros, todos con
+metadatos completos.
+
+## C3–C7
 
 Pendientes. Mismo procedimiento: probar vía `scripts/arxiv_export.py`,
 revisar recall contra el subconjunto arXiv-específico (verificando
