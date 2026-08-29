@@ -145,9 +145,28 @@ de aplicación en el resumen; un ítem parece ruido claro
 Sin filtro de volumen (muy bajo 600). Exportado vía
 `scripts/arxiv_export.py`: 9 registros, todos con metadatos completos.
 
-## C7
+## C7 — PR4, PR5 — ✅ CONGELADA (2026-08-29, 38 resultados)
 
-Pendiente. Mismo procedimiento: probar vía `scripts/arxiv_export.py`,
-revisar si #10 está indexado y si la cadena lo recupera, ajustar, y
-congelar. Ya se confirmó que #10 tiene versión en arXiv (arXiv:1105.0343,
-visto en el registro de zbMATH).
+```
+(all:"functional time series" OR all:"functional ARCH" OR all:"functional GARCH" OR all:"functional version") AND (all:volatility OR all:economic OR all:financial OR all:heteroskedastic OR all:heteroscedastic) AND submittedDate:[19970101000000 TO 20261231235959]
+```
+
+**Ancla confirmada: #10 recuperado al 100%** (arXiv:1105.0343, título
+"A Functional Version of the ARCH Model"). Traducción directa de la
+sintaxis ya calibrada en Scopus/zbMATH, sin ajuste adicional necesario.
+Sin filtro de volumen (bajo 600). Exportado vía `scripts/arxiv_export.py`:
+38 registros, todos con metadatos completos.
+
+## Con esto se completan las siete cadenas de arXiv
+
+| Cadena | Resultados | Ancla | Confianza |
+|---|---|---|---|
+| C1 | 298 | {#9a} | Alta |
+| C2 | 137 | Sin ancla, validada manualmente | Alta |
+| C3 | 10 | Sin ancla, validada manualmente | Alta |
+| C4 | 85 | Sin ancla, validada manualmente | **Baja** (ver nota en C4) |
+| C5 | 235 | Sin ancla, validada manualmente | Alta |
+| C6 | 9 | Sin ancla, validada manualmente | Alta |
+| C7 | 38 | {#10} 100% | Alta |
+
+**Total bruto: 812 registros** (con solapamiento esperado entre cadenas).
