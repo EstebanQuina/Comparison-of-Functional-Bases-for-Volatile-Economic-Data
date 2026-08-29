@@ -139,7 +139,28 @@ el cribado de la Fase 5 (criterio E5). Sin filtro de volumen (bajo 600).
 Exportado vía `scripts/zbmath_export.py`: 28 total → 21 con metadatos
 completos + 7 restringidos por licencia (con DOI).
 
-## C4–C7
+## C4 — PR2, PR4 — ✅ CONGELADA (2026-08-29, 192 resultados)
+
+```
+any:(basis* | spline* | Fourier | wavelet*) & any:("functional data analysis" | "functional data" | "functional principal component*" | FPCA) & any:(compar* | "comparative study" | benchmark*) & py:1997-2026
+```
+
+**Sin ancla en el conjunto oro** (#9b no está indexado en zbMATH).
+Validada por revisión manual de una muestra de 20 títulos, con **confianza
+más baja que C1–C3**: solo 2 de 20 son claramente comparativos de familias
+de bases (*"A wavelet-based method in aggregated functional data
+analysis"*, *"Functional principal component analysis via regularized
+Gaussian basis expansions..."*); el resto son papers de aplicación general
+de FDA (dental, agrícola, epigenética) donde `compar*` probablemente
+coincidió con vocabulario genérico ("compared to") en el resumen, no con
+una comparación central de bases — más el mismo patrón de falso positivo
+por volumen completo de actas ya visto en C3. Se acepta de todas formas:
+sobre-incluir es menos riesgoso que sub-incluir, y el volumen (192) es
+manejable para el cribado título/resumen de la Fase 5, que filtrará este
+ruido genérico. Exportado vía `scripts/zbmath_export.py`: 192 total → 166
+con metadatos completos + 26 restringidos por licencia (con DOI).
+
+## C5–C7
 
 Pendientes. Mismo procedimiento: probar (preferentemente vía
 `scripts/zbmath_export.py` directamente, ya que da el conteo real y
