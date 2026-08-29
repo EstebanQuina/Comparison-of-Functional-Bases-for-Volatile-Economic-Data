@@ -127,9 +127,27 @@ ecología, medicina) donde "time series" coincidió genéricamente. Sin
 filtro de volumen (bajo 600). Exportado vía `scripts/arxiv_export.py`:
 235 registros, todos con metadatos completos.
 
-## C6–C7
+## C6 — PR5 — ✅ CONGELADA (2026-08-29, 9 resultados)
 
-Pendientes. Mismo procedimiento: probar vía `scripts/arxiv_export.py`,
-revisar recall contra el subconjunto arXiv-específico (verificando
-primero cobertura — libros ausentes por diseño del repositorio), ajustar,
-y congelar.
+```
+(all:"functional data analysis" OR all:"functional data" OR all:"functional principal component" OR all:FPCA) AND (all:"Latin America" OR all:Ecuador OR all:"South America" OR all:Argentina OR all:Bolivia OR all:Brazil OR all:Chile OR all:Colombia OR all:"Costa Rica" OR all:Cuba OR all:"Dominican Republic" OR all:"El Salvador" OR all:Guatemala OR all:Haiti OR all:Honduras OR all:Mexico OR all:Nicaragua OR all:Panama OR all:Paraguay OR all:Peru OR all:Uruguay OR all:Venezuela) AND submittedDate:[19970101000000 TO 20261231235959]
+```
+
+**Sin ancla en el conjunto oro.** Volumen muy bajo, esperable (repositorio
+de matemática/estadística/CS, poca aplicación regional). Validado por
+revisión manual de los 9 títulos completos: un hallazgo claramente fuerte
+(*"Modeling the Evolution of Infectious Diseases with Functional Data
+Models: The Case of COVID-19 in Brazil"*), el mismo tipo de trabajo que
+ya había aparecido como relevante en zbMATH C6 — buena consistencia entre
+bases. El resto probablemente coincidió por mención de país como ejemplo
+de aplicación en el resumen; un ítem parece ruido claro
+("Towards proactive self-adaptive AI for non-stationary environments...").
+Sin filtro de volumen (muy bajo 600). Exportado vía
+`scripts/arxiv_export.py`: 9 registros, todos con metadatos completos.
+
+## C7
+
+Pendiente. Mismo procedimiento: probar vía `scripts/arxiv_export.py`,
+revisar si #10 está indexado y si la cadena lo recupera, ajustar, y
+congelar. Ya se confirmó que #10 tiene versión en arXiv (arXiv:1105.0343,
+visto en el registro de zbMATH).
