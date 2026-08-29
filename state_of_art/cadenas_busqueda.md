@@ -25,7 +25,7 @@ fuente antes de usarlo para citar.
     - **9c.** Escabias, M., Aguilera, A.M. & Aguilera-Morillo, M.C. (2014). "Functional PCA and Base-Line Logit Models". *Journal of Classification*, 31(3), pp. 296–324. DOI: [10.1007/s00357-014-9162-y](https://doi.org/10.1007/s00357-014-9162-y).
 
     Los 14 documentos completos del cluster se revisarán en el cribado de la Fase 5 (título/resumen), no solo estas tres anclas.
-10. Hörmann, S., Horváth, L. & Reeder, R. (2013). "A functional version of the ARCH model". *Econometric Theory*, 29(2), pp. 267–288. DOI: [10.1017/S0266466612000345](https://doi.org/10.1017/S0266466612000345). Cita completa verificada vía Scopus (2026-08-28). No recuperado por C1 (esperado: no es un trabajo de base/dominio general). **Recuperado por C5** (encontrado dentro del clúster de autoría de Hörmann en los resultados de C5); pendiente de confirmar también en C7.
+10. Hörmann, S., Horváth, L. & Reeder, R. (2013). "A functional version of the ARCH model". *Econometric Theory*, 29(2), pp. 267–288. DOI: [10.1017/S0266466612000345](https://doi.org/10.1017/S0266466612000345). Cita completa verificada vía Scopus (2026-08-28) — identificada al revisar el clúster de autoría de Hörmann que apareció en los resultados de C5. No recuperado por C1 (esperado). **Tampoco recuperado por C5**: C5 sí trae otros trabajos de Hörmann sobre series temporales/volatilidad funcional, pero no este título específico. Pendiente de probar en C7, su cadena originalmente asignada.
 
 ## 5.2 Estructura de las cadenas
 
@@ -93,7 +93,7 @@ recuperación para esta base de datos.
 | #9a | Sí | C1 | ✅ recuperado por C1 |
 | #9b | Sí | C1, C2, C4 | ✅ recuperado por C1, C2 y C4 |
 | #9c | Sí | C1 | ✅ recuperado por C1 |
-| #10 | Sí | C5, C7 | ✅ recuperado por C5 (vía clúster de autoría); pendiente confirmar en C7 |
+| #10 | Sí | C7 | ❌ no recuperado por C5 (aunque C5 sí trae otros trabajos del mismo autor); pendiente de probar en C7 |
 
 **Resultado de calibración de C1 (PR1, PR2):** subconjunto relevante = {#6,
 #9a, #9b, #9c} → 4/4 recuperados = 100%. C1 queda calibrada y congelada sin
@@ -159,11 +159,11 @@ se retira definitivamente a C1 solamente. #5 sí se recuperó. #8 no se
 recuperó pese a contener "Economic" literalmente en el título; confirmado
 con búsqueda directa `TITLE-ABS-KEY(padilla AND economic)` — se documenta
 como anomalía de indexación, no como fallo de vocabulario (ver ítem #8 en
-§5.1). Hallazgo adicional: C5 recupera varios trabajos de Hörmann,
-incluyendo #10 ("A functional version of the ARCH model", 2013),
-originalmente esperado solo en C7 — cita ahora verificada y completa en
-§5.1. Pendiente: conteo tras filtro de área temática y decisión de
-congelamiento.
+§5.1). Hallazgo adicional: C5 recupera varios trabajos de Hörmann sobre
+series temporales/volatilidad funcional (aunque no #10 específicamente,
+que sigue asignado solo a C7) — permitió identificar y verificar la cita
+completa de #10 en §5.1 aunque no lo recupere directamente. Pendiente:
+conteo tras filtro de área temática y decisión de congelamiento.
 
 ## Cambios respecto al borrador del protocolo
 
