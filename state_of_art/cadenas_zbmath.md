@@ -211,8 +211,30 @@ Sin filtro de volumen (muy bajo 600). Exportado vía
 `scripts/zbmath_export.py`: 12 total → 8 con metadatos completos + 4
 restringidos por licencia (con DOI).
 
-## C7
+## C7 — PR4, PR5 — ✅ CONGELADA (2026-08-29, 100 resultados)
 
-Pendiente. Mismo procedimiento: probar (preferentemente vía
-`scripts/zbmath_export.py` directamente), revisar si zbMATH tiene a #10
-indexado y si la cadena lo recupera, ajustar, y congelar.
+```
+any:("functional time series" | "functional ARCH" | "functional GARCH" | "functional version") & any:(volatil* | econom* | financ* | heteroskedastic* | heteroscedastic*) & py:1997-2026
+```
+
+**Ancla confirmada: #10 recuperado al 100%**, verificado contra el
+registro completo (mismo DOI ya verificado en Scopus,
+`10.1017/S0266466612000345`) — sin ambigüedad de homónimo esta vez.
+Traducción directa de la sintaxis ya calibrada en Scopus, sin necesidad de
+ajuste adicional. Sin filtro de volumen (bajo 600). Exportado vía
+`scripts/zbmath_export.py`: 100 total → 85 con metadatos completos + 15
+restringidos por licencia (con DOI).
+
+## Con esto se completan las siete cadenas de zbMATH Open
+
+| Cadena | Resultados | Ancla | Confianza |
+|---|---|---|---|
+| C1 | 798 | {#4, #6, #9a, #9c} 100% | Alta |
+| C2 | 375 | Sin ancla, validada manualmente | Alta |
+| C3 | 28 | Sin ancla, validada manualmente | Alta |
+| C4 | 192 | Sin ancla, validada manualmente | **Baja** (ver nota en C4) |
+| C5 | 717 | {#5} 100% | Alta |
+| C6 | 12 | Sin ancla, validada manualmente | Alta |
+| C7 | 100 | {#10} 100% | Alta |
+
+**Total bruto: 1522 registros** (con solapamiento esperado entre cadenas).
