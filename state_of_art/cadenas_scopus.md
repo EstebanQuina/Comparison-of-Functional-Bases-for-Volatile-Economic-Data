@@ -103,11 +103,22 @@ Functional Data Analysis"* y *"Comparing risk profiles of international
 stock markets as functional data: COVID-19 versus the global financial
 crisis"*. Sin filtro de volumen (bajo 600).
 
-## C7 — PR4, PR5
+## C7 — PR4, PR5 — ✅ CONGELADA (2026-08-28, 111 resultados)
 
 ```
-TITLE-ABS-KEY(("functional time series" OR "functional ARCH" OR "functional GARCH") AND (volatil* OR econom*)) AND PUBYEAR > 1996 AND PUBYEAR < 2027
+TITLE-ABS-KEY(("functional time series" OR "functional ARCH" OR "functional GARCH" OR "functional version") AND (volatil* OR econom* OR financ* OR heteroskedastic* OR heteroscedastic*)) AND PUBYEAR > 1996 AND PUBYEAR < 2027
 ```
+
+**Historial de calibración:** 64 (bloques originales) → 75 (+ "functional
+version" en el primer bloque) → 111 (+ `financ*`, `heteroskedastic*`,
+`heteroscedastic*` en el segundo bloque). Ancla del conjunto oro (#10,
+Hörmann/Horváth/Reeder 2013): no se recuperaba porque el título usa
+"functional **version** of the ARCH model", no la frase "functional ARCH",
+y porque el segundo bloque no cubría vocabulario técnico de
+heterocedasticidad condicional ni `financ*`. Recuperado al 100% tras
+ambos ajustes. Sin filtro de volumen (bajo 600).
+
+**Con C7 se completan las siete cadenas congeladas para Scopus.**
 
 ## Procedimiento de ejecución
 

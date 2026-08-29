@@ -3,7 +3,7 @@
 **Protocolo de referencia:** `protocolo_estado_del_arte.md`, §5
 **Criterios de elegibilidad:** `criterios_elegibilidad.md`
 **Fuentes de información:** `fuentes_informacion.md`
-**Estado:** v1.7 — C1 (871), C2 (473), C3 (33), C4 (389), C5 (735), C6 (114) congeladas en Scopus; C7 pendiente
+**Estado:** v2.0 — las siete cadenas (C1–C7) congeladas en Scopus: 871, 473, 33, 389, 735, 114, 111 resultados respectivamente
 
 ## 5.1 Conjunto oro (*gold standard set*)
 
@@ -52,7 +52,7 @@ indexadas* decidida en la Fase 1.
 | C4 | PR2, PR4 | `A AND B AND (compar* OR "comparative study" OR benchmark*)` |
 | C5 | PR5 | `A AND D` |
 | C6 | PR5 | `A AND E` |
-| C7 | PR4, PR5 | `("functional time series" OR "functional ARCH" OR "functional GARCH") AND (volatil* OR econom*)` |
+| C7 | PR4, PR5 | `("functional time series" OR "functional ARCH" OR "functional GARCH" OR "functional version") AND (volatil* OR econom* OR financ* OR heteroskedastic* OR heteroscedastic*)` |
 
 Ajusta operadores de truncamiento y comillas según cada base (Scopus usa
 `TITLE-ABS-KEY( )`; MathSciNet tiene su propia sintaxis de campos; zbMATH
@@ -93,7 +93,7 @@ recuperación para esta base de datos.
 | #9a | Sí | C1 | ✅ recuperado por C1 |
 | #9b | Sí | C1, C2, C4 | ✅ recuperado por C1, C2 y C4 |
 | #9c | Sí | C1 | ✅ recuperado por C1 |
-| #10 | Sí | C7 | ❌ no recuperado por C5 (aunque C5 sí trae otros trabajos del mismo autor); pendiente de probar en C7 |
+| #10 | Sí | C7 | ✅ recuperado por C7 (no recuperado por C5, que sí trae otros trabajos del mismo autor) |
 
 **Resultado de calibración de C1 (PR1, PR2):** subconjunto relevante = {#6,
 #9a, #9b, #9c} → 4/4 recuperados = 100%. C1 queda calibrada y congelada sin
@@ -191,6 +191,23 @@ crisis mediante datos funcionales).
 **C6 congelada (2026-08-28) en 114 resultados** — sintaxis exacta en
 `cadenas_scopus.md`. Sin filtro de volumen (bajo 600).
 
+**Resultado de calibración de C7 (PR4, PR5):** ancla = {#10}. La cadena
+original (9 tanteos: primero 64 resultados) no lo recuperaba pese a que
+#10 es literalmente el trabajo que la motivó — el título dice "A
+functional **version** of the ARCH model", no la frase exacta "functional
+ARCH", así que se perdía por formato de frase, no por tema. Se añadió
+`"functional version"` al primer bloque (64 → 75), pero seguía sin
+aparecer: el segundo bloque (`volatil* OR econom*`) tampoco cubría el
+vocabulario técnico real de un paper ARCH/GARCH (heterocedasticidad
+condicional) ni incluía `financ*`. Se amplió a
+`volatil* OR econom* OR financ* OR heteroskedastic* OR heteroscedastic*`
+(75 → 111) y #10 finalmente se recuperó — 100%.
+
+**C7 congelada (2026-08-28) en 111 resultados** — sintaxis exacta en
+`cadenas_scopus.md`. Sin filtro de volumen (bajo 600).
+
+**Con esto quedan las siete cadenas de Scopus congeladas.**
+
 ## Cambios respecto al borrador del protocolo
 
 - **§5.1**: se eliminaron dos candidatos del conjunto oro por caer fuera de
@@ -215,3 +232,4 @@ crisis mediante datos funcionales).
 | 1.5 | 2026-08-28 | Retirado #6 definitivamente de C2/C3/C4 (tercera falla consecutiva), queda solo en C1; C4 congelada en 389 resultados con subconjunto corregido {#9b} | Evidencia acumulada de tres cadenas confirma que #6 es un panorama general, no específico de ninguna sub-pregunta |
 | 1.6 | 2026-08-28 | Verificada cita completa de #10 (Hörmann, Horváth & Reeder, 2013); retirado #2 de C5/C6 (mismo patrón que #6); documentada anomalía de indexación de #8; C5 congelada en 735 resultados (área temática + tipo de documento) | Recall de #5 confirmado tras ambos filtros; volumen aceptado por el mismo criterio que C1 |
 | 1.7 | 2026-08-28 | Bloque E ampliado con los 20 países del panel; C6 congelada en 114 resultados, validada por revisión manual (sin ancla en conjunto oro) | 24 resultados con el Bloque E original era insuficiente; muchos trabajos regionales nombran el país sin decir "Latin America" |
+| 2.0 | 2026-08-28 | C7 ampliada en dos rondas (64→75→111) para recuperar #10 (frase "functional version" + vocabulario de heterocedasticidad/`financ*`); C7 congelada en 111. **Las siete cadenas quedan congeladas para Scopus.** | #10 se perdía por formato de frase y vocabulario técnico incompleto, no por error de mapeo — última cadena pendiente, cierra la Fase 4 en Scopus |
