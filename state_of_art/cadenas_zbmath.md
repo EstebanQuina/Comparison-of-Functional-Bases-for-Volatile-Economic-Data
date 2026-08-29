@@ -67,6 +67,38 @@ añadido por consistencia con el resto de la Fase 4; no se ha verificado que
 no excluya nada del conjunto oro (todos los ítems recuperados ya caen
 dentro de esa ventana de todas formas).
 
+## Exportación masiva vía API (en vez de la interfaz web)
+
+La interfaz web de zbMATH Open solo permite exportar página por página,
+inviable para cientos de resultados. zbMATH Open tiene una **API REST
+pública** (`https://api.zbmath.org/v1/`, con especificación OpenAPI en
+`/v1/openapi.json`) que permite paginar automáticamente.
+
+Script reutilizable: [`scripts/zbmath_export.py`](scripts/zbmath_export.py).
+
+```bash
+python3 scripts/zbmath_export.py '<cadena de búsqueda>' <prefijo_salida>
+```
+
+Notas del endpoint (`GET /v1/document/_search`):
+- Parámetros: `search_string`, `page` (empieza en 0), `results_per_page`
+  (máximo confiable: 100 — valores mayores devuelven error 502).
+- Algunos registros tienen metadatos (título, autor, referencias) marcados
+  como `"zbMATH Open Web Interface contents unavailable due to conflicting
+  licenses."` — restricción de licencia de terceros en la API abierta,
+  aunque sí visibles en la web. El script separa estos automáticamente y
+  extrae su DOI (o arXiv ID) cuando existe, en un archivo aparte para
+  importar a Zotero por identificador (**File → New Item by Identifier**),
+  lo cual además da mejores metadatos que zbMATH mismo (resuelve contra
+  Crossref).
+- El conteo de la API puede diferir ligeramente del conteo de la interfaz
+  web (798 vs. 806 para C1) — mismo tipo de fluctuación temporal que se
+  observó en Scopus, no indica un error.
+
+Para C1: 798 vía API → 664 con metadatos completos (`C1_zbmath.ris`) + 134
+restringidos por licencia (`C1_zbmath_ids_para_importar_por_DOI.txt`, con
+DOI en todos los casos).
+
 ## C2–C7
 
 Pendientes. Mismo procedimiento: probar, revisar recall contra el
