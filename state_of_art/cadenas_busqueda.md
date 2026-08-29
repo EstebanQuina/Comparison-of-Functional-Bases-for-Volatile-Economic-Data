@@ -3,7 +3,7 @@
 **Protocolo de referencia:** `protocolo_estado_del_arte.md`, §5
 **Criterios de elegibilidad:** `criterios_elegibilidad.md`
 **Fuentes de información:** `fuentes_informacion.md`
-**Estado:** v1.4 — C1 congelada en Scopus (871); C2 congelada (473); C3 congelada (33); C4–C7 pendientes
+**Estado:** v1.5 — C1 congelada en Scopus (871); C2 congelada (473); C3 congelada (33); C4 congelada (389); C5–C7 pendientes
 
 ## 5.1 Conjunto oro (*gold standard set*)
 
@@ -87,11 +87,11 @@ recuperación para esta base de datos.
 | #3 | No (confirmado) | — | fuera de alcance (Scopus) |
 | #4 | No | — | fuera de alcance (Scopus) |
 | #5 | Sí | C5, C6 (obra general) | pendiente de probar |
-| #6 | Sí | C1, C4 | ✅ recuperado por C1 |
+| #6 | Sí | C1 | ✅ recuperado por C1 |
 | #7 | No | — | fuera de alcance (Scopus) |
 | #8 | Sí | C5, C6 | pendiente de probar |
 | #9a | Sí | C1 | ✅ recuperado por C1 |
-| #9b | Sí | C1, C2, C4 | ✅ recuperado por C1 y C2 |
+| #9b | Sí | C1, C2, C4 | ✅ recuperado por C1, C2 y C4 |
 | #9c | Sí | C1 | ✅ recuperado por C1 |
 | #10 | Sí | C7 | pendiente de probar en C7 |
 
@@ -139,6 +139,19 @@ for feature extraction of epileptic EEGs"*).
 `cadenas_scopus.md`. Sin filtro de volumen (muy por debajo de 600). Ver
 `bitacora_busqueda.numbers` para el historial de calibración (9 → 32 → 33).
 
+**Resultado de calibración de C4 (PR2, PR4):** el mapeo inicial asignaba
+{#6, #9b} a C4. #6 no fue recuperado — tercera vez que falla (también en
+C2 y C3), lo que confirma con evidencia acumulada que #6 solo pertenece al
+subconjunto de C1: es un panorama/referencia general, nunca se
+autodescribe como comparativo, de umbral, ni sobre procesos irregulares.
+Se retira definitivamente de los subconjuntos de C2, C3 y C4. Subconjunto
+corregido de C4 = {#9b} → 1/1 recuperado = 100%. No fue necesario ampliar
+vocabulario.
+
+**C4 congelada (2026-08-28) en 389 resultados** — sintaxis exacta en
+`cadenas_scopus.md`. Sin filtro de volumen (bajo 600). Ver
+`bitacora_busqueda.numbers`.
+
 ## Cambios respecto al borrador del protocolo
 
 - **§5.1**: se eliminaron dos candidatos del conjunto oro por caer fuera de
@@ -160,3 +173,4 @@ for feature extraction of epileptic EEGs"*).
 | 1.2 | 2026-08-28 | C1 congelada en 871 resultados (área temática + tipo de documento), pese a superar el umbral orientativo de ~600 | Recall 100% confirmado dos veces; el recorte adicional se delega al cribado de la Fase 5 |
 | 1.3 | 2026-08-28 | Bloque C ampliado con vocabulario de umbral/dimensión; corregido el mapeo §5.5 de C2 de {#6, #9a-c} a {#9b}; C2 congelada en 473 resultados | Ampliar sinónimos no cambió la recuperación de #6/#9a/#9c, evidenciando un error de asignación en el mapeo inicial, no un vacío de vocabulario |
 | 1.4 | 2026-08-28 | Tercer bloque de C3 ampliado en dos rondas (9→32→33); corregido el mapeo §5.5 retirando #6 de C3; C3 congelada en 33 resultados, validada por revisión manual de títulos en vez de conjunto oro | Mismo patrón que C2: ampliar vocabulario no recuperó #6, confirmando error de asignación; C3 queda sin ancla propia |
+| 1.5 | 2026-08-28 | Retirado #6 definitivamente de C2/C3/C4 (tercera falla consecutiva), queda solo en C1; C4 congelada en 389 resultados con subconjunto corregido {#9b} | Evidencia acumulada de tres cadenas confirma que #6 es un panorama general, no específico de ninguna sub-pregunta |

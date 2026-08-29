@@ -59,11 +59,17 @@ PR4 (wavelets aplicados a señales con transiciones/irregularidades: voz,
 EEG epiléptico, datos dispersos). Sin filtro de volumen, muy por debajo de
 600.
 
-## C4 — PR2, PR4
+## C4 — PR2, PR4 — ✅ CONGELADA (2026-08-28, 389 resultados)
 
 ```
 TITLE-ABS-KEY(("functional data analysis" OR "functional data" OR "functional principal component*" OR FPCA) AND ("basis function*" OR "basis system" OR "basis expansion" OR "basis selection" OR "B-spline*" OR "P-spline*" OR spline* OR Fourier OR wavelet*) AND (compar* OR "comparative study" OR benchmark*)) AND PUBYEAR > 1996 AND PUBYEAR < 2027
 ```
+
+**Historial de calibración:** ejecución única, 389 resultados, bajo el
+umbral de 600. Subconjunto relevante corregido del conjunto oro (ver
+`cadenas_busqueda.md` §5.5) = {#9b} → recuperado, 100%. #6 se retiró
+definitivamente del mapeo esperado (tercera falla consecutiva en C2, C3 y
+C4).
 
 ## C5 — PR5
 
