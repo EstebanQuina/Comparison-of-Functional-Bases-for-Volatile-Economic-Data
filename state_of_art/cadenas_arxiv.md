@@ -105,7 +105,29 @@ mismo criterio: sobre-incluir es menos riesgoso que sub-incluir, y el
 volumen (85) es manejable para el cribado de la Fase 5. Exportado vía
 `scripts/arxiv_export.py`: 85 registros, todos con metadatos completos.
 
-## C5–C7
+## C5 — PR5 — ✅ CONGELADA (2026-08-29, 235 resultados)
+
+```
+(all:"functional data analysis" OR all:"functional data" OR all:"functional principal component" OR all:FPCA) AND (all:economic OR all:economics OR all:financial OR all:GDP OR all:"gross domestic product" OR all:volatility OR all:"time series") AND submittedDate:[19970101000000 TO 20261231235959]
+```
+
+**Sin ancla en el conjunto oro**, verificado directamente: #5 (Kokoszka &
+Reimherr) no tiene el libro en arXiv (sí tienen 3 papers conjuntos, pero
+no *Introduction to Functional Data Analysis*), y #8 (Padilla-Segarra)
+solo devuelve el mismo homónimo de ecuaciones diferenciales ya detectado
+en zbMATH — confirmado que el #8 real no está en arXiv. Validado por
+revisión manual de una muestra de 20 títulos: al menos 5 claramente
+económico-financieros (*"Dynamic functional time-series forecasts of
+foreign exchange implied volatility surfaces"*, *"A Statistical Machine
+Learning Approach to Yield Curve Forecasting"*, *"Inference for Model
+Misspecification in Interest Rate Term Structure..."*, *"Bayesian Spatial
+Homogeneity Pursuit of Functional Data: an Application to the U.S. Income
+Distribution"*), con ruido esperable de otros dominios (astronomía,
+ecología, medicina) donde "time series" coincidió genéricamente. Sin
+filtro de volumen (bajo 600). Exportado vía `scripts/arxiv_export.py`:
+235 registros, todos con metadatos completos.
+
+## C6–C7
 
 Pendientes. Mismo procedimiento: probar vía `scripts/arxiv_export.py`,
 revisar recall contra el subconjunto arXiv-específico (verificando
