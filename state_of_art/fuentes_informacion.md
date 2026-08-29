@@ -2,22 +2,41 @@
 
 **Protocolo de referencia:** `protocolo_estado_del_arte.md`, §4
 **Criterios de elegibilidad:** `criterios_elegibilidad.md`
-**Estado:** v1.0 — aprobado con modificaciones respecto al borrador del protocolo
+**Estado:** v1.1 — acceso institucional real verificado; ámbito de búsqueda ajustado en consecuencia
 
 ## 4.1 Bases de datos primarias (búsqueda sistemática con registro)
 
-| Fuente | Cobertura relevante | Prioridad |
-|---|---|---|
-| Scopus | Amplia, multidisciplinar | Alta |
-| Web of Science (Core Collection) | Amplia, complementaria a Scopus | Alta |
-| MathSciNet | Matemática y estadística teórica | Alta |
-| zbMATH Open | Matemática, acceso abierto | Alta |
-| ScienceDirect | Texto completo Elsevier (CSDA, JMVA) | Media |
-| SpringerLink | Libros de referencia de FDA | Media |
-| Project Euclid | Annals of Statistics y afines | Media |
-| JSTOR | Cobertura general de estadística/econometría, 1997–2026 | Baja |
-| arXiv (math.ST, stat.ME, stat.AP) | Trabajo reciente no publicado | Media |
-| IDEAS/RePEc | Aplicaciones económicas | Media |
+**Limitación de acceso documentada (2026-08-29).** La biblioteca de Yachay
+Tech solo ofrece acceso institucional directo a **Scopus** entre las bases
+listadas originalmente en el protocolo. El resto de bases suscritas por la
+biblioteca (CAS SciFinder, Digitalia Hispánica, EBSCO eBooks) no aparecen
+en el protocolo porque no son pertinentes para este tema (SciFinder es de
+química; Digitalia Hispánica es de humanidades en español; EBSCO eBooks es
+una colección de libros electrónicos, no una base de artículos con
+búsqueda booleana avanzada) o requieren solicitar credenciales adicionales
+a la biblioteca por un trámite aparte, fuera del alcance de esta revisión.
+
+En consecuencia, la búsqueda sistemática se ejecuta sobre las bases
+efectivamente accesibles: **Scopus** (acceso institucional) y tres bases de
+**acceso abierto sin necesidad de suscripción** — arXiv, zbMATH Open (de
+acceso abierto desde 2021) e IDEAS/RePEc. MathSciNet, ScienceDirect,
+SpringerLink, Project Euclid y JSTOR quedan **excluidas de la búsqueda
+sistemática por falta de acceso institucional**, no por decisión
+metodológica — esta distinción debe quedar explícita en la tesis (nota de
+limitación en la sección de metodología o en el Anexo A).
+
+| Fuente | Cobertura relevante | Prioridad | Acceso |
+|---|---|---|---|
+| Scopus | Amplia, multidisciplinar | Alta | ✅ Institucional (Yachay Tech) — completada |
+| zbMATH Open | Matemática, acceso abierto | Alta | ✅ Abierta (desde 2021) |
+| arXiv (math.ST, stat.ME, stat.AP) | Trabajo reciente no publicado | Media | ✅ Abierta |
+| IDEAS/RePEc | Aplicaciones económicas | Media | ✅ Abierta |
+| Web of Science (Core Collection) | Amplia, complementaria a Scopus | Alta | ❌ Sin acceso institucional |
+| MathSciNet | Matemática y estadística teórica | Alta | ❌ Sin acceso institucional |
+| ScienceDirect | Texto completo Elsevier (CSDA, JMVA) | Media | ❌ Sin acceso institucional |
+| SpringerLink | Libros de referencia de FDA | Media | ❌ Sin acceso institucional |
+| Project Euclid | Annals of Statistics y afines | Media | ❌ Sin acceso institucional |
+| JSTOR | Cobertura general de estadística/econometría, 1997–2026 | Baja | ❌ Sin acceso institucional |
 
 ## 4.2 Fuentes regionales
 
@@ -58,9 +77,13 @@ captura lo que la búsqueda sistemática pierde.
   consecuencia directa de la exclusión de fuentes latinoamericanas no
   indexadas decidida en la Fase 1.
 - **§4.3**: sin cambios respecto al borrador del protocolo.
+- **§4.1 (v1.1)**: acotado a las bases con acceso real verificado (Scopus +
+  tres de acceso abierto). Las demás quedan documentadas como excluidas
+  por falta de acceso institucional, no por decisión metodológica.
 
 ## Historial de versiones
 
 | Versión | Fecha | Cambio | Motivo |
 |---|---|---|---|
 | 1.0 | 2026-08-28 | Versión inicial: JSTOR conservado con propósito redefinido; §4.2 eliminada | Consistencia con los criterios de elegibilidad de la Fase 1 |
+| 1.1 | 2026-08-29 | Verificado acceso institucional real de la biblioteca de Yachay Tech: solo Scopus. Ámbito de búsqueda sistemática acotado a Scopus + arXiv + zbMATH Open + IDEAS/RePEc (acceso abierto); WoS/MathSciNet/ScienceDirect/SpringerLink/Project Euclid/JSTOR documentadas como excluidas por falta de acceso, no por decisión metodológica | Transparencia exigida por el protocolo (§14) ante una limitación real de acceso, no una elección de diseño |

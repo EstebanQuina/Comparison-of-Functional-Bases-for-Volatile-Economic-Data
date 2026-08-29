@@ -1,5 +1,11 @@
 # Cadenas de búsqueda — sintaxis Web of Science (Fase 4)
 
+**⏸ EN PAUSA (2026-08-29):** sin acceso institucional a Web of Science
+desde la biblioteca de Yachay Tech (ver `fuentes_informacion.md` §4.1,
+v1.1). Este archivo queda listo para retomar si se consigue acceso más
+adelante (por ejemplo, tras solicitar credenciales adicionales a la
+biblioteca), pero no forma parte activa de la búsqueda sistemática.
+
 **Protocolo de referencia:** `protocolo_estado_del_arte.md`, §5–§6
 **Cadenas congeladas en Scopus (base para esta traducción):** `cadenas_scopus.md`
 **Bitácora de ejecución:** `bitacora_busqueda.numbers`
