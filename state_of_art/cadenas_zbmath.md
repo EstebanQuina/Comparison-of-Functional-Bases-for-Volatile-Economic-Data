@@ -99,9 +99,30 @@ Para C1: 798 vía API → 664 con metadatos completos (`C1_zbmath.ris`) + 134
 restringidos por licencia (`C1_zbmath_ids_para_importar_por_DOI.txt`, con
 DOI en todos los casos).
 
-## C2–C7
+## C2 — PR3 — ✅ CONGELADA (2026-08-29, 375 resultados)
 
-Pendientes. Mismo procedimiento: probar, revisar recall contra el
-subconjunto zbMATH-específico (verificando primero si cada ítem está
-indexado aquí en absoluto, sin asumir el estado de Scopus), ajustar, y
-congelar.
+```
+any:(basis* | spline* | Fourier | wavelet*) & any:("functional data analysis" | "functional data" | "functional principal component*" | FPCA) & any:(smoothing | "roughness penalty" | penal* | "knot selection" | "cross-validation" | GCV | "threshold selection" | "wavelet threshold*" | "dimension selection" | "number of basis functions" | regulari*) & py:1997-2026
+```
+
+**Sin ancla en el conjunto oro**: el único ítem esperado (#9b) no está
+indexado en zbMATH (ver tabla de indexación arriba). Validado por revisión
+manual de una muestra de 20 títulos extraídos directamente del `.ris`
+exportado: perfil temático coherente con PR3, con varios hallazgos
+claramente centrados en el tema (*"Functional principal component
+analysis via regularized Gaussian basis expansions..."*, *"Wavelet-based
+functional mixed models"*, *"Some first inferential tools for spatial
+regression with differential regularization"*) junto con ruido esperable
+de aplicaciones ajenas (ecología, ciencia de materiales), a filtrar en el
+cribado de la Fase 5. Sin filtro de volumen (bajo 600). Exportado vía
+`scripts/zbmath_export.py`: 375 total → 308 con metadatos completos + 67
+restringidos por licencia (con DOI).
+
+## C3–C7
+
+Pendientes. Mismo procedimiento: probar (preferentemente vía
+`scripts/zbmath_export.py` directamente, ya que da el conteo real y
+permite muestrear títulos sin depender de la interfaz web), revisar
+recall contra el subconjunto zbMATH-específico (verificando primero si
+cada ítem está indexado aquí en absoluto, sin asumir el estado de
+Scopus), ajustar, y congelar.
