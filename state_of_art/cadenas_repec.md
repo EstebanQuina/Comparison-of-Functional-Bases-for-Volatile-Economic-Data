@@ -1,8 +1,16 @@
 # Cadenas de búsqueda — sintaxis IDEAS/RePEc (Fase 4)
 
+**⏸ EXCLUIDA (2026-08-29):** IDEAS/RePEc queda fuera de la búsqueda
+sistemática — sin API pública ni herramienta de exportación masiva o
+individual (verificado en IDEAS y en su sitio hermano EconPapers), a
+diferencia de zbMATH Open. Se probó C1 (376 resultados) antes de tomar
+esta decisión; ver `fuentes_informacion.md` v1.2 para el detalle completo
+de la exclusión. Este archivo queda como referencia por si en el futuro
+aparece una vía de exportación viable.
+
 **Protocolo de referencia:** `protocolo_estado_del_arte.md`, §5–§6
 **Cadenas congeladas en Scopus (base para esta traducción):** `cadenas_scopus.md`
-**Fuentes de información:** `fuentes_informacion.md` (v1.1 — acceso abierto, sin suscripción)
+**Fuentes de información:** `fuentes_informacion.md` (v1.2 — IDEAS/RePEc excluida)
 **Bitácora de ejecución:** `bitacora_busqueda.numbers`
 
 ## Aviso importante: sin API, sin exportación masiva
