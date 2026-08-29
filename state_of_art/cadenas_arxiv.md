@@ -70,7 +70,24 @@ Correlated Errors"*, *"...allowing for dimension selection"*,
 600). Exportado vía `scripts/arxiv_export.py`: 137 registros, todos con
 metadatos completos.
 
-## C3–C7
+## C3 — PR4 — ✅ CONGELADA (2026-08-29, 10 resultados)
+
+```
+(all:wavelet OR all:"wavelet basis") AND (all:"functional data analysis" OR all:"functional data" OR all:"functional principal component" OR all:FPCA) AND (all:nonstationary OR all:"non-stationary" OR all:rough OR all:discontinuous OR all:"structural break" OR all:"non-smooth" OR all:nonsmooth OR all:irregular OR all:jump OR all:singularity OR all:heterogeneous OR all:"local feature" OR all:"abrupt change" OR all:"regime change" OR all:shock OR all:spike OR all:anomaly) AND submittedDate:[19970101000000 TO 20261231235959]
+```
+
+**Sin ancla en el conjunto oro** (mismo caso que en las otras bases).
+Validada por revisión manual de los 10 títulos completos: 5–6 claramente
+relevantes, incluyendo dos que ya habían aparecido como relevantes en la
+muestra de C3 en zbMATH (*"Clustering nonstationary circadian rhythms
+using locally stationary wavelet representations"*, *"Feature Extraction
+for Functional Time Series: Theory and Application to NIR Spectroscopy
+Data"*) — buena señal de consistencia entre bases. Resto es ruido
+esperable (análisis de espectro de hardware, ajuste de redes). Sin filtro
+de volumen (muy bajo 600). Exportado vía `scripts/arxiv_export.py`: 10
+registros, todos con metadatos completos.
+
+## C4–C7
 
 Pendientes. Mismo procedimiento: probar vía `scripts/arxiv_export.py`,
 revisar recall contra el subconjunto arXiv-específico (verificando
