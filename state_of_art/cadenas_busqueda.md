@@ -3,7 +3,7 @@
 **Protocolo de referencia:** `protocolo_estado_del_arte.md`, §5
 **Criterios de elegibilidad:** `criterios_elegibilidad.md`
 **Fuentes de información:** `fuentes_informacion.md`
-**Estado:** v1.5 — C1 congelada en Scopus (871); C2 congelada (473); C3 congelada (33); C4 congelada (389); C5–C7 pendientes
+**Estado:** v1.6 — C1 (871), C2 (473), C3 (33), C4 (389), C5 (735) congeladas en Scopus; C6–C7 pendientes
 
 ## 5.1 Conjunto oro (*gold standard set*)
 
@@ -152,18 +152,28 @@ vocabulario.
 `cadenas_scopus.md`. Sin filtro de volumen (bajo 600). Ver
 `bitacora_busqueda.numbers`.
 
-**Resultado de calibración de C5 (PR5), en curso:** el mapeo inicial
-asignaba {#2, #5, #8} a C5 (1300 resultados sin filtrar). #2 no se
-recuperó — mismo patrón que #6: manual general sin vocabulario específico,
-se retira definitivamente a C1 solamente. #5 sí se recuperó. #8 no se
-recuperó pese a contener "Economic" literalmente en el título; confirmado
-con búsqueda directa `TITLE-ABS-KEY(padilla AND economic)` — se documenta
-como anomalía de indexación, no como fallo de vocabulario (ver ítem #8 en
+**Resultado de calibración de C5 (PR5):** el mapeo inicial asignaba
+{#2, #5, #8} a C5 (1300 resultados sin filtrar). #2 no se recuperó —
+mismo patrón que #6: manual general sin vocabulario específico, se retira
+definitivamente a C1 solamente. #5 sí se recuperó. #8 no se recuperó pese
+a contener "Economic" literalmente en el título; confirmado con búsqueda
+directa `TITLE-ABS-KEY(padilla AND economic)` — se documenta como
+anomalía de indexación, no como fallo de vocabulario (ver ítem #8 en
 §5.1). Hallazgo adicional: C5 recupera varios trabajos de Hörmann sobre
 series temporales/volatilidad funcional (aunque no #10 específicamente,
 que sigue asignado solo a C7) — permitió identificar y verificar la cita
-completa de #10 en §5.1 aunque no lo recupere directamente. Pendiente:
-conteo tras filtro de área temática y decisión de congelamiento.
+completa de #10 en §5.1 aunque no lo recupere directamente.
+
+Subconjunto relevante corregido de C5 = {#5, #8}: #5 recuperado, #8
+anomalía documentada (no bloquea). Historial de volumen: 1300 (sin
+filtro) → 746 (+ área temática) → 735 (+ tipo de documento). Recall de #5
+confirmado tras ambos filtros. Se acepta 735 pese a superar el umbral
+orientativo de 600, con el mismo criterio aplicado a C1: el filtro de
+tipo de documento apenas redujo el conteo (–11), señal de que el volumen
+es alcance real de la cadena, no ruido editorial.
+
+**C5 congelada (2026-08-28) en 735 resultados** — sintaxis exacta y
+filtros en `cadenas_scopus.md`. Ver `bitacora_busqueda.numbers`.
 
 ## Cambios respecto al borrador del protocolo
 
@@ -187,3 +197,4 @@ conteo tras filtro de área temática y decisión de congelamiento.
 | 1.3 | 2026-08-28 | Bloque C ampliado con vocabulario de umbral/dimensión; corregido el mapeo §5.5 de C2 de {#6, #9a-c} a {#9b}; C2 congelada en 473 resultados | Ampliar sinónimos no cambió la recuperación de #6/#9a/#9c, evidenciando un error de asignación en el mapeo inicial, no un vacío de vocabulario |
 | 1.4 | 2026-08-28 | Tercer bloque de C3 ampliado en dos rondas (9→32→33); corregido el mapeo §5.5 retirando #6 de C3; C3 congelada en 33 resultados, validada por revisión manual de títulos en vez de conjunto oro | Mismo patrón que C2: ampliar vocabulario no recuperó #6, confirmando error de asignación; C3 queda sin ancla propia |
 | 1.5 | 2026-08-28 | Retirado #6 definitivamente de C2/C3/C4 (tercera falla consecutiva), queda solo en C1; C4 congelada en 389 resultados con subconjunto corregido {#9b} | Evidencia acumulada de tres cadenas confirma que #6 es un panorama general, no específico de ninguna sub-pregunta |
+| 1.6 | 2026-08-28 | Verificada cita completa de #10 (Hörmann, Horváth & Reeder, 2013); retirado #2 de C5/C6 (mismo patrón que #6); documentada anomalía de indexación de #8; C5 congelada en 735 resultados (área temática + tipo de documento) | Recall de #5 confirmado tras ambos filtros; volumen aceptado por el mismo criterio que C1 |

@@ -71,11 +71,23 @@ umbral de 600. Subconjunto relevante corregido del conjunto oro (ver
 definitivamente del mapeo esperado (tercera falla consecutiva en C2, C3 y
 C4).
 
-## C5 — PR5
+## C5 — PR5 — ✅ CONGELADA (2026-08-28, 735 resultados)
 
 ```
 TITLE-ABS-KEY(("functional data analysis" OR "functional data" OR "functional principal component*" OR FPCA) AND (econom* OR financ* OR GDP OR "gross domestic product" OR volatil* OR "time series")) AND PUBYEAR > 1996 AND PUBYEAR < 2027
 ```
+
+**Filtros adicionales aplicados en Scopus:**
+- Subject area: Mathematics; Economics, Econometrics and Finance; Decision Sciences
+- Document type: Article, Review, Conference Paper, Book Chapter, Book
+
+**Historial de calibración:** 1300 (sin filtros) → 746 (+ área temática) →
+735 (+ tipo de documento). Recuperación del subconjunto relevante
+corregido del conjunto oro (#5, #8 — ver `cadenas_busqueda.md` §5.5): #5
+confirmado tras ambos filtros; #8 documentado como anomalía de indexación
+(no bloquea). Se acepta 735 pese a superar el umbral orientativo de ~600,
+mismo criterio que C1: el filtro de tipo de documento apenas redujo el
+conteo (–11), señal de alcance real, no ruido editorial.
 
 ## C6 — PR5
 
