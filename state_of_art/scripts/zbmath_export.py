@@ -22,7 +22,7 @@ REDACTED = "zbMATH Open Web Interface contents unavailable due to conflicting li
 DT_MAP = {"j": "JOUR", "b": "BOOK", "a": "CHAP", "p": "UNPB"}
 
 
-def fetch_page(search_string, page, per_page=100, retries=4):
+def fetch_page(search_string, page, per_page=100, retries=6):
     url = API + "?" + urllib.parse.urlencode(
         {"search_string": search_string, "page": page, "results_per_page": per_page}
     )
@@ -105,9 +105,10 @@ def main():
 
     clean, redacted_dois, redacted_arxiv, redacted_no_id = [], [], [], []
     page = 0
+    per_page = 40
     total = None
     while True:
-        data = fetch_page(search_string, page)
+        data = fetch_page(search_string, page, per_page=per_page)
         status = data["status"]
         if not status["execution_bool"]:
             print("API error:", status)
@@ -131,9 +132,9 @@ def main():
                 clean.append(ris_entry(doc))
         print(f"  page {page}: +{len(results)} (total so far: {len(clean) + len(redacted_dois) + len(redacted_arxiv) + len(redacted_no_id)} / {total})")
         page += 1
-        if page * 100 >= total:
+        if page * per_page >= total:
             break
-        time.sleep(0.3)
+        time.sleep(0.5)
 
     ris_path = f"{prefix}.ris"
     with open(ris_path, "w", encoding="utf-8") as f:

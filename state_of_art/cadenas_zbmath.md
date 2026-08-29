@@ -44,8 +44,10 @@ estado de Scopus (`cadenas_busqueda.md` §5.1):
 | #1 (Ramsay & Silverman 2005) | ✅ Sí | No recuperado por C1 — obra general sin término de familia de base, mismo patrón que #2 en Scopus |
 | #3 (Wang, Chiou & Müller 2016) | ❌ No | Tampoco estaba en Scopus — posible problema de indexación de esta revista en general |
 | #4 (Ferraty & Vieu 2006) | ✅ Sí | ✅ Recuperado por C1 |
+| #5 (Kokoszka & Reimherr 2017) | ✅ Sí | ✅ Recuperado por C5 |
 | #6 (Morettin, Pinheiro & Vidakovic 2017) | ✅ Sí | ✅ Recuperado por C1 (texto libre); **no** recuperado si se restringe por `cc:62R10` — no está clasificado bajo ese código pese a ser sobre wavelets en FDA |
 | #7 (Percival & Walden 2000) | ✅ Sí | No recuperado por C1 — título sin frase de dominio FDA ("Wavelet Methods for **Time Series** Analysis"), nunca fue un buen candidato de anclaje para este tema |
+| #8 (Padilla-Segarra et al. 2020) | ❌ No | Una búsqueda `au:Padilla-Segarra` inicial dio un falso positivo (homónimo, paper de 2022 sin relación) — verificado el registro completo, no coincide. No indexado en zbMATH |
 | #9a (Aguilera et al. 2021) | ✅ Sí | ✅ Recuperado por C1 |
 | #9b (Aguilera & Aguilera-Morillo 2013) | ❌ No | Confirmado no indexado en zbMATH (verificado por título exacto) |
 | #9c (Escabias, Aguilera & Aguilera-Morillo 2014) | ✅ Sí | ✅ Recuperado por C1 |
@@ -160,11 +162,41 @@ manejable para el cribado título/resumen de la Fase 5, que filtrará este
 ruido genérico. Exportado vía `scripts/zbmath_export.py`: 192 total → 166
 con metadatos completos + 26 restringidos por licencia (con DOI).
 
-## C5–C7
+## C5 — PR5 — ✅ CONGELADA (2026-08-29, 717 resultados)
+
+```
+any:("functional data analysis" | "functional data" | "functional principal component*" | FPCA) & any:(econom* | financ* | GDP | "gross domestic product" | volatil* | "time series") & py:1997-2026
+```
+
+**Corrección de verificación:** una comprobación inicial de indexación de
+#8 (`au:Padilla-Segarra`, sin más filtros) devolvió 1 resultado y se
+interpretó como confirmación — pero al inspeccionar el registro completo
+resultó ser un **homónimo**: un artículo de 2022 sobre sistemas
+semi-lineales no autónomos, sin relación con FDA. El #8 real (Padilla-
+Segarra, González-Villacorte, Amaro & Infante 2020) **no está indexado en
+zbMATH**. Verificar coincidencias de autor único siempre contra el
+registro completo, no solo el conteo — la Fase 4 en Scopus ya había hecho
+este mismo tipo de verificación cruzada de forma más rigurosa (par de
+apellidos, no uno solo).
+
+Subconjunto corregido = **{#5}** (Kokoszka & Reimherr) — confirmado
+recuperado (`au:Kokoszka & au:Reimherr` dentro de la cadena C5 → 6
+resultados). Recall = 100%.
+
+Se acepta 717 pese a superar el umbral orientativo de 600: no hay filtro
+de volumen seguro en zbMATH (`cc:` demostradamente excluye trabajos
+relevantes, ver C1), y el recall está confirmado — mismo criterio que
+C1/C5 en Scopus. Exportado vía `scripts/zbmath_export.py` (con
+`results_per_page=40` por inestabilidad del servidor con páginas más
+grandes en esta consulta): 717 total → 623 con metadatos completos + 94
+restringidos por licencia (con DOI).
+
+## C6–C7
 
 Pendientes. Mismo procedimiento: probar (preferentemente vía
 `scripts/zbmath_export.py` directamente, ya que da el conteo real y
 permite muestrear títulos sin depender de la interfaz web), revisar
 recall contra el subconjunto zbMATH-específico (verificando primero si
 cada ítem está indexado aquí en absoluto, sin asumir el estado de
-Scopus), ajustar, y congelar.
+Scopus — y verificando homónimos en coincidencias de un solo apellido),
+ajustar, y congelar.
