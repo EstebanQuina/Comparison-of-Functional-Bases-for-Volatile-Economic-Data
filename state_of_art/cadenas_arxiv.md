@@ -87,7 +87,25 @@ esperable (análisis de espectro de hardware, ajuste de redes). Sin filtro
 de volumen (muy bajo 600). Exportado vía `scripts/arxiv_export.py`: 10
 registros, todos con metadatos completos.
 
-## C4–C7
+## C4 — PR2, PR4 — ✅ CONGELADA (2026-08-29, 85 resultados; confianza más baja)
+
+```
+(all:"functional data analysis" OR all:"functional data" OR all:"functional principal component" OR all:FPCA) AND (all:basis OR all:spline OR all:Fourier OR all:wavelet) AND (all:comparative OR all:compare OR all:comparison OR all:benchmark) AND submittedDate:[19970101000000 TO 20261231235959]
+```
+
+**Sin ancla en el conjunto oro.** Mismo patrón de confianza más baja que
+en zbMATH C4: de una muestra de 15 títulos, solo ~4 son claramente sobre
+comparación de familias de bases (*"Fast Bayesian Basis Selection for
+Functional Data Representation..."*, *"...additive penalty in
+P-splines"*, *"A wavelet-based method in aggregated functional data
+analysis"*, *"Penalized likelihood estimation... using compositional
+splines"*); el resto es FDA general donde `comparative/compare/comparison`
+probablemente coincidió de forma genérica en el resumen. Se acepta con el
+mismo criterio: sobre-incluir es menos riesgoso que sub-incluir, y el
+volumen (85) es manejable para el cribado de la Fase 5. Exportado vía
+`scripts/arxiv_export.py`: 85 registros, todos con metadatos completos.
+
+## C5–C7
 
 Pendientes. Mismo procedimiento: probar vía `scripts/arxiv_export.py`,
 revisar recall contra el subconjunto arXiv-específico (verificando
