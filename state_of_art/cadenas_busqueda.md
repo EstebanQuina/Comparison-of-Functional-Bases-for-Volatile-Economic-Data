@@ -18,14 +18,14 @@ fuente antes de usarlo para citar.
 5. Kokoszka & Reimherr, *Introduction to Functional Data Analysis*, CRC, 2017.
 6. Morettin, Pinheiro & Vidakovic, *Wavelets in Functional Data Analysis*, Springer, 2017.
 7. Percival & Walden, *Wavelet Methods for Time Series Analysis*, Cambridge, 2000.
-8. Padilla-Segarra, González-Villacorte, Amaro & Infante, "Brief Review of Functional Data Analysis: a Case Study on Regional Demographic and Economic Data", *Information and Communication Technologies* (Springer CCIS), 2020. — artículo que motiva la tesis; verificado como venue indexado (Springer CCIS), no requiere excepción regional.
+8. Padilla-Segarra, González-Villacorte, Amaro & Infante, "Brief Review of Functional Data Analysis: a Case Study on Regional Demographic and Economic Data", *Information and Communication Technologies* (Springer CCIS), 2020. — artículo que motiva la tesis; verificado como venue indexado (Springer CCIS), no requiere excepción regional. **Anomalía documentada:** no se recupera con C5 (`A AND D`) pese a que el título contiene literalmente "Economic"; confirmado ausente incluso con la búsqueda directa `TITLE-ABS-KEY(padilla AND economic)` (2026-08-28). No es un problema de vocabulario (ampliar el Bloque D no lo solucionaría) sino una anomalía puntual de indexación de este registro. No bloquea nada: la cita ya está asegurada de forma independiente.
 9. Aguilera & Aguilera-Morillo — cluster de autoría central para el tema (14 documentos recuperados por C1 en Scopus). Tres anclas verificadas para calibración, con datos completos de Scopus:
     - **9a.** Aguilera, A.M., Acal, C., Aguilera-Morillo, M.C., Jiménez-Molinos, F. & Roldán, J.B. (2021). "Homogeneity problem for basis expansion of functional data with applications to resistive memories". *Mathematics and Computers in Simulation*, 186, pp. 41–51. DOI: [10.1016/j.matcom.2020.05.018](https://doi.org/10.1016/j.matcom.2020.05.018).
     - **9b.** Aguilera, A.M. & Aguilera-Morillo, M.C. (2013). "Comparative study of different B-spline approaches for functional data". *Mathematical and Computer Modelling*, 58(7–8), pp. 1568–1579. DOI: [10.1016/j.mcm.2013.04.007](https://doi.org/10.1016/j.mcm.2013.04.007).
     - **9c.** Escabias, M., Aguilera, A.M. & Aguilera-Morillo, M.C. (2014). "Functional PCA and Base-Line Logit Models". *Journal of Classification*, 31(3), pp. 296–324. DOI: [10.1007/s00357-014-9162-y](https://doi.org/10.1007/s00357-014-9162-y).
 
     Los 14 documentos completos del cluster se revisarán en el cribado de la Fase 5 (título/resumen), no solo estas tres anclas.
-10. Hörmann, Horváth & Reeder, sobre modelos funcionales de volatilidad — indexado en Scopus, **no recuperado por C1** (esperado: pertenece a C7, no a C1 — ver §5.5). Cita completa aún **por verificar**.
+10. Hörmann, S., Horváth, L. & Reeder, R. (2013). "A functional version of the ARCH model". *Econometric Theory*, 29(2), pp. 267–288. DOI: [10.1017/S0266466612000345](https://doi.org/10.1017/S0266466612000345). Cita completa verificada vía Scopus (2026-08-28). No recuperado por C1 (esperado: no es un trabajo de base/dominio general). **Recuperado por C5** (encontrado dentro del clúster de autoría de Hörmann en los resultados de C5); pendiente de confirmar también en C7.
 
 ## 5.2 Estructura de las cadenas
 
@@ -83,17 +83,17 @@ recuperación para esta base de datos.
 | Ítem | Indexado en Scopus | Cadena(s) a la(s) que corresponde | Estado |
 |---|---|---|---|
 | #1 | No | — | fuera de alcance (Scopus) |
-| #2 | Sí | C5, C6 (obra general, sin término de Bloque B en el título) | pendiente de probar |
+| #2 | Sí | C1 (retirado de C5/C6: obra general, sin vocabulario específico) | ❌ no recuperado por C5, error de mapeo confirmado |
 | #3 | No (confirmado) | — | fuera de alcance (Scopus) |
 | #4 | No | — | fuera de alcance (Scopus) |
-| #5 | Sí | C5, C6 (obra general) | pendiente de probar |
+| #5 | Sí | C5, C6 | ✅ recuperado por C5 |
 | #6 | Sí | C1 | ✅ recuperado por C1 |
 | #7 | No | — | fuera de alcance (Scopus) |
-| #8 | Sí | C5, C6 | pendiente de probar |
+| #8 | Sí | C5, C6 | ⚠️ anomalía de indexación — no recuperado ni con búsqueda directa, no bloquea |
 | #9a | Sí | C1 | ✅ recuperado por C1 |
 | #9b | Sí | C1, C2, C4 | ✅ recuperado por C1, C2 y C4 |
 | #9c | Sí | C1 | ✅ recuperado por C1 |
-| #10 | Sí | C7 | pendiente de probar en C7 |
+| #10 | Sí | C5, C7 | ✅ recuperado por C5 (vía clúster de autoría); pendiente confirmar en C7 |
 
 **Resultado de calibración de C1 (PR1, PR2):** subconjunto relevante = {#6,
 #9a, #9b, #9c} → 4/4 recuperados = 100%. C1 queda calibrada y congelada sin
@@ -151,6 +151,19 @@ vocabulario.
 **C4 congelada (2026-08-28) en 389 resultados** — sintaxis exacta en
 `cadenas_scopus.md`. Sin filtro de volumen (bajo 600). Ver
 `bitacora_busqueda.numbers`.
+
+**Resultado de calibración de C5 (PR5), en curso:** el mapeo inicial
+asignaba {#2, #5, #8} a C5 (1300 resultados sin filtrar). #2 no se
+recuperó — mismo patrón que #6: manual general sin vocabulario específico,
+se retira definitivamente a C1 solamente. #5 sí se recuperó. #8 no se
+recuperó pese a contener "Economic" literalmente en el título; confirmado
+con búsqueda directa `TITLE-ABS-KEY(padilla AND economic)` — se documenta
+como anomalía de indexación, no como fallo de vocabulario (ver ítem #8 en
+§5.1). Hallazgo adicional: C5 recupera varios trabajos de Hörmann,
+incluyendo #10 ("A functional version of the ARCH model", 2013),
+originalmente esperado solo en C7 — cita ahora verificada y completa en
+§5.1. Pendiente: conteo tras filtro de área temática y decisión de
+congelamiento.
 
 ## Cambios respecto al borrador del protocolo
 
