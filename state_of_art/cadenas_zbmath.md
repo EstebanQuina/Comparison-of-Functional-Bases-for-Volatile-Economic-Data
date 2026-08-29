@@ -191,12 +191,28 @@ C1/C5 en Scopus. Exportado vía `scripts/zbmath_export.py` (con
 grandes en esta consulta): 717 total → 623 con metadatos completos + 94
 restringidos por licencia (con DOI).
 
-## C6–C7
+## C6 — PR5 — ✅ CONGELADA (2026-08-29, 12 resultados)
 
-Pendientes. Mismo procedimiento: probar (preferentemente vía
-`scripts/zbmath_export.py` directamente, ya que da el conteo real y
-permite muestrear títulos sin depender de la interfaz web), revisar
-recall contra el subconjunto zbMATH-específico (verificando primero si
-cada ítem está indexado aquí en absoluto, sin asumir el estado de
-Scopus — y verificando homónimos en coincidencias de un solo apellido),
-ajustar, y congelar.
+```
+any:("functional data analysis" | "functional data" | "functional principal component*" | FPCA) & any:("Latin America*" | Ecuador | "South America*" | Argentina | Bolivia | Brazil | Chile | Colombia | "Costa Rica" | Cuba | "Dominican Republic" | "El Salvador" | Guatemala | Haiti | Honduras | Mexico | Nicaragua | Panama | Paraguay | Peru | Uruguay | Venezuela) & py:1997-2026
+```
+
+**Sin ancla en el conjunto oro** (mismo caso que en Scopus). Volumen muy
+bajo (12), esperable dado que zbMATH es de matemática pura, con menor
+cobertura de aplicaciones regionales que Scopus. Validada por revisión
+manual de los 8 títulos completos: dos claramente relevantes —
+*"Modeling the evolution of deaths from infectious diseases with
+functional data models: the case of COVID-19 in Brazil"* y *"Bayesian
+variable selection for function-on-scalar regression models: a
+comparative analysis"* (este último también identificado como relevante
+en el cribado de C6 en Scopus, buena señal de consistencia entre bases) —
+más un falso positivo por volumen completo de actas (SIS 2018, Palermo).
+Sin filtro de volumen (muy bajo 600). Exportado vía
+`scripts/zbmath_export.py`: 12 total → 8 con metadatos completos + 4
+restringidos por licencia (con DOI).
+
+## C7
+
+Pendiente. Mismo procedimiento: probar (preferentemente vía
+`scripts/zbmath_export.py` directamente), revisar si zbMATH tiene a #10
+indexado y si la cadena lo recupera, ajustar, y congelar.
