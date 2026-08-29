@@ -118,7 +118,28 @@ cribado de la Fase 5. Sin filtro de volumen (bajo 600). Exportado vía
 `scripts/zbmath_export.py`: 375 total → 308 con metadatos completos + 67
 restringidos por licencia (con DOI).
 
-## C3–C7
+## C3 — PR4 — ✅ CONGELADA (2026-08-29, 28 resultados)
+
+```
+any:(wavelet* | "wavelet basis") & any:("functional data analysis" | "functional data" | "functional principal component*" | FPCA) & any:(nonstationary | "non-stationary" | rough | discontinu* | "structural break*" | "non-smooth" | nonsmooth | irregular* | jump* | singularit* | heterogeneous | "local feature*" | "abrupt change*" | "regime change*" | shock* | spike* | anomal*) & py:1997-2026
+```
+
+**Sin ancla en el conjunto oro** (#6 no aplica a C3, ver
+`cadenas_busqueda.md` §5.5). Validada por revisión manual de los 28
+títulos completos: núcleo claro de trabajos centrados en wavelets aplicados
+a procesos irregulares/no estacionarios (*"Clustering nonstationary
+circadian rhythms using locally stationary wavelet representations"*,
+*"Using Bagidis in nonparametric functional data analysis: predicting
+from curves with sharp local features"*), junto con 4 falsos positivos
+identificables: registros de **volúmenes completos de actas de congreso**
+(COMPSTAT 2002, COMPSTAT 2014, ICANN 2002, ParCo 1997) que coinciden por
+palabras dispersas entre su contenido agregado, no por ser sobre el tema
+— patrón de ruido típico de registros a nivel de volumen, a descartar en
+el cribado de la Fase 5 (criterio E5). Sin filtro de volumen (bajo 600).
+Exportado vía `scripts/zbmath_export.py`: 28 total → 21 con metadatos
+completos + 7 restringidos por licencia (con DOI).
+
+## C4–C7
 
 Pendientes. Mismo procedimiento: probar (preferentemente vía
 `scripts/zbmath_export.py` directamente, ya que da el conteo real y
