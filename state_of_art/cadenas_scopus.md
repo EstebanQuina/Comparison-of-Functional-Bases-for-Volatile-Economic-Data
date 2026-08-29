@@ -89,11 +89,19 @@ confirmado tras ambos filtros; #8 documentado como anomalía de indexación
 mismo criterio que C1: el filtro de tipo de documento apenas redujo el
 conteo (–11), señal de alcance real, no ruido editorial.
 
-## C6 — PR5
+## C6 — PR5 — ✅ CONGELADA (2026-08-28, 114 resultados)
 
 ```
-TITLE-ABS-KEY(("functional data analysis" OR "functional data" OR "functional principal component*" OR FPCA) AND ("Latin America*" OR Ecuador OR "South America*")) AND PUBYEAR > 1996 AND PUBYEAR < 2027
+TITLE-ABS-KEY(("functional data analysis" OR "functional data" OR "functional principal component*" OR FPCA) AND ("Latin America*" OR Ecuador OR "South America*" OR Argentina OR Bolivia OR Brazil OR Chile OR Colombia OR "Costa Rica" OR Cuba OR "Dominican Republic" OR "El Salvador" OR Guatemala OR Haiti OR Honduras OR Mexico OR Nicaragua OR Panama OR Paraguay OR Peru OR Uruguay OR Venezuela)) AND PUBYEAR > 1996 AND PUBYEAR < 2027
 ```
+
+**Historial de calibración:** 24 (Bloque E original, solo región amplia)
+→ 114 (+ los 20 países del panel de la tesis). Sin ancla en el conjunto
+oro; validada por revisión manual — títulos confirmados relevantes
+incluyen *"A Study of the Colombian Stock Market with Multivariate
+Functional Data Analysis"* y *"Comparing risk profiles of international
+stock markets as functional data: COVID-19 versus the global financial
+crisis"*. Sin filtro de volumen (bajo 600).
 
 ## C7 — PR4, PR5
 

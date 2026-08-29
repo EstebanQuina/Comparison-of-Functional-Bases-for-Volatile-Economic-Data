@@ -3,7 +3,7 @@
 **Protocolo de referencia:** `protocolo_estado_del_arte.md`, §5
 **Criterios de elegibilidad:** `criterios_elegibilidad.md`
 **Fuentes de información:** `fuentes_informacion.md`
-**Estado:** v1.6 — C1 (871), C2 (473), C3 (33), C4 (389), C5 (735) congeladas en Scopus; C6–C7 pendientes
+**Estado:** v1.7 — C1 (871), C2 (473), C3 (33), C4 (389), C5 (735), C6 (114) congeladas en Scopus; C7 pendiente
 
 ## 5.1 Conjunto oro (*gold standard set*)
 
@@ -35,7 +35,7 @@ Bloques conceptuales combinados con `AND`, sinónimos internos con `OR`:
 - **Bloque B (base):** `"basis function*"` OR `"basis system"` OR `"basis expansion"` OR `"basis selection"` OR `B-spline*` OR `"P-spline*"` OR `spline*` OR `Fourier` OR `wavelet*`
 - **Bloque C (suavizado):** `smoothing` OR `"roughness penalty"` OR `penalized` OR `penalised` OR `"knot selection"` OR `"generalized cross-validation"` OR `"generalised cross-validation"` OR GCV OR `"cross-validation"` OR `"threshold selection"` OR `"wavelet threshold*"` OR `"dimension selection"` OR `"number of basis functions"` OR `regulari?ation`
 - **Bloque D (aplicación):** `econom*` OR `financ*` OR `GDP` OR `"gross domestic product"` OR `volatil*` OR `"time series"`
-- **Bloque E (región):** `"Latin America*"` OR Ecuador OR `"South America*"`
+- **Bloque E (región):** `"Latin America*"` OR Ecuador OR `"South America*"` OR Argentina OR Bolivia OR Brazil OR Chile OR Colombia OR `"Costa Rica"` OR Cuba OR `"Dominican Republic"` OR `"El Salvador"` OR Guatemala OR Haiti OR Honduras OR Mexico OR Nicaragua OR Panama OR Paraguay OR Peru OR Uruguay OR Venezuela *(ampliado con los 20 países del panel de la tesis, ver `metodology.tex`)*
 
 Nota: el Bloque E es un filtro temático sobre las bases de datos indexadas
 de `fuentes_informacion.md` §4.1 — encuentra trabajos indexados *sobre* la
@@ -175,6 +175,22 @@ es alcance real de la cadena, no ruido editorial.
 **C5 congelada (2026-08-28) en 735 resultados** — sintaxis exacta y
 filtros en `cadenas_scopus.md`. Ver `bitacora_busqueda.numbers`.
 
+**Resultado de calibración de C6 (PR5):** sin ancla propia en el conjunto
+oro. Con el Bloque E original (solo términos de región amplia) se
+obtuvieron 24 resultados — bajo, probablemente porque muchos trabajos
+regionales nombran el país específico sin decir "Latin America". Se amplió
+el Bloque E con los 20 países del panel de la tesis (114 resultados).
+Validado por revisión manual: se confirmaron hallazgos claramente
+relevantes entre los nuevos resultados, incluyendo *"A Study of the
+Colombian Stock Market with Multivariate Functional Data Analysis"* y
+*"Comparing risk profiles of international stock markets as functional
+data: COVID-19 versus the global financial crisis"* — este último
+directamente alineado con el marco teórico de la tesis (comparación de
+crisis mediante datos funcionales).
+
+**C6 congelada (2026-08-28) en 114 resultados** — sintaxis exacta en
+`cadenas_scopus.md`. Sin filtro de volumen (bajo 600).
+
 ## Cambios respecto al borrador del protocolo
 
 - **§5.1**: se eliminaron dos candidatos del conjunto oro por caer fuera de
@@ -198,3 +214,4 @@ filtros en `cadenas_scopus.md`. Ver `bitacora_busqueda.numbers`.
 | 1.4 | 2026-08-28 | Tercer bloque de C3 ampliado en dos rondas (9→32→33); corregido el mapeo §5.5 retirando #6 de C3; C3 congelada en 33 resultados, validada por revisión manual de títulos en vez de conjunto oro | Mismo patrón que C2: ampliar vocabulario no recuperó #6, confirmando error de asignación; C3 queda sin ancla propia |
 | 1.5 | 2026-08-28 | Retirado #6 definitivamente de C2/C3/C4 (tercera falla consecutiva), queda solo en C1; C4 congelada en 389 resultados con subconjunto corregido {#9b} | Evidencia acumulada de tres cadenas confirma que #6 es un panorama general, no específico de ninguna sub-pregunta |
 | 1.6 | 2026-08-28 | Verificada cita completa de #10 (Hörmann, Horváth & Reeder, 2013); retirado #2 de C5/C6 (mismo patrón que #6); documentada anomalía de indexación de #8; C5 congelada en 735 resultados (área temática + tipo de documento) | Recall de #5 confirmado tras ambos filtros; volumen aceptado por el mismo criterio que C1 |
+| 1.7 | 2026-08-28 | Bloque E ampliado con los 20 países del panel; C6 congelada en 114 resultados, validada por revisión manual (sin ancla en conjunto oro) | 24 resultados con el Bloque E original era insuficiente; muchos trabajos regionales nombran el país sin decir "Latin America" |
