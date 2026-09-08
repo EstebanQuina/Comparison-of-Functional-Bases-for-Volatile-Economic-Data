@@ -237,4 +237,6 @@ restringidos por licencia (con DOI).
 | C6 | 12 | Sin ancla, validada manualmente | Alta |
 | C7 | 100 | {#10} 100% | Alta |
 
-**Total bruto: 1522 registros** (con solapamiento esperado entre cadenas).
+**Total bruto: 2222 registros** (con solapamiento esperado entre cadenas;
+corregido 2026-09-07 — la cifra original de 1522 no cuadraba con la suma de
+la tabla anterior, 798+375+28+192+717+12+100).
