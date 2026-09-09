@@ -1,0 +1,201 @@
+id,title_short,decision,reason_code,confidence,rationale
+400,Supervised dimension reduction for functional time series,include,none,baja,"Sin resumen; reducción de dimensión en series temporales funcionales, ambiguo pero plausible PR1/PR2."
+401,Sasaki metric for spline models of manifold-valued trajectories,include,none,media,"Splines compuestos para representar trayectorias; representación mediante bases, aunque dominio no económico."
+402,Functional partially linear single-index model with beta distribution,include,none,media,"Regresión de single-index funcional; aproximación de función desconocida, sin dominio ajeno claro."
+403,Bayesian functional graphical models with change-point detection,include,none,media,Modelo gráfico bayesiano funcional con detección de cambios; metodología central FDA.
+404,Estimation of sparse functional additive models with adaptive group lasso,include,none,baja,"Sin resumen; modelo aditivo funcional disperso, metodología genérica."
+405,Parametric functional principal component analysis,include,none,alta,"FPCA paramétrico, tema central PR2."
+406,Function-on-function regression for two-dimensional functional data,include,none,baja,Sin resumen; regresión función-en-función.
+407,A data-driven approach in functional linear regression: ensemble empirical mode decomposition-based ,include,none,alta,Usa explícitamente base wavelet para extraer características en regresión funcional.
+408,Contagion Patterns Classification in Stock Indices: A Functional Clustering Analysis Using Decision ,include,none,alta,B-splines y curvas Bézier aplicados a índices bursátiles; aplicación económica (PR5) con base explícita.
+409,Wavelet transformation of functional data for hyperspectral image classification,include,none,media,"Transformación wavelet como método central, aunque aplicado a imágenes hiperespectrales (no económico)."
+410,A two-population extension of the exponential smoothing state space model with a smoothing penalisat,include,none,baja,Esquema de penalización de suavizado en modelo de mortalidad; PR3 tangencial.
+411,Deep Learning for Functional Data Analysis with Adaptive Basis Layers,include,none,media,Título explícita 'Adaptive Basis Layers' — elección de base central.
+412,ORDINAL PROBIT FUNCTIONAL OUTCOME REGRESSION WITH APPLICATION TO COMPUTER-USE BEHAVIOR IN RHESUS MON,include,none,baja,"Nuevo modelo de regresión (OPFOR); aporte metodológico, aplicación en monos es ilustrativa."
+413,Derivative estimation for longitudinal data analysis: Examining features of blood pressure measured ,include,none,baja,"Estimación de derivadas en datos longitudinales; metodología, aplicación médica ilustrativa."
+414,Fast covariance estimation for multivariate sparse functional data,include,none,alta,Formulación B-spline tensor-producto explícita para estimación de covarianza.
+415,Elastic analysis of irregularly or sparsely sampled curves,include,none,media,"Métodos de análisis elástico de curvas; representación/registro de curvas, dominio de aplicación variado."
+416,On function-on-function regression: partial least squares approach,include,none,baja,Sin resumen; regresión función-en-función vía PLS.
+417,Gaussian modeling with B-splines for spatial functional data on irregular domains,include,none,alta,B-splines explícitos para datos funcionales espaciales.
+418,Modeling the evolution of deaths from infectious diseases with functional data models: The case of C,include,none,alta,Aplicación FDA a COVID-19 en Brasil — antecedente directo PR5/América Latina.
+419,Clustering multiply imputed multivariate high-dimensional longitudinal profiles,include,none,media,Clustering de datos funcionales multivariados con PCA para reducción de dimensión.
+420,Clustering Functional Data With Measurement Errors: A Simulation-Based Approach,include,none,media,Clustering funcional con errores de medición; metodología central.
+421,Multivariate Varying Coefficient Spatiotemporal Model,include,none,baja,"Modelo espaciotemporal motivado por diálisis; aporte es el modelo estadístico, no la aplicación médica en sí."
+422,"16th International Conference on Brain Informatics, BI 2023",exclude,E5,alta,"Es el registro de un volumen completo de actas de congreso (16th Intl Conf Brain Informatics), no un trabajo individual."
+423,Generalized Spatio-Temporal Regression with PDE Penalization,include,none,media,Penalización de rugosidad en regresión espaciotemporal — relevante PR3.
+424,A Methodological Framework for Analyzing and Differentiating Daily Physical Activity Across Groups U,include,none,baja,"Marco de dominio de frecuencia para biomarcadores digitales; ambiguo, sin discusión clara de bases."
+425,Estimation for generalized partially functional linear additive regression model,include,none,media,Modelo aditivo lineal funcional parcial generalizado; metodología central.
+426,Function-on-function regression models with nonlinear dynamic effect and linear concurrent effect,include,none,media,Regresión función-en-función con efecto dinámico no lineal; metodología central.
+427,A Unified Analysis of Multi-task Functional Linear Regression Models with Manifold Constraint and Co,include,none,baja,"Sin resumen; penalización cuadrática compuesta, PR3 tangencial."
+428,Functional nonlinear principal component analysis,include,none,media,FPCA no lineal — tema central PR2.
+429,Smooth LASSO estimator for the Function-on-Function linear regression model,include,none,media,Estimador LASSO suave para regresión función-en-función.
+430,Efficient Functional ANOVA Through Wavelet-Domain Markov Groves,include,none,alta,Método explícito en dominio wavelet para ANOVA funcional.
+431,Statistical inference for partially shape-constrained function-on-scalar linear regression models,include,none,media,Inferencia con restricciones de forma en regresión función-en-escalar; metodología central.
+432,Fast symmetric additive covariance smoothing,include,none,media,Suavizado rápido de covarianza aditiva simétrica; metodología central.
+433,Comparing fpca based on conditional quantile functions and fpca based on conditional mean function,include,none,media,Comparación explícita de variantes de FPCA (cuantil vs media condicional).
+434,Elastic functional Cox regression model with shape predictors,include,none,baja,"Regresión de Cox funcional elástica; metodología, dominio de supervivencia ilustrativo."
+435,A simple method to construct confidence bands in functional linear regression,include,none,alta,Estimador basado en PCA con funciones base estimadas explícitas — PR2.
+436,Simultaneous inference for the mean of repeated functional data,include,none,baja,Sin resumen; inferencia simultánea sobre la media de datos funcionales repetidos.
+437,Functional Mixed Effects Model for the Analysis of Dose-Titration Studies,include,none,baja,"P-spline penalizado mencionado explícitamente, aunque aplicación es clínica (dosis-titulación)."
+438,ROBUST SMOOTHED CANONICAL CORRELATION ANALYSIS FOR FUNCTIONAL DATA,include,none,alta,Correlación canónica suavizada con expansión en bases y penalización explícitas.
+439,Reconciling functional data regression with excess bases,include,none,alta,Título explícitamente sobre exceso de bases en regresión funcional — PR1/PR3 directo.
+440,"Modelling multi-scale, state-switching functional data with hidden Markov models",include,none,media,Modelos ocultos de Markov para datos funcionales multiescala; metodología central.
+441,Robust functional principal components for irregularly spaced longitudinal data,include,none,media,FPCA robusto para datos longitudinales irregulares — PR2.
+442,Functional response regression analysis,include,none,alta,Funciones B-spline explícitas para aproximar la regresión funcional.
+443,Clustering nonstationary circadian rhythms using locally stationary wavelet representations,include,none,alta,Wavelets para procesos no estacionarios/irregulares — ya identificado como relevante en cribado manual de zbMATH/arXiv (C3).
+444,Detection of Unknown Functional Departure in Generalized Functional Regression,include,none,baja,"Detección de desviaciones funcionales; metodología, aplicación clínica ilustrativa (dosis de fármaco)."
+445,A robust estimation based on penalised regularisation for the varying-coefficient additive model,include,none,alta,Splines y regularización penalizada explícitas — PR3.
+446,Functional autoencoder for smoothing and representation learning,include,none,alta,Autoencoder funcional para representación mediante coeficientes — PR1 directo.
+447,Simultaneous inference and uniform test for eigensystems of functional data,include,none,media,Sistemas propios (eigensystems) relacionados con FPCA.
+448,Single-index partially functional linear quantile regression,include,none,media,Regresión cuantil funcional single-index; dataset Tecator típico de literatura de bases FDA.
+449,COVID-19 data imputation by multiple function-on-function principal component regression,include,none,media,Regresión FPCA función-en-función para imputación COVID-19 España; aplicación de FPCA.
+450,Clustering acoustic emission signals by mixing two stages dimension reduction and nonparametric appr,include,none,baja,"Sin resumen; reducción de dimensión no paramétrica, dominio acústico/ingeniería ambiguo."
+451,Functional L-Optimality Subsampling for Functional Generalized Linear Models with Massive Data,include,none,baja,"Sin resumen; submuestreo para GLM funcional, metodología general."
+452,Robust estimation with modified Huber's function for functional linear models,include,none,alta,Funciones base de componentes principales funcionales explícitas.
+453,Automatic Variable Selection for Partially Linear Functional Additive Model and Its Application to t,include,none,alta,FPCA y expansión en base spline explícitas para selección de variables.
+454,Diagnosing faults in electric motors using B-splines and Bayesian Mixture Model,include,none,baja,"B-splines explícitos, aunque aplicación es diagnóstico de fallas en motores (ingeniería)."
+455,Nonparametric covariance estimation with shrinkage toward stationary models,include,none,media,Estimación de covarianza no paramétrica con shrinkage; metodología central.
+456,10th Scientific Meeting of the Classification and Data Analysis Group of the Italian Statistical Soc,exclude,E5,alta,"Registro de volumen completo de actas (CLADAG 2015), no un trabajo individual."
+457,Functional EWMA control chart for phase II profile monitoring,include,none,baja,"Carta de control funcional EWMA para monitoreo de perfiles; aplicación de control de calidad, sin discusión de bases clara."
+458,Graph-constrained analysis for multivariate functional data,include,none,baja,"Modelo gráfico funcional multivariado; aporte metodológico, aplicación fMRI ilustrativa."
+459,Simulation studies to compare bayesian wavelet shrinkage methods in aggregated functional data,include,none,alta,Comparación explícita de métodos de wavelet shrinkage bayesiano — PR4 directo.
+460,A moment-based notion of time dependence for functional time series,include,none,media,Dependencia temporal vía scores de FPCA en series temporales funcionales.
+461,Compositional splines for representation of density functions,include,none,alta,Splines composicionales — representación en bases explícita.
+462,Pursuit of dynamic structure in quantile additive models with longitudinal data,include,none,baja,Modelos aditivos cuantílicos dinámicos; sin discusión clara de bases.
+463,Multiscale Clustering for Functional Data,include,none,baja,Sin resumen; clustering multiescala de datos funcionales.
+464,Locally Sparse Estimation for Simultaneous Functional Quantile Regression,include,none,baja,"Regresión cuantil funcional dispersa; metodología, aplicación agrícola ilustrativa."
+465,Multivariate functional generalized additive models,include,none,media,Penalización (gMCP) en modelo aditivo generalizado multivariado — PR3.
+466,Application of functional data analysis and FTIR-ATR spectroscopy to discriminatewine spirits ageing,exclude,E4,media,Aplicación de FDA a espectroscopia FTIR de vinos (ciencia de alimentos); no discute elección/calidad de base.
+467,Simultaneous confidence corridors for mean functions in functional data analysis of imaging data,include,none,baja,"Splines bivariados explícitos, aunque aplicación es imagenología biomédica."
+468,Bayesian covariance regression in functional data analysis with applications to functional brain ima,include,none,baja,"Regresión de covarianza bayesiana; aporte metodológico, aplicación en imagenología cerebral ilustrativa."
+469,Mixed Data Regression with Compositional Response and an Application in Stock Market Sentiment Analy,include,none,media,Aplicación a sentimiento de mercado bursátil — dominio económico/financiero (PR5).
+470,Semi-functional varying coefficient mode-based regression,include,none,baja,"Sin resumen; regresión de coeficiente variable semifuncional, metodología general."
+471,smoothEM: A new approach for the simultaneous assessment of smooth patterns and spikes,include,none,media,Suavizado spline con identificación de picos — relacionado con PR4 (irregularidades).
+472,Density ratio model with data-adaptive basis function,include,none,alta,Función base adaptativa a los datos explícita en el título.
+473,Principal Component Analysis for Distributions Observed by Samples in Bayes Spaces,include,none,baja,"PCA para distribuciones en espacios de Bayes; aplicación geocientífica, metodología de representación distribucional."
+474,Fourier approach to goodness-of-fit tests for Gaussian random processes,include,none,media,Enfoque de Fourier explícito para pruebas de bondad de ajuste.
+475,A Functional Regression Approach to Facial Landmark Tracking,include,none,baja,Nuevo método de regresión funcional ('Continuous Regression'); aplicación en seguimiento facial es ilustrativa.
+476,On uncertainty estimation in functional linear mixed models,include,none,baja,Estimación de incertidumbre en modelos mixtos lineales funcionales; metodología general.
+477,Robust estimation for functional logistic regression models,include,none,media,Herramientas de regularización para pendiente funcional en regresión logística — PR3.
+478,Online Bayesian learning for mixtures of spatial spline regressions with mixed effects,include,none,media,Mezclas de regresiones spline espaciales — splines explícitos.
+479,Functional emulation of high resolution Tsunami modelling over Cascadia,exclude,E4,media,Emulación de simulador de tsunamis; aplicación geofísica sin discusión de elección de base.
+480,Bayesian functional data analysis over dependent regions and its application for identification of d,include,none,baja,"Splines de suavizado bayesianos explícitos, aunque aplicación es epigenética."
+481,Penalized spline estimation of principal components for sparse functional data: Rates of convergence,include,none,alta,Tasas de convergencia de estimadores spline penalizados para PCA — PR1/PR3 teórico central.
+482,Single-index partially functional linear regression model,include,none,baja,Sin resumen; regresión funcional lineal parcial single-index.
+483,Multivariate functional clustering and its application to typhoon data,include,none,baja,"Sin resumen; clustering funcional multivariado, aplicación meteorológica (tifones) no descartable sin más info."
+484,Functional Regression for Densely Observed Data With Novel Regularization,include,none,alta,Penalización de suavidad y regularización explícitas — PR3.
+485,Interval-valued functional clustering based on the improved Euclidean distance with application to a,include,none,baja,"Sin resumen; clustering funcional con distancia euclídea mejorada, aplicación ambiental (calidad del aire)."
+486,Nonlinear Functional Modeling Using Neural Networks,include,none,alta,Nueva clase de modelos funcionales no lineales vía redes neuronales; metodología central.
+487,Statistical inference in functional semiparametric spatial autoregressive model,include,none,media,Modelo autorregresivo espacial semiparamétrico funcional; cercano a econometría espacial.
+488,NeuroPMD: Neural Fields for Density Estimation on Product Manifolds,include,none,baja,"Sin resumen; estimación de densidad en variedades, dominio neurocientífico no inequívoco."
+489,Generalized partial functional linear regression for network-linked data,include,none,media,Regresión funcional lineal parcial generalizada para datos en red; metodología general.
+490,Variable-Domain Functional Principal Component Analysis,include,none,alta,FPCA de dominio variable — tema central PR2.
+491,Mixture of partially functional linear regression,include,none,baja,Sin resumen; mezcla de regresiones funcionales lineales parciales.
+492,Short-Term Hourly Ozone Concentration Forecasting Using Functional Data Approach,exclude,E4,media,Pronóstico de concentración de ozono; aplicación ambiental sin discusión de elección de base.
+493,Regression Analysis of Asynchronous Longitudinal Functional and Scalar Data,include,none,baja,"Regresión asíncrona longitudinal funcional; aporte metodológico, aplicación en neuroimagen (ADNI) ilustrativa."
+494,Oracle-efficient confidence envelopes for covariance functions in dense functional data,include,none,baja,Envolventes de confianza oracle-eficientes para funciones de covarianza; metodología general. Posible duplicado de id 533 (mismo título) — revisar en Zotero.
+495,A dynamic interaction varying index coefficient quantile regression model,include,none,baja,Sin resumen; regresión cuantílica con coeficiente de índice variable dinámico.
+496,MULTISCALE POISSON PROCESS APPROACHES FOR DETECTING AND ESTIMATING DIFFERENCES FROM HIGH-THROUGHPUT ,exclude,E4,baja,"Sin resumen; título indica dominio de secuenciación genómica de alto rendimiento, ajeno a FDA/bases."
+497,A Latent-Class Model for Time-To-Event Outcomes and High-Dimensional Imaging Data,exclude,E4,media,Modelo de clase latente para datos de imagenología MRI de Alzheimer; aplicación médica sin discusión de bases.
+498,Robust optimal estimation of location from discretely sampled functional data,include,none,media,Estimación robusta de localización en datos funcionales muestreados discretamente; metodología central.
+499,Spatial Functional Data analysis: Irregular spacing and Bernstein polynomials,include,none,media,Polinomios de Bernstein — familia de base explícita.
+500,A comparison of tests for the one-way ANOVA problem for functional data,include,none,alta,Comparación explícita de pruebas basadas en test B-spline para ANOVA funcional.
+501,Reduced representations of vector-valued coupling variables in decomposition-based design optimizati,exclude,I1,baja,"Sin resumen; título sobre optimización de diseño por descomposición, sin conexión evidente a FDA/bases."
+502,Global sensitivity analysis for models with spatially dependent outputs,include,none,baja,Análisis de sensibilidad global con salidas espacialmente dependientes; posible relación con emulación funcional.
+503,Two-step estimation of functional linear models with applications to longitudinal data,include,none,alta,Splines de suavizado y kernel explícitos para funciones de coeficiente — PR1/PR3.
+504,Functional principal component analysis for multivariate multidimensional environmental data,include,none,media,"FPCA explícito, aplicación ambiental."
+505,Reduced rank regression models with latent variables in Bayesian functional data analysis,include,none,alta,Base de tipo Demmler-Reinsch de splines de interpolación explícita.
+506,Modeling environmental data by functional principal component logistic regression,include,none,media,FPCA explícito en regresión logística ambiental.
+507,Functional data analysis in longitudinal settings using smoothing splines,include,none,alta,Splines de suavizado explícitos para FDA longitudinal.
+508,Inference in smoothing spline analysis of variance,include,none,alta,ANOVA de splines de suavizado explícito.
+509,Bivariate splines for spatial functional regression models,include,none,media,Splines bivariados explícitos para regresión funcional espacial.
+510,Robust Classification of Functional and Quantitative Image Data Using Functional Mixed Models,include,none,baja,"Modelo mixto funcional para clasificación; aporte metodológico, aplicación en imágenes médicas ilustrativa."
+511,Computing functional estimators of spatiotemporal long-range dependence parameters in the spectral-w,include,none,media,Dominio espectral-wavelet explícito para dependencia de largo alcance.
+512,Functional Regression,include,none,alta,Revisión general de FDA (menciona el texto fundacional de Ramsay & Silverman 1997) — relevante para PR1.
+513,Wavelet-based nonparametric functional mapping of longitudinal curves,include,none,media,Mapeo funcional no paramétrico basado en wavelets explícito.
+514,Smoothing of GRF data using functional data analysis technique,include,none,baja,"Sin resumen; técnica de FDA para suavizado, dominio GRF ambiguo."
+515,A multiresolution approach to time warping achieved by a Bayesian prior-posterior transfer fitting s,include,none,baja,Funciones de warping ('warplets') como elementos tipo base para registro de curvas.
+516,Bivariate splines for ozone concentration forecasting,include,none,media,Splines bivariados explícitos sobre triangulaciones; aplicación ambiental (ozono) pero elección de base es el aporte central.
+517,Oscillations and time trends in stratospheric ozone levels: A functional data analysis approach,include,none,baja,"Sin resumen; 'enfoque de FDA' genérico aplicado a ozono estratosférico, dominio ambiental."
+518,Penalized solutions to functional regression problems,include,none,media,Soluciones penalizadas para problemas de regresión funcional — PR3.
+519,Functional dynamic factor models with application to yield curve forecasting,include,none,alta,Pronóstico de curva de rendimientos (yield curve) — aplicación financiera directa PR5.
+520,Robust regularized singular value decomposition with application to mortality data,include,none,baja,"SVD regularizado robusto; metodología de regularización, aplicación en mortalidad."
+521,On rates of convergence in functional linear regression,include,none,media,Tasas de convergencia en regresión lineal funcional — teoría central FDA.
+522,Wavelet-Based Weighted LASSO and Screening Approaches in Functional Linear Regression,include,none,alta,LASSO ponderado en dominio wavelet explícito — PR3/PR4.
+523,Bayesian adaptive regression splines for hierarchical data,include,none,baja,"Splines de regresión adaptativa bayesiana explícitos, aplicación médica (hormonas reproductivas)."
+524,Wavelet-Based Nonparametric Modeling of Hierarchical Functions in Colon Carcinogenesis,include,none,baja,"Modelado wavelet no paramétrico explícito, aplicación oncológica (carcinogénesis de colon)."
+525,Mixtures of spatial spline regressions for clustering and classification,include,none,media,Splines espaciales explícitos para clustering y clasificación.
+526,Functional linear regression analysis based on partial least squares and its application,include,none,baja,Sin resumen; regresión lineal funcional vía PLS.
+527,Modeling longitudinal data with nonparametric multiplicative random effects jointly with survival da,exclude,E4,media,Modelado conjunto de datos longitudinales y supervivencia; aplicación clínica de biomarcadores sin discusión de bases.
+528,Emulation of multivariate simulators using thin-plate splines with application to atmospheric disper,include,none,baja,"Splines de placa delgada (familia de base) explícitas, aplicación en dispersión atmosférica."
+529,On the optimal choice of the number of empirical Fourier coefficients for comparison of regression c,include,none,alta,Coeficientes de Fourier empíricos y comparación de curvas de regresión — PR1/PR4 directo.
+530,Computer model validation with functional output,include,none,baja,"Validación de modelos computacionales con salida funcional; subcampo de emulación funcional, sin discusión de base específica."
+531,Quantifying the lifetime circadian rhythm of physical activity: A covariate-dependent functional app,include,none,baja,"Sin resumen; ritmo circadiano de actividad física, dominio de salud/actividad."
+532,Identifiability in penalized function-on-function regression models,include,none,alta,Identificabilidad en regresión función-en-función penalizada — PR3 directo.
+533,Oracle-efficient confidence envelopes for covariance functions in dense functional data,include,none,baja,"Envolventes de confianza oracle-eficientes para funciones de covarianza; mismo título que id 494 — posible duplicado, revisar en Zotero."
+534,Comparative study of different B-spline approaches for functional data,include,none,alta,Estudio comparativo explícito de enfoques B-spline — PR1/PR4 directo.
+535,Restricted likelihood ratio tests for functional effects in the functional linear model,include,none,baja,Sin resumen; pruebas de razón de verosimilitud restringida para efectos funcionales.
+536,Testing equality of two functions using BARS,include,none,baja,BARS (Bayesian Adaptive Regression Splines) — método de base explícito.
+537,The role of functional data analysis for instantaneous frequency estimation,include,none,baja,"Sin resumen; papel de FDA en estimación de frecuencia instantánea, dominio de señales."
+538,Self-modelling regression for longitudinal data with time-invariant covariates,include,none,alta,Spline de regresión penalizada explícito para autorregresión de curvas.
+539,Adaptive basis selection for functional data analysis via stochastic penalization,include,none,alta,Selección adaptativa de base explícita vía penalización estocástica — coincide con PR1/PR3.
+540,A similarity analysis of curves,include,none,baja,"Sin resumen; análisis de similitud de curvas, metodología general de preprocesamiento FDA."
+541,Modelling three-dimensional trajectories by using Bézier curves with application to hand motion,include,none,baja,"Curvas de Bézier explícitas como base, aplicación en movimiento de mano (biomecánica)."
+542,Bayesian graphical models for multivariate functional data,include,none,baja,Sin resumen; modelos gráficos bayesianos para datos funcionales multivariados.
+543,Modeling and Testing Differential Item Functioning in Unidimensional Binary Item Response Models wit,include,none,baja,"Enfoque de FDA para funcionamiento diferencial de ítems; aporte metodológico, dominio psicométrico."
+544,A Bayesian Multivariate Functional Dynamic Linear Model,include,none,media,Modelo dinámico lineal funcional bayesiano multivariado con splines bayesianas mencionadas.
+545,Estimating the intensity of ward admission and its effect on emergency department access block,exclude,E4,media,Modelado de admisión hospitalaria y bloqueo de acceso; aplicación de operaciones de salud sin discusión de bases.
+546,Potential applications of functional data analysis in chemometrics,include,none,media,Revisión comparativa de FDA frente a métodos multivariados clásicos en quimiometría — relevante conceptualmente a PR1.
+547,Identifying cluster number for subspace projected functional data clustering,include,none,baja,Sin resumen; identificación de número de clusters en clustering funcional por subespacios.
+548,Varying-coefficient functional linear regression models,include,none,baja,Sin resumen; modelos de regresión lineal funcional con coeficiente variable.
+549,Bayesian hierarchical spatially correlated functional data analysis with application to colon carcin,exclude,E4,media,"Aplicación biomédica a carcinogénesis de colon; FDA como herramienta de análisis, sin discusión de bases."
+550,Classification using functional data analysis for temporal gene expression data,exclude,E4,media,"Clasificación de datos de expresión génica temporal; dominio genómico, sin discusión de bases."
+551,A hierarchical model for aggregated functional data,include,none,media,Modelo jerárquico para datos funcionales agregados; metodología central.
+552,Uncertainty Analysis for Functional Computer Output: A Simulation Study in Inverse Problems,include,none,baja,"Sin resumen; análisis de incertidumbre para salida funcional de computadora, problemas inversos."
+553,Statistical methods for proteomic biomarker discovery based on feature extraction or functional mode,exclude,E4,media,Métodos para descubrimiento de biomarcadores proteómicos; dominio proteómico sin discusión de bases.
+554,Linear discriminant analysis based on penalized functional PLS,include,none,media,PLS funcional penalizado explícito para discriminante lineal.
+555,Discriminative interpolation for classification of functional data,include,none,baja,Sin resumen; interpolación discriminativa para clasificación de datos funcionales.
+556,Nonparametric Bayesian functional clustering for time-course microarray data,exclude,E4,baja,"Sin resumen; título indica datos de microarreglos (genómica), dominio ajeno."
+557,Assessing the beneficial effects of economic growth: The harmonic growth index,include,none,media,Índice de crecimiento armónico — aplicación de crecimiento económico explícita (PR5).
+558,Continuous time-varying kriging for spatial prediction of functional data: An environmental applicat,include,none,baja,"Kriging funcional para predicción espacial; aplicación ambiental, método de predicción espacial-funcional."
+559,Quantile regression when the covariates are functions,include,none,alta,Estimador spline explícito para coeficiente funcional en regresión cuantílica — PR1/PR3.
+560,Soft sensor modeling method based on k-nearest neighbor and RBF neural network,include,none,baja,"RBF (función de base radial) explícita en el título, aplicación de sensor virtual industrial."
+561,Functional logistic discrimination via regularized basis expansions,include,none,alta,Expansión en base regularizada explícita en el título — PR1/PR3 directo.
+562,Functional approach of flexibly modelling generalized longitudinal data and survival time,include,none,baja,Sin resumen; enfoque funcional para datos longitudinales generalizados y tiempo de supervivencia.
+563,Lack of fit in self modeling regression: Application to pulse waveforms,include,none,baja,"Método de autorregistro (SEMOR); metodología general, aplicación en formas de onda de pulso ilustrativa."
+564,Estimation of space-speed profiles: A functional approach using smoothing splines,include,none,baja,"Splines de suavizado explícitos, aplicación en perfiles de velocidad-espacio (ingeniería de tráfico)."
+565,Robust shrinkage estimation and selection for functional multiple linear model through LAD loss,include,none,baja,Sin resumen; estimación robusta con shrinkage y selección para modelo lineal múltiple funcional.
+566,A time-frequency functional model for locally stationary time series data,include,none,media,Modelo tiempo-frecuencia para series temporales localmente estacionarias — relacionado con PR4.
+567,Bayesian hierarchical curve registration,include,none,baja,Sin resumen; registro jerárquico bayesiano de curvas.
+568,Defining and measuring the development of a country over time: A proposal of a new index,include,none,baja,Sin resumen; índice de desarrollo de país a lo largo del tiempo — posible aplicación económica (PR5).
+569,Wavelet-RKHS-based functional statistical classification,include,none,media,Wavelet y RKHS explícitos como métodos de base para clasificación estadística funcional.
+570,Grouped variable importance with random forests and application to multiple functional data analysis,include,none,media,Método de selección de variables funcionales basado en importancia agrupada (random forests).
+571,Non-linear local registration of functional data,include,none,baja,Sin resumen; registro local no lineal de datos funcionales.
+572,Efficient Bayesian hierarchical functional data analysis with basis function approximations using Ga,include,none,alta,Aproximaciones por funciones base explícitas en el título — PR1 directo.
+573,Cramér-Karhunen-Loève representation and harmonic principal component analysis of functional time se,include,none,alta,Representación de Karhunen-Loève y PCA armónico explícitos — tema central de representación FDA.
+574,Wavelet-based LASSO in functional linear regression,include,none,alta,Base wavelet explícita con selección de variables (LASSO) — PR3/PR4.
+575,Looking for similar patterns among monitoring stations. Venice Lagoon application,exclude,E4,media,"Estudio de aplicación ambiental (calidad del agua, Laguna de Venecia) usando un método de clasificación ya existente, sin aporte metodológico sobre bases."
+576,Penalized clustering of large-scale functional data with multiple covariates,include,none,media,"Método de clustering penalizado con mención de detección de saltos (jump), relevante PR3/PR4."
+577,Modelling price paths in on-line auctions: Smoothing sparse and unevenly sampled curves by using sem,include,none,media,Aplicación económica explícita (trayectorias de precios en subastas online) — PR5.
+578,Hierarchical clustering of spatially correlated functional data,include,none,media,Clustering jerárquico de datos funcionales espacialmente correlacionados; metodología central.
+579,A recursive local polynomial approximation method using dirichlet clouds and radial basis functions,include,none,baja,"Funciones de base radial explícitas, aunque aplicación es optimización estocástica general, no FDA clásica."
+580,Bayesian semiparametric predictive modeling with applications in dose-response prediction,exclude,E4,baja,"Sin resumen; predicción dosis-respuesta, dominio farmacológico/médico."
+581,Methods for characterizing and comparing populations of shock wave curves,include,none,baja,"Sin resumen; comparación de poblaciones de curvas de onda de choque, vocabulario PR4 ('shock') pero dominio físico ambiguo."
+582,Functional Generalized Structured Component Analysis,include,none,media,Extensión funcional de un método de análisis de componentes estructurado (GSCA); metodología central.
+583,Functional Data Analysis in Ecosystem Research: The Decline of Oweekeno Lake Sockeye Salmon and Wann,exclude,E4,media,"Investigación de ecosistemas (declive de salmón), dominio ecológico ajeno sin discusión de bases."
+584,Computer experiments: A review,include,none,baja,"Sin resumen; revisión de experimentos computacionales, posible relación con emulación de salida funcional."
+585,Bayesian analysis of mass spectrometry proteomic data using wavelet-based functional mixed models,include,none,media,Modelo mixto funcional bayesiano basado en wavelets; elección de base wavelet es central pese a aplicación proteómica.
+586,Generalized functional linear models with semiparametric single-index interactions,include,none,media,Modelo lineal funcional generalizado semiparamétrico con interacciones single-index; metodología central.
+587,"Fitting Trees to Functional Data, with an Application to Time-of-Day Patterns",include,none,baja,"Sin resumen; ajuste de árboles a datos funcionales, metodología general."
+588,Clustering functional data using wavelets,include,none,alta,Clustering funcional explícitamente basado en wavelets — PR4 directo.
+589,A simultaneous confidence corridor for varying coefficient regression with sparse functional data,include,none,baja,Sin resumen; corredor de confianza simultáneo para regresión de coeficiente variable dispersa.
+590,Longitudinal prostate-specific antigen reference ranges: Choosing the underlying model of age-relate,exclude,E4,media,Rangos de referencia de PSA (biomarcador de próstata); dominio médico/oncológico sin discusión de bases.
+591,Flexible estimation of covariance function by penalized spline with application to longitudinal fami,include,none,media,"Spline penalizado explícito para estimación de covarianza — PR3, aplicación biomédica ilustrativa."
+592,Bayesian Latent Factor Regression for Functional and Longitudinal Data,include,none,alta,Combinación lineal de funciones base explícita en el resumen — PR1 directo.
+593,Curve registration,include,none,alta,Registro de curvas — fundamento clásico de FDA (extensión de PCA/regresión a datos funcionales).
+594,Polynomial spline estimation for partial functional linear regression models,include,none,media,Spline polinómico explícito para regresión lineal funcional parcial.
+595,Free-knot spline smoothing for functional data,include,none,alta,Estimadores de spline de nudo libre explícitos — PR1/PR3 central.
+596,Fourier analysis of stationary time series in function space,include,none,alta,Operador de densidad espectral para series temporales funcionales — teoría central FDA/PR4.
+597,"Asia Simulation Conference 2012, AsiaSim 2012",exclude,E5,alta,"Es el registro de un volumen completo de actas de congreso (AsiaSim 2012), no un trabajo individual."
+598,Analysis of aggregated functional data from mixed populations with application to energy consumption,include,none,media,"Aplicación económica/energética explícita (consumo de energía) — PR5, datos funcionales agregados."
+599,Estimation and inference in functional single-index models,include,none,baja,Sin resumen; estimación e inferencia en modelos de índice único funcional.

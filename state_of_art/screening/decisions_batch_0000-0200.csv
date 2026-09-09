@@ -1,0 +1,201 @@
+id,title_short,decision,reason_code,confidence,rationale
+0,Model-based Fréchet regression in (quotient) metric spaces with a focus on elastic curves,include,none,baja,"Solo titulo disponible, terminologia FDA relevante, sin resumen para confirmar."
+1,A genome-wide comprehensive analysis of nucleosome positioning in yeast,exclude,E4,alta,"FPCA usada como herramienta para comparar cepas en genomica, sin discutir bases"
+2,Mathematical function data model analysis and synthesis system based on short-term human movement,exclude,E4,media,"Fourier fitting aplicado a sintesis de movimiento humano, sin discusion de bases, journal de bajo perfil"
+3,Curve Classification Based on Mean-Variance Feature Weighting and Its Application,include,none,baja,"Solo titulo disponible, terminologia FDA relevante, sin resumen para confirmar."
+4,Optimal design of experiments for functional linear models with dynamic factors,include,none,alta,Discute representacion en bases/FPCA explicitamente en el resumen.
+5,Parametric and nonparametric conditional quantile regression modeling for dependent spatial function,include,none,alta,Discute representacion en bases/FPCA explicitamente en el resumen.
+6,L1-regularized functional support vector machine*,include,none,media,FDA/datos funcionales relevante pero sin discusion explicita de bases en el resumen.
+7,Exponential Lp-quantile estimation of function-on-scalar model with its applications in functional d,include,none,media,FDA/datos funcionales relevante pero sin discusion explicita de bases en el resumen.
+8,A sandwich smoother for spatio-temporal functional data,include,none,alta,Discute representacion en bases/FPCA explicitamente en el resumen.
+9,Registration and estimation for functional generalized linear model,include,none,alta,Discute representacion en bases/FPCA explicitamente en el resumen.
+10,Principal Component Analysis of Two-dimensional Functional Data with Serial Correlation,include,none,alta,Discute representacion en bases/FPCA explicitamente en el resumen.
+11,Unified Principal Component Analysis for Sparse and Dense Functional Data under Spatial Dependency,include,none,alta,Discute representacion en bases/FPCA explicitamente en el resumen.
+12,Three recipes for quasi-interpolation with cubic Powell–Sabin splines,exclude,I1,media,"Splines Powell-Sabin en diseno geometrico (CAGD), no es FDA estadistico"
+13,Exploring patterns of demand in bike sharing systems via replicated point process models,exclude,I1,media,"Modelado de procesos puntuales de intensidad, no representacion funcional en bases"
+14,Two-sample tests for functional data using characteristic functions,include,none,alta,Discute representacion en bases/FPCA explicitamente en el resumen.
+15,Tensor product splines and functional principal components,include,none,alta,Discute representacion en bases/FPCA explicitamente en el resumen.
+16,A multivariate coefficient of variation for functional data,include,none,baja,"Solo titulo disponible, terminologia FDA relevante, sin resumen para confirmar."
+17,Variable selection of higher-order partially functional linear multiple varying coefficient spatial ,include,none,alta,Discute representacion en bases/FPCA explicitamente en el resumen.
+18,Estimation for functional linear semiparametric model,include,none,baja,"Solo titulo disponible, terminologia FDA relevante, sin resumen para confirmar."
+19,Statistical Depth for Text Data: An Application to the Classification of Healthcare Data,include,none,alta,Discute representacion en bases/FPCA explicitamente en el resumen.
+20,Wavelet estimation of the dimensionality of curve time series,include,none,alta,Discute representacion en bases/FPCA explicitamente en el resumen.
+21,Semiparametric Functional Factor Models with Bayesian Rank Selection*,include,none,alta,Discute representacion en bases/FPCA explicitamente en el resumen.
+22,Continuous-Time Multivariate Analysis,include,none,alta,Discute representacion en bases/FPCA explicitamente en el resumen.
+23,Functional Multivariable Logistic Regression With an Application to HIV Viral Suppression Prediction,include,none,alta,Discute representacion en bases/FPCA explicitamente en el resumen.
+24,New modeling approaches based on varimax rotation of functional principal components,include,none,alta,Discute representacion en bases/FPCA explicitamente en el resumen.
+25,High-Dimensional Statistics: Non-Parametric Generalized Functional Partially Linear Single-Index Mod,include,none,media,FDA/datos funcionales relevante pero sin discusion explicita de bases en el resumen.
+26,Morning surge in blood pressure using a random-effects multiple-component cosinor model,include,none,alta,Discute representacion en bases/FPCA explicitamente en el resumen.
+27,Three-part joint modeling methods for complex functional data mixed with zero-and-one–inflated propo,include,none,alta,Discute representacion en bases/FPCA explicitamente en el resumen.
+28,Wavelet-based dimensionality reduction for multiple sets of complicated functional data,include,none,baja,"Solo titulo disponible, terminologia FDA relevante, sin resumen para confirmar."
+29,Partially Linear Functional Additive Models for Multivariate Functional Data,include,none,alta,Discute representacion en bases/FPCA explicitamente en el resumen.
+30,Enhancing spatial functional linear regression with robust dimension reduction methods,include,none,alta,Discute representacion en bases/FPCA explicitamente en el resumen.
+31,Analyzing Electricity Demand in Colombia: A Functional Time Series Approach,include,none,alta,Discute representacion en bases/FPCA explicitamente en el resumen.
+32,Linear-Phase-Type probability modelling of functional PCA with applications to resistive memories,include,none,alta,Discute representacion en bases/FPCA explicitamente en el resumen.
+33,Functional data approximation on bounded domains using polygonal finite elements,exclude,I1,media,"Aproximacion de elementos finitos poligonales, geometria computacional, no FDA"
+34,Layered Bayesian nonparametric regression for DNA methylation rates,include,none,media,FDA/datos funcionales relevante pero sin discusion explicita de bases en el resumen.
+35,Quadratic inference with dense functional responses,include,none,alta,Discute representacion en bases/FPCA explicitamente en el resumen.
+36,Dynamic Regression Models for Time-Ordered Functional Data,include,none,alta,Discute representacion en bases/FPCA explicitamente en el resumen.
+37,Functional data analysis of single-trial auditory evoked potentials recorded in the awake rat,include,none,baja,"Solo titulo disponible, terminologia FDA relevante, sin resumen para confirmar."
+38,Adaptive estimation for functional data: Using a framelet block-thresholding method,include,none,media,FDA/datos funcionales relevante pero sin discusion explicita de bases en el resumen.
+39,Variation pattern classification of functional data,include,none,alta,Discute representacion en bases/FPCA explicitamente en el resumen.
+40,The investigation of temperature data in Turkey’s Black Sea Region using functional data analysis,include,none,alta,Discute representacion en bases/FPCA explicitamente en el resumen.
+41,Stationary Processes via Fourier Transformations: Representation and Estimation,include,none,baja,"Solo titulo disponible, terminologia FDA relevante, sin resumen para confirmar."
+42,On Estimation of the Effect Lag of Predictors and Prediction in a Functional Linear Model,include,none,alta,Discute representacion en bases/FPCA explicitamente en el resumen.
+43,Robust estimation for semi-functional linear regression models,include,none,media,FDA/datos funcionales relevante pero sin discusion explicita de bases en el resumen.
+44,Benchmarking different clustering algorithms on functional data,include,none,baja,"Solo titulo disponible, terminologia FDA relevante, sin resumen para confirmar."
+45,Analysis of a GPS Network Based on Functional Data Analysis,include,none,baja,"Solo titulo disponible, terminologia FDA relevante, sin resumen para confirmar."
+46,Surface temperature monitoring in liver procurement via functional variance change-point analysis,include,none,alta,Discute representacion en bases/FPCA explicitamente en el resumen.
+47,An Overview of Univariate and Multivariate Karhunen Loève Expansions in Statistics,include,none,baja,"Solo titulo disponible, terminologia FDA relevante, sin resumen para confirmar."
+48,Model-based clustering of multiple images incorporating covariates,include,none,media,FDA/datos funcionales relevante pero sin discusion explicita de bases en el resumen.
+49,Estimation and diagnostic for single-index partially functional linear regression model with p-order,include,none,media,FDA/datos funcionales relevante pero sin discusion explicita de bases en el resumen.
+50,Route identification in the National Football League: An application of model-based curve clustering,include,none,alta,Discute representacion en bases/FPCA explicitamente en el resumen.
+51,"Bayesian Semiparametric Functional Mixed Models for Serially Correlated Functional Data, With Applic",include,none,media,FDA/datos funcionales relevante pero sin discusion explicita de bases en el resumen.
+52,A Generalized Smoother for Linear Ordinary Differential Equations,include,none,baja,"Solo titulo disponible, terminologia FDA relevante, sin resumen para confirmar."
+53,Predicting the onset of breast cancer using mammogram imaging data with irregular boundary,include,none,alta,Discute representacion en bases/FPCA explicitamente en el resumen.
+54,FCWFA: Functional Cluster-Weighted Factor Analyzers,include,none,baja,"Solo titulo disponible, terminologia FDA relevante, sin resumen para confirmar."
+55,Semiparametric function-on-function quantile regression model with dynamic single-index interactions,include,none,media,FDA/datos funcionales relevante pero sin discusion explicita de bases en el resumen.
+56,Short-term electricity demand forecasting using a functional state space model,include,none,alta,Discute representacion en bases/FPCA explicitamente en el resumen.
+57,Repeated measures in functional logistic regression,include,none,baja,"Solo titulo disponible, terminologia FDA relevante, sin resumen para confirmar."
+58,Adaptive Generalized P-Splines for Functional Data: A Statistical Framework via Blockwise GSVD,include,none,alta,Discute representacion en bases/FPCA explicitamente en el resumen.
+59,Bayesian additive adaptive basis tensor product models for modeling high dimensional surfaces: an ap,include,none,alta,Discute representacion en bases/FPCA explicitamente en el resumen.
+60,Spatially Correlated Analysis of Infectious Disease Outcomes Based on Bayesian Functional Hierarchic,include,none,alta,Discute representacion en bases/FPCA explicitamente en el resumen.
+61,FPCA-based estimation for generalized functional partially linear models,include,none,baja,"Solo titulo disponible, terminologia FDA relevante, sin resumen para confirmar."
+62,Learning rates for partially linear functional models with high dimensional scalar covariates,include,none,alta,Discute representacion en bases/FPCA explicitamente en el resumen.
+63,Estimation of functional regression model via functional dimension reduction,include,none,alta,Discute representacion en bases/FPCA explicitamente en el resumen.
+64,Robust estimation for varying coefficient partially functional linear regression models based on exp,include,none,alta,Discute representacion en bases/FPCA explicitamente en el resumen.
+65,Visual retrieval of digital media image features based on active noise control,exclude,E4,media,"FPCA como una de varias herramientas de reduccion de dimension para recuperacion de imagenes, vision por computador"
+66,Pattern discovery of health curves using an ordered probit model with Bayesian smoothing and functio,include,none,alta,Discute representacion en bases/FPCA explicitamente en el resumen.
+67,Phase-II CUSUM Control Chart for Functional Data,include,none,baja,"Solo titulo disponible, terminologia FDA relevante, sin resumen para confirmar."
+68,Missing Data Imputation for Operation Data of Transformer Based on Functional Principal Component An,include,none,baja,"Solo titulo disponible, terminologia FDA relevante, sin resumen para confirmar."
+69,A frequency domain analysis of the error distribution from noisy high-frequency data,exclude,I1,media,"Estimacion de densidad de error de microestructura financiera, no aborda representacion funcional ni bases"
+70,Nonlinear mixed effects modeling and warping for functional data using B-splines,include,none,alta,Discute representacion en bases/FPCA explicitamente en el resumen.
+71,Simultaneous confidence band for stationary covariance function of dense functional data,include,none,alta,Discute representacion en bases/FPCA explicitamente en el resumen.
+72,Fast Bayesian basis selection for functional data representation with correlated errors,include,none,alta,Discute representacion en bases/FPCA explicitamente en el resumen.
+73,Functional Data Analysis of Head Impact Exposure of College Football Athletes,include,none,baja,"Solo titulo disponible, terminologia FDA relevante, sin resumen para confirmar."
+74,Bayesian analysis of longitudinal and multidimensional functional data,include,none,media,FDA/datos funcionales relevante pero sin discusion explicita de bases en el resumen.
+75,Functional data clustering by projection into latent generalized hyperbolic subspaces,include,none,baja,"Solo titulo disponible, terminologia FDA relevante, sin resumen para confirmar."
+76,High-Throughput Unsupervised Profiling of the Morphology of 316L Powder Particles for Use in Additiv,exclude,E4,media,FDA es uno de tres pipelines comparados para morfologia de particulas en manufactura aditiva
+77,Implicit surface reconstruction based on generalized radial basis functions interpolant with distinc,exclude,I1,media,"Reconstruccion de superficies implicitas via RBF, geometria computacional, datos funcionales solo incidental"
+78,SigFPLS: A Signatures-Based Approach for Scalar-on-Function Regression Model,include,none,alta,Discute representacion en bases/FPCA explicitamente en el resumen.
+79,Functional Continuum Regression Approach to Wavelet Transformation Data in a Non-Invasive Glucose Me,include,none,baja,"Solo titulo disponible, terminologia FDA relevante, sin resumen para confirmar."
+80,Weighted composite quantile regression estimation of partial functional linear model with censored r,include,none,alta,Discute representacion en bases/FPCA explicitamente en el resumen.
+81,Randomly censored partially linear varying coefficient model with functional single-index interactio,include,none,baja,"Solo titulo disponible, terminologia FDA relevante, sin resumen para confirmar."
+82,Statistical inference in functional quadratic expectile regression model,include,none,alta,Discute representacion en bases/FPCA explicitamente en el resumen.
+83,Landmark-Warped Emulators for Models with Misaligned Functional Response,include,none,media,FDA/datos funcionales relevante pero sin discusion explicita de bases en el resumen.
+84,Bayesian Deep Gaussian Processes for Correlated Functional Data: a Case Study in Cosmological Matter,include,none,alta,Discute representacion en bases/FPCA explicitamente en el resumen.
+85,Flexible parametrization of graph-theoretical features from individual-specific networks for predict,exclude,E4,media,"Extension de conceptos FDA a redes cerebrales fMRI, prediccion de edad biologica sin discusion de bases"
+86,Recovering the underlying trajectory from sparse and irregular longitudinal data,include,none,alta,Discute representacion en bases/FPCA explicitamente en el resumen.
+87,Inference for dependent error functional data with application to event-related potentials,include,none,baja,"Solo titulo disponible, terminologia FDA relevante, sin resumen para confirmar."
+88,Robust estimation in canonical correlation analysis for multivariate functional data,include,none,alta,Discute representacion en bases/FPCA explicitamente en el resumen.
+89,Modeling Experimental Designs Including Longitudinal Data and a Functional Covariate,include,none,alta,Discute representacion en bases/FPCA explicitamente en el resumen.
+90,Functional proportional hazards mixture cure model with applications in cancer mortality in NHANES a,include,none,alta,Discute representacion en bases/FPCA explicitamente en el resumen.
+91,Nonparametric quantile scalar-on-image regression,include,none,baja,"Solo titulo disponible, terminologia FDA relevante, sin resumen para confirmar."
+92,Regional and temporal patterns of influenza: Application of functional data analysis,include,none,alta,Discute representacion en bases/FPCA explicitamente en el resumen.
+93,Modeling approaches for assessing device-based measures of energy expenditure in school-based studie,exclude,E4,media,"Comparacion de 4 modelos mixtos aplicados a gasto energetico escolar, sin aporte metodologico sobre bases"
+94,"Cross-Validation, Information Theory, or Maximum Likelihood? A Comparison of Tuning Methods for Pena",include,none,alta,Discute representacion en bases/FPCA explicitamente en el resumen.
+95,Function-on-function regression for assessing production quality in industrial manufacturing,include,none,alta,Discute representacion en bases/FPCA explicitamente en el resumen.
+96,Varying-coefficient partially functional linear quantile regression models,include,none,baja,"Solo titulo disponible, terminologia FDA relevante, sin resumen para confirmar."
+97,A Time Series Data Classification Method Based on Basis Function Expansion and Bagging Framework,include,none,alta,Discute representacion en bases/FPCA explicitamente en el resumen.
+98,Mixture inner product spaces and their application to functional data analysis,include,none,baja,"Solo titulo disponible, terminologia FDA relevante, sin resumen para confirmar."
+99,Testing relevant hypotheses in functional variance function via self-normalization,include,none,alta,Discute representacion en bases/FPCA explicitamente en el resumen.
+100,Robust kernel regression function with uncertain scale parameter for high dimensional ergodic data u,exclude,I1,media,"Regresion kernel robusta en espacio funcional generico, no es FDA de curvas/bases"
+101,Stochastic modeling of Random Access Memories reset transitions,include,none,alta,Discute representacion en bases/FPCA explicitamente en el resumen.
+102,Bayesian Function-on-Scalars Regression for High-Dimensional Data,include,none,alta,Discute representacion en bases/FPCA explicitamente en el resumen.
+103,Functional kernel density estimation: Point and fourier approaches to time series anomaly detection,include,none,alta,Discute representacion en bases/FPCA explicitamente en el resumen.
+104,Estimation for Partial Functional Multiplicative Regression Model,include,none,alta,Discute representacion en bases/FPCA explicitamente en el resumen.
+105,Sparse smoothed quantile estimation for partially linear functional additive models,include,none,baja,"Solo titulo disponible, terminologia FDA relevante, sin resumen para confirmar."
+106,Quantile Regression for Longitudinal Functional Data with Application to Feed Intake of Lactating So,include,none,alta,Discute representacion en bases/FPCA explicitamente en el resumen.
+107,Asymptotic properties of penalized splines for functional data,include,none,alta,Discute representacion en bases/FPCA explicitamente en el resumen.
+108,Spectrally Sparse Nonparametric Regression via Elastic Net Regularized Smoothers,include,none,alta,Discute representacion en bases/FPCA explicitamente en el resumen.
+109,A Unified Approach to Functional Principal Component Analysis and Functional Multiple-Set Canonical ,include,none,alta,Discute representacion en bases/FPCA explicitamente en el resumen.
+110,Wasserstein Boxplots for the Analysis of EEG Power Spectral Densities With Applications to Autism,exclude,E4,media,"Boxplots de Wasserstein para densidades espectrales EEG en autismo, herramienta de visualizacion, no discute bases"
+111,Sparse logistic regression on functional data*,include,none,media,FDA/datos funcionales relevante pero sin discusion explicita de bases en el resumen.
+112,A fast epigraph and hypograph-based approach for clustering functional data,include,none,media,FDA/datos funcionales relevante pero sin discusion explicita de bases en el resumen.
+113,Robust inference in varying-coefficient additive models for longitudinal/functional data,include,none,alta,Discute representacion en bases/FPCA explicitamente en el resumen.
+114,A penalized spline estimator for functional linear regression with functional response,include,none,alta,Discute representacion en bases/FPCA explicitamente en el resumen.
+115,Mesh-Informed Neural Networks for Operator Learning in Finite Element Spaces,exclude,I1,media,"Redes neuronales para operadores en espacios de elementos finitos (EDPs), datos funcionales usado de forma generica"
+116,Functional Neural Networks for High-Dimensional Genetic Data Analysis,include,none,alta,Discute representacion en bases/FPCA explicitamente en el resumen.
+117,Estimation and inference in functional varying-coefficient single-index quantile regression models,include,none,media,FDA/datos funcionales relevante pero sin discusion explicita de bases en el resumen.
+118,ICS for complex data with application to outlier detection for density data,include,none,alta,Discute representacion en bases/FPCA explicitamente en el resumen.
+119,Functional principal component analysis in age–period–cohort analysis of body mass index data by gen,include,none,baja,"Solo titulo disponible, terminologia FDA relevante, sin resumen para confirmar."
+120,Bayesian Dependent Functional Mixture Estimation for Area and Time-Indexed Data: An Application for ,include,none,alta,Discute representacion en bases/FPCA explicitamente en el resumen.
+121,Fault Detection of Chemical Process Based on Functional Kernel Entropy Component Analysis,exclude,E4,media,"FPCA+entropia kernel para deteccion de fallas en proceso quimico, aplicacion industrial, ponencia breve"
+122,Dynamic prediction in functional concurrent regression with an application to child growth,include,none,media,FDA/datos funcionales relevante pero sin discusion explicita de bases en el resumen.
+123,Survival on Image Regression With Application to Partially Functional Distributional Representation ,include,none,media,FDA/datos funcionales relevante pero sin discusion explicita de bases en el resumen.
+124,From sparse to dense functional data: phase transitions from a simultaneous inference perspective,include,none,alta,Discute representacion en bases/FPCA explicitamente en el resumen.
+125,Functional data analysis to describe and classify southern resident killer whale calls,include,none,baja,"Solo titulo disponible, terminologia FDA relevante, sin resumen para confirmar."
+126,Basis expansions for functional snippets,include,none,alta,Discute representacion en bases/FPCA explicitamente en el resumen.
+127,Local Clustering for Functional Data,include,none,alta,Discute representacion en bases/FPCA explicitamente en el resumen.
+128,Gaussian graphical modeling for spectrometric data analysis,include,none,alta,Discute representacion en bases/FPCA explicitamente en el resumen.
+129,Bayesian estimation of principal components for functional data,include,none,alta,Discute representacion en bases/FPCA explicitamente en el resumen.
+130,A Fourier representation of kernel Stein discrepancy with application to Goodness-of-Fit tests for m,include,none,alta,Discute representacion en bases/FPCA explicitamente en el resumen.
+131,High-resolution signal recovery via generalized sampling and functional principal component analysis,include,none,alta,Discute representacion en bases/FPCA explicitamente en el resumen.
+132,BASS: An R package for fitting and performing sensitivity analysis of bayesian adaptive spline surfa,include,none,alta,Discute representacion en bases/FPCA explicitamente en el resumen.
+133,Mean and covariance estimation of functional data streams,include,none,alta,Discute representacion en bases/FPCA explicitamente en el resumen.
+134,Learning Bezier-Durrmeyer Type Descriptors for Classifying Curves – Preliminary Studies,include,none,baja,"Solo titulo disponible, terminologia FDA relevante, sin resumen para confirmar."
+135,Feature extraction for functional time series: Theory and application to NIR spectroscopy data,include,none,alta,Discute representacion en bases/FPCA explicitamente en el resumen.
+136,Functional group bridge for simultaneous regression and support estimation,include,none,media,FDA/datos funcionales relevante pero sin discusion explicita de bases en el resumen.
+137,clusterMLD: An Efficient Hierarchical Clustering Method for Multivariate Longitudinal Data,include,none,media,FDA/datos funcionales relevante pero sin discusion explicita de bases en el resumen.
+138,Sparse functional partial least squares regression with a locally sparse slope function,include,none,baja,"Solo titulo disponible, terminologia FDA relevante, sin resumen para confirmar."
+139,Multi-dimensional functional principal component analysis,include,none,alta,Discute representacion en bases/FPCA explicitamente en el resumen.
+140,Multimodal discourse analysis of English reading instruction in colleges and universities based on w,exclude,E4,media,"FPCA como componente de un sistema de analisis de discurso en ensenanza de ingles, journal de bajo perfil"
+141,Extremes of projections of functional time series on data–driven basis systems,include,none,baja,"Solo titulo disponible, terminologia FDA relevante, sin resumen para confirmar."
+142,A Feature Fusion Approach for Multiple Signal Classification,exclude,E4,media,FPCA es uno de varios metodos de extraccion de features comparados para clasificacion de senales MUSIC (telecom)
+143,Partitioning of functional gene expression data using principal points,exclude,E4,media,"Sistema de bases ortonormal usado como herramienta para particionar expresion genica, bioinformatica"
+144,Roughness regularization for functional data analysis with free knots spline estimation,include,none,alta,Discute representacion en bases/FPCA explicitamente en el resumen.
+145,Functional principal component analysis with informative observation times,include,none,alta,Discute representacion en bases/FPCA explicitamente en el resumen.
+146,Pseudo-quantile functional data clustering,include,none,alta,Discute representacion en bases/FPCA explicitamente en el resumen.
+147,SPATIAL PREDICTION OF LOCAL SOIL EROSION DISTRIBUTION IN THE WASSERSTEIN SPACE,include,none,alta,Discute representacion en bases/FPCA explicitamente en el resumen.
+148,Bayesian wavelet-packet historical functional linear models,include,none,alta,Discute representacion en bases/FPCA explicitamente en el resumen.
+149,Partially Linear Single-Index Models and Functional Principal Component Analysis of Spatially and Te,include,none,alta,Discute representacion en bases/FPCA explicitamente en el resumen.
+150,FILTRATED COMMON FUNCTIONAL PRINCIPAL COMPONENT ANALYSIS OF MULTIGROUP FUNCTIONAL DATA,include,none,alta,Discute representacion en bases/FPCA explicitamente en el resumen.
+151,Enhancing personalization in IoT-based health monitoring via generative AI and transfer learning,exclude,I1,media,"Monitoreo de salud IoT con IA generativa, sin conexion aparente a FDA/bases/FPCA"
+152,Composite Quantile Estimation in Partial Functional Linear Regression Model Based on Polynomial Spli,include,none,baja,"Solo titulo disponible, terminologia FDA relevante, sin resumen para confirmar."
+153,gptools: Scalable Gaussian Process Inference with Stan,exclude,I1,media,"Software de procesos Gaussianos general, sin conexion a datos funcionales/bases"
+154,"Joint analysis of multivariate longitudinal, imaging, and time-to-event data",include,none,alta,Discute representacion en bases/FPCA explicitamente en el resumen.
+155,Integrating spatial dependence into functional clustering of NDVI in the Ecuadorian Andes,include,none,alta,Discute representacion en bases/FPCA explicitamente en el resumen.
+156,Compositional splines for bivariate density data analysis,include,none,alta,Discute representacion en bases/FPCA explicitamente en el resumen.
+157,Multivariate analysis of variance for functional data,include,none,alta,Discute representacion en bases/FPCA explicitamente en el resumen.
+158,Fourier Spectral Domain Functional Principal Component Analysis of EEG Signals,include,none,baja,"Solo titulo disponible, terminologia FDA relevante, sin resumen para confirmar."
+159,Unbiased recursive decision tree for supervised functional data classification with applying on elec,include,none,baja,"Solo titulo disponible, terminologia FDA relevante, sin resumen para confirmar."
+160,Learning Block Structured Graphs in Gaussian Graphical Models,include,none,alta,Discute representacion en bases/FPCA explicitamente en el resumen.
+161,CONVERGENCE ANALYSIS FOR KERNEL-REGULARIZED ONLINE REGRESSION ASSOCIATED WITH AN RRKHS,exclude,I1,media,"Teoria de regresion online en RKHS general, sin lenguaje de datos funcionales/bases"
+162,Spline estimation of functional principal components via manifold conjugate gradient algorithm,include,none,alta,Discute representacion en bases/FPCA explicitamente en el resumen.
+163,Functional semiparametric modeling for nonstationary and periodic time series data,include,none,baja,"Solo titulo disponible, terminologia FDA relevante, sin resumen para confirmar."
+164,A mixture of experts regression model for functional response with functional covariates,include,none,baja,"Solo titulo disponible, terminologia FDA relevante, sin resumen para confirmar."
+165,Robust exponential squared loss-based estimation in semi-functional linear regression models,include,none,baja,"Solo titulo disponible, terminologia FDA relevante, sin resumen para confirmar."
+166,Global Inference and Test for Eigensystems of Imaging Data Over Complicated Domains,include,none,media,FDA/datos funcionales relevante pero sin discusion explicita de bases en el resumen.
+167,Estimation and inference for functional linear regression models with partially varying regression c,include,none,alta,Discute representacion en bases/FPCA explicitamente en el resumen.
+168,A comparison of parameter estimation in function-on-function regression,include,none,alta,Discute representacion en bases/FPCA explicitamente en el resumen.
+169,Quadratic regression for functional response models,include,none,alta,Discute representacion en bases/FPCA explicitamente en el resumen.
+170,"Multivariate functional response regression, with application to fluorescence spectroscopy in a cerv",include,none,alta,Discute representacion en bases/FPCA explicitamente en el resumen.
+171,Estimation and variable selection for generalized functional partially varying coefficient hybrid mo,include,none,baja,"Solo titulo disponible, terminologia FDA relevante, sin resumen para confirmar."
+172,Multidimensional analysis of sectoral equity dynamics: deconstructing market trends via functional d,include,none,baja,"Solo titulo disponible, terminologia FDA relevante, sin resumen para confirmar."
+173,Functional single-index composite quantile regression,include,none,baja,"Solo titulo disponible, terminologia FDA relevante, sin resumen para confirmar."
+174,Functional principal component analysis for incomplete space–time data,include,none,alta,Discute representacion en bases/FPCA explicitamente en el resumen.
+175,Neural network prediction of crude oil futures using B-splines,include,none,alta,Discute representacion en bases/FPCA explicitamente en el resumen.
+176,Robust simultaneous inference for the mean function of functional data,include,none,baja,"Solo titulo disponible, terminologia FDA relevante, sin resumen para confirmar."
+177,Integrated Model Selection and Scalability in Functional Data Analysis Through Bayesian Learning,include,none,alta,Discute representacion en bases/FPCA explicitamente en el resumen.
+178,Partial Functional Linear Regression Model Based on Functional Principal Component Basis Expansion a,include,none,alta,Discute representacion en bases/FPCA explicitamente en el resumen.
+179,Estimation in functional partially linear spatial autoregressive model,include,none,alta,Discute representacion en bases/FPCA explicitamente en el resumen.
+180,Functional principal component analysis for longitudinal data with informative dropout,include,none,alta,Discute representacion en bases/FPCA explicitamente en el resumen.
+181,Dynamic predictions in Bayesian functional joint models for longitudinal and time-to-event data: An ,include,none,media,FDA/datos funcionales relevante pero sin discusion explicita de bases en el resumen.
+182,Semiparametric mixture regression for asynchronous longitudinal data using multivariate functional p,include,none,alta,Discute representacion en bases/FPCA explicitamente en el resumen.
+183,Smoothed least absolute deviation estimation in functional linear model,include,none,alta,Discute representacion en bases/FPCA explicitamente en el resumen.
+184,Bayesian flexible beta regression model with functional covariate,include,none,alta,Discute representacion en bases/FPCA explicitamente en el resumen.
+185,Model-based regression clustering for high-dimensional data: application to functional data,include,none,baja,"Solo titulo disponible, terminologia FDA relevante, sin resumen para confirmar."
+186,Novel whitening approaches in functional settings,include,none,alta,Discute representacion en bases/FPCA explicitamente en el resumen.
+187,A Study on the Functional Gaussian Process Regression Model Based on Neural Networks,include,none,alta,Discute representacion en bases/FPCA explicitamente en el resumen.
+188,Inference on volatility curve at high frequencies via functional data analysis,include,none,alta,Discute representacion en bases/FPCA explicitamente en el resumen.
+189,BFDA: A MATLAB toolbox for bayesian functional data analysis,include,none,alta,Discute representacion en bases/FPCA explicitamente en el resumen.
+190,A nonparametric test of group distributional differences for hierarchically clustered functional dat,include,none,alta,Discute representacion en bases/FPCA explicitamente en el resumen.
+191,Empirically Driven Orthonormal Bases for Functional Data Analysis,include,none,baja,"Solo titulo disponible, terminologia FDA relevante, sin resumen para confirmar."
+192,Quantile Function on Scalar Regression Analysis for Distributional Data,include,none,alta,Discute representacion en bases/FPCA explicitamente en el resumen.
+193,Turning Bands in Functional Geostatistics: A Simulation Tool for Spatially Correlated Curves,include,none,baja,"Solo titulo disponible, terminologia FDA relevante, sin resumen para confirmar."
+194,Spatial correlation in weather forecast accuracy: a functional time series approach,include,none,alta,Discute representacion en bases/FPCA explicitamente en el resumen.
+195,Statistical inference of varying-coefficient partial functional spatial autoregressive model,include,none,alta,Discute representacion en bases/FPCA explicitamente en el resumen.
+196,Partial separability and functional graphical models for multivariate Gaussian processes,include,none,alta,Discute representacion en bases/FPCA explicitamente en el resumen.
+197,Stochastic functional linear models for gene-based association analysis of quantitative traits in lo,include,none,baja,"Solo titulo disponible, terminologia FDA relevante, sin resumen para confirmar."
+198,Two-Dimensional Functional Principal Component Analysis for Image Feature Extraction,include,none,alta,Discute representacion en bases/FPCA explicitamente en el resumen.
+199,Data driven orthogonal basis selection for functional data analysis,include,none,alta,Discute representacion en bases/FPCA explicitamente en el resumen.

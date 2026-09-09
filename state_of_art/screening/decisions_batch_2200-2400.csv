@@ -1,0 +1,201 @@
+id,title_short,decision,reason_code,confidence,rationale
+2200,Asymptotic normality of conditional density estimation in the single index model for functional time,include,none,baja,"Teoria FDA general sin resumen, sin conexion excluyente clara"
+2201,Cointegration in functional autoregressive processes,include,none,media,"Cointegracion en procesos AR funcionales, teoria econometrica (Granger-Johansen)"
+2202,Atm transaction simulation: combination of ACDs and Cox process,include,none,alta,Aplicacion financiera: transacciones ATM via FDA
+2203,Anomaly detection: a functional analysis perspective,include,none,baja,Titulo generico FDA sin resumen
+2204,Functional nonparametric statistics in action,include,none,baja,Capitulo generico FDA sin resumen
+2205,Structural change in volatility in China's stock market: a functional data analysis,include,none,alta,Volatilidad en mercado bursatil chino via FDA
+2206,Statistical inference for the slope parameter in functional linear regression,include,none,media,"Inferencia teorica en regresion lineal funcional, generico pero FDA central"
+2207,Functional linear regression with mixed predictors,include,none,baja,Titulo generico FDA sin resumen
+2208,An LRD spectral test for irregularly discretely observed functional time series in manifolds,include,none,baja,Titulo generico FDA sin resumen
+2209,Asymptotic normality of spectral means of Hilbert space valued random processes,include,none,baja,Titulo generico FDA sin resumen
+2210,Granger mediation analysis of multiple time series with an application to functional magnetic resona,exclude,E4,alta,"Aplicacion a neuroimagen fMRI, dominio ajeno sin discusion de base"
+2211,A conformal approach for distribution-free prediction of functional data,include,none,baja,Titulo generico FDA sin resumen
+2212,Nearest neighbors estimation for long memory functional data,include,none,baja,Titulo generico FDA sin resumen
+2213,Learning with signatures,include,none,baja,"Titulo ambiguo (signatures), sin desconexion clara de FDA"
+2214,Template based functional prediction with applications to noninvasive mechanical ventilation and sur,include,none,baja,Prediccion funcional con conexion FDA explicita pese a dominio medico
+2215,On the estimation of invertible functional time series,include,none,baja,Titulo generico FDA sin resumen
+2216,Consistency of the regression estimator with functional data under long memory conditions,include,none,baja,Titulo generico FDA sin resumen
+2217,Confidence surfaces for the mean of locally stationary functional time series,include,none,baja,Titulo generico FDA sin resumen
+2218,Forecasting online auctions via self-exciting point processes,include,none,alta,Aplicacion economica: precios de subastas online via FDA
+2219,Cluster based inference for extremes of time series,exclude,I1,alta,Resumen sin ninguna mencion a datos funcionales/FDA
+2220,Seasonal functional autoregressive models,include,none,media,"Modelo FDA generico (autoregresion estacional), sin dominio pero metodologicamente central"
+2221,On distributional autoregression and iterated transportation,include,none,media,"Autoregresion distribucional generica, adyacente a econometria"
+2222,Markov switching tensor regressions,include,none,baja,"Markov switching, terminologia de econometria macro, sin resumen"
+2223,Discussion of ``Analysis of spatio-temporal mobile phone data: a case study in the metropolitan area,exclude,I1,media,"Discusion sobre paper de datos de telefonia movil, no economia/finanzas ni bases"
+2224,Functional sieve bootstrap for the partial sum process with an application to change-point detection,include,none,media,Bootstrap FDA generico para deteccion de cambios
+2225,Shape-preserving prediction for stationary functional time series,include,none,media,"Prediccion FDA generica, sin dominio pero metodologicamente central"
+2226,On the rate of convergence for the autocorrelation operator in functional autoregression,include,none,media,"Autoregresion funcional generica, tasa de convergencia"
+2227,Topics on methodological and applied statistical inference. Selected papers based on the presentatio,exclude,E5,alta,"Volumen completo de actas SIS 2014, no un trabajo individual"
+2228,Joint models for grid point and response processes in longitudinal and functional data,include,none,media,Modelo conjunto FDA/longitudinal generico
+2229,Varying coefficient models for sparse noise-contaminated longitudinal data,include,none,media,Modelo de coeficientes variables para datos longitudinales dispersos
+2230,Testing equality of spectral density operators for functional processes,include,none,media,Test FDA generico sobre operadores de densidad espectral
+2231,Distributional Limit Theory for Optimal Transport,include,none,baja,"Transporte optimo, posible conexion via Wasserstein a FDA, sin resumen"
+2232,Interval-valued functional clustering based on the Wasserstein distance with application to stock da,include,none,alta,Clustering funcional aplicado a datos bursatiles (stock data)
+2233,Surface functional models,include,none,media,"Modelos funcionales de superficie, metodologia generica"
+2234,Parametric conditional mean inference with functional data applied to lifetime income curves,include,none,alta,Aplicacion economica: curvas de ingreso de por vida (lifetime income)
+2235,The autoregression bootstrap for kernel estimates of smooth nonlinear functional time series,include,none,baja,Titulo generico FDA sin resumen
+2236,A one-way ANOVA test for functional data with graphical interpretation.,include,none,media,Test ANOVA funcional generico
+2237,"Artificial intelligence and soft computing. 20th international conference, ICAISC 2021, virtual even",exclude,E5,alta,Volumen completo de actas ICAISC 2021
+2238,Detecting changes in functional linear models,include,none,media,"Deteccion de cambios en modelos lineales funcionales, generico"
+2239,Analysing the complexity mixture structure of daily probability densities of Bitcoin returns,include,none,alta,Aplicacion financiera explicita: retornos de Bitcoin
+2240,On the instrument functional form with a binary endogenous explanatory variable,include,none,media,"Terminologia econometrica (variable instrumental, endogena)"
+2241,Functional and high-dimensional statistics and related fields. Selected papers presented at the 5th ,exclude,E5,alta,Volumen completo de actas del workshop IWFOS 2021
+2242,State space models for functional time series,include,none,baja,Titulo generico FDA sin resumen
+2243,On filter-type estimation of discretely sampled cyclic long-memory processes,include,none,baja,"Procesos ciclicos de memoria larga, econometrico-adyacente, sin resumen"
+2244,Rates of strong consistencies of the regression function estimator for functional stationary ergodic,include,none,baja,Titulo generico FDA sin resumen
+2245,Asymptotic properties of nonparametric M-estimation for mixing functional data,include,none,baja,Titulo generico FDA sin resumen
+2246,Fitting multivariate Erlang mixtures to data: a roughness penalty approach,include,none,alta,Roughness penalty explicito (PR3) mas aplicacion aseguradora/financiera
+2247,Asymptotics for spherical functional autoregressions,include,none,media,"Autoregresion funcional esferica, teoria generica sin dominio explicito"
+2248,Linear hypothesis testing for weighted functional data with applications,include,none,alta,"Datos funcionales ponderados en areas socioeconomicas, explicito"
+2249,Harmonically weighted processes,include,none,media,"Procesos de memoria larga, teoria econometrica generica"
+2250,The ARHD model,include,none,media,Modelo autoregresivo funcional generico (ARHD)
+2251,Preprocessing noisy functional data: a multivariate perspective,include,none,media,"Preprocesamiento de datos funcionales ruidosos, metodologia generica"
+2252,New statistical developments in data science -- SIS 2017. Extended versions of papers based on the c,exclude,E5,alta,Volumen completo de actas SIS 2017
+2253,Nonlinear factor-augmented predictive regression models with functional coefficients,include,none,alta,Regresion predictiva con terminologia econometrica (factor-augmented)
+2254,Prediction models with functional data for variables related with energy production,include,none,alta,Aplicacion economica: produccion de energia
+2255,Efficient inference of longitudinal/functional data models with time-varying additive structure,include,none,media,Inferencia FDA/longitudinal generica
+2256,Optimal model averaging estimator for semi-functional partially linear models,include,none,baja,Titulo generico FDA sin resumen
+2257,Instrumental variable estimation in functional linear models,include,none,media,Variable instrumental (terminologia econometrica) en modelos funcionales
+2258,"COMPSTAT. Proceedings in computational statistics. 16th symposium, Prague, Czech Republic, August 23",exclude,E5,alta,Volumen completo de actas COMPSTAT 2004
+2259,Tests for detecting hidden periodicities in functional time series,include,none,baja,Titulo generico FDA sin resumen
+2260,MAGMA: inference and prediction using multi-task Gaussian processes with common mean,exclude,I1,media,Framework de Gaussian processes sin mencion a datos funcionales/FDA
+2261,Functional Extreme-PLS,include,none,baja,Titulo generico FDA sin resumen (PLS)
+2262,A more powerful test identifying the change in mean of functional data,include,none,baja,Titulo generico FDA sin resumen
+2263,Minimax prediction in the Functional Autoregressive Model,include,none,baja,Titulo generico FDA sin resumen
+2264,Discussion on the paper ``Analysis of spatio-temporal mobile phone data: a case study in the metropo,exclude,I1,media,"Discusion sobre paper de datos de telefonia movil, no economia/finanzas ni bases"
+2265,Efficient estimation of integrated volatility functionals under general volatility dynamics,include,none,alta,"Volatilidad financiera y datos de alta frecuencia, explicito"
+2266,Estimation for high-frequency data under parametric market microstructure noise,include,none,alta,"Microestructura de mercado, explicito financiero"
+2267,Estimation and simulation of autoregressive Hilbertian processes with exogenous variables,include,none,baja,Titulo generico FDA sin resumen
+2268,Long range dependence spectral testing from discretely observed functional time series in manifolds,include,none,baja,Titulo generico FDA sin resumen
+2269,Robust regression for functional time series data,exclude,E4,media,"Aplicacion a datos de fisica, dominio ajeno sin discusion de base"
+2270,Gaussian Differentially Private Human Faces Under a Face Radial Curve Representation,include,none,baja,Representacion de curvas (FDA-adyacente) pese a dominio de biometria facial
+2271,Detecting practically significant dependencies in metric spaces via distance correlations,include,none,baja,Titulo generico FDA sin resumen
+2272,Supervised classification of geometrical objects by integrating currents and functional data analysi,include,none,baja,FDA explicito en titulo pese a dominio de objetos geometricos
+2273,Functional approach to analysis of daily tax revenues,include,none,alta,Aplicacion economica explicita: ingresos fiscales diarios (tax revenue)
+2274,Exponential mixing properties of nonlinear functional autoregressive models,include,none,baja,Titulo generico FDA sin resumen
+2275,Rates of convergence of autocorrelation estimates for autoregressive Hilbertian processes,include,none,baja,Titulo generico FDA sin resumen
+2276,Estimating lagged (cross-)covariance operators of \(L^p\)-\(m\)-approximable processes in Cartesian ,include,none,alta,Menciona explicitamente modelos GARCH funcionales (econometria)
+2277,Rice-distributed autoregressive time series modeling of magnitude functional MRI data,exclude,E4,media,"Datos de resonancia magnetica funcional (fMRI), dominio medico ajeno"
+2278,Multi-spectral decomposition of functional autoregressive models,include,none,baja,Titulo generico FDA sin resumen
+2279,Linear Processes for Functional Data,include,none,baja,Titulo generico FDA sin resumen
+2280,Resolvent estimators for functional autoregressive processes with random coefficients,include,none,baja,Titulo generico FDA sin resumen
+2281,Dynamic modeling for multivariate functional and longitudinal data,include,none,baja,Titulo generico FDA sin resumen
+2282,Strong uniform consistency rates of conditional density estimation in the single functional index mo,include,none,baja,Titulo generico FDA sin resumen
+2283,Functional time series model identification and diagnosis by means of auto- and partial autocorrelat,include,none,media,Identificacion de modelos FDA generica (autocorrelacion)
+2284,On projection methods for functional time series forecasting,include,none,media,"Metodos de proyeccion FDA para pronostico, generico"
+2285,Rejoinder to the discussion of ``Analysis of spatio-temporal mobile phone data: a case study in the ,exclude,I1,media,"Discusion sobre paper de datos de telefonia movil, no economia/finanzas ni bases"
+2286,Logratio approach to distributional modeling,include,none,baja,"Modelado distribucional (logratio), posible conexion a datos composicionales economicos"
+2287,Uniform almost complete convergence of nonparametric regression estimate in single function index mo,include,none,baja,Titulo generico FDA sin resumen
+2288,"Methodological and applied statistics and demography I. SIS 2024. Short papers, plenary and speciali",exclude,E5,alta,Volumen completo de actas SIS 2024
+2289,A class of functional partially linear single-index models,include,none,baja,Titulo generico FDA sin resumen
+2290,A General Theory for Large-Scale Curve Time Series via Functional Stability Measure,include,none,baja,Titulo generico FDA sin resumen
+2291,Neural networks in Fréchet spaces,include,none,media,"Redes neuronales en espacios funcionales, teoria de representacion generica"
+2292,"Dynamical multiple regression in function spaces, under kernel regressors, with ARH(1) errors",include,none,baja,Titulo generico FDA sin resumen
+2293,Testing marginal homogeneity in Hilbert spaces with applications to stock market returns,include,none,alta,Aplicacion financiera explicita: retornos bursatiles
+2294,Forecasting non stationary function-valued process. Application to the electricity load demand,include,none,alta,Aplicacion economica: demanda de carga electrica
+2295,Bootstrap in semi-functional partial linear regression under dependence,include,none,baja,Titulo generico FDA sin resumen
+2296,Consistency of recursive nonparametric kernel estimates for independent functional data,include,none,baja,Titulo generico FDA sin resumen
+2297,A new approach to bootstrap inference in functional coefficient models,include,none,baja,Titulo generico FDA sin resumen
+2298,Geostatistical functional data analysis,include,none,media,"Libro especifico sobre FDA geoestadistica, dominio ambiental pero cobertura metodologica amplia"
+2299,Variable selection for functional additive models and an application to the population age structure,include,none,alta,"Estructura de edad poblacional, aplicacion demografico-economica"
+2300,Adaptive estimation for weakly dependent functional times series,include,none,media,Estimacion adaptativa FDA generica
+2301,Functional profile techniques for claims reserving,include,none,alta,Aplicacion actuarial/financiera explicita: reservas de siniestros (claims reserving)
+2302,Mantel test for spatial functional data. An application to infiltration curves,include,none,baja,FDA explicito en titulo pese a dominio ambiental (infiltracion)
+2303,Nonparametric multivariate \(L_{1}\)-median regression estimation with functional covariates,include,none,media,Regresion L1-mediana funcional generica
+2304,Uncovering data across continua: an introduction to functional data analysis,include,none,media,"Articulo introductorio/survey de FDA, verificar rigor en texto completo (posible E2)"
+2305,Space-time autoregressive Hilbertian models and their application for wind speed,exclude,E4,media,"Aplicacion a velocidad del viento, dominio meteorologico ajeno sin discusion de base"
+2306,"Best linear predictor of a \(C_{[0, 1]}\)-valued functional autoregressive process",include,none,media,Predictor lineal funcional generico
+2307,Testing a parametric function against a non-parametric alternative in IV and GMM settings,include,none,alta,Terminologia econometrica explicita: variables instrumentales y GMM
+2308,Mixing conditions of conjugate processes,include,none,baja,Titulo generico ambiguo sin resumen
+2309,Models for data analysis. SIS 2018. Selected papers based on the presentations at the 49th scientifi,exclude,E5,alta,Volumen completo de actas SIS 2018
+2310,Two-sample inference for sparse functional data,exclude,E4,media,"Datos de conteo de CD4, dominio medico (VIH) ajeno sin discusion de base"
+2311,SPHARMA approximations for stationary functional time series on the sphere,include,none,media,"Procesos funcionales esfericos generico, sin dominio ajeno explicito"
+2312,"Stochastic models, statistics and their applications. Collected papers based on the presentations at",exclude,E5,alta,Volumen completo de actas workshop Dresden 2019
+2313,Nonparametric local linear regression estimation for censored data and functional regressors,include,none,baja,Titulo generico FDA sin resumen
+2314,Testing with functional time series,include,none,baja,Titulo generico FDA sin resumen
+2315,A novel spectral density operator approach to unveil dynamic time dependencies in multivariate long-,exclude,E4,media,"Datos de electrocardiograma (ECG), dominio medico ajeno"
+2316,Real-time anomaly detection of spatial processes via functional conformal-prediction bands,include,none,baja,Titulo generico FDA sin resumen
+2317,Bayes Hilbert space additive density-on-scalar regression based on individual observations,include,none,media,Regresion FDA generica en espacios de Bayes
+2318,Discussion of ``Analysis of spatio-temporal mobile phone data: a case study in the metropolitan area,exclude,I1,media,"Discusion sobre paper de datos de telefonia movil, no economia/finanzas ni bases"
+2319,A second order approach to analyse spatial point patterns with functional marks,include,none,baja,Titulo generico FDA sin resumen
+2320,Handbook of cluster analysis,exclude,I1,media,"Handbook general de clustering, sin conexion FDA en el titulo"
+2321,The maximum of the periodogram of Hilbert space valued time series,include,none,baja,Titulo generico FDA sin resumen
+2322,Forecasting density-valued functional panel data,include,none,media,Pronostico FDA generico de datos de panel con densidades
+2323,Exponential bounds and convergence rates of sieve estimators for functional autoregressive processes,include,none,baja,Titulo generico FDA sin resumen
+2324,A uniform bound on the operator norm of sub-Gaussian random matrices and its applications,include,none,media,"Teoria de matrices aleatorias, posible conexion a alta dimension/funcional"
+2325,Regression models with correlated errors based on functional random design,include,none,baja,Titulo generico FDA sin resumen
+2326,Using complex surveys to estimate the \(L_1\)-median of a functional variable: application to electr,include,none,alta,Aplicacion economica: curvas de carga electrica
+2327,Supervised classification of functional data via ensembles of different functional representations,include,none,alta,Representaciones funcionales explicitas (basis-adyacente)
+2328,Functional lagged regression,include,none,baja,Titulo generico FDA sin resumen
+2329,Stratified psychiatry via convexity-based clustering with applications towards moderator analysis,exclude,E4,alta,"Aplicacion a psiquiatria, dominio medico ajeno sin discusion de base"
+2330,Mining functional data in prediction markets,include,none,alta,Aplicacion financiera explicita: mercados de prediccion
+2331,Forecasting the US term structure of interest rates using nonparametric functional data analysis,include,none,alta,Aplicacion financiera explicita: tasas de interes
+2332,The \(k\)-nearest neighbors method in single index regression model for functional quasi-associated ,include,none,baja,Titulo generico FDA sin resumen
+2333,Lasso estimation for spherical autoregressive processes,include,none,media,Autoregresion funcional esferica generica
+2334,Sieves estimator of functional autoregressive process,include,none,baja,Titulo generico FDA sin resumen
+2335,Limit theory and inference about conditional distributions,include,none,baja,Titulo generico ambiguo sin resumen
+2336,"Piercesare Secchi, Simone Vantini and Valeria Vitelli: ``Analysis of spatio-temporal mobile phone da",exclude,I1,media,"Discusion sobre paper de datos de telefonia movil, no economia/finanzas ni bases"
+2337,A Bayesian estimation method for the functional spatial error model,include,none,alta,Terminologia de econometria espacial explicita
+2338,Statistical inference of locally stationary functional coefficient models,include,none,media,Modelo FDA generico de coeficientes localmente estacionarios
+2339,A note on asymptotic normality of a copula function in regression model,include,none,baja,Titulo generico FDA sin resumen
+2340,Addressing class imbalance in functional data clustering,include,none,baja,Titulo generico FDA sin resumen
+2341,Time series regression for zero-inflated and overdispersed count data: a functional response model a,include,none,baja,Titulo generico FDA sin resumen
+2342,Functional SAC model: with application to spatial econometrics,include,none,alta,Econometria espacial explicita en el resumen
+2343,Boosting for real and functional samples: an application to an environmental problem,exclude,E4,media,"Aplicacion ambiental, dominio ajeno sin discusion de base"
+2344,On partial-sum processes of ARMAX residuals,include,none,alta,Modelo ARMAX explicito (econometria de series de tiempo)
+2345,A signature-based functional spatial autoregressive model,include,none,media,"Modelo espacial autoregresivo funcional, econometrico-adyacente"
+2346,Discussion of ``Analysis of spatio-temporal mobile phone data: a case study in the metropolitan area,exclude,I1,media,"Discusion sobre paper de datos de telefonia movil, no economia/finanzas ni bases"
+2347,Rate of uniform consistency for nonparametric of the conditional quantile estimate with functional v,include,none,baja,Titulo generico FDA sin resumen
+2348,Functional modelling of microarray time series,exclude,E4,alta,"Datos de microarreglos (genomica), dominio medico ajeno"
+2349,CLT for single functional index quantile regression under dependence structure,include,none,media,Regresion cuantilica FDA generica
+2350,A clustering method for economic aggregates by using concentration curves,include,none,alta,Aplicacion economica explicita: agregados economicos
+2351,Functional local linear estimate for functional relative-error regression,include,none,baja,Titulo generico FDA sin resumen
+2352,Functional prediction in the Spanish electricity market,include,none,alta,Aplicacion economica explicita: mercado electrico espanol
+2353,The EE-Classifier: A classification method for functional data based on extremality indexes,include,none,baja,Titulo generico FDA sin resumen
+2354,PLS methods for the analysis of functional data,include,none,media,"Metodos PLS para FDA, adyacente a reduccion de dimension/bases"
+2355,A quantitative comparison of stochastic mortality models on Italian population data,include,none,alta,Aplicacion actuarial: modelos de mortalidad
+2356,Improvement of the nonparametric estimation of functional stationary time series using Yeo-Johnson t,exclude,E4,media,"Aplicacion a curvas de temperatura, dominio meteorologico ajeno"
+2357,Test of partial separability for multivariate functional data,include,none,baja,Titulo generico FDA sin resumen
+2358,Pandemics: insurance and social protection,exclude,I1,media,"Libro general sobre pandemias/seguros, sin conexion FDA en el titulo"
+2359,The comprehensive ranking method of multi-type data with functional data -- comprehensive ranking of,include,none,alta,Aplicacion economica explicita: ranking economico-ambiental de ciudades
+2360,Functional data analysis of generalized quantile regression with application to the climate change,exclude,E4,media,"Aplicacion a cambio climatico, dominio ambiental ajeno"
+2361,Asymptotic methods in change-point analysis,exclude,I1,media,"Libro general de teoria de cambio estructural, sin conexion FDA en el titulo"
+2362,Editorial: Special issue on time series analysis in the biological sciences,exclude,I1,alta,"Editorial de numero especial, dominio biologico, no sustantivo"
+2363,Editorial,exclude,I1,alta,"Editorial generico, no sustantivo"
+2364,Editorial of the special issue ``Functional data'',exclude,I1,alta,"Editorial de numero especial, no es investigacion original"
+2365,Advanced statistical methods in data science. Selected papers based on the presentations at the 2nd ,exclude,E5,alta,Volumen completo de actas ICSA-Canada 2015
+2366,Mathematical modeling of random and deterministic phenomena. Based on the first international confer,exclude,E5,alta,Volumen completo de actas CIMOM 2018
+2367,Intra-day co-movements of crude oil futures: China and the international benchmarks,include,none,alta,Aplicacion financiera explicita: futuros de petroleo crudo
+2368,On a state-space modelling for functional data,include,none,alta,"Menciona expansion de Karhunen-Loeve, representacion en base (I1a)"
+2369,Aggregated load curves estimation in presence of asynchronous individual meter data,include,none,alta,Aplicacion economica: curvas de carga electrica
+2370,Contributions in statistics and inference. Celebrating Nazaré Mendes Lopes' 60th birthday. Extended ,exclude,E5,alta,Volumen festschrift/actas workshop Coimbra 2015
+2371,The art of semiparametrics. Papers based on the presentation at the conference the art of semiparame,exclude,E5,alta,Volumen completo de actas de conferencia Berlin 2006
+2372,Detecting changes in Hilbert space data based on ''repeated'' and change-aligned principal component,include,none,alta,Menciona componentes principales (FPCA-adyacente)
+2373,"Trends in mathematical, information and data sciences. A tribute to Leandro Pardo. Based on the pres",exclude,E5,alta,"Volumen completo del simposio Madrid, tributo"
+2374,Novel mathematics inspired by industrial challenges,exclude,I1,media,"Libro general de matematicas industriales, sin conexion FDA en el titulo"
+2375,Statistical methodology and theory for functional and topological data. Abstracts from the workshop ,exclude,E5,alta,"Libro de resumenes agregados de workshop, no un trabajo individual"
+2376,Statistical learning and data science,exclude,I1,media,"Libro general de statistical learning, sin conexion FDA especifica en el titulo"
+2377,The mathematics and statistics of quantitative risk management. Abstracts from the workshop held Mar,exclude,E5,alta,"Libro de resumenes agregados de workshop, no un trabajo individual"
+2378,A note on optimal consumption and investment in a geometric Ornstein-Uhlenbeck market,exclude,I1,alta,"Calculo estocastico/finanzas matematicas, no FDA estadistico (uso distinto de 'functional')"
+2379,Special issue: Computational methods in economic modeling and engineering -- CMMSE 2010. Selected pa,exclude,E5,alta,Volumen completo de actas CMMSE 2010
+2380,Operations research proceedings 2002. Selected papers of the international conference on operations ,exclude,E5,alta,Volumen completo de actas SOR 2002
+2381,Asymptotic efficiency in high-dimensional covariance estimation,include,none,baja,"Titulo generico de alta dimension, adyacente a funcional, sin resumen"
+2382,An Adaptive Functional Autoregressive Forecast Model to Predict Electricity Price Curves,include,none,alta,Aplicacion economica explicita: precios de electricidad
+2383,Forecasting age distribution of life-table death counts via <i>α</i> -transformation,include,none,alta,Aplicacion actuarial: pronostico de mortalidad (life-table)
+2384,Stock market trend prediction using a functional time series approach,include,none,alta,Aplicacion financiera explicita: mercado bursatil
+2385,Grouped multivariate and functional time series forecasting: an application to annuity pricing,include,none,alta,Aplicacion financiera explicita: precios de anualidades (annuity pricing)
+2386,Modeling seasonality and serial dependence of electricity price curves with warping functional autor,include,none,alta,Aplicacion economica explicita: precios de electricidad
+2387,Functional quantile autoregression,include,none,baja,Titulo generico FDA sin resumen
+2388,Forecasting age distribution of deaths: cumulative distribution function transformation,include,none,media,Pronostico demografico/actuarial de mortalidad
+2389,A quasi-sure optional decomposition and super-hedging result on the Skorokhod space,exclude,I1,alta,"Calculo estocastico/cobertura financiera, no FDA estadistico (uso distinto de 'functional')"
+2390,Influence of forecasting electricity prices in the optimization of complex hydrothermal systems,include,none,alta,Aplicacion economica explicita: precios de electricidad
+2391,Inference on the dimension of the nonstationary subspace in functional time series,include,none,media,"Subespacio no estacionario en series funcionales, econometrico-adyacente (cointegracion)"
+2392,Dynamic principal component regression: application to age-specific mortality forecasting,include,none,alta,Menciona PCA explicitamente mas aplicacion actuarial/demografica
+2393,The functional version of the Ball inequality,exclude,I1,alta,"Geometria convexa pura, no FDA estadistico (uso distinto de 'functional')"
+2394,The functional Meyer-Tanaka formula,exclude,I1,alta,"Calculo estocastico (formula de Ito), no FDA estadistico (uso distinto de 'functional')"
+2395,Cointegration and representation of cointegrated autoregressive processes in Banach spaces,include,none,alta,Cointegracion explicita (econometria) en espacios de Banach
+2396,The influence of fiscal and monetary policies on the shape of the yield curve,include,none,alta,Aplicacion economica explicita: politica fiscal/monetaria y curva de rendimientos
+2397,A Frequentist Approach to Change Point Detection: Methods and Applications,include,none,baja,Titulo generico FDA sin resumen
+2398,Testing for common trends and patterns in functional time series data,include,none,media,"Tendencias comunes en series funcionales, econometrico-adyacente (cointegracion)"
+2399,A bootstrap-based KPSS test for functional time series,include,none,alta,Test KPSS explicito (econometria de series de tiempo)

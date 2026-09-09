@@ -1,0 +1,201 @@
+id,title_short,decision,reason_code,confidence,rationale
+1200,Permutation tests for equality of distributions of functional data,include,none,media,Test de permutacion para igualdad de distribuciones en datos funcionales economicos
+1201,Evaluating a Stock Market Pairs Trading Strategy Using a Dependent Functional Data Cointegration Met,include,none,baja,Estrategia de trading de pares via cointegracion funcional (financiero)
+1202,On functional processes with multiple discontinuities,include,none,media,"Estimacion de puntos de cambio multiples en procesos funcionales, relevante a finanzas"
+1203,Vine copula MFPCA residual control chart for sparse multivariate functional data,include,none,media,MFPCA con copulas vine para datos financieros de alta frecuencia
+1204,Forecasting Age- and Sex-Specific Survival Functions: Application to Annuity Pricing,include,none,media,FPCR aplicado a pricing de anualidades
+1205,Financial impact of pandemics on pension sustainability: an application for Spain,exclude,I1,media,"Sostenibilidad de pensiones ante pandemias, sin mencion de FDA en el resumen"
+1206,Frequency domain theory for functional time series: Variance decomposition and an invariance princip,include,none,media,Teoria de dominio de frecuencia y descomposicion de varianza para FTS
+1207,Bayesian Testing of Granger Causality in Functional Time Series,include,none,media,Causalidad de Granger bayesiana en FTS aplicada a curvas de rendimiento
+1208,Poisson subsampling for large-scale functional data analysis,include,none,baja,Subsampling Poisson para FDA a gran escala
+1209,On Consistent Hypothesis Testing In General Hilbert Spaces,include,none,media,Testing consistente de hipotesis en espacios de Hilbert generales
+1210,NETWORK-LEVEL TRAFFIC FLOW PREDICTION: FUNCTIONAL TIME SERIES VS. FUNCTIONAL NEURAL NETWORK APPROACH,include,none,baja,FTS vs red neuronal funcional para prediccion de trafico
+1211,"Contemporary Experimental Design, Multivariate Analysis and Data Mining: Festschrift in Honour of Pr",exclude,I1,baja,Festschrift de diseno experimental/mineria de datos sin relacion aparente a FDA
+1212,Nonlinear prediction of functional time series,include,none,media,Prediccion no lineal de FTS no estacionarias
+1213,Comparative Study of FDA and Time Series Approaches for Seabed Classification from Acoustic Curves,include,E4,media,"Comparacion de FDA y series de tiempo para clasificacion acustica, discusion metodologica comparativa"
+1214,Change-point detection in functional time series: applications to age-specific mortality and fertili,include,none,media,"Deteccion de cambios en mortalidad/fertilidad via FTS, FPCA sustantivo"
+1215,Scalable multiple changepoint detection for functional data sequences,include,none,media,Deteccion escalable de multiples puntos de cambio en secuencias de datos funcionales
+1216,Statistical Process Monitoring Based on Functional Data Analysis,include,none,media,Revision de monitoreo de procesos estadisticos basado en FDA
+1217,Factor models for high-dimensional functional time series I: Representation results,include,none,media,"Modelos de factores para FTS de alta dimension, representacion"
+1218,Forecasting Canadian Age-Specific Mortality Rates: Application of Functional Time Series Analysis,include,none,media,FTS aplicado a pronostico de mortalidad canadiense
+1219,Multipopulation mortality modelling and forecasting: the weighted multivariate functional principal ,include,none,media,FPCA multivariante ponderado para mortalidad multipoblacional
+1220,Cointegrated linear processes in Bayes Hilbert space,include,none,media,Procesos cointegrados en espacio de Hilbert de Bayes
+1221,The scalar-on-function modal regression for functional time series data,include,none,media,Regresion modal escalar-sobre-funcion para FTS
+1222,Nonparametric K-means algorithm with applications in economic and functional data,exclude,E1,media,"K-means no parametrico con aplicacion economica, FDA como componente accesorio sin discutir bases"
+1223,A Time Series Regression Model Based on Distance Covariance Weighted Bagging Framework and Functiona,include,none,media,FPCA combinado con Bagging para regresion de series de tiempo
+1224,A novel hybrid algorithm to forecast functional time series based on pattern sequence similarity wit,include,none,media,Pronostico hibrido de FTS aplicado a demanda electrica
+1225,Stationary count time series models,exclude,I1,media,"Modelos de series de conteo estacionarias, sin relacion a datos funcionales"
+1226,Uniform in Number of Neighbor Consistency and Weak Convergence of k-Nearest Neighbor Single Index Co,include,none,media,Teoria de U-estadisticos condicionales para datos funcionales mixing
+1227,Independent component analysis: A statistical perspective,exclude,I1,media,"ICA desde perspectiva estadistica general, sin mencion de datos funcionales"
+1228,Choosing the right norm for change point detection in functional data,include,none,media,Eleccion de norma para deteccion de puntos de cambio en datos funcionales
+1229,Estimating the conditional distribution in functional regression problems,include,none,media,Estimacion de distribucion condicional en regresion funcional
+1230,DeepGraphDMD: Interpretable Spatio-Temporal Decomposition of Non-linear Functional Brain Network Dyn,exclude,I1,media,"'Functional' se refiere a redes cerebrales (neurociencia), no a FDA/bases"
+1231,A scenario analysis of future Hong Kong age and labour force profiles and its implications,include,none,media,FDA aplicado a proyeccion demografica/laboral de Hong Kong
+1232,Forecasting u.S. aggregate stock market excess return: Do functional data analysis add economic valu,include,none,media,FDA no parametrico aplicado a pronostico de exceso de retorno bursatil
+1233,Animal movement models for multiple individuals,exclude,I1,media,"Modelos de movimiento animal, sin mencion de datos funcionales en el resumen"
+1234,Coherent mortality forecasting by the weighted multilevel functional principal component approach,include,none,media,FPCA multinivel ponderado para pronostico coherente de mortalidad
+1235,Testing covariance separability for continuous functional data,include,none,media,"Test de separabilidad de covarianza para datos funcionales, estructura de representacion"
+1236,Different PCA approaches for vector functional time series with applications to resistive switching ,include,none,media,"PCA funcional para FTS vectoriales aplicado a memristores, comparacion de enfoques"
+1237,Nonparametric estimation of functional dynamic factor model,include,none,media,Estimacion no parametrica de modelo de factor dinamico funcional
+1238,A Novel Curve Clustering Method for Functional Data: Applications to COVID-19 and Financial Data,include,none,media,Clustering de curvas aplicado a COVID-19 y datos financieros
+1239,A weak law of large numbers for realised covariation in a Hilbert space setting,include,none,media,"Covariacion realizada en espacio de Hilbert, datos funcionales de alta frecuencia"
+1240,"Variable Selection for the Prediction of C[0,1]-Valued Autoregressive Processes using Reproducing Ke",include,none,media,"Seleccion de variables para procesos autorregresivos en C[0,1] via RKHS"
+1241,TI-FPCA: Effective and Interpretable Dimensionality Reduction with Transform-Invariant Functional Pr,include,none,baja,"TI-FPCA, reduccion de dimensionalidad invariante a transformaciones"
+1242,An autocovariance-based learning framework for high-dimensional functional time series,include,none,media,Marco de aprendizaje por autocovarianza para FTS de alta dimension
+1243,Forecasting the old-age dependency ratio to determine a sustainable pension age,include,none,media,Pronostico de razon de dependencia de vejez via modelos funcionales de mortalidad
+1244,The Functional Delta Method for Deriving Asymptotic Distributions,include,none,media,Metodo delta funcional para distribuciones asintoticas
+1245,Advances in estimation and inference for historical functional linear models,include,none,media,Avances en modelos lineales funcionales historicos (function-on-function)
+1246,The role of geopolitical risk on the ESG stock market: evidence from functional data analysis,include,none,baja,Riesgo geopolitico en mercado ESG via FDA
+1247,Construction of a green development performance index of industrial enterprises: Based on the empiri,exclude,I1,baja,"Indice de desempeno verde industrial, sin mencion de FDA"
+1248,Impact of COVID-19-Related Lockdown Measures on Economic and Social Outcomes in Lithuania,exclude,I1,media,"Impacto economico de COVID en Lituania, sin mencion de FDA en el resumen"
+1249,Functional forecasting of dissolved oxygen in high-frequency vertical lake profiles,include,E4,media,"Pronostico funcional de oxigeno disuelto, discusion explicita de idoneidad de FDA"
+1250,How Does Financial Development Affect Global Energy Security? A Functional Data Analysis,include,none,media,FDA aplicado a desarrollo financiero y seguridad energetica global
+1251,Bayesian estimation of the functional spatial lag model,include,none,media,Estimacion bayesiana de modelo espacial funcional (spatial lag)
+1252,Nonlinear function-on-function regression by RKHS,include,none,baja,Regresion funcion-sobre-funcion no lineal via RKHS
+1253,Embedding and learning with signatures,include,none,media,"Signatures como representacion de trayectorias, relacionado a representacion funcional"
+1254,Bootstrap prediction intervals for the age distribution of life-table death counts,include,none,media,"Bootstrap para conteos de muerte por edad, metodologia FPC-relacionada"
+1255,Detecting British Columbia coastal rainfall patterns by clustering Gaussian processes,include,E4,media,"Clustering de lluvia costera via procesos gaussianos, con framing metodologico de FDA"
+1256,A spatial-functional clustering algorithm for panel data with an application to Italian health tax d,include,none,baja,Clustering espacial-funcional aplicado a deducciones fiscales de salud en Italia
+1257,Research on the Application of Functional Data Regression Analysis in Time Series Forecasting,include,none,media,Regresion de datos funcionales aplicada a pronostico de series de tiempo
+1258,Analyzing and forecasting the Chinese term structure of interest rates using functional principal co,include,none,media,FPCA aplicado a pronostico de estructura de tasas de interes chinas
+1259,Spatiotemporal factor models for functional data with application to population map forecast,include,none,media,Modelos de factores espaciotemporales funcionales aplicados a mapas de poblacion
+1260,Wasserstein Regression,include,none,media,"Regresion de Wasserstein para datos de distribucion, marco de representacion"
+1261,Nonstationary fractionally integrated functional time series,include,none,baja,FTS fraccionalmente integradas no estacionarias
+1262,Evaluating the Fingerprint of the Mt. Pinatubo Eruption on Stratospheric Temperatures with Spatial F,include,none,baja,Cambios estructurales funcionales espaciales aplicados a erupcion del Pinatubo (titulo explicito Functional)
+1263,Proactive safety monitoring: A functional approach to detect safety-related anomalies using unmanned,include,E4,media,Enfoque funcional para detectar anomalias de seguridad via video de drones
+1264,Change-Point Detection and Its Modern Applications,include,none,media,Revision de metodos modernos de deteccion de puntos de cambio
+1265,Empirical likelihood inference for partial functional linear model with missing responses,include,none,baja,Verosimilitud empirica para modelo lineal funcional parcial
+1266,Improving Quality of Smart Grid Data by Functional Data Analysis,include,E4,media,Mejora de calidad de datos de redes electricas inteligentes via FDA
+1267,Monte Carlo Simulation on the Stiefel Manifold via Polar Expansion,exclude,I1,media,"Simulacion Monte Carlo en variedad de Stiefel, sin relacion a datos funcionales"
+1268,Weighted empirical likelihood inference for dynamical correlations,include,none,media,Verosimilitud empirica ponderada para correlaciones dinamicas de funciones aleatorias
+1269,Functional recurrent neural network for vector-on-functional data modeling,include,none,baja,RNN funcional para modelado vector-sobre-funcion
+1270,Autocorrelation Functions for Point-Process Time Series,exclude,I1,media,"Autocorrelacion para procesos de puntos, sin abordar representacion funcional/bases"
+1271,A Non-linear Function-on-Function Model for Regression with Time Series Data,include,none,media,Modelo funcion-sobre-funcion no lineal con series de tiempo
+1272,Real-time estimation for functional stochastic regression models,include,none,media,Estimacion en tiempo real de regresion estocastica funcional heterocedastica
+1273,Functional Principal Component Analysis as an Alternative to Mixed-Effect Models for Describing Spar,include,E4,media,"FPCA como alternativa a modelos mixtos, comparacion metodologica sustantiva"
+1274,Forecasting the Yellow River runoff based on functional data analysis methods,include,none,baja,Pronostico de caudal del rio Amarillo via FDA (titulo explicito)
+1275,Factor models for high-dimensional functional time series II: Estimation and forecasting,include,none,media,"Modelos de factores para FTS de alta dimension, Parte II"
+1276,Weak convergence of the conditional single index U-statistics for locally stationary functional time,include,none,media,Convergencia debil de U-estadisticos condicionales para FTS localmente estacionarias
+1277,Bayesian functional forecasting with locally-autoregressive dependent processes,include,none,media,Pronostico bayesiano funcional aplicado a curvas de oferta/demanda
+1278,Long-Range Dependent Curve Time Series,include,none,media,FTS con dependencia de largo alcance via FPCA
+1279,Time series of functional data with application to yield curves,include,none,media,Series de tiempo de datos funcionales aplicado a curvas de rendimiento
+1280,Forecasting a time series of Lorenz curves: one-way functional analysis of variance,include,none,media,Pronostico de curvas de Lorenz via ANOVA funcional
+1281,Inference on Common Intraday Periodicity at High Frequencies With Jumps,include,none,media,Periodicidad intradia comun con saltos via FDA en activos financieros
+1282,Semi-functional partial linear spatial autoregressive model,include,none,media,Modelo espacial autoregresivo semi-funcional parcial lineal
+1283,Functional Methods for Multimodal Data Analysis,include,none,baja,Metodos funcionales para analisis de datos multimodales
+1284,The Area of the Convex Hull of Sampled Curves: a Robust Functional Statistical Depth Measure,include,none,baja,Medida de profundidad estadistica funcional via casco convexo
+1285,A Predictive Trading Framework Using Functional Linear Discriminant Analysis,include,none,media,Marco de trading predictivo via analisis discriminante lineal funcional
+1286,A note on quadratic forms of stationary functional time series under mild conditions,include,none,media,"Formas cuadraticas de FTS estacionarias, densidad espectral"
+1287,Outlier detection for multivariate time series: A functional data approach[Formula presented],include,none,baja,Deteccion de outliers en series de tiempo multivariadas via enfoque funcional
+1288,Cross-validation model averaging for generalized functional linear model,include,none,media,Model averaging por validacion cruzada para modelo lineal funcional generalizado (econometria)
+1289,Does financial development have a non-linear impact on energy consumption? Evidence from 30 province,exclude,I1,media,"Desarrollo financiero y consumo energetico en China, 'funcional' parece referirse a forma funcional economica, no FDA"
+1290,"Forecasting Crude Oil Prices with Major S&P 500 Stock Prices: Deep Learning, Gaussian Process, and V",exclude,I1,media,"Pronostico de precios de petroleo via deep learning/GP/vine copula, sin FDA explicito"
+1291,The lock-down effects of COVID-19 on the air pollution indices in Iran and its neighbors,exclude,I1,media,"Confinamiento COVID y contaminacion del aire en Iran, sin mencion de datos funcionales"
+1292,Revisiting correlation-based functional connectivity and its relationship with structural connectivi,exclude,I1,media,"'Functional connectivity' es termino de neurociencia, no de FDA/representacion de bases"
+1293,Asymptotic Distribution of the Functional Modal Regression Estimator,include,none,media,Distribucion asintotica del estimador de regresion modal funcional para FTS
+1294,Climate Downscaling and Prediction Using GIS-Based Machine Learning,exclude,I1,media,"Downscaling climatico via ML, sin mencion de datos funcionales"
+1295,TWO-SAMPLE TESTS FOR RELEVANT DIFFERENCES IN THE EIGENFUNCTIONS OF COVARIANCE OPERATORS,include,none,baja,Test de dos muestras para diferencias en eigenfunciones de operadores de covarianza
+1296,Comparative Analysis of Weather-Based Indexes and the Actuaries Climate IndexTM for Crop Yield Predi,exclude,I1,media,"Indices climaticos para pricing de derivados agricolas, sin discusion explicita de FDA"
+1297,Dependence-Based Fuzzy Clustering of Functional Time Series,include,none,media,Clustering difuso basado en dependencia para FTS en espacio de Hilbert
+1298,Walking fingerprinting,exclude,I1,media,"Fingerprinting de marcha via acelerometria e imagenes, sin mencion clara de FDA"
+1299,High-dimensional functional time series forecasting: An application to age-specific mortality rates,include,none,media,"FTS de alta dimension aplicado a mortalidad especifica por edad, FPCA dinamica"
+1300,Heteroskedastic geographically weighted regression model for functional data,include,none,media,Regresion geograficamente ponderada heterocedastica para datos funcionales
+1301,Intraday forecasts of a volatility index: functional time series methods with dynamic updating,include,none,media,Pronosticos intradia del indice de volatilidad VIX via FTS
+1302,"Taxes, Growth, and Equity: The Illusions of Fiscal Policy",exclude,I1,media,"Politica fiscal y crecimiento economico, sin relacion a FDA"
+1303,Recursive non parametric regression estimation for functional time series data under random censorsh,include,none,media,Regresion no parametrica recursiva para FTS bajo censura aleatoria
+1304,Estimation of functional ARMA models,include,none,baja,Estimacion de modelos ARMA funcionales
+1305,Graphical Principal Component Analysis of Multivariate Functional Time Series,include,none,media,PCA grafico para FTS multivariadas con dependencia serial y grafica
+1306,Application of an Intensive Longitudinal Functional Model with Multiple Time Scales in Objectively M,include,E4,media,"Modelo funcional longitudinal con coeficientes variables en el tiempo, metodologia sustantiva pese a dominio de salud"
+1307,Variational Nonparametric Inference in Stochastic Block Models with Functional Covariates,include,none,baja,Inferencia variacional no parametrica en modelos de bloques estocasticos con covariables funcionales
+1308,Bridge closure in the road network of Lombardy: a spatio-temporal analysis of the socio-economic imp,exclude,I1,media,"Cierre de puentes en Lombardia, sin mencion explicita de datos funcionales"
+1309,DETECTING DISTRIBUTIONAL DIFFERENCES IN LABELED SEQUENCE DATA WITH APPLICATION TO TROPICAL CYCLONE S,exclude,I1,media,"Diferencias distribucionales en imagenes de ciclones, sin framing explicito de FDA"
+1310,Generalized probabilistic principal component analysis of correlated data,include,none,baja,PCA probabilistica generalizada de datos correlacionados
+1311,Region-referenced spectral power dynamics of EEG signals: A hierarchical modeling approach,include,E4,media,"EEG representado como datos funcionales referenciados por region, mencion explicita de FDA"
+1312,Resampling-free inference for time series via rkhs embedding,include,none,media,Inferencia libre de resampling para series de tiempo funcionales/multivariadas via RKHS
+1313,Forecasting day-ahead electric power prices with functional data analysis,include,none,media,Pronostico de precios electricos dia-adelante via FDA
+1314,Time series clustering and classification via frequency domain methods,include,none,media,"Clustering/clasificacion de series de tiempo via dominio de frecuencia, relevante a representacion"
+1315,Heterogeneous beliefs and the Phillips curve,exclude,I1,baja,"Creencias heterogeneas y curva de Phillips, economia pura sin FDA"
+1316,Nonparametric testing for differences in electricity prices: The case of the fukushima nuclear accid,include,none,media,"Test no parametrico para diferencias en precios de electricidad, FDA aplicado a datos dispersos"
+1317,Functional Cointegration Test for Expectation Hypothesis of the Term Structure of Interest Rates in ,include,none,baja,Test de cointegracion funcional para tasas de interes en China
+1318,Conformal prediction bands for two-dimensional functional time series,include,none,media,Bandas de prediccion conformal para FTS bidimensionales
+1319,Statistical Learning of Conditional Single-Index U-Processes Under Local Stationarity and Missing-At,include,none,media,Teoria asintotica para U-procesos condicionales bajo datos funcionales faltantes
+1320,Dynamic Value at Risk Estimation in Multi-Functional Volterra Time-Series Model (MFVTSM),include,none,media,VaR dinamico en modelo Volterra multi-funcional de series de tiempo
+1321,Spatial-Temporal Interpolation of Reference Evapotranspiration for Pakistan,exclude,I1,media,"Interpolacion de evapotranspiracion en Pakistan, sin mencion de datos funcionales"
+1322,NONLINEAR INDEPENDENT COMPONENT ANALYSIS FOR DISCRETE-TIME AND CONTINUOUS-TIME SIGNALS,exclude,I1,baja,"ICA no lineal para senales, sin relacion evidente a FDA"
+1323,Forecasting intraday particle number size distribution: a functional time-series approach,include,none,media,Pronostico de distribucion de tamano de particulas intradia via FTS de alta dimension
+1324,Differential equations in data analysis,include,none,media,"Ecuaciones diferenciales en analisis de datos, revision de interseccion con FDA"
+1325,Estimation and specification tests for functional quadratic spatial autoregressive model,include,none,baja,Estimacion y tests de especificacion para modelo espacial autoregresivo cuadratico funcional
+1326,A goodness-of-fit test for geometric Brownian motion,exclude,I1,baja,"Test de bondad de ajuste para movimiento browniano geometrico, sin relacion a FDA"
+1327,Non parametric regression for locally stationary functional data,include,none,media,Regresion no parametrica para datos funcionales localmente estacionarios
+1328,A practical model from multidimensional layering: Personal finance information framework using mobil,exclude,I1,media,"Framework de finanzas personales via interfaz de software, no relacionado a FDA (falso positivo por 'finance')"
+1329,Hidden Markov Mixture of Gaussian Process Functional Regression: Utilizing Multi-Scale Structure for,include,none,media,Mezcla de regresion funcional de proceso gaussiano oculta de Markov para pronostico multiescala
+1330,Time-Varying Functional Principal Components for Non-Stationary EpCO 2 in Freshwater Systems,include,E4,media,"FPCA variante en el tiempo para CO2 no estacionario, desarrollo metodologico sustantivo"
+1331,On the Exact Asymptotic Error of the Kernel Estimator of the Conditional Hazard Function for Quasi-A,include,none,media,Error asintotico del estimador kernel de riesgo condicional para variables funcionales cuasi-asociadas
+1332,Statistical inference for high-dimensional panel functional time series,include,none,media,Inferencia estadistica para FTS panel de alta dimension via descomposicion de bases
+1333,CLUSTERING AND FORECASTING MULTIPLE FUNCTIONAL TIME SERIES,include,none,media,"Clustering y pronostico de multiples FTS aplicado a mortalidad, FPCA basado en paneles"
+1334,Incorporating physics to overcome data scarcity in predictive modeling of protein function: A case s,exclude,I1,media,"Modelado de funcion de proteinas (biologia), sin relacion a FDA (funcion no es FDA)"
+1335,Reinforced Risk Prediction With Budget Constraint Using Irregularly Measured Data From Electronic He,exclude,I1,media,"Prediccion de riesgo con registros medicos electronicos, sin mencion de datos funcionales"
+1336,Forecasting High-Dimensional Functional Time Series: Application to Sub-National Age-Specific Mortal,include,none,media,"FTS de alta dimension aplicado a mortalidad subnacional, FANOVA"
+1337,Least Square Estimation for Multiple Functional Linear Model with Autoregressive Errors,include,none,baja,Minimos cuadrados para modelo lineal funcional multiple con errores autorregresivos
+1338,Local and global timeseries proxies using functional principal component analysis: application to hi,include,none,baja,Proxies de series de tiempo via FPCA aplicados a history-matching petrolero
+1339,White noise testing for functional time series,include,none,baja,Test de ruido blanco para FTS
+1340,Recent developments in complex and spatially correlated functional data,include,none,media,Revision de datos funcionales complejos y espacialmente correlacionados
+1341,Nonparametric expectile shortfall regression for functional data,include,none,media,"Regresion de expectile shortfall no parametrica para datos funcionales, riesgo financiero"
+1342,HARGRURNN: Human activity recognition using inertial body sensor gated recurrent units recurrent neu,exclude,E4,media,"Reconocimiento de actividad humana via sensores, mencion tangencial de 'datos funcionales' sin desarrollo metodologico"
+1343,Multi-population modelling and forecasting life-table death counts,include,none,baja,Modelado multipoblacional de conteos de muerte en tablas de vida
+1344,Multivariate Control Charts and Changepoint Detection for Multivariate Functional Data by Nonparamet,include,none,media,Cartas de control multivariadas y deteccion de cambios para datos funcionales via FPCA
+1345,Single index regression for locally stationary functional time series,include,none,media,Regresion de indice unico para FTS localmente estacionarias
+1346,Permutation-based inference for function-on-scalar regression with an application in PET brain imagi,include,E4,media,"Regresion funcion-sobre-escalar aplicada a neuroimagen PET, metodologia funcional explicita"
+1347,Forecasting the Colombian electricity spot price under a functional approach,include,none,baja,Pronostico de precio spot de electricidad colombiana via enfoque funcional
+1348,Nonparametric relative error regression for functional time series data under random censorship,include,none,baja,Regresion de error relativo no parametrica para FTS bajo censura aleatoria
+1349,Rich-text document styling restoration via reinforcement learning,exclude,I1,baja,"Restauracion de estilo de documentos via RL, sin relacion a FDA"
+1350,The Demographics of Defense and Security in Japan,exclude,I1,baja,"Demografia de defensa en Japon, sin relacion a FDA"
+1351,Functional Time Series Analysis Using Single-Index L1-Modal Regression,include,none,media,Analisis de FTS via regresion modal L1 de indice unico
+1352,A goodness-of-fit test for functional time series with applications to Ornstein-Uhlenbeck processes,include,none,media,"Test de bondad de ajuste para FTS aplicado a procesos Ornstein-Uhlenbeck, datos financieros de alta frecuencia"
+1353,A general bi-clustering algorithm for object data with an application to the analysis of a Lombardy ,include,none,baja,"Bi-clustering de datos de objetos aplicado a linea ferroviaria, posible relevancia FDA via 'object data'"
+1354,Describing the concentration of income populations by functional principal component analysis on Lor,include,none,media,FPCA sobre curvas de Lorenz para concentracion de ingreso
+1355,A flexible spatial autoregressive modelling framework for mixed covariates of multiple data types,include,none,media,Modelo SAR con covariables funcionales integradas metodologicamente
+1356,Weak convergence of the conditional U-statistics for locally stationary functional time series,include,none,baja,Convergencia debil de U-estadisticos condicionales para FTS localmente estacionarias
+1357,A kernel regression approach for identification of first order differential equations based on funct,include,none,baja,Regresion kernel para identificar ecuaciones diferenciales basado en datos funcionales
+1358,Intraday volatility analysis of CSI 300 index futures: a dependent functional data method,include,none,media,Volatilidad intradia del indice CSI 300 via datos funcionales dependientes
+1359,Empirical Asset Pricing with Functional Factors,include,none,media,Asset pricing empirico con factores funcionales
+1360,Remaining useful life prognosis of vacuum circuit breaker mechanical performance via vibration signa,exclude,I1,media,"Prognosis de vida util de disyuntores via vibracion, sin relacion a FDA"
+1361,Visualization and assessment of spatio-temporal covariance properties,include,none,media,Visualizacion y evaluacion de propiedades de covarianza espacio-temporal via FDA
+1362,Change Point Analysis: Theory and Application,exclude,I1,baja,"Libro generico de analisis de puntos de cambio, sin indicio de enfoque FDA especifico"
+1363,Detecting changes in the covariance structure of functional time series with application to fMRI dat,include,E4,media,"Deteccion de cambios en covarianza de FTS aplicado a fMRI, foco metodologico en covarianza funcional"
+1364,Detection and localization of changes in a panel of densities,include,none,baja,Deteccion y localizacion de cambios en panel de densidades
+1365,Dynamically Consistent Analysis of Realized Covariations in Term Structure Models,include,none,media,"Covariaciones realizadas en modelos de estructura de tasas, datos de bonos"
+1366,Selection of number of clusters and warping penalty in clustering functional electrocardiogram,include,none,media,Seleccion de clusters y penalizacion de warping en clustering de ECG funcional
+1367,Forecasting Shor-term Electricity Load of East Java Province using Functional Regression Time-varyin,include,none,media,Pronostico de carga electrica via regresion funcional con coeficiente variable en el tiempo
+1368,Particularities and commonalities of singular spectrum analysis as a method of time series analysis ,exclude,I1,media,"Analisis espectral singular comparado con PCA, no aborda datos funcionales/bases"
+1369,Deciphering Spatiotemporal Heterogeneity in Urban Networks with Functional Clustering,include,E4,media,"Clustering funcional de heterogeneidad urbana, transformacion explicita a representacion funcional"
+1370,A nonparametric test for stationarity in functional time series,include,none,media,Test no parametrico de estacionariedad para FTS
+1371,Ornstein–Uhlenbeck processes in Hilbert space and autoregressive moving-average time series,include,none,media,Procesos Ornstein-Uhlenbeck en espacio de Hilbert y series ARMA
+1372,Bayesian Spatial Homogeneity Pursuit of Functional Data: An Application to the U.S. Income Distribut,include,none,media,Homogeneidad espacial bayesiana de datos funcionales aplicado a distribucion de ingreso en EEUU
+1373,Functional arch and garch models: A yule-walker approach,include,none,baja,Modelos ARCH y GARCH funcionales via enfoque Yule-Walker
+1374,Shape-based outlier detection in multivariate functional data,include,none,media,Deteccion de outliers basada en forma para datos funcionales multivariados
+1375,Recursive Estimation of the Expectile-Based Shortfall in Functional Ergodic Time Series,include,none,media,Estimacion recursiva de shortfall basado en expectile para FTS ergodicas
+1376,Deep Learning-Based Age Prediction from rs-fMRI,exclude,I1,media,"'rs-fMRI' es resonancia magnetica funcional (neurociencia), no FDA/representacion de bases"
+1377,The effect of global crises on stock market correlations: Evidence from scalar regressions via funct,include,none,media,Efecto de crisis globales en correlaciones bursatiles via FDA
+1378,Forecasting intraday financial time series with sieve bootstrapping and dynamic updating,include,none,media,Pronostico de FTS financieras intradia via sieve bootstrapping
+1379,Estimation of total electricity consumption curves by sampling in a finite population when some traj,include,none,media,Estimacion de curvas de consumo electrico total via muestreo poblacional
+1380,A robust spatial autoregressive scalar-on-function regression with t-distribution,include,none,baja,Regresion espacial autoregresiva robusta escalar-sobre-funcion
+1381,"Hedging option contracts with locally weighted regression, functional data analysis, and Markov chai",include,none,media,Cobertura de opciones via regresion localmente ponderada y FDA
+1382,Intraday Functional PCA Forecasting of Cryptocurrency Returns,include,none,media,FPCA intradia para pronostico de retornos de criptomonedas
+1383,Change point analysis of covariance functions: A weighted cumulative sum approach,include,none,baja,Analisis de puntos de cambio de funciones de covarianza via CUSUM ponderado
+1384,Pivotal tests for relevant differences in the second order dynamics of functional time series,include,none,media,Tests pivotales para diferencias en dinamica de segundo orden de FTS
+1385,Forecasting Error Pattern-Based Anomaly Detection in Multivariate Time Series,exclude,I1,baja,"Deteccion de anomalias en series de tiempo multivariadas, sin mencion de FDA"
+1386,Nonparametric Estimation of the Expected Shortfall Regression for Quasi-Associated Functional Data,include,none,media,Estimacion no parametrica de expectile shortfall para datos funcionales cuasi-asociados
+1387,Forecasting Functional Time Series Using Federated Learning,include,none,baja,Pronostico de FTS via aprendizaje federado
+1388,"Big Data, Machine Learning and Statistics: Challenges and Opportunities",exclude,I1,baja,"Big Data/ML/Estadistica: revision generica, sin indicio especifico de FDA"
+1389,Functional Vašiček Model,include,none,media,Modelo Vasicek funcional para tasas continuas de trading day
+1390,Exploring Universal Kriging Modelling for Functional Greenness Data Captured by Digital Webcams,exclude,I1,baja,"Kriging universal para datos de verdor via webcams, sin mencion de FDA"
+1391,"AI-Enabled Integrated Information Systems for Service Operations Performance: Linking Accounting, Di",exclude,I1,baja,"Sistemas de informacion con IA para operaciones de servicio, sin relacion a FDA"
+1392,A similarity measure for second order properties of non-stationary functional time series with appli,include,none,media,Medida de similitud para propiedades de segundo orden de FTS no estacionarias
+1393,Extremal correlation coefficient for functional data,include,none,media,Coeficiente de correlacion extremal para datos funcionales
+1394,Inferring Brain Signals Synchronicity From a Sample of EEG Readings,exclude,I1,media,"Sincronia de senales cerebrales EEG, sin mencion explicita de FDA/representacion funcional"
+1395,Weighted compositional functional data analysis for modeling and forecasting life-table death counts,include,none,media,FDA composicional ponderada para modelar conteos de muerte en tablas de vida
+1396,A Hotelling spatial scan statistic for functional data: Application to economic and climate data,include,none,media,Estadistico de escaneo espacial de Hotelling para datos funcionales aplicado a datos economicos
+1397,A global test for heteroscedastic one-way FMANOVA with applications,include,none,baja,Test global heteroscedastico FMANOVA con aplicaciones
+1398,Uniform consistency rate of kNN regression estimation for functional time series data,include,none,media,Tasa de consistencia uniforme de kNN para FTS
+1399,From zero crossings to quantile-frequency analysis of time series with an application to nondestruct,include,none,media,Cruces por cero a analisis de cuantil-frecuencia con aplicacion a evaluacion no destructiva

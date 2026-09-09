@@ -1,0 +1,201 @@
+id,title_short,decision,reason_code,confidence,rationale
+1800,Functional ARCH directional dependence via copula for intraday volatility,include,none,alta,"fARCH + copula para volatilidad intradia, PR4/PR5 directo"
+1801,Systematic and iterative development of a smartphone app to promote sun-protection,exclude,I1,alta,"App de salud/turismo, sin relacion a FDA; match espurio en 'volatile populations'"
+1802,Evaluation of a Functional Time Series Model for Forecasting Inflation in Uganda,include,none,baja,"Solo titulo; FTS aplicado a inflacion, PR5 claro"
+1803,Optimal transport convergence of conditional distribution estimation for single-indexed locally stationary FTS,include,none,baja,"Solo titulo; FTS localmente estacionaria, PR1/PR4"
+1804,Factor Modeling for High-Dimensional Functional Time Series,include,none,alta,"Modelo factorial funcional de alta dimension, PR1/PR5"
+1805,Volatility asymmetry in functional threshold GARCH model,include,none,alta,"fGARCH umbral, volatilidad financiera, PR4/PR5"
+1806,A comparative analysis of forecasting models for air temperature,include,none,baja,"Solo titulo; comparativa incluye enfoque funcional, dominio meteorologia (E4 borde)"
+1807,A functional limit theorem for dependent sequences with infinite variance stable limits,exclude,I1,alta,"'Funcional' en sentido de TCL de procesos, no FDA/bases"
+1808,A Functional Garch Model with Multiple Constant Parameters,include,none,baja,"Solo titulo; fGARCH, PR4/PR5 claro"
+1809,Sustainability-focused international PBL project,exclude,I1,alta,"Educacion en ingenieria, sin relacion a FDA"
+1810,Dynamics of financial returns densities: functional approach applied to Bovespa,include,none,baja,"Solo titulo; FDA aplicado a mercado brasileno, PR5/regional"
+1811,Frontiers in time series and financial econometrics: An overview,include,none,baja,"Solo titulo, sin palabra funcional; ante la duda se incluye"
+1812,Functional Stochastic Volatility in Financial Option Surfaces,include,none,baja,"Solo titulo; volatilidad funcional financiera, PR4/PR5"
+1813,A Plug-in Bandwidth Selection Procedure for Long-Run Covariance with Stationary FTS,include,none,alta,"Seleccion de ancho de banda para FTS, PR3"
+1814,Forecasting High-Dimensional Financial Functional Time Series,include,none,alta,"FTS financiero alta dimension, PR5"
+1815,Testing for independence between functional time series,include,none,alta,"Metodologia FDA general, PR1"
+1816,Simultaneous inference of the mean of functional time series,include,none,alta,"Usa suavizado por splines, PR1/PR3"
+1817,Conjugate processes: Theory and application to risk forecasting,exclude,I1,media,"Procesos ciclicos continuos, sin representacion funcional/bases evidente"
+1818,Forecasting stock index futures intraday returns: Functional time series model,include,none,alta,"FPCA explicito, PR2/PR5"
+1819,Forecasting electricity prices in an optimization hydrothermal problem,exclude,I1,alta,"Optimizacion energetica, sin senal FDA en titulo"
+1820,Granger causality of bivariate stationary curve time series,include,none,alta,"Series de curvas, PR1/PR5"
+1821,Functional volatility forecasting,include,none,alta,PR4/PR5 directo
+1822,Modeling Functional Time Series and Mixed-Type Predictors With Partially Functional Autoregressions,include,none,alta,"Autorregresion funcional, PR1/PR5"
+1823,Functional Conditional Volatility Modeling With Missing Data: Energy Commodities,include,none,alta,"Regresion heterocedastica funcional, PR4/PR5"
+1824,Co-processing - Towards economic sustainability,exclude,I1,alta,"Sostenibilidad industrial, sin relacion a FDA"
+1825,Drought interval simulation using functional data analysis,include,none,media,"FDA aplicado a hidrologia (E4 borde), posible discusion metodologica"
+1826,Development of Functional Quantile Autoregressive Model for River Flow Curve Forecasting,include,none,media,"Desarrollo metodologico funcional, dominio hidrologia (E4 borde)"
+1827,Functional time series models for ultrafine particle distributions,include,none,media,"Modelo bayesiano FTS, dominio salud/ambiental (E4 borde)"
+1828,LLM-Guided Ensemble Learning for Contextual Bandits with Copula and Gaussian Process Models,exclude,I1,alta,"Bandits contextuales con ML, sin relacion real a FDA"
+1829,Optimal software free trial strategy,exclude,I1,alta,"'Version funcional' de software, no FDA; dominio marketing/software"
+1830,Functional Volatility Relationship Analysis in International Crude Oil Futures Markets,include,none,alta,"fGARCH-X, PR4/PR5"
+1831,Cognitive behavior therapy for anxious and depressed youth,exclude,I1,alta,"Salud mental/app movil, sin relacion a FDA"
+1832,Clustering-based improvement of nonparametric FTS forecasting: household load curves,include,none,baja,"Solo titulo; metodologia FTS no parametrica, dominio energia"
+1833,Consumer-based approaches for adaptive toileting system for children,exclude,I1,alta,"Tecnologia asistiva infantil, sin relacion a FDA"
+1834,Augmented functional time series representation and forecasting with Gaussian processes,include,none,baja,"Solo titulo; representacion FTS, PR1"
+1835,On-line detection of changes in the shape of intraday volatility curves,include,none,baja,"Solo titulo; curvas de volatilidad, PR4/PR5"
+1836,Advancing Economic Forecasting With Hybrid Time Series and Functional Models: Electricity Demand,include,none,media,Modelos funcionales en pronostico economico via demanda electrica
+1837,Exploring volatility of crude oil intraday return curves: functional GARCH-X model,include,none,alta,PR4/PR5 directo
+1838,Sparse Contextual CDF Regression,include,none,baja,"Solo titulo; posible relacion a regresion funcional de distribuciones, ambiguo"
+1839,Nonlinear drivers and volatility of solar radiation variability in Asian megacities: FTS approach,include,none,media,FTS aplicado a meteorologia (E4 borde)
+1840,A functional time series analysis of forward curves derived from commodity futures,include,none,alta,PR4/PR5 directo
+1841,The chang-kim-park model of cointegrated density-valued time series cannot accommodate a stochastic trend,include,none,baja,"Series de densidades = datos funcionales, PR1/PR5; revista de comentarios"
+1842,A functional version of the arch model,include,none,alta,ANCLA conjunto oro #10 (Hormann/Horvath/Reeder)
+1843,Forecasting value at risk with intra-day return curves,include,none,alta,"Datos funcionales financieros, PR4/PR5"
+1844,Nonlinear autocorrelation function of functional time series,include,none,alta,"Metodologia FTS, PR1"
+1845,A distributed requirements collaboration process,exclude,I1,alta,"Ingenieria de requisitos de software, sin relacion a FDA"
+1846,Change point detection for the intraday volatility using functional ARCH and conditional Copula,include,none,alta,PR4/PR5 directo
+1847,Inference in functional factor models with applications to yield curves,include,none,alta,"Curvas de rendimiento, PR1/PR5"
+1848,A randomness test for functional panels,include,none,alta,"Metodologia FTS, PR1"
+1849,The dynamics of economic functions: Modeling and forecasting the yield curve,include,none,baja,"Solo titulo; curva de rendimiento, PR5 clasico"
+1850,Functional Ergodic Time Series Analysis Using Expectile Regression,include,none,alta,"Regresion funcional, PR1"
+1851,Five number summary approach to functional ARCH for high-frequency intraday volatility,include,none,alta,PR4/PR5 directo
+1852,Fourier-type tests of mutual independence between functional time series,include,none,baja,"Solo titulo; base de Fourier + FTS, PR1"
+1853,Stochastic evolution of distributions and functional Bollinger bands,include,none,alta,"Distribuciones funcionales aplicadas a finanzas, PR5"
+1854,Functional linear models with latent factors,include,none,baja,"Solo titulo; metodologia FDA, PR1/PR2"
+1855,Transfer estimates for causal effects across heterogeneous sites,exclude,I1,baja,"Solo titulo, sin senal de datos funcionales; verificar en Etapa 2"
+1856,Stagewise crop yield prediction with multisource functional indices,include,none,media,"Indices funcionales, dominio agricola (E4 borde), desarrollo metodologico"
+1857,Smooth and rough sample paths in mean derivative estimation for functional data,include,none,alta,Directamente relevante a PR4 (rugosidad de trayectorias)
+1858,Simultaneous inference for the distribution of functional principal component scores,include,none,baja,"Solo titulo; FPCA, PR2"
+1859,Regionalization of China's PM2.5: robust functional spatial clustering with angular depth,include,none,baja,"Solo titulo; metodo funcional nuevo, dominio ambiental (E4 borde)"
+1860,Minimax estimation of Functional Principal Components from noisy discretized functional data,include,none,baja,"Solo titulo; FPCA, PR2"
+1861,Distribution-Free Stochastic Analysis and Robust Multilevel Vector Field Anomaly Detection,exclude,I1,baja,"Solo titulo, sin senal de datos funcionales/bases; verificar en Etapa 2"
+1862,Estimation of partial functional linear additive spatial lag quantile regression model,include,none,baja,"Solo titulo; regresion funcional, PR1"
+1863,Wavelet thresholding-based multi-layer perceptron for fall detection,include,none,media,"Umbralizacion wavelet, dominio salud (E4 borde)"
+1864,Locally sparse estimation for functional linear models with scalar response,include,none,baja,"Solo titulo; capitulo IWFOS 2025, PR1/PR3"
+1865,Prediction with mixed effects smooth models by using P-splines,include,none,baja,"Solo titulo; capitulo IWFOS 2025, base P-spline, PR1/PR3"
+1866,Statistical analysis of bivariate densities with compositional splines,include,none,baja,"Solo titulo; capitulo IWFOS 2025, base spline, PR1"
+1867,Efficient physics-informed smoothing of space-time functional data,include,none,baja,"Solo titulo; capitulo IWFOS 2025, suavizado, PR3"
+1868,Innovative approach to wind direction data analyses: compositional periodic spline representation,include,none,media,"Capitulo IWFOS 2025, representacion en splines, dominio meteorologia (E4 borde)"
+1869,Functional regression with shape constraints,include,none,baja,"Solo titulo; capitulo IWFOS 2025, PR1"
+1870,Robust penalized splines for location estimation from discretely sampled functional data,include,none,baja,"Solo titulo; capitulo IWFOS 2025, PR1/PR3"
+1871,Comparison of deep learning methods for functional data,include,none,baja,"Solo titulo; capitulo IWFOS 2025, tema comparativo PR2/PR4"
+1872,Spectral analysis of multidimensional thermal fields,include,none,baja,"Solo titulo; capitulo IWFOS 2025, contexto sugiere relevancia pese a titulo generico"
+1873,An expansion of the functional projection pursuit regression to generalized partially linear single index models,include,none,baja,"Solo titulo; capitulo IWFOS 2025, PR1"
+1874,Local constant likelihood estimation for beta distribution with time varying parameters,include,none,baja,"Solo titulo; capitulo IWFOS 2025, senal debil pero contexto del workshop"
+1875,Robust functional principal component analysis for non-Euclidean random objects,include,none,alta,"FPCA robusta, PR1/PR2"
+1876,Latent process models for functional network data,include,none,baja,"Solo titulo; datos funcionales, PR1"
+1877,Covariate-informed bifidelity bias correction of distributional output,include,none,media,FDA como herramienta en fisica computacional (E1/E4 borde)
+1878,Tutorial on Bayesian functional regression using Stan,include,none,media,"Tutorial revisado por pares en revista seria, no divulgativo sin revision (E2 no aplica)"
+1879,Statistical inference for multivariate functional panel data,include,none,baja,Solo titulo; PR1
+1880,Statistical inference for mean functions of complex 3D objects,include,none,media,"Extension de FDA a objetos 3D, alcance limite de I1"
+1881,Functional partial linear regression with quadratic regression for the multivariate predictor,include,none,alta,"Regresion semiparametrica funcional, PR1"
+1882,Adaptive nonparametric estimation in the functional linear model with functional output,include,none,baja,Solo titulo; PR1
+1883,Bayesian functional region selection,include,none,alta,"Seleccion de regiones en predictores funcionales, PR1"
+1884,Ultra-efficient MCMC for Bayesian longitudinal functional data analysis,include,none,alta,"Modelos mixtos funcionales, PR1"
+1885,New trends in functional statistics and related fields (IWFOS 2025 proceedings volume),exclude,E5,alta,"Registro de volumen completo de actas, no un trabajo individual"
+1886,Functional regression models with functional response: a new approach and a comparative study,include,none,alta,"Estudio comparativo, PR1/PR2/PR4"
+1887,From dense to sparse design: optimal rates for estimating the mean function in FDA,include,none,alta,"Teoria central de FDA, PR1"
+1888,On metrics for analysis of functional data on geometric domains,include,none,alta,"Teoria FDA en dominios geometricos, PR1"
+1889,Enhanced structural break detection in functional means,include,none,alta,"Seleccion de funciones base para deteccion de cambios, PR4 directo"
+1890,Anisotropic multidimensional smoothing using Bayesian tensor product P-splines,include,none,alta,"Base P-spline, suavizado, PR1/PR3"
+1891,Inference for Model Misspecification in Interest Rate Term Structure using FPCA,include,none,alta,"FPCA aplicado a tasas de interes, PR5 (ya identificado en calibracion arXiv C5)"
+1892,Functional quadratic regression,include,none,baja,"Solo titulo; metodologia FDA central, PR1"
+1893,Sparse functional principal component analysis in a new regression framework,include,none,alta,"FPCA, PR1/PR2"
+1894,Functional PLS logit regression model,include,none,alta,"Base de funciones explicita, PR1"
+1895,Partial functional linear quantile regression,include,none,baja,Solo titulo; PR1
+1896,Clusterwise functional linear regression models,include,none,baja,Solo titulo; PR1
+1897,Dynamic prediction of disease progression for leukemia patients by FPCA,exclude,I1,baja,Solo titulo; aplicacion medica de FPCA sin foco en bases (E4 borde) - verificar en Etapa 2
+1898,Statistical inference in the partial functional linear expectile regression model,include,none,baja,Solo titulo; PR1
+1899,Hypotheses testing of functional principal components,include,none,baja,Solo titulo; PR1/PR2
+1900,On the estimation of functional random effects,include,none,alta,"Representacion en bases de curvas, PR1/PR3"
+1901,Sparse multivariate functional principal component analysis,include,none,alta,"FPCA multivariada, PR1/PR2"
+1902,Estimation in functional partial linear composite quantile regression model,include,none,baja,Solo titulo; PR1
+1903,Partial functional linear additive quantile regression model,include,none,baja,Solo titulo; PR1
+1904,Efficient uncertainty quantification in stochastic finite element analysis based on FPCA,include,none,baja,Solo titulo; FPCA como herramienta en ingenieria (E1/E4 borde)
+1905,Functional and operatorial statistics (IWFOS 2008 proceedings volume),exclude,E5,alta,"Registro de volumen completo de actas, no un trabajo individual"
+1906,Applying functional principal components to structural topology optimization,include,none,baja,Solo titulo; FPCA como herramienta en ingenieria (E4 borde)
+1907,On linear regression models in infinite dimensional spaces with scalar response,include,none,baja,"Solo titulo; regresion funcional, PR1"
+1908,COMPSTAT 1998 (Bristol) proceedings volume,exclude,E5,alta,"Registro de volumen completo de actas, patron de ruido ya detectado en Fase 4"
+1909,Minimax estimation of Functional Principal Components from noisy discretized functional data,exclude,E3,alta,"Duplicado exacto de id=1860, no depurado en 7.1"
+1910,Time series forecasting by principal component methods,exclude,I1,baja,"Solo titulo, sin senal de FDA (PCA clasico, no funcional aparente)"
+1911,Clustering functional data into groups by using projections,include,none,alta,"Clustering funcional via proyecciones, PR1"
+1912,Polynomial spline estimation for generalized partial functional linear regression models,include,none,baja,"Solo titulo; base spline, PR1/PR3"
+1913,COMPSTAT 2002 (Berlin) proceedings volume,exclude,E5,alta,"Registro de volumen completo de actas, patron de ruido ya detectado en Fase 4"
+1914,Partially function linear error-in-response models with validation data,include,none,baja,Solo titulo; PR1
+1915,Functional linear models for the analysis of similarity of waveforms,include,none,baja,Solo titulo; PR1
+1916,Yield and price forecasting for stochastic crop decision planning,include,none,baja,"Solo titulo, sin palabra funcional; ante la duda se incluye, verificar Etapa 2"
+1917,Spatial Bayesian latent factor regression modeling of coordinate-based meta-analysis data,include,none,media,"Modelado espacial en neuroimagen (E4 borde), sin discusion clara de bases"
+1918,Estimation of functional partially linear quantile regression model with censored response,include,none,baja,Solo titulo; PR1
+1919,Testing for error correlation in semi-functional linear models,include,none,baja,Solo titulo; PR1
+1920,Empirical Bayesian smoothing splines for signals with correlated errors,include,none,baja,"Solo titulo; base spline con errores correlacionados, PR1/PR3"
+1921,A wavelet approach to functional principal component analysis,include,none,baja,"Solo titulo; base wavelet + FPCA, PR1/PR4"
+1922,Nonparametric functional data analysis. Theory and practice,include,none,alta,ANCLA conjunto oro #4 (Ferraty & Vieu 2006)
+1923,Some remarks on the Nelson-Siegel model,include,none,baja,"Solo titulo; modelo de curva de rendimiento, dominio PR5, sin senal FDA explicita"
+1924,Wavelets in functional data analysis,include,none,alta,"ANCLA conjunto oro #6 (Morettin, Pinheiro & Vidakovic 2017)"
+1925,Functional data analysis for density functions by transformation to a Hilbert space,include,none,alta,"Teoria FDA central, PR1"
+1926,Ordering and selecting components in multivariate or functional data linear prediction,include,none,alta,"Seleccion de dimension/componentes, PR1/PR3"
+1927,Functional data analysis of payment systems,include,none,baja,"Solo titulo; FDA en dominio economico-financiero, PR5"
+1928,A pairwise interaction model for multivariate functional and longitudinal data,include,none,baja,Solo titulo; PR1
+1929,A universal kriging predictor for spatially dependent functional data of a Hilbert space,include,none,alta,"Teoria FDA, PR1"
+1930,Bayesian curve registration of functional data,include,none,baja,Solo titulo; PR1
+1931,Nonparametric local polynomial regression for functional covariates,include,none,baja,Solo titulo; PR1
+1932,The historical functional linear model,include,none,alta,"Modelo funcional con base de elementos finitos, PR1/PR3"
+1933,How far can symmetry help? Phase transitions and symmetry selection in sparse FDA,include,none,baja,Solo titulo; PR1
+1934,Robust functional linear regression based on splines,include,none,alta,"Base spline, PR1/PR3"
+1935,Weighted least squares methods for prediction in the functional data linear model,include,none,alta,"Alternativa a base PCA, PR1/PR3"
+1936,Functional estimation of the random rate of a Cox process,include,none,alta,"FPCA explicita, PR1"
+1937,A topologically valid definition of depth for functional data,include,none,baja,Solo titulo; PR1
+1938,Nonparametric and semiparametric models in comparison of particle-size distribution,include,none,baja,"Solo titulo, sin palabra funcional; ante la duda se incluye, dominio materiales (E4 borde)"
+1939,Functional data analysis by matrix completion,include,none,alta,Relevante a PR4 (rugosidad vs suavidad de rasgos funcionales)
+1940,Sensitivity analysis and emulation for functional data using Bayesian adaptive splines,include,none,baja,"Solo titulo; base spline adaptativa, PR1/PR3"
+1941,Nonparametric regression based on discretely sampled curves,include,none,baja,Solo titulo; PR1
+1942,Variational Bayesian functional PCA,include,none,baja,"Solo titulo; FPCA, PR1/PR2"
+1943,Dimension reduction in functional regression with applications,include,none,baja,"Solo titulo; seleccion de dimension, PR1/PR3"
+1944,Heuristic framework for multiscale testing of the multi-manifold hypothesis,include,none,media,"Sin mencion explicita de datos funcionales/bases, senal debil"
+1945,Generalized additive models. An introduction with R,exclude,I1,baja,"Libro general de GAM, no especifico de FDA/representacion en bases"
+1946,Conditional functional clustering for longitudinal data with heterogeneous nonlinear patterns,include,none,baja,"Solo titulo; clustering funcional, PR1"
+1947,Statistics of time warpings and phase variations,include,none,alta,"Registro de curvas, comparativa de metodos, PR1/PR4"
+1948,Nonparametric density estimation for intentionally corrupted functional data,include,none,alta,PR1
+1949,Statistical analysis of temporal evolution in single-neuron firing rates,include,none,baja,"Solo titulo, sin palabra funcional; dominio neurociencia (E4 borde), ante la duda se incluye"
+1950,Empirical likelihood inference for mean functionals with nonignorably missing response data,include,none,baja,"Solo titulo; ambiguedad terminologica funcionales/funcional, ante la duda se incluye"
+1951,Compositional regression with functional response,include,none,alta,"Regresion function-on-scalar, PR1"
+1952,Geodesic PCA in the Wasserstein space by convex PCA,include,none,baja,"Solo titulo; PCA distribucional/funcional, PR1/PR2"
+1953,A class of multi-resolution approximations for large spatial datasets,include,none,media,Menciona explicitamente datos funcionales y funciones base multi-resolucion
+1954,Higher-order accurate spectral density estimation of functional time series,include,none,alta,"FTS, metodologia espectral/Fourier, PR1/PR3"
+1955,Robust principal component analysis for functional data (With comments),include,none,baja,"Solo titulo; FPCA robusta, probablemente Locantore et al 1999, PR1/PR2"
+1956,Optimal learning with local nonlinear parametric models over continuous designs,exclude,I1,media,"Optimizacion bayesiana de funciones, no FDA/representacion en bases"
+1957,Functional linear and single-index models: a unified approach via Gaussian Stein identity,include,none,alta,"Metodologia central de regresion funcional, PR1"
+1958,The interval testing procedure: a general framework for inference in FDA,include,none,alta,"Menciona explicitamente representacion en base funcional, PR1"
+1959,Linear regression models for functional data,include,none,baja,Solo titulo; PR1
+1960,Statistical inference for functional time series,include,none,baja,Solo titulo; PR1
+1961,Significance tests for functional data with complex dependence structure,include,none,baja,Solo titulo; PR1
+1962,Functional data fitting and fairing with triangular B-splines,include,none,baja,"Solo titulo; base B-spline, PR1/PR3"
+1963,Parseval inequalities and lower bounds for variance-based sensitivity indices,include,none,media,"Base tensorial de Hilbert/autofunciones pero enfocado en cuantificacion de incertidumbre, no FDA directo"
+1964,Computation of the harmonics-to-noise ratio of a voice signal using a functional data analysis algorithm,include,none,baja,"Solo titulo; FDA aplicado a acustica (E4 borde), verificar en Etapa 2"
+1965,Dyadic diagonalization of positive definite band matrices and efficient B-spline orthogonalization,include,none,baja,"Solo titulo; metodologia de base B-spline, PR1/PR3"
+1966,A ridge estimator of the drift from discrete repeated observations of an SDE,include,none,baja,"Solo titulo, sin senal clara de FDA; ante la duda se incluye"
+1967,Robust estimation with a modified Huber's loss for partial functional linear models based on splines,include,none,baja,"Solo titulo; base spline, PR1/PR3"
+1968,Testing for the rank of a covariance operator,include,none,alta,"Dimension de representacion FPCA, PR2/PR3"
+1969,Learning rates of regularized regression for functional data,include,none,alta,"Regularizacion, PR1/PR3"
+1970,Some first inferential tools for spatial regression with differential regularization,include,none,alta,"Cruce explicito FDA/regularizacion, PR1/PR3"
+1971,Approximation of nonlinear functionals using deep ReLU networks,exclude,I1,media,"'Funcionales' en sentido de analisis funcional matematico, no FDA estadistica"
+1972,Nonparametric clustering of functional data using pseudo-densities,include,none,alta,"Clustering funcional, PR1"
+1973,Crisp and fuzzy k-means clustering algorithms for multivariate functional data,include,none,baja,Solo titulo; PR1
+1974,Function-on-scalar quantile regression with application to mass spectrometry proteomics data,include,none,media,"Datos funcionales irregulares/heterogeneos, relevante a PR4, dominio medico (E4 borde)"
+1975,Log-contrast regression with functional compositional predictors: gut microbiome trajectories,include,none,media,"Metodologia de regresion composicional funcional, dominio medico (E4 borde)"
+1976,Robust estimation for partial functional linear regression model based on modal regression,include,none,baja,Solo titulo; PR1
+1977,Modern nonlinear function-on-function regression,include,none,alta,"Redes neuronales con estrategias basadas en bases, PR1"
+1978,Adaptive inference for the mean of a Gaussian process in functional data,include,none,alta,"Base funcional aproximante explicita, PR1/PR3"
+1979,Efficient Bayesian shape-restricted function estimation with constrained Gaussian process priors,include,none,alta,"Coeficientes de base explicitos, PR1/PR3"
+1980,Estimation in functional linear quantile regression,include,none,alta,PR1
+1981,Modeling spatially dependent functional data via regression with differential regularization,include,none,alta,"Regularizacion, PR1/PR3"
+1982,Energy minimization method for scattered data Hermite interpolation,include,none,baja,"Solo titulo; interpolacion numerica, posible falso positivo de Bloque B, ante la duda se incluye"
+1983,On probability estimation of buffer overflow for communication networks,exclude,I1,media,"Trafico de telecomunicaciones, sin contenido de representacion funcional/bases"
+1984,Integro sextic spline interpolation and its super convergence,include,none,baja,"Solo titulo; analisis numerico de splines, posible falso positivo, ante la duda se incluye"
+1985,Triangular spline estimation for the functional linear model,include,none,baja,"Solo titulo; modelo lineal funcional, base spline, PR1/PR3"
+1986,Functional boxplots for multivariate curves,include,none,alta,"Visualizacion/deteccion de atipicos en FDA, PR1"
+1987,Clustering for multivariate continuous and discrete longitudinal data,exclude,I1,media,Clustering longitudinal medico sin mencion de datos funcionales/bases
+1988,Analysis of target data-dependent greedy kernel algorithms,include,none,media,"Algoritmos greedy en espacios de kernel, relacion tenue con seleccion de bases"
+1989,Statistical tools for finance and insurance,exclude,I1,baja,"Libro general de finanzas/seguros, sin contenido especifico de FDA"
+1990,Gaussian tree constraints applied to acoustic linguistic functional data,include,none,media,"FDA explicito en dominio linguistico/acustico (E4 borde), metodologia sustantiva"
+1991,A roughness penalty approach to estimate densities over two-dimensional manifolds,include,none,baja,"Solo titulo; penalizacion de rugosidad, PR1/PR3"
+1992,Comments on Modular regression -- a Lego system for structured additive distributional regression,include,none,baja,"Solo titulo; comentario academico revisado por pares sobre interacciones tensor-producto (base), ambiguo"
+1993,Penalized spline estimation for functional coefficient regression models,include,none,media,"Base spline penalizada para coeficientes variables, PR1/PR3"
+1994,Marginal distance and Hilbert-Schmidt covariances-based independence tests for multivariate functional data,include,none,alta,"Menciona representacion en base de datos funcionales, PR1"
+1995,Distribution-Free Stochastic Analysis and Robust Multilevel Vector Field Anomaly Detection,exclude,E3,alta,"Duplicado exacto de id=1861, no depurado en 7.1"
+1996,Regularized functional regression modeling for functional response and predictors,include,none,baja,"Solo titulo; regularizacion, PR1/PR3"
+1997,A new distance with derivative information for functional k-means clustering algorithm,include,none,alta,"Clustering funcional, PR1"
+1998,Nonparametric pointwise estimation for a regression model with multiplicative noise,include,none,media,"Metodo wavelet para regresion no parametrica, relacion con PR4/Bloque B"
+1999,B-spline estimations of partially functional linear multiplicative model,include,none,baja,"Solo titulo; base B-spline, PR1/PR3"

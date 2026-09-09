@@ -1,0 +1,201 @@
+id,title_short,decision,reason_code,confidence,rationale
+2400,Cointegrated Density-Valued Linear Processes,include,none,baja,Título sugiere procesos lineales funcionales densidad-valuados; solo título
+2401,Machine Learning Assisted Orthonormal Basis Selection for Functional Data Analysis,include,none,alta,"Selección de base ortonormal para FDA, tema central PR1"
+2402,Generalized dynamic functional principal component analysis,include,none,alta,FPCA dinámica para series temporales funcionales
+2403,A wavelet-based method in aggregated functional data analysis,include,none,alta,"Método wavelet en FDA agregada, ya confirmado relevante en Fase 4"
+2404,Covariance estimation for derivatives of functional data using an additive penalty in P-splines,include,none,alta,"Estimación de covarianza con P-splines en FDA, PR1/PR3"
+2405,Efficient Multidimensional Functional Data Analysis Using Marginal Product Basis Systems,include,none,alta,Sistemas de bases producto marginal para FDA multidimensional
+2406,Efficient Bayesian hierarchical functional data analysis with basis function approximations using Ga,include,none,alta,Aproximaciones por funciones base en FDA jerárquica bayesiana
+2407,Estimation of Functional Principal Components from Sparse Functional Data,include,none,alta,"FPCA para datos funcionales dispersos, PR2"
+2408,Efficient spline orthogonal basis for representation of density functions,include,none,alta,Base spline ortogonal para representación de densidades
+2409,Splines 'n Lines: Rest-frame galaxy spectral energy distributions via Bayesian functional data analy,include,media,media,FDA aplicado a espectros de galaxias pero con discusión sustantiva de representación en bases irregulares (E4 no aplica por profundidad metodológica)
+2410,Sparse Functional Principal Component Analysis in High Dimensions,include,none,alta,FPCA dispersa en alta dimensión
+2411,Compositional splines for representation of density functions,include,none,alta,Splines composicionales para representación de densidades
+2412,Constrained variable clustering and the best basis problem in functional data analysis,include,none,alta,Problema de mejor base en clustering de variables FDA
+2413,Online Functional Principal Component Analysis on a Multidimensional Domain,include,none,alta,FPCA en línea para dominio multidimensional
+2414,Bayesian Multivariate Sparse Functional Principal Components Analysis,include,none,alta,FPCA bayesiana multivariante dispersa
+2415,Filtrated Common Functional Principal Components for Multivariate Functional data,include,media,media,FPCA común filtrada; aplicación a LFP pero contribución es metodológica (FPCA)
+2416,Functional principal component analysis with informative observation times,include,none,alta,FPCA con tiempos de observación informativos
+2417,Penalized Spline M-Estimators for Discretely Sampled Functional Data: Existence and Asymptotics,include,none,alta,"Estimadores M penalizados por splines para FDA, PR3"
+2418,Inference for Model Misspecification in Interest Rate Term Structure using Functional Principal Comp,include,none,alta,"FPCA aplicado a estructura de tasas de interés, PR5"
+2419,Distribution of a Non-parametric Wavelet-based Statistic for Functional Data,include,none,alta,Estadístico basado en wavelets para FDA
+2420,Sparse Longitudinal Functional Principal Component Analysis for Episodic Ambulatory Behavioral Asses,exclude,E4,media,"FPCA aplicada a monitoreo de fatiga mental; único aporte es la aplicación, sin discusión sustantiva de bases"
+2421,Bayesian Functional Data Analysis over Dependent Regions and Its Application for Identification of D,include,media,media,FDA bayesiana en regiones dependientes; aplicación a metilación pero con contribución metodológica de partición en ventanas
+2422,Randomized Spline Trees for Functional Data Classification: Theory and Application to Environmental ,include,media,media,Árboles de splines aleatorizados; aplicación ambiental pero con discusión metodológica de representación en splines
+2423,Fast Bayesian Basis Selection for Functional Data Representation with Correlated Errors,include,none,alta,"Selección bayesiana de base para FDA, ya confirmado como ancla en Fase 4 arXiv"
+2424,Wavelet-based estimation in aggregated functional data with positive and correlated errors,include,none,alta,Estimación wavelet en FDA agregada con errores correlacionados
+2425,Splinets -- Orthogonal Splines and FDA for the Classification Problem,include,none,alta,Splinets: bases ortogonales de splines para clasificación FDA
+2426,A unified approach for morphometrics and functional data analysis with machine learning for craniode,exclude,E4,media,Aplicación de FDA a morfometría craneodental de musarañas sin discusión sustantiva de elección de base
+2427,FPCA-Enhanced Simulation-Based Inference for Robust Type Ia Supernova Cosmology,exclude,E4,media,"FPCA como herramienta accesoria para inferencia cosmológica de supernovas, sin discusión de bases"
+2428,Wavelet-Based Bayesian Hierarchical Modeling with Regularized Horseshoe Priors for Spatially Correla,include,media,media,Modelado jerárquico wavelet con horseshoe priors; aplicación ambiental pero con discusión sustantiva de regularización de coeficientes wavelet
+2429,Functional Random Forest with Adaptive Cost-Sensitive Splitting for Imbalanced Functional Data Class,include,none,alta,"Random Forest funcional con splitting adaptativo, método FDA nativo"
+2430,BAMIFun: Bayesian Multiple Imputation for Functional Data,include,none,alta,Imputación múltiple bayesiana para FDA vía FPCA
+2431,Flexible joint models for multivariate longitudinal and time-to-event data using multivariate functi,include,media,media,FPCA multivariante en modelos conjuntos longitudinales; metodológico
+2432,BFDA: A Matlab Toolbox for Bayesian Functional Data Analysis,include,none,alta,Software Bayesiano para FDA (BFDA toolbox)
+2433,Wavelet Functional Data Analysis for FANOVA Models under Dependent Errors,include,none,alta,FDA wavelet para modelos FANOVA con errores dependientes
+2434,"Splinets -- splines through the Taylor expansion, their support sets and orthogonal bases",include,none,alta,Splinets: bases ortogonales de splines vía expansión de Taylor
+2435,Object-Oriented Software for Functional Data,include,none,alta,Software orientado a objetos para representación de datos funcionales
+2436,A Wavelet-Based Independence Test for Functional Data with an Application to MEG Functional Connecti,include,media,media,Test de independencia basado en wavelets; aplicación MEG pero metodología wavelet sustantiva
+2437,Simulation studies to compare bayesian wavelet shrinkage methods in aggregated functional data,include,none,alta,"Estudio comparativo de métodos de shrinkage wavelet bayesiano en FDA agregada, relevante PR4/C4"
+2438,Mixtures of Spatial Spline Regressions,include,none,alta,Extensión de splines a regresión espacial (superficies)
+2439,FunctionalCalibration: an R package for estimation in aggregated functional data model,include,none,alta,"Paquete R para FDA agregada, mismo tema metodológico que otros ítems confirmados"
+2440,Functional Data Analysis by Matrix Completion,include,none,alta,"FDA vía completado de matrices; debate suavizado vs. rugosidad, PR1/PR2"
+2441,Fast Bivariate Penalized Splines: the Sandwich Smoother,include,none,alta,"P-splines bivariados (sandwich smoother), técnica de suavizado central"
+2442,Ultra-efficient MCMC for Bayesian longitudinal functional data analysis,include,none,alta,MCMC eficiente para FDA longitudinal bayesiana
+2443,Fast Covariance Estimation for Sparse Functional Data,include,none,alta,Estimación de covarianza con splines penalizados en FDA dispersa
+2444,Efficient Covariance Estimation for Sparsified Functional Data,include,none,alta,Estimadores B-spline para covarianza en FDA dispersa
+2445,Bayesian mixtures of spatial spline regressions,include,none,alta,Regresiones spline espaciales bayesianas (extensión de 2438)
+2446,Wavelet estimation of the dimensionality of curve time series,include,none,alta,"Estimación wavelet de dimensionalidad en series de curvas, PR3"
+2447,Compositional Periodic Spline Approximation for Circular Density Data in Bayes Spaces,include,none,alta,Splines periódicos composicionales para datos de densidad circular
+2448,Bivariate Densities in Bayes Spaces: Orthogonal Decomposition and Spline Representation,include,none,alta,Representación spline de densidades bivariadas en espacios de Bayes
+2449,Benchmarking time series classification -- Functional data vs machine learning approaches,include,none,alta,"Comparación FDA vs. machine learning en clasificación de series temporales, PR2/PR4"
+2450,Bayesian Change Point Detection for Functional Data,include,none,alta,"Detección bayesiana de puntos de cambio vía transformada wavelet discreta, PR4"
+2451,Bayesian local clustering of functional data via semi-Markovian random partitions,include,none,alta,Clustering local bayesiano vía expansión en bases B-spline
+2452,Reconciling Functional Data Regression with Excess Bases,include,none,alta,"Regresión funcional con exceso de bases, selección de dimensión PR3"
+2453,Bayesian Nonparametric Detection of Anomalies in Multivariate Functional Data,include,none,alta,Detección bayesiana no paramétrica de anomalías en FDA multivariante
+2454,On Metrics for Analysis of Functional Data on Geometric Domains,include,media,media,"Métricas para FDA en dominios geométricos, teoría fundamental FDA"
+2455,Penalized likelihood estimation of probability density functions using compositional splines,include,none,alta,Estimación por verosimilitud penalizada con splines composicionales para densidades
+2456,Mixed Gaussian Projections for Two-Sample Testing of Functional Data,include,none,alta,Test de dos muestras vía proyecciones gaussianas mixtas en FDA
+2457,Fast Covariance Estimation for Multivariate Sparse Functional Data,include,none,alta,"Estimación de covarianza vía splines penalizados bivariados, FDA multivariante dispersa"
+2458,Bayesian Graphical Models for Multivariate Functional Data,include,none,alta,Modelos gráficos bayesianos para FDA multivariante
+2459,Robust joint modeling of sparsely observed paired functional data,include,none,alta,Modelado conjunto robusto de FDA pareada dispersa vía FPCA
+2460,A geometric approach to maximum likelihood estimation of the functional principal components from sp,include,none,alta,"MLE geométrico para FPCA desde datos longitudinales dispersos, PR2 fundacional"
+2461,"Bayesian Framework for Simultaneous Registration and Estimation of Noisy, Sparse and Fragmented Func",include,none,alta,Registro y estimación bayesiana de FDA dispersa/fragmentada
+2462,Clustering nonstationary circadian rhythms using locally stationary wavelet representations,include,none,alta,Clustering de ritmos circadianos no estacionarios vía wavelets localmente estacionarios; ya confirmado relevante en Fase 4 C3
+2463,A topologically valid definition of depth for functional data,include,none,alta,"Definición topológica de profundidad para FDA, teoría fundamental"
+2464,Explainable Outlier Detection for Multivariate Functional Data,include,none,alta,Detección explicable de outliers en FDA multivariante
+2465,Nonparametric Transient Classification using Adaptive Wavelets,include,media,media,Clasificación de transitorios astronómicos vía wavelets adaptativos; discusión metodológica sustantiva de bases wavelet
+2466,Trend Filtering for Functional Data,include,none,alta,"Trend filtering funcional, representación de tendencia en FDA"
+2467,A novel generalized additive scalar-on-function regression model for partially observed multidimensi,include,media,media,Regresión aditiva funcional con datos parcialmente observados; aplicación a calidad del aire pero con contribución metodológica en manejo de dimensión variable
+2468,Bayesian repulsive mixture model for multivariate functional data,include,none,alta,"Modelo de mezcla repulsiva bayesiano para FDA multivariante, clustering"
+2469,Clustering of functional data prone to complex heteroscedastic measurement error,include,none,alta,Clustering de FDA con error de medición heteroscedástico complejo
+2470,Graph-constrained Analysis for Multivariate Functional Data,include,none,alta,Modelos gráficos con restricciones de grafo para FDA multivariante
+2471,Basis Expansions for Functional Snippets,include,none,alta,"Expansión en bases para fragmentos funcionales (snippets), PR1 central"
+2472,Structural adaptation and rate accelerated estimation in bivariate functional data,include,none,alta,"Adaptación estructural y estimación acelerada en FDA bivariada, anisotropía relevante PR4"
+2473,A functional-data approach to the Argo data,include,media,media,"FDA aplicado a datos oceanográficos Argo; aplicación con cierto desarrollo metodológico espacio-temporal, posible E4"
+2474,Functional Bipartite Ranking: a Wavelet-Based Filtering Approach,include,none,alta,Ranking bipartito funcional vía filtrado wavelet
+2475,Sufficient conditions for proper posteriors in fully-Bayesian Functional PCA,include,none,alta,"FPCA plenamente bayesiana con base spline ortonormal, teoría PR2"
+2476,From dense to sparse design: Optimal rates under the supremum norm for estimating the mean function ,include,none,alta,Tasas óptimas de convergencia para estimación de función media en FDA
+2477,A Hierarchical Model for Aggregated Functional Data,include,none,alta,"Modelo jerárquico para FDA agregada, mismo tema metodológico que otros ítems del cluster"
+2478,Multiple testing for outlier detection in functional data,include,none,alta,Test múltiple para detección de outliers vía proyección en bases wavelet/PCA
+2479,Bayesian Function-on-Function Regression for Spatial Functional Data,include,media,media,Regresión bayesiana función-en-función espacial; aplicación pero con contribución metodológica de correlación espacial
+2480,Real-Time Wavelet-transform spectrum analyzer for the investigation of 1/f^αnoise,exclude,I1,alta,"Analizador de espectro wavelet en hardware DSP para ruido 1/f, no es FDA estadística"
+2481,Enhancing Spatial Functional Linear Regression with Robust Dimension Reduction Methods,include,none,alta,FPCA y mínimos cuadrados parciales funcionales robustos para reducción de dimensión
+2482,A novel framework for detecting multiple change points in functional data sequences,include,none,alta,"Framework de detección de múltiples puntos de cambio en secuencias funcionales, PR4"
+2483,Nonparametric density estimation for intentionally corrupted functional data,include,none,alta,"Estimación de densidad no paramétrica para FDA con privacidad, metodología FDA"
+2484,Variation Pattern Classification of Functional Data,include,media,media,Clasificación de patrones de variación en FDA; aplicación LFP pero método central es clasificación funcional
+2485,Scalable Function-on-Scalar Quantile Regression for Densely Sampled Functional Data,include,none,alta,Regresión cuantílica función-en-escalar para FDA densamente muestreada
+2486,Gaussian Tree Constraints Applied to Acoustic Linguistic Functional Data,include,media,media,"Modelo de árbol gaussiano para FDA lingüística acústica; conexión con bases no explícita, dominio ajeno posible E4"
+2487,Post-Nonlinear Sparse Component Analysis Using Single-Source Zones and Functional Data Clustering,include,media,media,Análisis de componentes dispersos post-no-lineal con clustering de FDA; metodología de procesamiento de señales
+2488,Unraveling time-varying causal effects of multiple exposures: integrating Functional Data Analysis w,exclude,E4,media,"Integración de FDA con aleatorización mendeliana; único aporte es inferencia causal, sin discusión de bases"
+2489,High-dimensional Bayesian Fourier Analysis For Detecting Circadian Gene Expressions,include,media,media,Análisis de Fourier bayesiano de alta dimensión para genes circadianos; discusión sustantiva de base de Fourier pese a dominio genómico
+2490,The Deep Radial Basis Function Data Descriptor (D-RBFDD) Network: A One-Class Neural Network for Ano,exclude,I1,alta,"Red neuronal de funciones de base radial (RBF) para detección de anomalías; 'basis' se refiere a arquitectura de red, no a FDA"
+2491,Factor-augmented model for functional data,include,none,alta,"Modelo factor-aumentado para FDA, debate suavizado vs. componente factor, PR1/PR2"
+2492,"Controlling Statistical, Discretization, and Truncation Errors in Learning Fourier Linear Operators",include,baja,baja,Errores de truncamiento de Fourier en aprendizaje de operadores; más cercano a análisis numérico que a FDA estadística
+2493,Modeling Multivariate Mixed-Response Functional Data,include,none,alta,Modelado bayesiano de respuestas funcionales mixtas multivariantes
+2494,Classification of pediatric pneumonia using chest X-rays by functional regression,include,media,media,"Regresión funcional aplicada a clasificación de neumonía pediátrica; aplicación médica con método FDA de fondo, posible E4"
+2495,Factor-augmented Smoothing Model for Functional Data,exclude,E3,media,"Resumen casi idéntico al id 2491 (mismo grupo de autores/modelo factor-aumentado); probable duplicado no fusionado en §7.1, verificar"
+2496,A Fourier continuation framework for high-order approximations,include,baja,baja,Marco de continuación de Fourier para aproximaciones de alto orden; más análisis numérico/espectral que FDA estadística
+2497,Bayesian Semiparametric Orthogonal Tucker Factorized Mixed Models for Multi-dimensional Longitudinal,include,none,alta,Modelos mixtos bayesianos con descomposición en funciones base para FDA longitudinal multidimensional
+2498,Functional Multidimensional Scaling,include,none,alta,Escalamiento multidimensional funcional vía B-splines cúbicos
+2499,Wavelet-based genetic association analysis of functional phenotypes arising from high-throughput seq,include,media,media,Análisis de asociación genética wavelet para fenotipos funcionales; discusión sustantiva de base wavelet pese a dominio genómico
+2500,Functional Clustering of Survival Data via Smoothed Log-Hazard Trajectories: A Risk-Dynamics Perspec,include,none,alta,Clustering funcional de curvas de riesgo (log-hazard) en datos de supervivencia
+2501,Fast symmetric additive covariance smoothing,include,none,alta,Suavizado rápido de covarianza aditiva simétrica para FDA
+2502,Bayesian semiparametric modelling of biomarker variability in joint models,include,media,media,"Modelado bayesiano semiparamétrico de variabilidad de biomarcador vía rugosidad de trayectoria; posible E4, dominio biomédico"
+2503,Dynamics of Liquidity Surfaces in Uniswap v3,include,none,alta,"FPCA y factores dinámicos aplicados a superficies de liquidez DeFi, aplicación financiera PR5"
+2504,A Multivariate Multilevel Longitudinal Functional Model for Repeatedly Observed Human Movement Data,include,media,media,Modelo funcional multinivel multivariante para datos de movimiento humano; dominio biomecánico con metodología FDA sustantiva
+2505,Cosine Series Representation,include,none,alta,"Representación en series de coseno (base ortonormal) para FDA, PR1"
+2506,Mapping-to-Parameter Nonlinear Functional Regression with Novel B-spline Free Knot Placement Algorit,include,none,alta,"Regresión funcional no lineal con algoritmo de nudos libres B-spline, PR3"
+2507,Fourier Band-Power E/B-mode Estimators for Cosmic Shear,exclude,I1,media,"Estimadores de banda de potencia de Fourier para cizalla cósmica; análisis astrofísico, no FDA de curvas"
+2508,Spatial function-on-function quantile regression,include,none,alta,Regresión cuantílica función-en-función espacial
+2509,A functional joint model with baseline functional covariates: linking sitting accumulation patterns ,include,media,media,Modelo conjunto funcional con covariables funcionales de línea base; aplicación epidemiológica con contribución metodológica
+2510,Generalized Linear Models for Geometrical Current predictors. An application to predict garment fit,include,media,media,Regresión con predictores 'geometrical current' en RKHS vector-valuado; aplicación a moda con metodología FDA sustantiva
+2511,Nonparametric regression based on discretely sampled curves,include,none,alta,"Regresión no paramétrica basada en curvas muestreadas discretamente, teoría FDA fundamental"
+2512,QCD analysis of $xF_3$ structure function data and power correction to $α_s$,exclude,I1,alta,"Análisis QCD de función de estructura xF3 en física de partículas; coincidencia de términos, no es FDA"
+2513,Fourier Neural Operators for Learning Dynamics in Quantum Spin Systems,exclude,I1,media,"Operadores neuronales de Fourier para dinámica cuántica; aprendizaje de operadores en física, no FDA estadística"
+2514,Recovering the Underlying Trajectory from Sparse and Irregular Longitudinal Data,include,none,alta,"Recuperación de trayectoria vía FPCA (PACE) en datos longitudinales dispersos, PR2"
+2515,Profile Estimation for Partial Functional Partially Linear Single-Index Model,include,none,alta,Modelo funcional parcialmente lineal de índice único
+2516,High-Dimensional Functional Mixed-effect Model for Bilevel Repeated Measurements,include,none,alta,Modelo mixto funcional de alta dimensión para medidas repetidas binivel
+2517,"Generalized Multivariate Functional Additive Mixed Models for Location, Scale, and Shape",include,none,alta,Modelos aditivos mixtos funcionales multivariantes generalizados (GAMLSS funcional)
+2518,Aggregated functional data model for Near-Infrared Spectroscopy calibration and prediction,include,none,alta,"Modelo de FDA agregada para calibración NIR, mismo cluster metodológico que otros ítems confirmados"
+2519,Mimetic Muscle Rehabilitation Analysis Using Clustering of Low Dimensional 3D Kinect Data,exclude,I1,media,Clustering de datos Kinect de baja dimensión para rehabilitación muscular; sin marco explícito de FDA en bases
+2520,Continuous-time multivariate analysis,include,none,alta,"Análisis multivariante en tiempo continuo, planteamiento fundacional de representación funcional, PR1"
+2521,Functional Additive Mixed Models,include,none,alta,"Modelos aditivos mixtos funcionales, metodología central FDA"
+2522,On estimation of the effect lag of predictors and prediction in functional linear model,include,none,alta,"Modelo lineal funcional con expansión explícita en sistema de bases (FPCA, splines), PR1/PR3"
+2523,A comparison of parameter estimation in function-on-function regression,include,none,alta,"Comparación de estimación de parámetros en regresión función-en-función, estudio comparativo PR2/PR4"
+2524,Cosmic Shear E/B-mode Estimation with Binned Correlation Function Data,exclude,I1,alta,"Estimación de modos E/B de cizalla cósmica con datos de correlación binned; astrofísica, no FDA"
+2525,A Study of Functional Depths,include,none,alta,"Estudio de profundidades funcionales, metodología fundamental FDA"
+2526,Distribution-Free Stochastic Analysis and Robust Multilevel Vector Field Anomaly Detection,include,media,media,Análisis estocástico funcional para detección de anomalías en campos vectoriales; aplicación remota sensing con metodología FDA
+2527,Towards proactive self-adaptive AI for non-stationary environments with dataset shifts,exclude,I1,alta,IA autoadaptativa para entornos no estacionarios (dataset shift); ya señalado como ruido claro en Fase 4 C6
+2528,An Understanding of Principal Differential Analysis,include,none,alta,"Análisis diferencial principal (PDA de Ramsay), fundamento teórico FDA PR1/PR2"
+2529,Theoretical Properties of Projection Based Multilayer Perceptrons with Functional Inputs,include,none,alta,"Perceptrones multicapa con entradas funcionales, propiedades teóricas FDA"
+2530,Kolmogorov--Arnold Networks for Small Language Models,exclude,I1,alta,Redes Kolmogorov-Arnold para modelos de lenguaje pequeños; no relacionado con FDA
+2531,Comparison of Clustering Methods for Time Course Genomic Data: Applications to Aging Effects,exclude,I1,baja,Comparación de métodos de clustering para datos genómicos de series temporales; sin marco FDA explícito en el resumen
+2532,Modeling continuous monitoring glucose curves by Beta generalized non-parametric models,include,media,media,FDA aplicada a curvas de glucosa con modelos Beta no paramétricos; aplicación médica con metodología FDA sustantiva
+2533,Sieve Bootstrap for Functional Time Series,include,none,alta,Bootstrap sieve para series temporales funcionales vía expansión de Karhunen-Loève
+2534,A Functional Approach to Curve Alignment and Shape Analysis,include,none,alta,Enfoque funcional para alineación de curvas y análisis de forma
+2535,Locally Sparse Function on function Regression,include,none,alta,Regresión función-en-función localmente dispersa
+2536,Robust smoothed canonical correlation analysis for functional data,include,none,alta,Análisis de correlación canónica robusto para FDA vía expansión en bases y penalización
+2537,Applying Non-negative Matrix Factorization with Covariates to the Longitudinal Data as Growth Curve ,include,media,media,Factorización de matrices no negativas (basis matrix) aplicada a curvas de crecimiento longitudinal; analogía con representación en bases
+2538,An Interpretable Machine Learning Model for Deformation of Multi-Walled Carbon Nanotubes,exclude,I1,alta,Modelo ML interpretable para deformación de nanotubos de carbono; no relacionado con FDA
+2539,Conditional multivariate functional PCA for the reconstruction of temperature and salinity profiles ,include,none,alta,"FPCA multivariante condicional para reconstrucción de perfiles oceanográficos, metodología FPCA con aplicación"
+2540,Classification of EEG recordings in auditory brain activity via a logistic functional linear regress,include,media,media,Clasificación de EEG vía regresión lineal funcional logística; aplicación neurocientífica con metodología FDA sustantiva
+2541,A functional approach to deconvolve dynamic neuroimaging data,include,media,media,Deconvolución funcional de datos de neuroimagen dinámica (PET); metodología funcional sustantiva
+2542,Impact of Market Reforms on Deterministic Frequency Deviations in the European Power Grid,exclude,I1,media,Desviaciones de frecuencia en red eléctrica europea por reformas de mercado; sin marco FDA aparente en el resumen
+2543,Adaptive inference for the mean of a stochastic process in functional data,include,none,alta,"Inferencia adaptativa para la media de un proceso estocástico en FDA, teoría fundamental"
+2544,Functional linear and single-index models: A unified approach via Gaussian Stein identity,include,none,alta,Modelos lineales y de índice único funcionales vía identidad de Stein gaussiana
+2545,Interpretable sparse SIR for functional data,include,none,alta,"SIR disperso interpretable para FDA, con expansión en base funcional explícita"
+2546,smoothEM: a new approach for the simultaneous assessment of smooth patterns and spikes,include,none,alta,"smoothEM: suavizado spline regularizado + EM para identificar picos irregulares en FDA, relevante PR4"
+2547,A Novel Statistical Method Based on Dynamic Models for Classification,include,none,alta,Método estadístico basado en modelos dinámicos para clasificación de datos funcionales
+2548,Semi-parametric local variable selection under misspecification,exclude,I1,baja,Selección de variable local semiparamétrica bajo mala especificación; sin conexión explícita a datos funcionales en el resumen
+2549,Model-based regression clustering for high-dimensional data. Application to functional data,include,none,alta,Clustering por regresión de alta dimensión con aplicación explícita a datos funcionales
+2550,Testing marginal homogeneity in Hilbert spaces with applications to stock market returns,include,none,alta,"Test de homogeneidad marginal en espacios de Hilbert aplicado a retornos bursátiles, PR5"
+2551,Band Depth based initialization of $k$-Means for functional data clustering,include,none,alta,Inicialización de k-Means basada en profundidad de banda para clustering de FDA
+2552,Optimal rates for estimating the covariance kernel from synchronously sampled functional data,include,none,alta,Tasas óptimas para estimar el kernel de covarianza en FDA muestreada sincrónicamente
+2553,Fine-grain atlases of functional modes for fMRI analysis,exclude,I1,media,"Atlas de modos funcionales para análisis fMRI; 'funcional' se refiere a neuroimagen funcional, no a FDA estadística"
+2554,DeepFRC: An End-to-End Deep Learning Model for Functional Registration and Classification,include,none,alta,Deep learning end-to-end para registro y clasificación funcional (curvas/trayectorias)
+2555,Nonparametric function-on-scalar regression using deep neural networks,include,none,alta,"Regresión función-en-escalar no paramétrica con redes neuronales, comparado explícitamente con splines/bases"
+2556,Adaptive Ridge-Regularized Hotelling Change-Point Tests for Functional Data,include,none,alta,Test de cambio de media tipo Hotelling con expansión en bases crecientes para FDA
+2557,Unified theory of testing relevant hypotheses in functional time series,include,none,alta,Teoría unificada de test de hipótesis en series temporales funcionales vía expansión B-spline
+2558,Enhanced Change-Point Detection in Functional Means,include,none,alta,"Detección de puntos de cambio en medias funcionales con selección de funciones base, PR3/PR4"
+2559,Minimum regularized covariance trace estimator and outlier detection for functional data,include,none,alta,Estimador de covarianza regularizada mínima y detección de outliers para FDA
+2560,Dynamic Function-on-Scalars Regression,include,none,alta,Regresión dinámica función-en-escalares
+2561,Robust Functional Regression with Discretely Sampled Predictors,include,none,alta,Regresión funcional robusta con predictores muestreados discretamente
+2562,Local Optimization of Black-Box Function with High or Infinite-Dimensional Inputs,include,baja,baja,Optimización de caja negra con entradas de alta/infinita dimensión vía reducción de dimensión; tangencial a FDA
+2563,Approximation of RKHS Functionals by Neural Networks,include,none,alta,"Aproximación de funcionales RKHS vía redes neuronales, teoría de representación funcional"
+2564,Unsupervised learning of regression mixture models with unknown number of components,exclude,I1,baja,Modelos de mezcla de regresión no supervisados; sin mención explícita de datos funcionales en el resumen
+2565,Functional Horseshoe Smoothing for Functional Trend Estimation,include,none,alta,"Suavizado horseshoe funcional para estimación de tendencia en series temporales funcionales, PR3/PR4"
+2566,A Multi-Layer Regression based Predicable Function Fitting Network,include,media,media,"Red de ajuste de funciones multicapa; menciona explícitamente FFT, wavelets y funciones curva como contexto"
+2567,A class of multi-resolution approximations for large spatial datasets,include,media,media,Aproximaciones multiresolución con funciones base para datos espaciales/funcionales de gran escala
+2568,Sparse Fisher's discriminant analysis with thresholded linear constraints,exclude,I1,baja,Análisis discriminante de Fisher disperso con restricciones lineales umbralizadas; sin mención de datos funcionales
+2569,The reconstruction of dark energy with Ridge Regression Approach,exclude,I1,media,"Reconstrucción de energía oscura vía PCA y regresión ridge; cosmología, no FDA de curvas"
+2570,Bayesian functional graphical models,include,none,alta,"Modelos gráficos funcionales bayesianos, metodología central FDA"
+2571,Bayesian Function-on-Scalars Regression for High Dimensional Data,include,none,alta,Regresión función-en-escalares bayesiana con funciones base desconocidas y adaptativas
+2572,Statistical Inference for High Dimensional Panel Functional Time Series,include,none,alta,"Inferencia estadística para series temporales funcionales panel de alta dimensión, con descomposición en bases"
+2573,Semiparametric Functional Factor Models with Bayesian Rank Selection,include,none,alta,Modelos de factores funcionales semiparamétricos con selección bayesiana de rango; ya confirmado relevante en Fase 4
+2574,Scalable Gaussian Process Inference with Stan,include,media,media,"Inferencia escalable de procesos gaussianos en Stan; modela datos funcionales, más computacional/software"
+2575,Model Testing for Generalized Scalar-on-Function Linear Models,include,none,alta,Test de modelo para modelos lineales generalizados escalar-en-función
+2576,Deep functional multiple index models with an application to SER,include,media,media,Modelos funcionales de múltiples índices profundos aplicados a reconocimiento de emociones en voz; dominio ajeno con metodología FDA sustantiva
+2577,Spatial Clustering of Curves with Functional Covariates: A Bayesian Partitioning Model with Applicat,include,media,media,Clustering espacial bayesiano de curvas con covariables funcionales; aplicación climática con metodología sustantiva
+2578,Application of an upsampling algorithm to quantum state preparation of continuous and discrete proba,exclude,I1,media,"Preparación de estados cuánticos vía upsampling; 'functional data' incidental, no es FDA estadística"
+2579,Deep Survival Analysis for Competing Risk Modeling with Functional Covariates and Missing Data Imput,include,media,media,Framework de deep learning para riesgos competitivos con covariables funcionales; biostatística con contribución metodológica
+2580,Refining perovskite structures to pair distribution function data using collective Glazer modes as a,exclude,I1,alta,"Refinamiento de estructuras de perovskita con 'basis' de modos de Glazer; cristalografía, no FDA"
+2581,FAME: Adaptive Functional Attention with Expert Routing for Function-on-Function Regression,include,none,alta,Atención funcional adaptativa con expansión en bases para regresión función-en-función
+2582,Uncovering Regions of Maximum Dissimilarity on Random Process Data,include,media,media,Regiones de máxima disimilitud en datos de proceso aleatorio; posible metodología FDA/procesos estocásticos
+2583,Functional-Edged Network Modeling,include,none,alta,Modelado de redes con aristas funcionales (datos funcionales como aristas)
+2584,Partially Functional Dynamic Backdoor Diffusion-based Causal Model,include,baja,baja,Modelo causal de difusión con covariables 'parcialmente funcionales'; conexión con FDA no central
+2585,A unified approach for testing in Hilbert spaces on incomplete data,include,none,alta,"Test unificado en espacios de Hilbert para datos incompletos, teoría fundamental FDA"
+2586,Function-On-Function Regression Through Separable Neural Operators,include,none,alta,Regresión función-en-función vía operadores neuronales separables
+2587,Verifying Properties of Index Arrays in a Purely-Functional Data-Parallel Language,exclude,I1,alta,"Verificación de propiedades en lenguaje de programación funcional puro; 'funcional' es paradigma de programación, no FDA"
+2588,High-dimensional Functional Graphical Model Structure Learning via Neighborhood Selection Approach,include,none,alta,"Modelo gráfico funcional de alta dimensión vía selección de vecindad, motivado por EEG/fMRI"
+2589,Semi-parametric Functional Classification via Path Signatures Logistic Regression with Adaptive Orde,include,none,alta,"Clasificación funcional semiparamétrica vía firmas de trayectoria, menciona explícitamente expansión en bases fijas"
+2590,Flexible Bayesian Nonparametric Product Mixtures for Multi-scale Functional Clustering,include,none,alta,Mezclas de producto bayesiano no paramétrico para clustering funcional multiescala
+2591,Adaptive Ridge-Penalized Functional Local Linear Regression,include,none,alta,"Regresión lineal local funcional con penalización ridge adaptativa, dimensión de base J"
+2592,Regression Analyses of Distributions using Quantile Functional Regression,include,media,media,Regresión cuantílica funcional aplicada a radiómica de imágenes de tumores; dominio médico con metodología sustantiva
+2593,A Resolution Independent Neural Operator,exclude,I1,media,"Operador neuronal de resolución independiente (DeepONet) para EDPs; aprendizaje de operadores científico, no FDA estadística"
+2594,Probabilistic size-and-shape functional mixed models,include,none,alta,Modelos mixtos funcionales de tamaño y forma probabilísticos
+2595,The relation between alignment covariance and background-averaged epistasis,exclude,I1,alta,"Epistasis genética y covarianza de alineamiento; 'funcional' es función biológica, no FDA"
+2596,KANO: Kolmogorov-Arnold Neural Operator,exclude,I1,media,"Operador neuronal Kolmogorov-Arnold con bases espectrales/espaciales; aprendizaje de operadores científico, no FDA"
+2597,Sigmoid function based intensity transformation for parameter initialization in MRI-PET Registration,exclude,I1,media,"Registro de imágenes MRI-PET; 'datos funcionales' es imagen PET funcional (perfusión/metabolismo), no FDA"
+2598,Transfer Estimates for Causal Effects across Heterogeneous Sites,exclude,I1,baja,Estimación de efectos causales transferidos entre sitios heterogéneos; sin mención de datos funcionales
+2599,Functional proportional hazards mixture cure model and its application to modelling the association ,include,media,media,Modelo de riesgos proporcionales funcional con cura mixta aplicado a mortalidad por cáncer; epidemiología con metodología FDA sustantiva

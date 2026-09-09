@@ -1,0 +1,201 @@
+id,title_short,decision,reason_code,confidence,rationale
+1600,Functional brain image analysis using joint function-structure priors,exclude,I1,baja,"'Functional' refiere a imagen cerebral (fMRI), no a FDA estadistica"
+1601,Asymptotics for random functions moderated by dependent noise,include,none,baja,"Asintotica de funciones aleatorias con ruido dependiente, tema FDA"
+1602,Locally stationary functional time series,include,none,alta,"Series temporales funcionales localmente estacionarias, PR4 central"
+1603,KPSS test for functional time series,include,none,baja,Test KPSS para series temporales funcionales
+1604,Non Parametric Regression Quantile Estimation for Dependent Functional Data under Random Censorship:,include,none,baja,Regresion cuantilica no parametrica para datos funcionales dependientes
+1605,Failure probability control approach for service life evaluation in corrosive environment,exclude,I1,baja,"Evaluacion de vida util en ambiente corrosivo, sin relacion con FDA"
+1606,Autoregressive forecasting of some functional climatic variations,include,none,alta,"Define modelos autorregresivos funcionales (FAR), metodologia central"
+1607,Analysis of multivariate and high-dimensional data,exclude,I1,media,"Libro general de datos multivariantes/alta dimension, sin foco en FDA"
+1608,Trend Extraction in Functional Data of Amplitudes of R and T Waves in Exercise Electrocardiogram,include,none,media,"Modela ECG como datos funcionales no estacionarios, prueba de tendencia"
+1609,Fixed point and Bregman iterative methods for matrix rank minimization,exclude,I1,media,"Minimizacion de rango matricial, optimizacion, sin relacion con FDA"
+1610,Efficiency in multivariate functional nonparametric models with autoregressive errors,include,none,baja,Modelos no parametricos multivariantes funcionales con errores autorregresivos
+1611,Testing equality of means when the observations are from functional time series,include,none,alta,Test de igualdad de medias en series temporales funcionales
+1612,On-line clustering of functional boxplots for monitoring multiple streaming time series,include,none,baja,Clustering online de boxplots funcionales para series streaming
+1613,Gene set differential analysis of time course expression profiles via sparse estimation in functiona,exclude,E4,baja,"Modelo logistico funcional aplicado a expresion genica, dominio ajeno sin discusion de base"
+1614,Empirical orthogonal function and functional data analysis procedures to impute long gaps in environ,include,none,baja,Procedimientos de FDA para imputar huecos en datos ambientales
+1615,Functional data analysis for volatility,include,none,baja,"FDA aplicado a volatilidad, PR5 directo"
+1616,Forecasting of a hierarchical functional time series on example of macromodel for the day and night ,include,none,baja,"Serie temporal funcional jerarquica, revision critica, journal de econometria"
+1617,Adaptive varying-coefficient linear models,exclude,E1,media,"Modelos de coeficientes variables; FDA es solo uno de varios contextos motivadores, sin discutir base"
+1618,Converting high-dimensional regression to high-dimensional conditional density estimation,exclude,I1,media,"Estimacion de densidad condicional en alta dimension, sin mencion de FDA"
+1619,Functional principal component analysis for the explorative analysis of multisite-multivariate air p,include,none,baja,FPCA explicito para series multisite de contaminacion del aire
+1620,Bayesian nonparametric forecasting of monotonic functional time series,include,none,alta,Pronostico bayesiano no parametrico de series temporales funcionales monotonas
+1621,Goodness-of-fit tests for functional data,include,none,baja,Pruebas de bondad de ajuste para datos funcionales
+1622,Conditional estimation for dependent functional data,include,none,baja,Estimacion condicional para datos funcionales dependientes
+1623,Canonical correlation for stochastic processes,include,none,baja,"Correlacion canonica para procesos estocasticos, plausible base de FCCA"
+1624,Change point and trend analyses of annual expectile curves of tropical storms,include,none,baja,"Curvas expectile para tormentas tropicales, metodo basado en curvas"
+1625,Vertically Weighted Averages in Hilbert Spaces and Applications to Imaging: Fixed-Sample Asymptotics,include,none,baja,"Metodos en espacios de Hilbert aplicados a imagenes, plausible FDA"
+1626,Introduction to Functional Data Analysis,include,none,baja,"Libro Kokoszka & Reimherr, obra de referencia central de FDA (#5 conjunto oro)"
+1627,Introducing Functional Data Analysis to Managerial Science,include,none,alta,"Revision explicita de FPCA, regresion y clustering funcional para ciencias gerenciales"
+1628,Statistical state - space modeling via Kalman filtration,exclude,I1,baja,"Modelado de espacio de estados via Kalman, sin mencion de datos funcionales"
+1629,Cluster analysis of three-way atmospheric data,exclude,I1,media,"Clustering de datos atmosfericos three-way, sin mencion de bases/FPCA/FDA"
+1630,A large deviation inequality for β-mixing time series and its applications to the functional kernel ,include,none,alta,Desigualdad de gran desviacion aplicada al modelo de regresion kernel funcional de Ferraty
+1631,FuncICA for time series pattern discovery,include,none,baja,"FuncICA, analisis de componentes independientes funcional para series"
+1632,Varying coefficient functional autoregressive model with application to the U.S. treasuries,include,none,baja,Modelo autorregresivo funcional de coeficientes variables aplicado a bonos del Tesoro EE.UU.
+1633,On two sample inference for eigenspaces in functional data analysis with dependent errors,include,none,baja,Inferencia de dos muestras para eigenspacios en FDA con errores dependientes
+1634,Selecting the number of principal components in functional data,include,none,alta,"Criterios para seleccionar numero de componentes principales funcionales, PR3 directo"
+1635,Robust Functional Supervised Classification for Time Series,include,none,baja,Clasificacion supervisada funcional robusta para series temporales
+1636,Mixture of functional linear models and its application to CO2-GDP functional data,include,none,baja,Mezcla de modelos lineales funcionales aplicado a datos CO2-PIB
+1637,"Self modeling with flexible, random time transformations",include,none,alta,"Self-modeling regression, clase general de FDA, registro de tiempo flexible"
+1638,Best estimation of functional linear models,include,none,alta,Estimacion optima de modelos lineales funcionales con reconstruccion de curvas por suavizado
+1639,Functional Time Series,include,none,baja,Capitulo de handbook sobre series temporales funcionales
+1640,Functional nonparametric model for time series: A fractal approach for dimension reduction,include,none,baja,"Modelo no parametrico funcional para series temporales, enfoque fractal"
+1641,Testing for asymmetry in betas of cumulative returns: Impact of the financial crisis and crude oil p,include,none,alta,"Modelo de factores funcional para curvas de retorno acumulado, crisis financiera"
+1642,Rate of uniform consistency for a class of mode regression on functional stationary ergodic data,include,none,baja,Consistencia uniforme para regresion de moda en datos funcionales ergodicos
+1643,Identifying the spectral representation of Hilbertian time series,include,none,alta,"Representacion espectral de series temporales hilbertianas, covarianza funcional"
+1644,Multimode geometric-profile monitoring with correlated image data and its application to nanoparticl,include,none,baja,"Monitoreo de perfil geometrico correlacionado, subcampo de FDA en control de calidad"
+1645,Rainbow: An R package for visualizing functional time series,include,none,alta,"Paquete R para visualizar series temporales funcionales, herramienta FDA"
+1646,Functional principal component analysis of density families with categorical and continuous data on ,include,none,baja,"FPCA de familias de densidad aplicado a datos de manufactura, economico"
+1647,Forecasting intraday S&P 500 index returns: A functional time series approach,include,none,alta,"Enfoque de series temporales funcionales para retornos intradia S&P 500, PR5"
+1648,"Nonparametric models for functional data, with application in regression, time-series prediction and",include,none,baja,"Modelos no parametricos para datos funcionales, regresion y discriminacion de curvas"
+1649,Determining the order of the functional autoregressive model,include,none,alta,"Determina el orden del modelo autorregresivo funcional (FAR), PR1/PR3"
+1650,Statistical analysis of functional data,include,none,baja,Entrada de enciclopedia sobre analisis estadistico de datos funcionales
+1651,Nonparametric time series prediction: A semi-functional partial linear modeling,include,none,baja,Modelo semi-funcional parcial lineal para prediccion no parametrica de series
+1652,Big data and reliability applications: The complexity dimension,exclude,I1,media,"Big data y confiabilidad, no menciona datos funcionales en el resumen"
+1653,Testing stationarity of functional time series,include,none,baja,"Test de estacionariedad para series temporales funcionales, PR4"
+1654,Relative-error prediction in nonparametric functional statistics: Theory and practice,include,none,baja,Prediccion de error relativo en estadistica funcional no parametrica
+1655,"Characterizing spatial-temporal patterns of landscape disturbance and recovery in western Alberta, C",include,none,baja,Enfoque explicito de FDA para patrones espacio-temporales de paisaje
+1656,Portmanteau test of independence for functional observations,include,none,baja,Test de portmanteau de independencia para observaciones funcionales
+1657,Weakly dependent functional data,include,none,alta,"Datos funcionales debilmente dependientes, teoria central de series temporales funcionales"
+1658,Dos enfoques para el análisis de componentes principales funcionales múltiples: Un estudio comparati,include,none,baja,"Estudio comparativo de dos enfoques de FPCA multiple, posible autoria Aguilera/Aguilera-Morillo"
+1659,Estimation of the mean of functional time series and a two-sample problem,include,none,alta,"Estimacion de la media de series temporales funcionales, problema de dos muestras"
+1660,Functional factor analysis for periodic remote sensing data,include,none,alta,Rotacion de factores para FPCA aplicado a datos periodicos de teledeteccion
+1661,On modeling and forecasting time series of smooth curves,include,none,baja,Modelado y pronostico de series temporales de curvas suaves
+1662,Strategic portfolio planning in industries with long R&D cycles and interrelated product offerings: ,exclude,I1,baja,"Planificacion estrategica de portafolio en I+D, sin relacion con datos funcionales"
+1663,Optimal prediction for additive function-on-function regression,include,none,alta,"Regresion aditiva function-on-function, modelo no lineal central en FDA"
+1664,Forecasting implied volatility in foreign exchange markets: a functional time series approach,include,none,baja,"Enfoque de series temporales funcionales para volatilidad implicita en FX, PR5"
+1665,Adding Support for Theory in Open Science Big Data,exclude,I1,baja,"Big data y ciencia abierta, sin relacion con FDA"
+1666,Adding Support for Theory in Open Science Big Data,exclude,I1,baja,"Mismo titulo que id 1665, posible registro en congreso paralelo, sin relacion con FDA"
+1667,The impact of special days in call arrivals forecasting: A neural network approach to modelling spec,exclude,I1,baja,"Pronostico de llamadas con red neuronal, no se menciona enfoque funcional"
+1668,Modeling Reputation as a Time-Series: Evaluating the Risk of Purchase Decisions on eBay,exclude,I1,media,Modela reputacion como serie temporal; no se establece explicitamente metodologia FDA/base
+1669,Functional model selection for sparse binary time series with multiple inputs,exclude,I1,baja,"'Functional' probablemente refiere a forma funcional del modelo, no a FDA"
+1670,A semiparametric factor model for implied volatility surface dynamics,include,none,baja,"Modelo de factores para dinamica de superficie de volatilidad implicita, plausible FDA"
+1671,Strong uniform consistency rates of conditional quantile estimation in the single functional index m,include,none,alta,"Modelo de indice funcional unico, metodologia no parametrica central de FDA"
+1672,Robust forecasting of mortality and fertility rates: A functional data approach,include,none,alta,"Pronostico de mortalidad/fertilidad via enfoque de datos funcionales, metodologia central"
+1673,Comparing dissimilarity measures: A case of banking ratios,exclude,I1,baja,"Medidas de disimilitud para ratios bancarios, sin mencion de datos funcionales"
+1674,Modeling and forecasting electricity spot prices: A functional data perspective,include,none,alta,Modelado de precios spot de electricidad desde perspectiva de datos funcionales
+1675,Detection of outliers in functional time series,include,none,alta,Deteccion de outliers en series temporales funcionales via profundidad funcional
+1676,A new Dirichlet process for mining dynamic patterns in functional data,include,none,baja,Proceso de Dirichlet para patrones dinamicos en datos funcionales
+1677,Discussion of different logistic models with functional data. Application to Systemic Lupus Erythema,include,none,alta,"Discusion comparativa de modelos logisticos funcionales, discusion metodologica sustantiva (excepcion E4)"
+1678,"Nonparametric estimation of correlation functions in longitudinal and spatial data, with application",include,none,media,"Estimacion no parametrica de funciones de correlacion, relevante a covarianza funcional pese a dominio medico"
+1679,Local half-region depth for functional data,include,none,alta,"Profundidad de media region local para datos funcionales, metodologia central"
+1680,Functional time series forecasting with dynamic updating: An application to intraday particulate mat,include,none,alta,"Pronostico de series temporales funcionales con actualizacion dinamica, metodologia sustantiva pese a dominio ambiental"
+1681,Bootstrap methods for stationary functional time series,include,none,baja,Metodos bootstrap para series temporales funcionales estacionarias
+1682,Testing the structural stability of temporally dependent functional observations and application to ,include,none,alta,Test de estabilidad estructural para observaciones funcionales dependientes
+1683,Advances on asymptotic normality in non-parametric functional time series analysis,include,none,baja,Avances en normalidad asintotica en analisis no parametrico de series funcionales
+1684,Combining functional data projections for time series classification,include,none,baja,Combina proyecciones de datos funcionales para clasificacion de series temporales
+1685,Direct forecasting of reservoir performance using production data without history matching,exclude,I1,baja,"Pronostico de desempeno de yacimientos petroleros, sin relacion con FDA"
+1686,"Signal regression models for location, scale and shape with an application to stock returns",include,none,alta,"Modelos de regresion de senal con predictor funcional, aplicado a retornos bursatiles"
+1687,Some research on functional data analysis,include,none,baja,"Titulo generico sobre investigacion en FDA, sin senal de exclusion clara"
+1688,Kriging unconventional production decline rate from geological and completion parameters,exclude,I1,baja,"Kriging de tasa de declinacion de produccion petrolera, sin relacion con FDA"
+1689,Prediction of functional ARMA processes with an application to traffic data,include,none,alta,"Prediccion de procesos ARMA funcionales via FPCA, aplicado a datos de trafico"
+1690,Heterogeneous Spatial Dynamical Regression in a Hilbert-Valued Context,include,none,baja,Regresion espacial dinamica heterogenea en contexto valuado en Hilbert
+1691,Clustering chlorophyll-a satellite data using quantiles,include,none,baja,"Clustering de datos satelitales de clorofila-a por cuantiles, plausible dato funcional"
+1692,On the asymptotic normality of kernel estimators of the long run covariance of functional time serie,include,none,alta,Normalidad asintotica de estimadores kernel de covarianza de largo plazo de series funcionales
+1693,Outlier detection for geostatistical functional data: An application to sensor data,include,none,baja,Deteccion de outliers para datos funcionales geoestadisticos
+1694,Functional principal components analysis of shanghai stock exchange 50 index,include,none,alta,"FPCA explicito aplicado al indice bursatil Shanghai 50, PR5"
+1695,Potential Genes and Pathways of Neonatal Sepsis Based on Functional Gene Set Enrichment Analyses,exclude,E4,alta,"FPCA usado como herramienta accesoria en estudio genomico de sepsis neonatal, sin discusion de base"
+1696,Italian deposits time series forecasting via functional data analysis,include,none,baja,"FDA explicito aplicado a series de depositos bancarios italianos, PR5"
+1697,Frontiers in financial dynamics,exclude,I1,baja,"Titulo generico de editorial/perspectiva en dinamica financiera, sin senal de FDA"
+1698,Testing linearity in semi-parametric functional data analysis,include,none,baja,"Test de linealidad en FDA semiparametrica, metodologia central"
+1699,Analysis of distribution valued dissimilarity data,include,none,baja,"Analisis de disimilitud de datos valorados en distribuciones, plausible adyacente a FDA"
+1700,Pairwise comparison of treatment levels in functional analysis of variance with application to eryth,include,none,alta,"ANOVA funcional para comparacion de curvas de tratamiento, metodologia central"
+1701,"Prevalence of Sarcopenic Obesity and its Association with Functionality, Lifestyle, Biomarkers and M",exclude,I1,alta,"'Functionality' refiere a funcion fisica en adultos mayores, no FDA"
+1702,Predicting rainfall and irrigation requirements of corn in Ecuador,include,none,media,"Menciona explicitamente marco de FDA aplicado a riego de maiz en Ecuador, PR5 regional"
+1703,"Fertility in Rosario City, Argentina: Projections and retro-projections of the global fertility rate",exclude,I1,media,Proyecciones de fertilidad sin mencion explicita de metodologia FDA
+1704,Bayesian variable selection for function-on-scalar regression models: A comparative analysis,include,none,alta,"Seleccion de variables bayesiana para regresion function-on-scalar, metodologia central"
+1705,Functional ANOVA for Modelling Temperature Profiles in Ecuador,include,none,alta,"ANOVA funcional para perfiles de temperatura en Ecuador, PR5 regional"
+1706,Comparison of Positivity in Two Epidemic Waves of COVID-19 in Colombia with FDA,include,none,alta,FDA explicito (t-test funcional) para comparar olas de COVID en Colombia
+1707,Semi-automated data collection from electronic health records in a stroke unit in Brazil,exclude,I1,alta,"'Functional data' refiere a estado funcional clinico post-ictus, no FDA"
+1708,"Transmission dynamics and forecasts of the COVID-19 pandemic in Mexico, March- December 2020",exclude,I1,alta,"Modelos de crecimiento epidemiologico, sin metodologia FDA"
+1709,Heterogeneity of voltage- and chemosignal-activated response profiles in vomeronasal sensory neurons,exclude,I1,alta,"'Functional data' refiere a datos fisiologicos neuronales, no FDA"
+1710,Deconstructing the dimensions of alpha diversity in squamate reptiles (Reptilia: Squamata) across th,exclude,I1,alta,"'Functional data' refiere a rasgos funcionales ecologicos, no FDA"
+1711,A novel animal-borne miniature echosounder to observe the distribution and migration patterns of int,exclude,I1,baja,"Instrumento de ecosondeo animal, sin relacion con FDA"
+1712,The renin-angiotensin system: Going beyond the classical paradigms,exclude,I1,alta,"'Functional analysis' refiere a fisiologia del sistema renina-angiotensina, no FDA"
+1713,"Clinical, Functional, and Hemodynamic Profile of Schistosomiasis-Associated Pulmonary Arterial Hyper",exclude,I1,alta,"'Functional' refiere a perfil clinico-funcional en hipertension pulmonar, no FDA"
+1714,Optimal sampling for spatial prediction of functional data,include,none,baja,Muestreo optimo para prediccion espacial de datos funcionales
+1715,Description of the scientific domain macrobrachium through the analysis of the authors with higher p,exclude,I1,baja,"Estudio bibliometrico de productividad de autores, sin relacion con FDA"
+1716,Silica exposure index in gold mining,exclude,I1,alta,"Indice de exposicion a silice en mineria, sin relacion con FDA"
+1717,Linking patterns and processes of tree community assembly across spatial scales in tropical montane ,exclude,I1,alta,"Ensamblaje de comunidades de arboles, 'functional' es rasgo ecologico, no FDA"
+1718,Heterogeneous disease progress of black leaf streak disease of banana at the within-leaf scale,exclude,I1,baja,"Progreso de enfermedad en hoja de banano, sin relacion con FDA"
+1719,Maximizing biodiversity conservation and carbon stocking in restored tropical forests,exclude,I1,alta,"Conservacion de biodiversidad y carbono, sin relacion con FDA"
+1720,Exploratory analysis of requests for authorization to dispense high-cost medication to COPD patients,exclude,I1,alta,"Autorizacion de medicamentos de alto costo para EPOC, sin relacion con FDA"
+1721,Assessment of health devices regarding user requirements: The emotional dimension,exclude,I1,baja,"Evaluacion de dispositivos de salud, sin relacion con FDA"
+1722,Bayesian Spatial Functional Data Clustering: Applications in Disease Surveillance,include,none,alta,"Clustering funcional espacial bayesiano para vigilancia epidemiologica, metodologia central"
+1723,"Campomanesia adamantium O Berg. fruit, native to Brazil, can protect against oxidative stress and pr",exclude,I1,alta,"'FPCA' aqui es acronimo casual de 'fruit pulp', colision de siglas, no Functional PCA"
+1724,Satellite prediction of coastal hypoxia in the northern Gulf of Mexico,exclude,I1,media,"Prediccion satelital de hipoxia costera, sin mencion de FDA en el resumen"
+1725,Novel MYT1 variants expose the complexity of oculo-auriculo-vertebral spectrum genetic mechanisms,exclude,I1,alta,"Variantes geneticas MYT1, genetica medica, sin relacion con FDA"
+1726,"Investigation of Total Polyphenol Content, Antioxidant Activity, and Carbohydrate-hydrolyzing Enzyme",exclude,I1,baja,"Contenido de polifenoles en hojas de yacon, sin relacion con FDA"
+1727,Chronic non-communicable diseases in Argentina: Model and Forecast by sex and age,exclude,I1,media,"Modelo/pronostico de enfermedades cronicas en Argentina, sin mencion explicita de FDA"
+1728,Relationship between dermatoglyphic markers and morphofunctional profile in professional soccer play,exclude,I1,alta,"'Morfofuncional' refiere a funcion fisica en futbolistas, no FDA"
+1729,Extreme learning machines for soybean classification in remote sensing hyperspectral images,exclude,I1,baja,"Clasificacion de soya con extreme learning machines, sin relacion con FDA"
+1730,Optimizing Sowing Calendars for Climate-Resilient Common Bean Production in Central-Southern Brazil:,include,none,alta,Enfoque explicito de FDA integrado con modelado de cultivos en Brasil
+1731,Mapping price dynamics across electricity market designs: A functional data approach with STL decomp,include,none,baja,"Enfoque explicito de datos funcionales para precios de electricidad, PR5"
+1732,MicroAgroBiome: a toolkit for exploring specialized metabolism and ecological interactions in rhizos,exclude,I1,alta,"Toolkit de metagenomica de microbioma, sin relacion con FDA"
+1733,Functional PCA and cluster analysis for determining temperature patterns in Chile,include,none,baja,"FPCA explicito para patrones de temperatura en Chile, PR5 regional"
+1734,"Research Trends, Hotspots and Future Perspectives of Geometric Morphometrics in Entomology: A Scient",exclude,I1,alta,"Revision bibliometrica de morfometria geometrica en entomologia, sin relacion con FDA"
+1735,Assessing the effects of multivariate functional outlier identification and sample robustification o,include,none,baja,"Identificacion de outliers funcionales multivariantes para PM2.5 en Medellin, PR5"
+1736,A guide through a family of phylogenetic dissimilarity measures among sites,exclude,I1,alta,"Medidas de disimilitud filogenetica, 'functional' es rasgo ecologico, no FDA"
+1737,Correction for Data Papers/Data Articles Published Between 2021 and 2024,exclude,I1,alta,"Nota de correccion/errata, no es un trabajo de investigacion"
+1738,Exploratory analysis of regionalized variables with functional methods,include,none,baja,"Metodos funcionales para variables regionalizadas, journal colombiano"
+1739,Distinctive genomic features of human T-lymphotropic virus type 1-related adult T-cell leukemia-lymp,exclude,I1,alta,"Caracteristicas genomicas de leucemia de celulas T, sin relacion con FDA"
+1740,Anatomical and functional data on female and male reproductive systems of some dung beetle species o,exclude,I1,alta,"'Functional data' refiere a anatomia reproductiva de escarabajos, no FDA"
+1741,Uncovering temporal and spatial patterns in public transport demand: A functional data analysis of s,include,none,baja,"FDA explicito aplicado a transacciones de tarjeta inteligente en Bogota, PR5"
+1742,Cognitive screening test in primary care: Cut points for low education,exclude,I1,alta,"'Functional data' refiere a estado funcional cognitivo/clinico, no FDA"
+1743,Disjoint and functional principal component analysis for infected cases and deaths due to covid-19 i,include,none,alta,"FPCA disjunto explicito para casos COVID-19 en Sudamerica, PR5"
+1744,Physiotherapeutic approach and profile of patients treated in the emergency room surgical unit of a ,exclude,I1,alta,"Perfil clinico-funcional de pacientes en urgencias, no FDA"
+1745,Influence of advertisement on social networks in the emotional response and the intention or purchas,exclude,I1,alta,"'Funcionales' refiere a alimentos funcionales (nutricion), no FDA"
+1746,Punctuated Equilibrium in Latin American Budgets: Mapping Cross-National and Cross-Sectoral Patterns,exclude,I1,media,"'Functional data' refiere a clasificacion funcional del gasto publico (COFOG), no FDA estadistica"
+1747,Characterization and outcomes of pulmonary alveolar proteinosis in Brazil: A case series,exclude,I1,alta,"Serie de casos de proteinosis alveolar pulmonar, sin relacion con FDA"
+1748,Functional nestedness of anuran communities along gradients of pond area and permanence,exclude,I1,baja,"Anidamiento funcional de comunidades de anuros, rasgo ecologico, no FDA"
+1749,Swimming in an ocean of curves: A functional approach to understanding elephant seal habitat use in ,include,none,baja,Titulo sugiere enfoque FDA explicito ('ocean of curves') para uso de habitat de foca elefante
+1750,A Bayesian Functional Methodology for Dengue Risk Mapping in Latin America and the Caribbean,include,none,media,"Metodologia funcional bayesiana para mapeo de riesgo de dengue, plausible FDA espacio-temporal"
+1751,An Exploratory Analysis of COVID-19 in Latin America Using Functional Principal Component Analysis,include,none,baja,FPCA explicito para analisis exploratorio de COVID-19 en LatAm
+1752,"1st International Conference on Advanced Research in Technologies, Information, Innovation and Susta",exclude,E5,alta,"Registro a nivel de volumen completo de actas de congreso, no un trabajo individual"
+1753,Sustainable visual analysis for bank non-performing loans and government debt distress,include,none,alta,"FPCA explicito para prestamos morosos y deuda soberana, PR5"
+1754,Residual kriging for functional spatial prediction of salinity curves,include,none,baja,Prediccion espacial funcional (kriging) de curvas de salinidad
+1755,Weather-Driven Ensemble Logistic Models for Predicting Fusarium Head Blight of Wheat in Brazil,include,none,media,Marco de FDA usado sustantivamente para identificar variables climaticas criticas en fitopatologia
+1756,Spatio-temporal characterization of long-term solar resource using spatial functional data analysis:,include,none,alta,"FDA espacial explicito para recurso solar en Ecuador, PR5 regional"
+1757,"Reduced version of the Activity Measure for Post-Acute Care (AM-PAC) for inpatients, “6-clicks”: Bra",exclude,I1,alta,"Adaptacion transcultural de medida de actividad funcional clinica, no FDA"
+1758,Proteomic and functional analyses of the venom of Porthidium lansbergii lansbergii (Lansberg's hogno,exclude,I1,baja,"Analisis proteomico y funcional de veneno de vibora, no FDA"
+1759,Proteomic analysis of the venom from the fish eating coral snake Micrurus surinamensis: Novel toxins,exclude,I1,alta,"Analisis proteomico de veneno de serpiente coral, no FDA"
+1760,PDE-regularised spatial quantile regression,include,none,baja,"Regresion cuantilica espacial regularizada por PDE, plausible adyacente a FDA (JMVA)"
+1761,Functional characterization of compound heterozygosity Hb S/Hb Deer Lodge in Brazil,exclude,I1,alta,"Caracterizacion funcional de variante de hemoglobina, genetica medica, no FDA"
+1762,Local Correlation Integral Approach for Anomaly Detection Using Functional Data,include,none,alta,Deteccion de anomalias en datos funcionales via integral de correlacion local en espacios de Hilbert
+1763,A Two-Stage GMFAMM Approximation for Joint Bias Correction of NASA POWER Hydroclimatic Data: The Col,include,none,alta,Modelo aditivo mixto multivariante funcional (GMFAMM) para correccion de sesgo climatico
+1764,An Overall View of the Functional and Structural Characterization of Glucose-6-Phosphate Dehydrogena,exclude,I1,alta,"Caracterizacion funcional/estructural de variantes de G6PD, bioquimica, no FDA"
+1765,A Bayesian Spatiotemporal Functional Model for Data With Block Structure and Repeated Measures,include,none,alta,"Modelo funcional espaciotemporal bayesiano con estructura de bloques, metodologia central"
+1766,DPYD genetic polymorphisms in non-European patients with severe fluoropyrimidine-related toxicity: a,exclude,I1,alta,"Revision de polimorfismos DPYD y toxicidad, prediccion funcional de variantes geneticas, no FDA"
+1767,Production and use of lithic artifacts in hunter-gatherer contexts in the interserrana area (Argenti,exclude,I1,alta,"Analisis tecno-morfologico y funcional de artefactos liticos, arqueologia, no FDA"
+1768,"Microbial community composition, functions, and activities in the gulf of mexico 1 year after the de",exclude,I1,alta,"Comunidad microbiana y funciones ecologicas tras derrame petrolero, no FDA"
+1769,Genome-wide scan identifies a susceptibility locus for familial primary cutaneous amyloidosis on chr,exclude,I1,baja,"Locus de susceptibilidad genetica para amiloidosis cutanea, no FDA"
+1770,Acoustic seascape partitioning through functional data analysis,include,none,alta,Metodologia explicita de FDA para particion de paisajes acusticos
+1771,"10th Ecuadorian Congress of Information and Communication Technologies, TICEC 2022",exclude,E5,alta,"Registro a nivel de volumen completo de congreso ecuatoriano, no un trabajo individual"
+1772,Suggestive linkage of familial primary cutaneous amyloidosis to a locus on chromosome 1q23,exclude,I1,baja,"Ligamiento genetico de amiloidosis cutanea, no FDA"
+1773,Using ivacaftor practicegeneric in patients drug elexacaftor/tezacaftor/ivacaftor+ with cystic fidos,exclude,I1,alta,"Estudio clinico de terapia combinada para fibrosis quistica, no FDA"
+1774,Probabilistic projections of the Argentine population,exclude,I1,baja,"Proyecciones probabilisticas de poblacion argentina, sin mencion de FDA"
+1775,Multivariate functional random fields: prediction and optimal sampling,include,none,baja,"Campos aleatorios funcionales multivariantes, prediccion y muestreo optimo"
+1776,Barriers and facilitators to access post-stroke rehabilitation services in the first six months of r,exclude,I1,alta,"Datos clinico-funcionales de rehabilitacion post-ictus, no FDA"
+1777,Functional Data Analysis: A Meteorological Study Case in North of Ecuador,include,none,alta,"FDA y FPCA explicitos para caso meteorologico en norte de Ecuador, PR5 regional"
+1778,Spatial functional data analysis for regionalizing precipitation seasonality and intensity in a spar,include,none,alta,"FDA espacial explicito para regionalizar precipitacion en Ecuador, PR5 regional"
+1779,Functional analysis of variance of air pollution caused by fine particles,include,none,alta,ANOVA funcional explicito para contaminacion por particulas finas
+1780,MUC5B rs35705950 and its association with survival in Brazilian patients with idiopathic pulmonary f,exclude,I1,alta,"Asociacion genetica MUC5B y fibrosis pulmonar, no FDA"
+1781,"8th Conference on Information and Communication Technologies of Ecuador, TICEC 2020",exclude,E5,alta,"Registro a nivel de volumen completo de congreso ecuatoriano, no un trabajo individual"
+1782,Association between progranulin serum levels and dietary intake,exclude,I1,alta,"Niveles sericos de progranulina y dieta, bioquimica, no FDA"
+1783,Multivariate functional data modeling with time-varying clustering,include,none,alta,Modelado de datos funcionales multivariantes con clustering variable en el tiempo
+1784,Pre-operative Functional Parameters of Patients Undergoing Total Knee Arthroplasty,exclude,I1,alta,"Parametros funcionales pre-operatorios en artroplastia de rodilla, funcion fisica clinica, no FDA"
+1785,Field measurements reveal local limits of imputed functional traits in tropical trees,exclude,I1,alta,"Rasgos funcionales imputados en arboles tropicales, ecologia, no FDA"
+1786,Double Lock of a Human Neutralizing and Protective Monoclonal Antibody Targeting the Yellow Fever Vi,exclude,I1,alta,"Anticuerpo monoclonal contra fiebre amarilla, inmunologia, no FDA"
+1787,"Two Stories of Wage Dynamics in Latin America: Different Policies, Different Outcomes",exclude,I1,baja,"Dinamica salarial en America Latina, sin mencion de metodologia FDA"
+1788,"Leaf anatomy, morphology and ecological aspects of amaranthaceae species from reserva particular do ",exclude,I1,alta,"Anatomia y morfologia foliar de Amaranthaceae, botanica, no FDA"
+1789,"Spatio-temporal dynamics of water stress for common bean production in Goiás, Brazil",include,none,baja,"Dinamica espacio-temporal de estres hidrico en cultivo de frijol, tematica afin a FDA agricola"
+1790,Constructing a control chart using functional data,include,none,alta,"Carta de control usando datos funcionales, subcampo de monitoreo de perfiles"
+1791,Case study of anomaly detection and quality control of energy efficiency and hygrothermal comfort in,include,none,media,"Deteccion de anomalias y control de calidad energetico, tematica afin a 1790"
+1792,Forecasting pollen concentration by a two-step functional model,include,none,alta,Modelo funcional de dos pasos (FPC) para pronostico de concentracion de polen
+1793,A Longitudinal Exploratory Study of SARS-CoV-2 Antibody Dynamics in Young Adults in Bogotá: Lessons ,exclude,I1,alta,"Dinamica de anticuerpos SARS-CoV-2, inmunologia, no FDA"
+1794,"Clinical and epidemiological comparison between perimesencephalic and non-perimesencephalic, non-ane",exclude,I1,alta,"Comparacion clinica de hemorragia subaracnoidea, no FDA"
+1795,Geospatial Variability in Excess Death Rates during the COVID-19 Pandemic in Mexico: Examining Socio,exclude,I1,alta,"Variabilidad geoespacial de mortalidad por COVID-19 con modelos de Serfling, no FDA"
+1796,Elderly outpatient profile and predictors of falls,exclude,I1,alta,"Perfil de caidas en adultos mayores, funcion clinica, no FDA"
+1797,Functional diffusion driven stochastic volatility model,include,none,alta,"Modelo de volatilidad estocastica por difusion funcional para series de curvas, PR5"
+1798,Short-Term Electricity Prices Forecasting Using Functional Time Series Analysis,include,none,alta,Series temporales funcionales explicitas para pronostico de precios electricos
+1799,Dynamic functional time-series forecasts of foreign exchange implied volatility surfaces,include,none,alta,"FPCA dinamica explicita para superficies de volatilidad implicita FX, PR5"

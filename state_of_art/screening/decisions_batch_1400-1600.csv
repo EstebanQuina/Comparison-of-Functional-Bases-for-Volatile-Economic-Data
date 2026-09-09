@@ -1,0 +1,201 @@
+id,title_short,decision,reason_code,confidence,rationale
+1400,Functional data analysis of the relationship between electricity consumption and climate change driv,include,none,alta,Contenido metodologico o aplicado de FDA/FPCA claro en el resumen
+1401,Rethinking energy security in China: Multi-dimensional measurement and spatiotemporal dynamics,include,none,baja,Sin resumen disponible; titulo no descarta contenido FDA (cadena de origen garantiza coincidencia)
+1402,Dynamic evolution and spatial–temporal disparities decomposition of high-quality economic developmen,include,none,baja,Sin resumen disponible; titulo no descarta contenido FDA (cadena de origen garantiza coincidencia)
+1403,Regression estimation for continuous-time functional data processes with missing at random response,include,none,alta,Contenido metodologico o aplicado de FDA/FPCA claro en el resumen
+1404,Is the Group Structure Important in Grouped Functional Time Series?,include,none,alta,Contenido metodologico o aplicado de FDA/FPCA claro en el resumen
+1405,Identifying the Dynamic Influence of Economic Policy Uncertainty on Enterprise Investment Using Func,include,none,alta,Contenido metodologico o aplicado de FDA/FPCA claro en el resumen
+1406,FuNVol: multi-asset implied volatility market simulator using functional principal components and ne,include,none,alta,Contenido metodologico o aplicado de FDA/FPCA claro en el resumen
+1407,Can High Frequency Data Improve Stock Prices Forecasting? — Empirical Evidence Based on Functional D,include,none,baja,Sin resumen disponible; titulo no descarta contenido FDA (cadena de origen garantiza coincidencia)
+1408,Asynchronous Changepoint Estimation for Spatially Correlated Functional Time Series,include,none,alta,Contenido metodologico o aplicado de FDA/FPCA claro en el resumen
+1409,Efficient Bayesian functional principal component analysis of irregularly-observed multivariate curv,include,none,alta,Contenido metodologico o aplicado de FDA/FPCA claro en el resumen
+1410,MD-MBPLS: A novel explanatory model in computational social science,include,none,media,"Incluido por regla de duda; posible E4 a revisar: MD-MBPLS mezcla tipos de datos, FDA es solo un componente, uso posiblemente accesorio"
+1411,Local polynomial estimation of regression operators from functional data with correlated errors,include,none,alta,Contenido metodologico o aplicado de FDA/FPCA claro en el resumen
+1412,On semiparametric regression in functional data analysis,include,none,alta,Contenido metodologico o aplicado de FDA/FPCA claro en el resumen
+1413,A dynamic separable network model with actor heterogeneity: An application to global weapons transfe,exclude,I1,alta,"Red de transferencias de armas (STERGM), sin contenido de datos funcionales"
+1414,Forecasting the Age Structure of the Scientific Workforce in Australia,include,none,alta,Contenido metodologico o aplicado de FDA/FPCA claro en el resumen
+1415,Non-parametric Bayesian covariate-dependent multivariate functional clustering: An application to ti,include,none,alta,Contenido metodologico o aplicado de FDA/FPCA claro en el resumen
+1416,Kolmogorov Entropy for Convergence Rate in Incomplete Functional Time Series: Application to Percent,include,none,alta,Contenido metodologico o aplicado de FDA/FPCA claro en el resumen
+1417,Multi-country clustering-based forecasting of healthy life expectancy,include,none,alta,Contenido metodologico o aplicado de FDA/FPCA claro en el resumen
+1418,Quantifying time dynamics in the regional disparities and spatial convergence of China’s high-qualit,include,none,baja,Sin resumen disponible; titulo no descarta contenido FDA (cadena de origen garantiza coincidencia)
+1419,On the Use of Yeo-Johnson Transformation in the Functional Multivariate Time Series,include,none,alta,Contenido metodologico o aplicado de FDA/FPCA claro en el resumen
+1420,Nonstationary Functional Time Series Forecasting,include,none,alta,Contenido metodologico o aplicado de FDA/FPCA claro en el resumen
+1421,Functional Mixed-type Clustering of Investors' Daily Returns During a Market Shock Change-point and ,include,none,alta,Contenido metodologico o aplicado de FDA/FPCA claro en el resumen
+1422,Financial risk management based on functional data analysis,include,none,alta,Contenido metodologico o aplicado de FDA/FPCA claro en el resumen
+1423,The Maximum of the Periodogram of a Sequence of Functional Data,include,none,alta,Contenido metodologico o aplicado de FDA/FPCA claro en el resumen
+1424,Parameter clustering in Bayesian functional principal component analysis of neuroscientific data,include,none,alta,Contenido metodologico o aplicado de FDA/FPCA claro en el resumen
+1425,A robust functional time series forecasting method,include,none,alta,Contenido metodologico o aplicado de FDA/FPCA claro en el resumen
+1426,Functional Time Series Prediction Under Partial Observation of the Future Curve,include,none,alta,Contenido metodologico o aplicado de FDA/FPCA claro en el resumen
+1427,Brief Review of Functional Data Analysis: A Case Study on Regional Demographic and Economic Data,include,none,baja,Sin resumen disponible; titulo no descarta contenido FDA (cadena de origen garantiza coincidencia)
+1428,Tests for conditional heteroscedasticity of functional data,include,none,alta,Contenido metodologico o aplicado de FDA/FPCA claro en el resumen
+1429,Detecting a structural change in functional time series using local Wilcoxon statistic,include,none,alta,Contenido metodologico o aplicado de FDA/FPCA claro en el resumen
+1430,Nonparametric estimation of expectile regression in functional dependent data,include,none,alta,Contenido metodologico o aplicado de FDA/FPCA claro en el resumen
+1431,Functional singular spectrum analysis,include,none,alta,Contenido metodologico o aplicado de FDA/FPCA claro en el resumen
+1432,Robust depth-based estimation of the functional autoregressive model,include,none,alta,Contenido metodologico o aplicado de FDA/FPCA claro en el resumen
+1433,An adapted vector autoregressive expectation maximization imputation algorithm for climate data netw,exclude,I1,alta,"Imputacion climatica via VAR-EM, sin mencion a FDA/FPCA"
+1434,Uncertainty Quantification of Complex Weather Dynamics Using a Novel Functional Autoregressive Model,include,none,alta,Contenido metodologico o aplicado de FDA/FPCA claro en el resumen
+1435,Topological signatures of periodic-like signals,exclude,I1,media,"Firmas topologicas de senales periodicas (TDA), no es analisis de datos funcionales"
+1436,Improved functional portmanteau tests,include,none,alta,Contenido metodologico o aplicado de FDA/FPCA claro en el resumen
+1437,Change-Point Detection for Object-Valued Time Series,include,none,alta,Contenido metodologico o aplicado de FDA/FPCA claro en el resumen
+1438,Risk related brain regions detection and individual risk classification with 3D image FPCA,include,none,alta,Contenido metodologico o aplicado de FDA/FPCA claro en el resumen
+1439,Functional spherical autocorrelation: A robust estimate of the autocorrelation of a functional time ,include,none,alta,Contenido metodologico o aplicado de FDA/FPCA claro en el resumen
+1440,Enhancing mean-reverting time series prediction with Gaussian Processes: functional and augmented da,include,none,baja,Sin resumen disponible; titulo no descarta contenido FDA (cadena de origen garantiza coincidencia)
+1441,Inference for the Lagged Cross-Covariance Operator Between Functional Time Series,include,none,alta,Contenido metodologico o aplicado de FDA/FPCA claro en el resumen
+1442,Bootstrapping Long-Run Covariance of Stationary Functional Time Series,include,none,alta,Contenido metodologico o aplicado de FDA/FPCA claro en el resumen
+1443,Robust archetypoids for anomaly detection in big functional data,include,none,baja,Sin resumen disponible; titulo no descarta contenido FDA (cadena de origen garantiza coincidencia)
+1444,Forecasting health expenses using a functional data model,include,none,alta,Contenido metodologico o aplicado de FDA/FPCA claro en el resumen
+1445,Modeling and forecasting of the high-dimensional time series data with functional data analysis and ,include,none,media,"Incluido por regla de duda; posible E4 a revisar: Prediccion meteorologica con tecnicas FTS existentes, discusion metodologica de base incierta"
+1446,Functional analysis of long-run ESG trajectories across world regions,include,none,alta,Contenido metodologico o aplicado de FDA/FPCA claro en el resumen
+1447,FRODO: a novel approach to micro–macro multilevel regression,exclude,I1,alta,"Modelo de regresion multinivel micro-macro, sin datos funcionales"
+1448,Monitoring the evolution of sustainable development goals in the European Union: a synthetic approac,include,none,baja,Sin resumen disponible; titulo no descarta contenido FDA (cadena de origen garantiza coincidencia)
+1449,"On randomly periodic strongly dependent time series, with applications to neural respiratory drive d",exclude,I1,media,"Teorema limite funcional (convergencia debil), no FDA de curvas"
+1450,Combining unsupervised and supervised learning techniques for enhancing the performance of functiona,include,none,alta,Contenido metodologico o aplicado de FDA/FPCA claro en el resumen
+1451,Decomposing anomalies,include,none,baja,Sin resumen disponible; titulo no descarta contenido FDA (cadena de origen garantiza coincidencia)
+1452,Analyzing the difference evolution of provincial energy consumption in China using the functional da,include,none,baja,Sin resumen disponible; titulo no descarta contenido FDA (cadena de origen garantiza coincidencia)
+1453,Directional Spectra-Based Clustering for Visualizing Patterns of Ocean Waves and Winds,include,none,baja,Sin resumen disponible; titulo no descarta contenido FDA (cadena de origen garantiza coincidencia)
+1454,Advanced Data Augmentation Methods in Neural Network for Functional Data Classification,include,none,alta,Contenido metodologico o aplicado de FDA/FPCA claro en el resumen
+1455,A FEASIBLE CENTRAL LIMIT THEOREM FOR REALISED COVARIATION OF SPDES IN THE CONTEXT OF FUNCTIONAL DATA,include,none,baja,Sin resumen disponible; titulo no descarta contenido FDA (cadena de origen garantiza coincidencia)
+1456,Bayesian Analysis of Multivariate Matched Proportions with Sparse Response,exclude,I1,alta,"Proporciones multivariadas pareadas, sin datos funcionales"
+1457,The general linear hypothesis testing problem for multivariate functional data with applications,include,none,alta,Contenido metodologico o aplicado de FDA/FPCA claro en el resumen
+1458,Zooming in on spatiotemporal V-to-C coarticulation with functional PCA,include,none,alta,Contenido metodologico o aplicado de FDA/FPCA claro en el resumen
+1459,Asymptotic normality of the local linear estimation of the conditional density for functional time-s,include,none,baja,Sin resumen disponible; titulo no descarta contenido FDA (cadena de origen garantiza coincidencia)
+1460,A review study of functional autoregressive models with application to energy forecasting,include,none,alta,Contenido metodologico o aplicado de FDA/FPCA claro en el resumen
+1461,Topological Hidden Markov Models,include,none,baja,Sin resumen disponible; titulo no descarta contenido FDA (cadena de origen garantiza coincidencia)
+1462,Modeling functional data: a test procedure,include,none,baja,Sin resumen disponible; titulo no descarta contenido FDA (cadena de origen garantiza coincidencia)
+1463,Testing Separability of Functional Time Series,include,none,alta,Contenido metodologico o aplicado de FDA/FPCA claro en el resumen
+1464,Conditional Density Kernel Estimation Under Random Censorship for Functional Weak Dependence Data,include,none,alta,Contenido metodologico o aplicado de FDA/FPCA claro en el resumen
+1465,Time evolution of income distributions with subgroup decompositions,include,none,alta,Contenido metodologico o aplicado de FDA/FPCA claro en el resumen
+1466,F-KAN: a novel framework for functional regression based on Kolmogorov–Arnold networks,include,none,baja,Sin resumen disponible; titulo no descarta contenido FDA (cadena de origen garantiza coincidencia)
+1467,Projection-based white noise and goodness-of-fit tests for functional time series,include,none,baja,Sin resumen disponible; titulo no descarta contenido FDA (cadena de origen garantiza coincidencia)
+1468,Clustering-based simultaneous forecasting of life expectancy time series through Long-Short Term Mem,include,none,baja,Sin resumen disponible; titulo no descarta contenido FDA (cadena de origen garantiza coincidencia)
+1469,Understanding return variation in crypto assets: a functional ANOVA approach,include,none,alta,Contenido metodologico o aplicado de FDA/FPCA claro en el resumen
+1470,Forecasting regional long-run energy demand: A functional coefficient panel approach,include,none,alta,Contenido metodologico o aplicado de FDA/FPCA claro en el resumen
+1471,Detecting structural breaks in eigensystems of functional time series,include,none,alta,Contenido metodologico o aplicado de FDA/FPCA claro en el resumen
+1472,Aggregating multiple types of complex data in stock market prediction: A model-independent framework,include,none,alta,Contenido metodologico o aplicado de FDA/FPCA claro en el resumen
+1473,Convergence rate of kernel regression estimation for time series data when both response and covaria,include,none,baja,Sin resumen disponible; titulo no descarta contenido FDA (cadena de origen garantiza coincidencia)
+1474,Robust multivariate and functional archetypal analysis with application to financial time series ana,include,none,alta,Contenido metodologico o aplicado de FDA/FPCA claro en el resumen
+1475,Fractionally integrated curve time series with cointegration,include,none,alta,Contenido metodologico o aplicado de FDA/FPCA claro en el resumen
+1476,Bayesian variable selection in distributed lag models: a focus on binary quantile and count data reg,include,none,alta,Contenido metodologico o aplicado de FDA/FPCA claro en el resumen
+1477,Structural stability of functional data — A new adjusted-range-based self-normalization approach,include,none,baja,Sin resumen disponible; titulo no descarta contenido FDA (cadena de origen garantiza coincidencia)
+1478,A portmanteau test for the iid hypothesis,include,none,alta,Contenido metodologico o aplicado de FDA/FPCA claro en el resumen
+1479,Forecasting the Term Structure of Interest Rates of the BRICS: Evidence from a Nonparametric Functio,include,none,alta,Contenido metodologico o aplicado de FDA/FPCA claro en el resumen
+1480,HOW FUNCTIONAL DATA CAN ENHANCE THE ESTIMATION OF HEALTH EXPECTANCY: THE CASE OF DISABLED Spanish PO,include,none,alta,Contenido metodologico o aplicado de FDA/FPCA claro en el resumen
+1481,Classification of social media users with generalized functional data analysis,include,none,baja,Sin resumen disponible; titulo no descarta contenido FDA (cadena de origen garantiza coincidencia)
+1482,Self-normalization tests for change points in functional time series,include,none,baja,Sin resumen disponible; titulo no descarta contenido FDA (cadena de origen garantiza coincidencia)
+1483,Convolution-based linear discriminant analysis for functional data classification,include,none,alta,Contenido metodologico o aplicado de FDA/FPCA claro en el resumen
+1484,"Delta method, asymptotic distribution",exclude,I1,alta,"Metodo delta generico, sin contenido de datos funcionales"
+1485,Distributions of GDP across versions of the Penn World Tables: A functional data analysis approach,include,none,alta,Contenido metodologico o aplicado de FDA/FPCA claro en el resumen
+1486,FORECASTING MULTIPLE FUNCTIONAL TIME SERIES in A GROUP STRUCTURE: AN APPLICATION to MORTALITY,include,none,alta,Contenido metodologico o aplicado de FDA/FPCA claro en el resumen
+1487,A time-varying distance based interval-valued functional principal component analysis method – A cas,include,none,baja,Sin resumen disponible; titulo no descarta contenido FDA (cadena de origen garantiza coincidencia)
+1488,Frequency modulation increases the specificity of time-resolved connectivity: A resting-state fMRI s,include,none,alta,Contenido metodologico o aplicado de FDA/FPCA claro en el resumen
+1489,Inference and Computation for Sparsely Sampled Random Surfaces,include,none,alta,Contenido metodologico o aplicado de FDA/FPCA claro en el resumen
+1490,Scalar-on-Function Mode Estimation Using Entropy and Ergodic Properties of Functional Time Series Da,include,none,alta,Contenido metodologico o aplicado de FDA/FPCA claro en el resumen
+1491,Functional GARCH models: The quasi-likelihood approach and its applications,include,none,alta,Contenido metodologico o aplicado de FDA/FPCA claro en el resumen
+1492,Functional classification and dynamic prediction of cumulative intraday returns in crude oil futures,include,none,baja,Sin resumen disponible; titulo no descarta contenido FDA (cadena de origen garantiza coincidencia)
+1493,Second-Generation Functional Data,include,none,alta,Contenido metodologico o aplicado de FDA/FPCA claro en el resumen
+1494,"Trading signal, functional data analysis and time series momentum",include,none,alta,Contenido metodologico o aplicado de FDA/FPCA claro en el resumen
+1495,NITPicker: Selecting time points for follow-up experiments,include,none,media,"Incluido por regla de duda; posible E4 a revisar: Seleccion de puntos temporales en experimentos, abstract truncado no confirma vinculo FDA"
+1496,Functional-SVD for Heterogeneous Trajectories: Case Studies in Health,include,none,baja,Sin resumen disponible; titulo no descarta contenido FDA (cadena de origen garantiza coincidencia)
+1497,Asymptotic results of the randomly censored kernel-type expectile regression estimator for functiona,include,none,alta,Contenido metodologico o aplicado de FDA/FPCA claro en el resumen
+1498,Functional data analysis approach for mapping change in time series: A case study using bicycle ride,include,none,baja,Sin resumen disponible; titulo no descarta contenido FDA (cadena de origen garantiza coincidencia)
+1499,The functional kNN estimator of the conditional expectile: Uniform consistency in number of neighbor,include,none,alta,Contenido metodologico o aplicado de FDA/FPCA claro en el resumen
+1500,Functional time series forecasting of distributions: A Koopman-Wasserstein approach,include,none,alta,Contenido metodologico o aplicado de FDA/FPCA claro en el resumen
+1501,The consistency and asymptotic normality of the kernel type expectile regression estimator for funct,include,none,alta,Contenido metodologico o aplicado de FDA/FPCA claro en el resumen
+1502,A New Approach to Statistical Inference for Functional Time Series,include,none,alta,Contenido metodologico o aplicado de FDA/FPCA claro en el resumen
+1503,Functional approach for Two Way Dimension Reduction in Time Series,include,none,alta,Contenido metodologico o aplicado de FDA/FPCA claro en el resumen
+1504,Nonparametric Functional Times Series Data Analysis by kNN–Local Linear M-Regression,include,none,alta,Contenido metodologico o aplicado de FDA/FPCA claro en el resumen
+1505,How does natural disasters affect China agricultural economic growth？,include,none,baja,Sin resumen disponible; titulo no descarta contenido FDA (cadena de origen garantiza coincidencia)
+1506,Finite sample theory for high-dimensional functional/scalar time series with applications,include,none,alta,Contenido metodologico o aplicado de FDA/FPCA claro en el resumen
+1507,"Volatility and dynamic dependence modeling: Review, applications, and financial risk management",include,none,alta,Contenido metodologico o aplicado de FDA/FPCA claro en el resumen
+1508,Robust change-point detection for functional time series based on U-statistics and dependent wild bo,include,none,alta,Contenido metodologico o aplicado de FDA/FPCA claro en el resumen
+1509,Degradation Data Analysis based on Wiener Process with a Nonlinear Drift and a Stochastic Volatility,include,none,alta,Contenido metodologico o aplicado de FDA/FPCA claro en el resumen
+1510,Common Factors in the Profitability of Energy Firms,include,none,alta,Contenido metodologico o aplicado de FDA/FPCA claro en el resumen
+1511,On consistency and sparsity for high-dimensional functional time series with application to autoregr,include,none,alta,Contenido metodologico o aplicado de FDA/FPCA claro en el resumen
+1512,Dynamic functional principal components,include,none,alta,Contenido metodologico o aplicado de FDA/FPCA claro en el resumen
+1513,Conditional quantiles for dependent functional data with application to the climatic El Niño phenome,include,none,baja,Sin resumen disponible; titulo no descarta contenido FDA (cadena de origen garantiza coincidencia)
+1514,An approach for identifying and predicting economic recessions in real-time using time-frequency fun,include,none,alta,Contenido metodologico o aplicado de FDA/FPCA claro en el resumen
+1515,Regularization for Continuously Observed Ordinal Response Variables with Piecewise-constant Function,include,none,alta,Contenido metodologico o aplicado de FDA/FPCA claro en el resumen
+1516,Generalized dynamic semi-parametric factor models for high-dimensional non-stationary time series,include,none,alta,Contenido metodologico o aplicado de FDA/FPCA claro en el resumen
+1517,On the concept of depth for functional data,include,none,baja,Sin resumen disponible; titulo no descarta contenido FDA (cadena de origen garantiza coincidencia)
+1518,A functional approach to Hill's numbers for assessing changes in species variety of ecological commu,include,none,baja,Sin resumen disponible; titulo no descarta contenido FDA (cadena de origen garantiza coincidencia)
+1519,Vector-on-function quantile regression for stationary ergodic processes,include,none,baja,Sin resumen disponible; titulo no descarta contenido FDA (cadena de origen garantiza coincidencia)
+1520,Bayesian functional data modeling for heterogeneous volatility,include,none,alta,Contenido metodologico o aplicado de FDA/FPCA claro en el resumen
+1521,Bayesian nonparametric mixture estimation for time-indexed functional data in R,include,none,alta,Contenido metodologico o aplicado de FDA/FPCA claro en el resumen
+1522,Generalized exponential smoothing in prediction of hierarchical time series,include,none,alta,Contenido metodologico o aplicado de FDA/FPCA claro en el resumen
+1523,The evolution of firm-level distributions for Ukrainian manufacturing firms,include,none,baja,Sin resumen disponible; titulo no descarta contenido FDA (cadena de origen garantiza coincidencia)
+1524,Maximum-Likelihood Asymptotic Inference for Autoregressive Hilbertian Processes: ML for Autoregressi,include,none,baja,Sin resumen disponible; titulo no descarta contenido FDA (cadena de origen garantiza coincidencia)
+1525,Kolmogorov–Zurbenko filters in spatiotemporal analysis,include,none,alta,Contenido metodologico o aplicado de FDA/FPCA claro en el resumen
+1526,Nonstationarity in time series of state densities,include,none,baja,Sin resumen disponible; titulo no descarta contenido FDA (cadena de origen garantiza coincidencia)
+1527,Evaluating the complexity of some families of functional data,include,none,baja,Sin resumen disponible; titulo no descarta contenido FDA (cadena de origen garantiza coincidencia)
+1528,Functional time series approach for forecasting very short-term electricity demand,include,none,baja,Sin resumen disponible; titulo no descarta contenido FDA (cadena de origen garantiza coincidencia)
+1529,Robust clustering for time series using spectral densities and functional data analysis,include,none,alta,Contenido metodologico o aplicado de FDA/FPCA claro en el resumen
+1530,Forecasting electricity consumption by aggregating experts; how to design a good set of experts,include,none,baja,Sin resumen disponible; titulo no descarta contenido FDA (cadena de origen garantiza coincidencia)
+1531,A dynamic water quality index model based on functional data analysis,include,none,baja,Sin resumen disponible; titulo no descarta contenido FDA (cadena de origen garantiza coincidencia)
+1532,Functional samples and bootstrap for predicting sulfur dioxide levels,include,none,baja,Sin resumen disponible; titulo no descarta contenido FDA (cadena de origen garantiza coincidencia)
+1533,Some Methods for Analyzing Big Dependent Data,include,none,baja,Sin resumen disponible; titulo no descarta contenido FDA (cadena de origen garantiza coincidencia)
+1534,On estimation of mean and covariance functions in repeated time series with long-memory errors*,include,none,baja,Sin resumen disponible; titulo no descarta contenido FDA (cadena de origen garantiza coincidencia)
+1535,A longevity basis risk analysis in a joint FDM framework,include,none,alta,Contenido metodologico o aplicado de FDA/FPCA claro en el resumen
+1536,Functional data analysis for optimizing strategies of cash-flow management,include,none,baja,Sin resumen disponible; titulo no descarta contenido FDA (cadena de origen garantiza coincidencia)
+1537,"Time series forecasting using functional partial least square regression with stochastic volatility,",include,none,alta,Contenido metodologico o aplicado de FDA/FPCA claro en el resumen
+1538,"Using robust FPCA to identify outliers in functional time series, with applications to the electrici",include,none,baja,Sin resumen disponible; titulo no descarta contenido FDA (cadena de origen garantiza coincidencia)
+1539,A spatio-temporal model for Antarctic sea ice formation,include,none,media,"Incluido por regla de duda; posible E4 a revisar: Modelo espacio-temporal para hielo marino, abstract truncado, no confirma discusion de base"
+1540,An analysis of implied volatility jump dynamics: Novel functional data representation in crude oil m,include,none,baja,Sin resumen disponible; titulo no descarta contenido FDA (cadena de origen garantiza coincidencia)
+1541,Functional cluster analysis of financial time series,include,none,baja,Sin resumen disponible; titulo no descarta contenido FDA (cadena de origen garantiza coincidencia)
+1542,Forecasting Generalized Quantiles of Electricity Demand: A Functional Data Approach,include,none,baja,Sin resumen disponible; titulo no descarta contenido FDA (cadena de origen garantiza coincidencia)
+1543,Analysis of non-stationary dynamics in the financial system,include,none,baja,Sin resumen disponible; titulo no descarta contenido FDA (cadena de origen garantiza coincidencia)
+1544,Asymptotic normality of the principal components of functional time series,include,none,baja,Sin resumen disponible; titulo no descarta contenido FDA (cadena de origen garantiza coincidencia)
+1545,Predictability of shapes of intraday price curves,include,none,baja,Sin resumen disponible; titulo no descarta contenido FDA (cadena de origen garantiza coincidencia)
+1546,Predicting microRNA targets in time-series microarray experiments via functional data analysis,include,none,media,"Incluido por regla de duda; posible E4 a revisar: Prediccion de dianas de microRNA via FDA aplicada a genomica, posible uso accesorio"
+1547,An introduction to functional data analysis and a principal component approach for testing the equal,include,none,baja,Sin resumen disponible; titulo no descarta contenido FDA (cadena de origen garantiza coincidencia)
+1548,Adaptive bandwidth selection in the long run covariance estimator of functional time series,include,none,baja,Sin resumen disponible; titulo no descarta contenido FDA (cadena de origen garantiza coincidencia)
+1549,ftsa: An R package for analyzing functional time series,include,none,alta,Contenido metodologico o aplicado de FDA/FPCA claro en el resumen
+1550,Testing for periodicity in functional time series,include,none,alta,Contenido metodologico o aplicado de FDA/FPCA claro en el resumen
+1551,Functional methods for time series prediction: A nonparametric approach,include,none,alta,Contenido metodologico o aplicado de FDA/FPCA claro en el resumen
+1552,A nonparametric estimator for the covariance function of functional data,include,none,alta,Contenido metodologico o aplicado de FDA/FPCA claro en el resumen
+1553,Stochastic modelling for evolution of stock prices by means of functional principal component analys,include,none,baja,Sin resumen disponible; titulo no descarta contenido FDA (cadena de origen garantiza coincidencia)
+1554,Statistics in action: A canadian outlook,include,none,baja,Sin resumen disponible; titulo no descarta contenido FDA (cadena de origen garantiza coincidencia)
+1555,Detecting trends in time series of functional data: A study of Antarctic climate change,include,none,media,"Incluido por regla de duda; posible E4 a revisar: Deteccion de tendencias climaticas con FDA, discusion metodologica de base incierta"
+1556,A stickiness coefficient for longitudinal data,include,none,baja,Sin resumen disponible; titulo no descarta contenido FDA (cadena de origen garantiza coincidencia)
+1557,Testing the stability of the functional autoregressive process,include,none,baja,Sin resumen disponible; titulo no descarta contenido FDA (cadena de origen garantiza coincidencia)
+1558,"Analyzing research impact via functional data analysis: A powerful tool for scholars, insiders, and ",include,none,baja,Sin resumen disponible; titulo no descarta contenido FDA (cadena de origen garantiza coincidencia)
+1559,Functional convolution models,include,none,alta,Contenido metodologico o aplicado de FDA/FPCA claro en el resumen
+1560,Forecasting functional time series,include,none,baja,Sin resumen disponible; titulo no descarta contenido FDA (cadena de origen garantiza coincidencia)
+1561,Specification test for missing functional data,include,none,alta,Contenido metodologico o aplicado de FDA/FPCA claro en el resumen
+1562,Functional Generalized Autoregressive Conditional Heteroskedasticity,include,none,alta,Contenido metodologico o aplicado de FDA/FPCA claro en el resumen
+1563,Asymptotic results of a nonparametric conditional quantile estimator for functional time series,include,none,baja,Sin resumen disponible; titulo no descarta contenido FDA (cadena de origen garantiza coincidencia)
+1564,A semiparametric factor model for CDO surfaces dynamics,include,none,baja,Sin resumen disponible; titulo no descarta contenido FDA (cadena de origen garantiza coincidencia)
+1565,Extensions of some classical methods in change point analysis,include,none,baja,Sin resumen disponible; titulo no descarta contenido FDA (cadena de origen garantiza coincidencia)
+1566,Clustering random curves under spatial interdependence with application to service accessibility,include,none,baja,Sin resumen disponible; titulo no descarta contenido FDA (cadena de origen garantiza coincidencia)
+1567,Nonparametric and semiparametric regression for dependent data,include,none,baja,Sin resumen disponible; titulo no descarta contenido FDA (cadena de origen garantiza coincidencia)
+1568,Mortality and life expectancy forecasting for a group of populations in developed countries: A multi,include,none,alta,Contenido metodologico o aplicado de FDA/FPCA claro en el resumen
+1569,"Decoupling change-point detection based on characteristic functions: Methodology, asymptotics, subsa",include,none,baja,Sin resumen disponible; titulo no descarta contenido FDA (cadena de origen garantiza coincidencia)
+1570,FUNNEL-GSEA: FUNctioNal ELastic-net regression in time-course gene set enrichment analysis,include,none,alta,Contenido metodologico o aplicado de FDA/FPCA claro en el resumen
+1571,Testing trend stationarity of functional time series with application to yield and daily price curve,include,none,baja,Sin resumen disponible; titulo no descarta contenido FDA (cadena de origen garantiza coincidencia)
+1572,The discriminative functional mixture model for a comparative analysis of bike sharing systems,include,none,alta,Contenido metodologico o aplicado de FDA/FPCA claro en el resumen
+1573,Multivariate functional time series forecasting: Application to age-specific mortality rates,include,none,alta,Contenido metodologico o aplicado de FDA/FPCA claro en el resumen
+1574,An innovations algorithm for the prediction of functional linear processes,include,none,alta,Contenido metodologico o aplicado de FDA/FPCA claro en el resumen
+1575,White noise testing and model diagnostic checking for functional time series,include,none,baja,Sin resumen disponible; titulo no descarta contenido FDA (cadena de origen garantiza coincidencia)
+1576,Forecasting binary longitudinal data by a functional PC-ARIMA model,include,none,alta,Contenido metodologico o aplicado de FDA/FPCA claro en el resumen
+1577,Bootstrap for dependent Hilbert space-valued random variables with application to von Mises statisti,include,none,alta,Contenido metodologico o aplicado de FDA/FPCA claro en el resumen
+1578,Clustering time series under the Fréchet distance,include,none,alta,Contenido metodologico o aplicado de FDA/FPCA claro en el resumen
+1579,Detecting and dating structural breaks in functional data without dimension reduction,include,none,alta,Contenido metodologico o aplicado de FDA/FPCA claro en el resumen
+1580,Some asymptotic results of a non-parametric conditional mode estimator for functional time-series da,include,none,alta,Contenido metodologico o aplicado de FDA/FPCA claro en el resumen
+1581,A functional data-analytic approach to the classification of species according to their spatial disp,include,none,baja,Sin resumen disponible; titulo no descarta contenido FDA (cadena de origen garantiza coincidencia)
+1582,An extension of the classical distance correlation coefficient for multivariate functional data with,include,none,alta,Contenido metodologico o aplicado de FDA/FPCA claro en el resumen
+1583,A Simple Test for White Noise in Functional Time Series,include,none,alta,Contenido metodologico o aplicado de FDA/FPCA claro en el resumen
+1584,Software complex for information support of computationally difficult tasks,exclude,I1,alta,"Infraestructura de computo distribuido, sin contenido FDA"
+1585,Whole-volume clustering of time series data from zebrafish brain calcium images via mixture modeling,include,none,alta,Contenido metodologico o aplicado de FDA/FPCA claro en el resumen
+1586,On the Prediction of Stationary Functional Time Series,include,none,alta,Contenido metodologico o aplicado de FDA/FPCA claro en el resumen
+1587,Can personal dependency paths help to estimate life expectancy free of dependency?,include,none,baja,Sin resumen disponible; titulo no descarta contenido FDA (cadena de origen garantiza coincidencia)
+1588,Applications of Functional Dynamic Factor Models,include,none,baja,Sin resumen disponible; titulo no descarta contenido FDA (cadena de origen garantiza coincidencia)
+1589,Common functional principal components,include,none,alta,Contenido metodologico o aplicado de FDA/FPCA claro en el resumen
+1590,Two sample inference for the second-order property of temporally dependent functional data,include,none,alta,Contenido metodologico o aplicado de FDA/FPCA claro en el resumen
+1591,A Functional Stochastic Model for the Evolution of Spanish Stock Market,include,none,baja,Sin resumen disponible; titulo no descarta contenido FDA (cadena de origen garantiza coincidencia)
+1592,A simulation model validation method based on functional data analysis,include,none,baja,Sin resumen disponible; titulo no descarta contenido FDA (cadena de origen garantiza coincidencia)
+1593,Inference for the autocovariance of a functional time series under conditional heteroscedasticity,include,none,baja,Sin resumen disponible; titulo no descarta contenido FDA (cadena de origen garantiza coincidencia)
+1594,Evaluating stationarity via change-point alternatives with applications to fMRI data,include,none,alta,Contenido metodologico o aplicado de FDA/FPCA claro en el resumen
+1595,Integrated data-driven analytics to identify instability signatures in nonstationary financial time ,include,none,baja,Sin resumen disponible; titulo no descarta contenido FDA (cadena de origen garantiza coincidencia)
+1596,Bootstrapping functional data: A study of distributional property of sample eigenvalues,include,none,baja,Sin resumen disponible; titulo no descarta contenido FDA (cadena de origen garantiza coincidencia)
+1597,Functional principal component analysis of financial time series,include,none,baja,Sin resumen disponible; titulo no descarta contenido FDA (cadena de origen garantiza coincidencia)
+1598,Modelling a response as a function of high-frequency count data: The association between physical ac,include,none,media,"Incluido por regla de duda; posible E4 a revisar: Histograma como resumen funcional de acelerometria, aporte metodologico parcial"
+1599,Functional principal component learning using oja's method and Sobolev norms,include,none,baja,Sin resumen disponible; titulo no descarta contenido FDA (cadena de origen garantiza coincidencia)
