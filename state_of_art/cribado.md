@@ -244,30 +244,47 @@ E1/E4) limitó la certeza, o el extracto resultó ser una página de aterrizaje
 en vez del cuerpo real. Todos esos casos se resolvieron a favor de la
 inclusión ("ante la duda, incluye").
 
-### Pendiente de verificación humana antes de cerrar §7.3 (subconjunto de 761)
+### Verificación humana de la lista prioritaria (2026-09-10)
 
-`screening/ft_revision_prioritaria.csv` — **66 ids**:
-- **Las 61 exclusiones**, con foco en las 41 hechas sobre extracto truncado
-  (mayor riesgo de descartar algo cuya justificación estaría en la sección
-  de Métodos omitida).
-- **id 1350** — contradice la verificación de Etapa 1 del usuario (lo había
-  promovido de exclude/I1 → include; el texto completo indica E1, aplicación
-  a política de defensa/demografía japonesa sin discusión de base). Decisión
-  del usuario requerida.
-- **id 1347** — el fetch trajo el PDF de OTRO artículo (mercado del petróleo
-  en vez del precio de electricidad colombiano). Decisión tomada solo por el
-  título; re-descargar el correcto.
-- **ids 348 / 2491** — ambos "Factor-augmented model for functional data",
-  ambos `include`; su variante id 2495 ("...Smoothing Model...") ya se
-  excluyó como E3 en Etapa 1. Posible triplete — verificar en Zotero.
-- **ids 2367, 2757** — el fork anotó que el extracto podría no ser el cuerpo
-  real del artículo; quedaron `include`, verificar.
+El usuario revisó `screening/ft_revision_prioritaria.csv` (66 ids) en
+`ft_revision_prioritaria_terminada.numbers`, con código de color:
+**verde** = de acuerdo (63), **amarillo** = decisión cambiada (2),
+**rojo** = no pudo acceder al documento completo (1). Leído
+programáticamente (`numbers-parser`, bg_color por celda, 0 filas con color
+mixto).
+
+Cambios respecto a la propuesta de IA (los 63 verdes se confirmaron sin
+cambio; pasan a `confidence=alta`, `revisado_manualmente=si`):
+
+| id | IA | final | motivo |
+|---|---|---|---|
+| 2367 | include | **exclude / E1** | revisor: no menciona explícitamente la base usada — FDA accesoria |
+| 2491 | include | **exclude / E3** | revisor: duplicado de id 348 (se conserva 348; 2491 y 2495 fuera) |
+| 1187 | exclude / E4 | **pendiente_acceso** | el revisor no pudo acceder al texto completo — sale del subconjunto cribado, va a la cola de pendientes |
+
+Nota sobre id 1350 y id 1347 (flageados por los forks): el usuario los
+revisó dentro de esta lista y quedaron en verde (de acuerdo con la
+propuesta) — 1350 confirmado `exclude/E1` (sobrescribe su propia promoción
+a include en la Etapa 1), 1347 mantiene `include` por el título pese al PDF
+equivocado del fetch.
+
+**Resultado final del cribado de texto completo (subconjunto accesible,
+760 ítems tras mover 1187 a pendientes):**
+
+| Decisión | n |
+|---|---|
+| **Incluye** | **698** |
+| **Excluye** | **62** |
+
+Motivos de exclusión: I1=30 · E4=21 · E1=9 · E3=2.
+Artefacto final: `screening/ft_decisions_master.csv`
+(`revisado_manualmente=si` marca los 66 ids verificados).
 
 ### Estado global de §7.3
 
 - 2347 pasaron la Etapa 1.
-- **700 confirmados `include`** tras cribado de texto completo (subconjunto accesible).
-- 61 excluidos en texto completo (pendiente verificación humana de los 66 prioritarios).
-- **1586 pendientes** de obtención de texto completo por otra vía (bloqueados en el fetch + sin OA detectado).
+- **698 confirmados `include`** tras cribado de texto completo (subconjunto accesible, verificado por el usuario).
+- 62 excluidos en texto completo (verificados).
+- **1587 pendientes** de obtención de texto completo por otra vía: 903 sin OA detectado + 683 bloqueados en el fetch + 1 (id 1187) que el usuario no pudo abrir. Se destraban en parte según lo que resuelva el usuario con la biblioteca de Yachay Tech / CEDIA.
 
 ## 7.4 Control de consistencia intra-evaluador / auditoría del director — pendiente
