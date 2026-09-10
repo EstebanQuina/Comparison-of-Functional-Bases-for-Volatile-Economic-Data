@@ -13,6 +13,11 @@ __pycache__/
 # OS
 .DS_Store
 
+# Full-text cache / excerpts for Fase 5 Etapa 2 (copyrighted content, never committed)
+state_of_art/screening/fulltext_cache/
+state_of_art/screening/fulltext_excerpts.json
+state_of_art/screening/ft_batch_*.json
+
 # LaTeX build artifacts
 *.aux
 *.bbl

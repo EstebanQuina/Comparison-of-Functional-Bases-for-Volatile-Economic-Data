@@ -1,0 +1,1445 @@
+id,status,error,n_chars,method
+0,too_short,,11,html
+3,ok,,6035,html
+4,ok,,65335,pdf
+6,error_fetch,HTTP Error 404: Not Found,0,
+8,too_short,,11,html
+10,error_fetch,HTTP Error 403: Forbidden,0,
+11,ok,,117568,pdf
+14,ok,,38091,pdf
+15,error_fetch,HTTP Error 403: Forbidden,0,
+19,error_fetch,HTTP Error 403: Forbidden,0,
+20,ok,,60648,pdf
+21,too_short,,83,html
+22,error_fetch,HTTP Error 403: Forbidden,0,
+23,error_fetch,HTTP Error 403: Forbidden,0,
+24,error_fetch,HTTP Error 403: Forbidden,0,
+25,error_fetch,HTTP Error 403: Forbidden,0,
+26,error_fetch,HTTP Error 403: Forbidden,0,
+27,too_short,,167,html
+29,too_short,,6,html
+31,ok,,48806,pdf
+32,error_fetch,HTTP Error 403: Forbidden,0,
+35,too_short,,167,html
+36,too_short,,82,html
+39,too_short,,83,html
+40,too_short,,167,html
+42,ok,,60170,pdf
+43,ok,,88706,pdf
+45,ok,,3426,html
+46,too_short,,82,html
+48,error_fetch,HTTP Error 403: Forbidden,0,
+49,ok,,85187,pdf
+50,ok,,31194,pdf
+51,ok,,124902,html
+53,too_short,,82,html
+55,too_short,,82,html
+56,error_fetch,HTTP Error 403: Forbidden,0,
+57,too_short,,11,html
+58,ok,,48440,pdf
+59,ok,,45712,pdf
+62,ok,,12886,html
+64,too_short,,0,html
+70,too_short,,82,html
+71,too_short,,11,html
+72,ok,,80244,pdf
+74,ok,,51113,html
+79,error_fetch,<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1028)>,0,
+82,ok,,71480,pdf
+83,ok,,16085,html
+84,error_fetch,HTTP Error 403: Forbidden,0,
+86,ok,,40966,pdf
+88,ok,,36284,pdf
+89,ok,,37311,pdf
+92,error_fetch,HTTP Error 403: Forbidden,0,
+94,error_fetch,HTTP Error 403: Forbidden,0,
+98,too_short,,82,html
+99,error_fetch,HTTP Error 403: Forbidden,0,
+101,ok,,42446,pdf
+102,too_short,,0,html
+103,error_fetch,HTTP Error 403: Forbidden,0,
+104,error_fetch,HTTP Error 403: Forbidden,0,
+106,ok,,58200,pdf
+107,too_short,,81,html
+111,ok,,35262,pdf
+112,ok,,80899,pdf
+114,ok,,107427,html
+116,too_short,,82,html
+120,too_short,,81,html
+122,error_fetch,HTTP Error 403: Forbidden,0,
+123,error_fetch,HTTP Error 403: Forbidden,0,
+125,too_short,,11,html
+126,ok,,96244,pdf
+127,ok,,75569,html
+128,ok,,49002,pdf
+129,too_short,,82,html
+130,ok,,108140,pdf
+131,ok,,74048,pdf
+132,ok,,73473,pdf
+135,ok,,115609,pdf
+136,ok,,68308,pdf
+137,too_short,,167,html
+139,ok,,47490,pdf
+144,ok,,39966,pdf
+145,error_fetch,HTTP Error 403: Forbidden,0,
+146,error_fetch,HTTP Error 403: Forbidden,0,
+148,ok,,43026,pdf
+149,error_fetch,HTTP Error 403: Forbidden,0,
+150,ok,,12684,html
+154,error_fetch,HTTP Error 403: Forbidden,0,
+156,ok,,105074,pdf
+157,too_short,,0,html
+160,too_short,,0,html
+162,ok,,73286,pdf
+168,ok,,105187,pdf
+169,ok,,32247,pdf
+170,too_short,,167,html
+174,ok,,76833,pdf
+177,error_fetch,HTTP Error 403: Forbidden,0,
+179,ok,,11478,html
+181,too_short,,167,html
+182,error_fetch,HTTP Error 403: Forbidden,0,
+183,ok,,58993,pdf
+184,ok,,63887,pdf
+186,error_fetch,HTTP Error 403: Forbidden,0,
+187,error_fetch,HTTP Error 403: Forbidden,0,
+189,ok,,45417,pdf
+190,error_fetch,HTTP Error 403: Forbidden,0,
+191,ok,,9422,html
+192,too_short,,167,html
+196,ok,,83350,pdf
+199,error_fetch,HTTP Error 403: Forbidden,0,
+201,error_fetch,HTTP Error 403: Forbidden,0,
+202,error_fetch,HTTP Error 404: Not Found,0,
+203,ok,,56314,pdf
+204,error_fetch,<urlopen error timed out>,0,
+205,ok,,101329,pdf
+207,ok,,81227,pdf
+211,ok,,80332,pdf
+212,error_fetch,HTTP Error 403: Forbidden,0,
+213,too_short,,167,html
+214,error_fetch,HTTP Error 403: Forbidden,0,
+215,error_fetch,HTTP Error 403: Forbidden,0,
+216,too_short,,82,html
+217,ok,,62776,pdf
+218,error_fetch,HTTP Error 403: Forbidden,0,
+222,too_short,,82,html
+223,ok,,12050,html
+224,error_fetch,HTTP Error 403: Forbidden,0,
+225,error_fetch,HTTP Error 403: Forbidden,0,
+227,error_fetch,HTTP Error 403: Forbidden,0,
+234,too_short,,167,html
+235,ok,,67216,pdf
+239,ok,,7021,html
+240,ok,,72770,pdf
+243,error_fetch,HTTP Error 403: Forbidden,0,
+244,ok,,66880,pdf
+246,too_short,,167,html
+249,error_fetch,<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Missing Subject Key Identifier (_ssl.c:1028)>,0,
+250,too_short,,0,html
+252,too_short,,167,html
+254,too_short,,167,html
+255,error_fetch,HTTP Error 403: Forbidden,0,
+257,error_fetch,HTTP Error 403: Forbidden,0,
+260,too_short,,167,html
+261,too_short,,82,html
+262,ok,,61267,pdf
+263,ok,,69012,pdf
+264,error_fetch,HTTP Error 403: Forbidden,0,
+266,ok,,44622,pdf
+270,ok,,51551,pdf
+272,ok,,60248,pdf
+278,too_short,,0,html
+279,ok,,71793,html
+280,ok,,142778,pdf
+281,ok,,17713,pdf
+283,ok,,56155,pdf
+287,too_short,,11,html
+288,ok,,47249,pdf
+289,error_fetch,HTTP Error 403: Forbidden,0,
+290,error_fetch,HTTP Error 403: Forbidden,0,
+291,error_fetch,HTTP Error 500: Internal Server Error,0,
+294,ok,,64171,pdf
+296,ok,,8238,html
+298,ok,,19903,html
+299,ok,,7012,html
+300,error_fetch,HTTP Error 403: Forbidden,0,
+304,ok,,87992,pdf
+311,blocked_antibot,,1200,html
+312,too_short,,0,html
+313,ok_dudoso_corto,,2813,html
+314,ok,,76861,html
+316,too_short,,82,html
+319,ok,,57160,pdf
+320,ok,,51859,pdf
+321,error_fetch,HTTP Error 403: Forbidden,0,
+323,too_short,,167,html
+324,error_fetch,HTTP Error 403: Forbidden,0,
+328,error_fetch,HTTP Error 403: Forbidden,0,
+330,blocked_antibot,,1200,html
+331,ok,,74048,pdf
+333,ok,,57469,pdf
+334,too_short,,6,html
+335,error_fetch,HTTP Error 403: Forbidden,0,
+336,ok,,30571,pdf
+337,ok,,39207,pdf
+342,too_short,,167,html
+346,error_fetch,HTTP Error 403: Forbidden,0,
+348,ok,,99461,pdf
+351,too_short,,81,html
+352,ok,,33805,pdf
+353,error_fetch,HTTP Error 403: Forbidden,0,
+355,error_fetch,HTTP Error 403: Forbidden,0,
+357,too_short,,83,html
+358,ok,,54524,pdf
+359,error_fetch,HTTP Error 403: Forbidden,0,
+360,ok,,59992,pdf
+361,too_short,,0,html
+362,error_fetch,HTTP Error 403: Forbidden,0,
+364,ok,,7463,html
+365,too_short,,167,html
+366,error_fetch,HTTP Error 403: Forbidden,0,
+368,too_short,,82,html
+370,ok,,101761,pdf
+371,ok,,63461,pdf
+372,too_short,,11,html
+373,ok,,49241,pdf
+374,too_short,,167,html
+376,ok,,44039,pdf
+377,blocked_antibot,,1200,html
+378,error_fetch,HTTP Error 403: Forbidden,0,
+380,ok,,62911,pdf
+381,error_fetch,HTTP Error 403: Forbidden,0,
+382,too_short,,0,html
+383,error_fetch,HTTP Error 403: Forbidden,0,
+384,ok,,65044,pdf
+385,ok,,59988,pdf
+386,error_fetch,HTTP Error 403: Forbidden,0,
+387,too_short,,167,html
+389,too_short,,83,html
+391,ok,,96195,pdf
+396,too_short,,11,html
+397,too_short,,0,html
+401,ok,,37113,pdf
+403,ok,,71344,pdf
+408,error_fetch,HTTP Error 403: Forbidden,0,
+410,error_fetch,HTTP Error 403: Forbidden,0,
+412,ok,,48625,pdf
+413,error_fetch,HTTP Error 403: Forbidden,0,
+414,error_fetch,HTTP Error 403: Forbidden,0,
+415,error_fetch,HTTP Error 403: Forbidden,0,
+416,ok,,83893,pdf
+418,error_fetch,HTTP Error 403: Forbidden,0,
+419,ok,,46681,pdf
+420,too_short,,167,html
+421,ok,,93991,pdf
+423,ok,,10558,pdf
+424,error_fetch,HTTP Error 403: Forbidden,0,
+426,ok,,58699,pdf
+428,too_short,,11,html
+429,ok,,73769,pdf
+430,ok,,113510,pdf
+431,ok,,72046,pdf
+432,ok,,122375,pdf
+434,error_fetch,HTTP Error 403: Forbidden,0,
+435,ok,,67249,pdf
+438,ok,,43986,pdf
+440,ok,,107253,pdf
+442,too_short,,11,html
+443,ok,,64991,pdf
+444,error_fetch,HTTP Error 403: Forbidden,0,
+449,error_fetch,HTTP Error 403: Forbidden,0,
+450,blocked_antibot,,1200,html
+452,too_short,,0,html
+453,error_fetch,HTTP Error 403: Forbidden,0,
+458,ok,,73508,pdf
+459,error_fetch,"<urlopen error [Errno 8] nodename nor servname provided, or not known>",0,
+461,ok,,51190,pdf
+467,ok,,86685,pdf
+468,too_short,,82,html
+471,too_short,,83,html
+472,error_fetch,HTTP Error 404: Not Found,0,
+473,ok,,70148,html
+475,ok,,76195,pdf
+477,too_short,,82,html
+480,error_fetch,HTTP Error 403: Forbidden,0,
+481,ok,,70014,pdf
+483,ok,,15101,html
+484,too_short,,0,html
+486,ok,,53168,pdf
+487,ok,,14747,html
+489,error_fetch,HTTP Error 403: Forbidden,0,
+498,ok,,89542,pdf
+500,ok,,57742,pdf
+502,ok,,64376,pdf
+503,error_fetch,<urlopen error timed out>,0,
+505,too_short,,83,html
+510,ok,,56749,pdf
+512,error_fetch,HTTP Error 403: Forbidden,0,
+515,error_fetch,HTTP Error 403: Forbidden,0,
+518,ok,,51767,html
+519,ok,,63409,pdf
+520,too_short,,82,html
+521,too_short,,11,html
+522,too_short,,0,html
+524,too_short,,98,html
+528,error_fetch,HTTP Error 403: Forbidden,0,
+530,too_short,,83,html
+531,error_fetch,HTTP Error 403: Forbidden,0,
+532,too_short,,83,html
+534,error_fetch,HTTP Error 403: Forbidden,0,
+539,error_fetch,HTTP Error 503: Service Unavailable,0,
+541,error_fetch,HTTP Error 403: Forbidden,0,
+544,ok,,105703,pdf
+546,error_fetch,HTTP Error 403: Forbidden,0,
+551,ok,,42987,pdf
+555,ok,,43829,pdf
+558,ok_dudoso_corto,,2631,html
+559,ok,,36767,pdf
+563,too_short,,0,html
+566,ok,,54067,html
+570,ok,,70222,pdf
+571,ok,,21183,pdf
+572,too_short,,167,html
+573,error_fetch,HTTP Error 403: Forbidden,0,
+574,too_short,,167,html
+578,too_short,,6,html
+579,error_fetch,URL can't contain control characters. '/Papers/Jamshidi Powell - Recursive local polynomial approximation method using DC-RBF Feb162013.pdf' (found at least ' '),0,
+582,ok_dudoso_corto,,741,html
+585,too_short,,167,html
+586,too_short,,167,html
+588,ok,,68463,pdf
+589,error_fetch,HTTP Error 403: Forbidden,0,
+591,too_short,,167,html
+592,too_short,,167,html
+593,error_fetch,HTTP Error 403: Forbidden,0,
+596,ok,,80340,pdf
+598,ok,,61547,pdf
+600,too_short,,167,html
+604,too_short,,82,html
+606,ok,,68277,html
+607,error_fetch,HTTP Error 403: Forbidden,0,
+610,ok,,64555,html
+611,too_short,,83,html
+612,too_short,,83,html
+619,error_fetch,HTTP Error 403: Forbidden,0,
+620,too_short,,83,html
+621,ok,,66521,html
+622,ok,,72380,html
+628,ok,,54251,html
+629,ok,,93746,pdf
+630,too_short,,0,html
+634,error_fetch,HTTP Error 403: Forbidden,0,
+635,too_short,,167,html
+636,too_short,,83,html
+638,too_short,,83,html
+640,error_fetch,HTTP Error 403: Forbidden,0,
+643,too_short,,83,html
+645,error_fetch,HTTP Error 504: Gateway Time-out,0,
+647,error_fetch,HTTP Error 403: Forbidden,0,
+650,error_fetch,HTTP Error 403: Forbidden,0,
+653,error_fetch,HTTP Error 403: Forbidden,0,
+654,ok,,53203,pdf
+655,ok,,72739,pdf
+657,ok,,46266,pdf
+658,too_short,,167,html
+662,error_fetch,HTTP Error 403: Forbidden,0,
+667,ok_dudoso_corto,,1466,html
+669,too_short,,167,html
+672,too_short,,167,html
+673,too_short,,167,html
+675,too_short,,83,html
+677,too_short,,167,html
+680,too_short,,167,html
+682,ok_dudoso_corto,,1812,html
+683,error_fetch,HTTP Error 500: Internal Server Error,0,
+686,error_fetch,HTTP Error 403: Forbidden,0,
+687,error_fetch,<urlopen error timed out>,0,
+688,ok,,49986,pdf
+689,ok,,157736,pdf
+690,ok,,26914,pdf
+691,ok,,37866,pdf
+693,too_short,,83,html
+695,too_short,,81,html
+696,ok,,60053,html
+699,too_short,,81,html
+702,error_fetch,HTTP Error 403: Forbidden,0,
+703,ok,,34468,html
+705,error_fetch,HTTP Error 403: Forbidden,0,
+706,blocked_antibot,,1200,html
+707,error_fetch,HTTP Error 403: Forbidden,0,
+708,too_short,,167,html
+709,error_fetch,HTTP Error 403: Forbidden,0,
+711,error_fetch,HTTP Error 403: Forbidden,0,
+713,too_short,,11,html
+715,too_short,,167,html
+717,ok,,51801,pdf
+721,too_short,,167,html
+722,too_short,,167,html
+724,too_short,,167,html
+725,ok,,41704,pdf
+729,error_fetch,HTTP Error 504: Gateway Time-out,0,
+730,too_short,,0,html
+741,error_fetch,HTTP Error 403: Forbidden,0,
+742,ok,,78934,pdf
+744,ok,,42915,html
+746,ok,,63736,pdf
+749,error_fetch,HTTP Error 403: Forbidden,0,
+753,too_short,,0,html
+754,too_short,,0,html
+755,ok,,51241,html
+758,ok,,45819,pdf
+759,too_short,,167,html
+763,too_short,,167,html
+768,too_short,,167,html
+769,too_short,,167,html
+770,ok_dudoso_corto,,2531,html
+771,error_fetch,HTTP Error 403: Forbidden,0,
+774,ok,,47842,pdf
+775,too_short,,81,html
+776,error_fetch,HTTP Error 504: Gateway Time-out,0,
+778,ok,,30645,pdf
+780,ok,,73464,html
+781,too_short,,11,html
+782,ok,,59390,html
+783,too_short,,0,html
+784,error_fetch,HTTP Error 403: Forbidden,0,
+786,too_short,,0,html
+789,error_fetch,HTTP Error 403: Forbidden,0,
+793,ok,,37930,pdf
+794,error_fetch,HTTP Error 500: Internal Server Error,0,
+795,error_fetch,HTTP Error 403: Forbidden,0,
+798,too_short,,11,html
+800,too_short,,81,html
+801,error_fetch,HTTP Error 403: Forbidden,0,
+802,error_fetch,HTTP Error 504: Gateway Time-out,0,
+804,too_short,,167,html
+809,error_fetch,HTTP Error 403: Forbidden,0,
+812,too_short,,167,html
+813,ok,,22603,pdf
+814,error_fetch,HTTP Error 403: Forbidden,0,
+820,error_fetch,HTTP Error 403: Forbidden,0,
+825,ok,,43541,pdf
+827,error_fetch,HTTP Error 403: Forbidden,0,
+828,error_fetch,HTTP Error 403: Forbidden,0,
+835,error_fetch,HTTP Error 403: Forbidden,0,
+836,too_short,,167,html
+841,too_short,,167,html
+843,error_fetch,HTTP Error 403: Forbidden,0,
+844,ok,,53582,pdf
+847,error_fetch,HTTP Error 403: Forbidden,0,
+848,too_short,,83,html
+850,too_short,,167,html
+851,error_fetch,HTTP Error 403: Forbidden,0,
+852,ok,,30226,pdf
+854,too_short,,167,html
+856,too_short,,167,html
+861,ok,,59691,html
+866,ok,,53958,pdf
+867,ok,,63943,html
+868,ok,,14208,html
+870,ok,,50426,html
+872,error_fetch,HTTP Error 403: Forbidden,0,
+873,ok,,25278,pdf
+874,error_fetch,HTTP Error 403: Forbidden,0,
+875,ok,,57439,pdf
+876,ok,,70698,pdf
+877,ok,,35024,pdf
+879,ok,,4073,html
+884,ok,,26754,pdf
+885,ok,,44957,pdf
+886,too_short,,397,html
+887,error_fetch,HTTP Error 403: Forbidden,0,
+888,error_fetch,HTTP Error 403: Forbidden,0,
+889,ok,,3647,html
+890,ok,,6778,html
+891,error_fetch,HTTP Error 504: Gateway Time-out,0,
+893,ok,,35494,pdf
+894,ok,,55188,pdf
+899,error_fetch,HTTP Error 403: Forbidden,0,
+900,ok,,39422,pdf
+901,ok,,64454,pdf
+902,error_fetch,HTTP Error 403: Forbidden,0,
+908,ok,,41954,pdf
+910,ok,,145302,pdf
+911,ok,,6569,html
+915,too_short,,167,html
+917,too_short,,11,html
+918,ok,,83879,html
+920,ok,,39035,html
+923,ok,,29559,pdf
+924,error_fetch,HTTP Error 403: Forbidden,0,
+925,ok,,112445,pdf
+928,error_fetch,HTTP Error 403: Forbidden,0,
+929,ok,,29510,html
+932,error_fetch,HTTP Error 403: Forbidden,0,
+934,too_short,,11,html
+935,ok,,59136,pdf
+936,error_fetch,HTTP Error 403: Forbidden,0,
+937,error_fetch,HTTP Error 403: Forbidden,0,
+938,error_fetch,HTTP Error 403: Forbidden,0,
+942,error_fetch,HTTP Error 403: Forbidden,0,
+944,error_fetch,HTTP Error 403: Forbidden,0,
+945,error_fetch,HTTP Error 403: Forbidden,0,
+948,ok,,31695,pdf
+949,error_fetch,HTTP Error 403: Forbidden,0,
+950,error_fetch,HTTP Error 403: Forbidden,0,
+954,error_fetch,<urlopen error timed out>,0,
+955,error_fetch,HTTP Error 403: Forbidden,0,
+956,error_fetch,HTTP Error 403: Forbidden,0,
+958,ok,,3889,html
+959,ok,,46102,pdf
+961,error_fetch,HTTP Error 403: Forbidden,0,
+962,too_short,,167,html
+963,ok,,68989,pdf
+964,ok,,52476,pdf
+965,ok_dudoso_corto,,2339,html
+966,ok,,66594,pdf
+967,error_fetch,HTTP Error 403: Forbidden,0,
+970,ok,,41494,html
+971,error_fetch,HTTP Error 403: Forbidden,0,
+972,ok,,87870,pdf
+979,ok,,36034,pdf
+982,ok,,4385,html
+986,ok,,44610,pdf
+995,ok,,68116,html
+996,ok,,53332,pdf
+1004,error_fetch,<urlopen error timed out>,0,
+1009,ok,,30453,pdf
+1012,ok,,35789,pdf
+1018,ok,,48224,pdf
+1020,ok,,65917,pdf
+1024,ok,,41494,pdf
+1026,too_short,,11,html
+1039,blocked_antibot,,1205,html
+1040,too_short,,0,html
+1041,error_fetch,HTTP Error 404: Not Found,0,
+1042,ok,,57405,pdf
+1044,ok,,48727,pdf
+1049,ok,,56720,pdf
+1050,ok,,36040,pdf
+1052,ok,,52717,pdf
+1053,ok,,47719,pdf
+1059,error_fetch,HTTP Error 403: Forbidden,0,
+1062,too_short,,11,html
+1063,error_fetch,HTTP Error 403: Forbidden,0,
+1070,ok,,91783,pdf
+1071,error_fetch,HTTP Error 403: Forbidden,0,
+1072,error_fetch,HTTP Error 403: Forbidden,0,
+1073,ok,,71000,pdf
+1074,error_fetch,HTTP Error 403: Forbidden,0,
+1077,ok,,42659,pdf
+1078,error_fetch,HTTP Error 403: Forbidden,0,
+1081,error_fetch,HTTP Error 403: Forbidden,0,
+1082,ok,,246195,pdf
+1083,error_fetch,HTTP Error 403: Forbidden,0,
+1084,ok_dudoso_corto,,1914,html
+1085,ok,,57949,pdf
+1087,error_fetch,HTTP Error 403: Forbidden,0,
+1088,ok,,104493,pdf
+1089,too_short,,11,html
+1090,too_short,,83,html
+1091,ok,,35906,pdf
+1092,ok,,65242,pdf
+1094,ok,,6932,html
+1095,ok,,70628,pdf
+1097,ok,,37578,pdf
+1099,ok,,66941,pdf
+1102,error_fetch,HTTP Error 403: Forbidden,0,
+1103,ok,,37948,pdf
+1104,ok,,58684,pdf
+1107,error_fetch,HTTP Error 403: Forbidden,0,
+1108,ok,,70572,pdf
+1110,error_fetch,HTTP Error 403: Forbidden,0,
+1111,ok,,51508,pdf
+1113,ok,,71142,pdf
+1115,ok,,3120,html
+1116,error_fetch,HTTP Error 403: Forbidden,0,
+1118,error_fetch,HTTP Error 403: Forbidden,0,
+1120,error_fetch,HTTP Error 403: Forbidden,0,
+1122,ok,,69441,pdf
+1126,ok,,5365,html
+1130,ok,,96340,pdf
+1131,too_short,,11,html
+1132,ok,,3406,html
+1134,too_short,,82,html
+1135,error_fetch,HTTP Error 403: Forbidden,0,
+1137,error_fetch,HTTP Error 403: Forbidden,0,
+1141,error_fetch,HTTP Error 403: Forbidden,0,
+1142,error_fetch,HTTP Error 403: Forbidden,0,
+1143,ok,,119682,pdf
+1144,too_short,,82,html
+1149,ok,,60952,pdf
+1150,error_fetch,HTTP Error 403: Forbidden,0,
+1151,error_fetch,HTTP Error 403: Forbidden,0,
+1154,error_fetch,HTTP Error 403: Forbidden,0,
+1155,ok,,42921,pdf
+1156,error_fetch,HTTP Error 503: Service Unavailable,0,
+1157,error_fetch,HTTP Error 403: Forbidden,0,
+1158,too_short,,11,html
+1159,too_short,,82,html
+1161,ok,,104293,pdf
+1162,too_short,,82,html
+1164,error_fetch,HTTP Error 403: Forbidden,0,
+1167,too_short,,82,html
+1168,ok,,45916,pdf
+1169,error_fetch,HTTP Error 403: Forbidden,0,
+1171,error_fetch,HTTP Error 403: Forbidden,0,
+1172,error_fetch,HTTP Error 403: Forbidden,0,
+1173,error_fetch,HTTP Error 403: Forbidden,0,
+1174,error_fetch,HTTP Error 403: Forbidden,0,
+1175,too_short,,0,html
+1176,too_short,,0,html
+1183,error_fetch,HTTP Error 403: Forbidden,0,
+1184,ok,,49927,pdf
+1186,error_fetch,HTTP Error 403: Forbidden,0,
+1187,ok,,60504,pdf
+1188,ok,,51952,pdf
+1189,error_fetch,HTTP Error 403: Forbidden,0,
+1190,error_fetch,HTTP Error 403: Forbidden,0,
+1192,error_fetch,HTTP Error 403: Forbidden,0,
+1196,ok,,75662,pdf
+1197,ok,,37642,pdf
+1198,error_fetch,HTTP Error 403: Forbidden,0,
+1201,ok,,50677,pdf
+1202,error_fetch,HTTP Error 403: Forbidden,0,
+1204,error_fetch,HTTP Error 403: Forbidden,0,
+1206,too_short,,81,html
+1207,ok,,42887,pdf
+1209,ok,,3671,pdf
+1212,error_fetch,HTTP Error 403: Forbidden,0,
+1213,error_fetch,<urlopen error timed out>,0,
+1215,ok,,60774,pdf
+1218,error_fetch,HTTP Error 403: Forbidden,0,
+1219,error_fetch,HTTP Error 403: Forbidden,0,
+1224,error_fetch,HTTP Error 403: Forbidden,0,
+1226,error_fetch,HTTP Error 403: Forbidden,0,
+1228,too_short,,82,html
+1229,too_short,,82,html
+1231,error_fetch,HTTP Error 403: Forbidden,0,
+1232,error_fetch,HTTP Error 403: Forbidden,0,
+1234,too_short,,0,html
+1235,error_fetch,HTTP Error 403: Forbidden,0,
+1236,too_short,,11,html
+1237,error_fetch,HTTP Error 403: Forbidden,0,
+1238,error_fetch,HTTP Error 403: Forbidden,0,
+1239,error_fetch,HTTP Error 403: Forbidden,0,
+1240,error_fetch,The read operation timed out,0,
+1242,too_short,,11,html
+1243,too_short,,0,html
+1244,error_fetch,HTTP Error 403: Forbidden,0,
+1249,error_fetch,HTTP Error 403: Forbidden,0,
+1251,ok,,30492,pdf
+1253,blocked_antibot,,1200,html
+1254,error_fetch,HTTP Error 403: Forbidden,0,
+1255,ok,,39626,pdf
+1259,too_short,,11,html
+1261,ok,,58885,pdf
+1264,ok,,23748,html
+1271,ok,,44850,pdf
+1272,ok,,7584,html
+1273,error_fetch,HTTP Error 403: Forbidden,0,
+1276,ok,,194322,pdf
+1277,too_short,,81,html
+1278,ok,,64867,pdf
+1279,error_fetch,The read operation timed out,0,
+1280,error_fetch,HTTP Error 403: Forbidden,0,
+1286,ok,,105946,pdf
+1287,too_short,,11,html
+1288,error_fetch,HTTP Error 403: Forbidden,0,
+1293,error_fetch,HTTP Error 403: Forbidden,0,
+1295,error_fetch,<urlopen error timed out>,0,
+1297,error_fetch,HTTP Error 403: Forbidden,0,
+1299,error_fetch,HTTP Error 403: Forbidden,0,
+1301,ok,,7437,html
+1305,ok,,64657,pdf
+1306,error_fetch,HTTP Error 403: Forbidden,0,
+1311,too_short,,82,html
+1312,too_short,,82,html
+1313,ok,,65019,html
+1316,too_short,,82,html
+1318,too_short,,11,html
+1319,error_fetch,HTTP Error 403: Forbidden,0,
+1320,error_fetch,HTTP Error 403: Forbidden,0,
+1329,error_fetch,HTTP Error 403: Forbidden,0,
+1330,ok,,51917,pdf
+1331,error_fetch,HTTP Error 403: Forbidden,0,
+1332,ok,,76794,pdf
+1333,too_short,,82,html
+1336,ok,,61984,pdf
+1339,too_short,,81,html
+1340,too_short,,82,html
+1341,too_short,,0,html
+1345,ok,,118841,pdf
+1346,too_short,,82,html
+1347,ok,,5086,html
+1350,ok,,29187,pdf
+1351,error_fetch,HTTP Error 403: Forbidden,0,
+1352,too_short,,11,html
+1354,error_fetch,HTTP Error 403: Forbidden,0,
+1355,ok,,41434,pdf
+1358,error_fetch,HTTP Error 403: Forbidden,0,
+1359,error_fetch,HTTP Error 403: Forbidden,0,
+1361,error_fetch,HTTP Error 403: Forbidden,0,
+1363,ok,,84179,pdf
+1364,too_short,,11,html
+1365,error_fetch,HTTP Error 403: Forbidden,0,
+1366,error_fetch,HTTP Error 403: Forbidden,0,
+1370,ok,,85369,pdf
+1371,error_fetch,HTTP Error 403: Forbidden,0,
+1372,too_short,,82,html
+1373,too_short,,81,html
+1374,error_fetch,HTTP Error 403: Forbidden,0,
+1375,error_fetch,HTTP Error 403: Forbidden,0,
+1377,ok,,62506,pdf
+1378,error_fetch,HTTP Error 403: Forbidden,0,
+1379,error_fetch,HTTP Error 403: Forbidden,0,
+1380,blocked_antibot,,1200,html
+1382,error_fetch,HTTP Error 403: Forbidden,0,
+1383,ok,,64844,pdf
+1384,too_short,,169,html
+1386,error_fetch,HTTP Error 403: Forbidden,0,
+1389,error_fetch,HTTP Error 403: Forbidden,0,
+1392,too_short,,82,html
+1395,error_fetch,HTTP Error 403: Forbidden,0,
+1396,too_short,,11,html
+1400,too_short,,82,html
+1403,error_fetch,HTTP Error 403: Forbidden,0,
+1404,ok,,55804,pdf
+1405,error_fetch,HTTP Error 403: Forbidden,0,
+1408,ok,,18879,html
+1409,too_short,,11,html
+1411,error_fetch,HTTP Error 403: Forbidden,0,
+1414,error_fetch,HTTP Error 403: Forbidden,0,
+1416,error_fetch,HTTP Error 403: Forbidden,0,
+1417,ok,,19274,html
+1419,ok,,32114,pdf
+1420,ok,,61662,pdf
+1421,error_fetch,HTTP Error 403: Forbidden,0,
+1423,ok,,6800,html
+1424,error_fetch,HTTP Error 403: Forbidden,0,
+1425,ok,,48749,pdf
+1426,ok,,55788,pdf
+1428,error_fetch,HTTP Error 403: Forbidden,0,
+1429,ok,,47371,pdf
+1431,ok,,62159,pdf
+1432,too_short,,82,html
+1434,error_fetch,HTTP Error 403: Forbidden,0,
+1437,ok,,96528,pdf
+1439,too_short,,81,html
+1442,error_fetch,HTTP Error 403: Forbidden,0,
+1443,too_short,,6,html
+1444,ok,,38255,pdf
+1445,ok,,39943,html
+1446,ok,,53110,pdf
+1450,ok,,55289,pdf
+1451,blocked_antibot,,1200,html
+1455,too_short,,82,html
+1460,too_short,,0,html
+1463,ok,,64623,pdf
+1464,error_fetch,HTTP Error 403: Forbidden,0,
+1469,ok,,46019,pdf
+1471,too_short,,82,html
+1472,ok,,61162,pdf
+1474,too_short,,6,html
+1475,too_short,,82,html
+1476,error_fetch,HTTP Error 403: Forbidden,0,
+1479,ok,,70999,pdf
+1480,ok,,70712,pdf
+1481,error_fetch,HTTP Error 403: Forbidden,0,
+1483,too_short,,11,html
+1486,ok,,52935,pdf
+1488,error_fetch,HTTP Error 403: Forbidden,0,
+1489,error_fetch,HTTP Error 403: Forbidden,0,
+1490,error_fetch,HTTP Error 403: Forbidden,0,
+1491,error_fetch,<urlopen error timed out>,0,
+1493,error_fetch,HTTP Error 403: Forbidden,0,
+1494,blocked_antibot,,1200,html
+1495,ok,,48399,pdf
+1497,ok,,87880,pdf
+1498,too_short,,11,html
+1500,ok,,56592,pdf
+1501,error_fetch,HTTP Error 403: Forbidden,0,
+1502,error_fetch,HTTP Error 403: Forbidden,0,
+1503,ok,,39160,pdf
+1504,error_fetch,HTTP Error 403: Forbidden,0,
+1506,too_short,,82,html
+1507,error_fetch,HTTP Error 403: Forbidden,0,
+1508,ok,,121045,html
+1511,too_short,,82,html
+1516,error_fetch,HTTP Error 403: Forbidden,0,
+1517,ok_dudoso_corto,,2069,html
+1520,too_short,,81,html
+1521,ok,,91398,pdf
+1522,ok,,9796,html
+1526,error_fetch,HTTP Error 403: Forbidden,0,
+1529,ok,,40687,pdf
+1536,error_fetch,HTTP Error 404: Not Found,0,
+1542,error_fetch,<urlopen error timed out>,0,
+1543,error_fetch,HTTP Error 403: Forbidden,0,
+1544,error_fetch,HTTP Error 403: Forbidden,0,
+1546,ok,,45398,pdf
+1548,error_fetch,HTTP Error 403: Forbidden,0,
+1549,ok,,25373,pdf
+1550,too_short,,81,html
+1551,error_fetch,HTTP Error 403: Forbidden,0,
+1555,error_fetch,<urlopen error timed out>,0,
+1556,ok,,43655,pdf
+1557,too_short,,11,html
+1562,ok,,39497,pdf
+1564,too_short,,11,html
+1568,too_short,,82,html
+1570,error_fetch,HTTP Error 403: Forbidden,0,
+1572,too_short,,81,html
+1573,error_fetch,HTTP Error 403: Forbidden,0,
+1574,error_fetch,HTTP Error 403: Forbidden,0,
+1576,error_fetch,HTTP Error 403: Forbidden,0,
+1577,error_fetch,HTTP Error 403: Forbidden,0,
+1578,ok,,129738,pdf
+1579,ok,,73034,pdf
+1582,error_fetch,HTTP Error 404: Not Found,0,
+1583,ok,,72296,pdf
+1585,too_short,,167,html
+1586,ok,,78835,pdf
+1589,too_short,,81,html
+1590,too_short,,82,html
+1593,error_fetch,HTTP Error 403: Forbidden,0,
+1594,ok,,108953,pdf
+1598,ok,,12944,html
+1602,too_short,,82,html
+1610,error_fetch,HTTP Error 403: Forbidden,0,
+1615,ok,,72102,pdf
+1620,too_short,,82,html
+1622,too_short,,11,html
+1623,error_fetch,HTTP Error 403: Forbidden,0,
+1626,too_short,,80,html
+1631,error_fetch,HTTP Error 403: Forbidden,0,
+1632,error_fetch,HTTP Error 403: Forbidden,0,
+1634,ok,,62496,html
+1635,ok_dudoso_corto,,2200,html
+1638,error_fetch,HTTP Error 403: Forbidden,0,
+1643,ok,,19334,pdf
+1645,ok,,23548,pdf
+1651,error_fetch,HTTP Error 403: Forbidden,0,
+1654,error_fetch,HTTP Error 403: Forbidden,0,
+1657,too_short,,82,html
+1659,error_fetch,HTTP Error 403: Forbidden,0,
+1660,too_short,,82,html
+1663,too_short,,82,html
+1664,ok,,74507,pdf
+1671,too_short,,0,html
+1672,too_short,,0,html
+1674,too_short,,81,html
+1677,error_fetch,HTTP Error 403: Forbidden,0,
+1678,too_short,,82,html
+1679,error_fetch,HTTP Error 403: Forbidden,0,
+1680,ok,,61846,pdf
+1681,ok,,42574,pdf
+1682,too_short,,81,html
+1684,ok,,21416,pdf
+1686,ok,,100269,pdf
+1689,ok,,76664,pdf
+1691,too_short,,82,html
+1692,error_fetch,HTTP Error 403: Forbidden,0,
+1694,error_fetch,HTTP Error 403: Forbidden,0,
+1700,too_short,,82,html
+1702,error_fetch,HTTP Error 403: Forbidden,0,
+1706,error_fetch,HTTP Error 403: Forbidden,0,
+1722,ok,,11978,html
+1730,error_fetch,HTTP Error 403: Forbidden,0,
+1731,too_short,,11,html
+1741,too_short,,11,html
+1743,error_fetch,HTTP Error 403: Forbidden,0,
+1749,error_fetch,HTTP Error 403: Forbidden,0,
+1750,ok,,233581,html
+1753,error_fetch,HTTP Error 403: Forbidden,0,
+1754,too_short,,6,html
+1755,error_fetch,HTTP Error 403: Forbidden,0,
+1756,error_fetch,HTTP Error 403: Forbidden,0,
+1760,too_short,,11,html
+1762,error_fetch,HTTP Error 403: Forbidden,0,
+1763,error_fetch,HTTP Error 403: Forbidden,0,
+1765,error_fetch,HTTP Error 403: Forbidden,0,
+1770,error_fetch,HTTP Error 403: Forbidden,0,
+1778,error_fetch,HTTP Error 403: Forbidden,0,
+1779,ok,,31258,pdf
+1783,ok,,71549,pdf
+1790,error_fetch,HTTP Error 403: Forbidden,0,
+1791,blocked_antibot,,12152,html
+1797,ok,,65340,pdf
+1798,error_fetch,HTTP Error 403: Forbidden,0,
+1799,ok,,113677,pdf
+1803,too_short,,11,html
+1806,too_short,,11,html
+1811,ok,,4589,html
+1812,error_fetch,HTTP Error 403: Forbidden,0,
+1813,ok,,38974,pdf
+1814,error_fetch,HTTP Error 403: Forbidden,0,
+1815,error_fetch,"<urlopen error [Errno 8] nodename nor servname provided, or not known>",0,
+1816,too_short,,82,html
+1818,ok,,5826,html
+1820,ok,,33197,pdf
+1821,error_fetch,HTTP Error 403: Forbidden,0,
+1822,too_short,,0,html
+1823,error_fetch,HTTP Error 403: Forbidden,0,
+1826,error_fetch,HTTP Error 403: Forbidden,0,
+1827,ok,,66150,pdf
+1836,too_short,,0,html
+1837,too_short,,11,html
+1839,ok,,49861,pdf
+1840,ok,,91742,pdf
+1842,ok,,38821,pdf
+1843,ok,,72400,pdf
+1844,ok,,49038,pdf
+1847,error_fetch,HTTP Error 403: Forbidden,0,
+1848,error_fetch,HTTP Error 403: Forbidden,0,
+1849,ok,,103117,pdf
+1850,error_fetch,HTTP Error 403: Forbidden,0,
+1852,too_short,,11,html
+1854,error_fetch,<urlopen error timed out>,0,
+1856,error_fetch,HTTP Error 403: Forbidden,0,
+1858,error_fetch,<urlopen error timed out>,0,
+1860,ok,,94514,pdf
+1861,ok,,79286,pdf
+1870,ok,,14956,pdf
+1874,ok,,14524,pdf
+1875,error_fetch,HTTP Error 403: Forbidden,0,
+1878,error_fetch,HTTP Error 403: Forbidden,0,
+1879,error_fetch,<urlopen error timed out>,0,
+1880,error_fetch,<urlopen error timed out>,0,
+1882,too_short,,81,html
+1883,error_fetch,HTTP Error 403: Forbidden,0,
+1884,ok,,68331,pdf
+1888,ok,,16401,html
+1889,error_fetch,<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Missing Subject Key Identifier (_ssl.c:1028)>,0,
+1890,ok,,53140,pdf
+1891,ok,,45762,pdf
+1894,error_fetch,HTTP Error 504: Gateway Time-out,0,
+1897,too_short,,83,html
+1899,error_fetch,<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Missing Subject Key Identifier (_ssl.c:1028)>,0,
+1907,ok,,42808,pdf
+1911,too_short,,83,html
+1915,error_fetch,HTTP Error 403: Forbidden,0,
+1917,ok,,50542,pdf
+1924,ok,,9784,html
+1925,too_short,,82,html
+1929,too_short,,81,html
+1931,ok,,28172,pdf
+1933,ok,,120866,pdf
+1934,error_fetch,HTTP Error 403: Forbidden,0,
+1935,too_short,,83,html
+1936,error_fetch,HTTP Error 504: Gateway Time-out,0,
+1937,error_fetch,<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1028)>,0,
+1938,ok,,35747,pdf
+1939,ok,,144412,pdf
+1940,ok,,88258,pdf
+1944,ok,,79076,pdf
+1947,too_short,,83,html
+1948,ok,,73650,pdf
+1949,error_fetch,HTTP Error 403: Forbidden,0,
+1951,error_fetch,HTTP Error 403: Forbidden,0,
+1952,blocked_antibot,,1200,html
+1953,ok,,59484,pdf
+1954,ok,,44587,pdf
+1957,ok,,81359,pdf
+1960,error_fetch,<urlopen error timed out>,0,
+1961,ok,,73366,html
+1963,too_short,,83,html
+1965,error_fetch,HTTP Error 403: Forbidden,0,
+1966,too_short,,83,html
+1968,ok_dudoso_corto,,2977,html
+1970,error_fetch,HTTP Error 403: Forbidden,0,
+1972,too_short,,83,html
+1974,ok,,74841,pdf
+1975,too_short,,81,html
+1977,ok,,45301,pdf
+1979,ok,,43885,pdf
+1980,ok,,59415,pdf
+1981,error_fetch,HTTP Error 403: Forbidden,0,
+1988,ok,,68302,pdf
+1990,too_short,,11,html
+1991,error_fetch,HTTP Error 403: Forbidden,0,
+1993,too_short,,167,html
+1994,ok,,75445,pdf
+1998,error_fetch,HTTP Error 403: Forbidden,0,
+2002,ok,,56270,pdf
+2004,error_fetch,HTTP Error 403: Forbidden,0,
+2007,error_fetch,HTTP Error 403: Forbidden,0,
+2009,too_short,,81,html
+2010,ok_dudoso_corto,,1488,html
+2027,too_short,,82,html
+2030,too_short,,83,html
+2034,blocked_antibot,,1200,html
+2035,ok,,115521,pdf
+2036,error_fetch,HTTP Error 403: Forbidden,0,
+2037,ok,,24635,pdf
+2038,too_short,,0,html
+2049,error_fetch,<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Missing Subject Key Identifier (_ssl.c:1028)>,0,
+2050,ok,,42314,pdf
+2051,ok,,67930,pdf
+2052,too_short,,167,html
+2053,ok,,41712,pdf
+2055,error_fetch,HTTP Error 403: Forbidden,0,
+2061,error_fetch,HTTP Error 403: Forbidden,0,
+2065,ok,,112755,pdf
+2067,error_fetch,<urlopen error timed out>,0,
+2076,too_short,,167,html
+2078,error_fetch,HTTP Error 403: Forbidden,0,
+2079,error_fetch,HTTP Error 403: Forbidden,0,
+2081,ok,,78734,pdf
+2082,too_short,,167,html
+2083,ok,,3186,html
+2085,ok,,65594,pdf
+2086,blocked_antibot,,1200,html
+2090,ok,,32309,pdf
+2092,too_short,,0,html
+2094,ok,,76729,pdf
+2095,error_fetch,HTTP Error 403: Forbidden,0,
+2098,ok,,58142,pdf
+2099,blocked_antibot,,1200,html
+2100,ok,,39961,pdf
+2101,too_short,,0,html
+2102,too_short,,0,html
+2105,blocked_antibot,,1200,html
+2110,error_fetch,HTTP Error 403: Forbidden,0,
+2112,error_fetch,HTTP Error 403: Forbidden,0,
+2113,ok,,67473,pdf
+2115,too_short,,167,html
+2118,ok,,35908,pdf
+2121,ok,,65567,pdf
+2122,ok,,30493,pdf
+2127,too_short,,83,html
+2128,ok,,123905,pdf
+2130,error_fetch,HTTP Error 403: Forbidden,0,
+2138,ok,,67194,pdf
+2141,ok,,29321,pdf
+2143,ok,,36872,pdf
+2148,error_fetch,HTTP Error 403: Forbidden,0,
+2149,error_fetch,"<urlopen error [Errno 8] nodename nor servname provided, or not known>",0,
+2151,too_short,,81,html
+2155,error_fetch,HTTP Error 403: Forbidden,0,
+2159,error_fetch,HTTP Error 403: Forbidden,0,
+2160,error_fetch,HTTP Error 403: Forbidden,0,
+2161,error_fetch,HTTP Error 403: Forbidden,0,
+2163,error_fetch,HTTP Error 403: Forbidden,0,
+2164,ok,,57247,pdf
+2165,too_short,,81,html
+2167,ok,,10608,html
+2169,ok,,120455,pdf
+2171,too_short,,83,html
+2172,blocked_antibot,,1222,html
+2176,error_fetch,HTTP Error 403: Forbidden,0,
+2180,ok,,113433,pdf
+2181,too_short,,11,html
+2184,ok,,14392,pdf
+2185,too_short,,83,html
+2187,error_fetch,HTTP Error 403: Forbidden,0,
+2189,ok,,49305,pdf
+2190,error_fetch,HTTP Error 403: Forbidden,0,
+2191,too_short,,83,html
+2193,error_fetch,HTTP Error 403: Forbidden,0,
+2197,ok,,74405,pdf
+2198,ok,,7051,html
+2199,ok,,119931,pdf
+2201,ok,,86042,pdf
+2202,ok,,18500,pdf
+2203,ok,,40870,pdf
+2206,too_short,,82,html
+2207,ok,,175200,pdf
+2211,error_fetch,HTTP Error 403: Forbidden,0,
+2214,too_short,,11,html
+2216,blocked_antibot,,1200,html
+2217,error_fetch,<urlopen error timed out>,0,
+2220,too_short,,0,html
+2221,error_fetch,HTTP Error 403: Forbidden,0,
+2224,error_fetch,HTTP Error 403: Forbidden,0,
+2225,too_short,,83,html
+2226,error_fetch,HTTP Error 403: Forbidden,0,
+2228,ok,,41390,pdf
+2229,error_fetch,<urlopen error timed out>,0,
+2230,ok,,67826,pdf
+2231,ok,,123603,pdf
+2233,error_fetch,HTTP Error 403: Forbidden,0,
+2234,error_fetch,HTTP Error 401: Unauthorized,0,
+2235,ok,,91859,pdf
+2236,ok,,69332,pdf
+2238,too_short,,11,html
+2243,ok,,39679,pdf
+2247,ok,,63148,pdf
+2250,blocked_antibot,,1200,html
+2251,too_short,,83,html
+2253,ok,,62083,pdf
+2257,ok_dudoso_corto,,2494,html
+2261,ok,,103953,pdf
+2263,ok,,104415,pdf
+2265,too_short,,83,html
+2266,ok,,91585,pdf
+2268,ok,,59577,pdf
+2270,ok,,60720,pdf
+2271,ok,,88985,pdf
+2273,ok,,4542,html
+2274,ok,,85145,pdf
+2276,error_fetch,HTTP Error 403: Forbidden,0,
+2279,ok,,50761,pdf
+2284,error_fetch,HTTP Error 403: Forbidden,0,
+2289,error_fetch,HTTP Error 403: Forbidden,0,
+2290,ok,,97737,pdf
+2293,ok,,46314,pdf
+2296,ok,,49246,pdf
+2297,blocked_antibot,,1125,html
+2300,error_fetch,HTTP Error 403: Forbidden,0,
+2303,too_short,,83,html
+2304,ok,,44659,html
+2307,error_fetch,"<urlopen error [Errno 8] nodename nor servname provided, or not known>",0,
+2308,ok,,11993,pdf
+2311,ok,,59452,pdf
+2317,ok_dudoso_corto,,2566,html
+2321,ok,,85124,pdf
+2324,ok,,35171,pdf
+2326,ok,,53303,pdf
+2333,error_fetch,HTTP Error 403: Forbidden,0,
+2337,ok,,31633,pdf
+2342,ok,,6002,html
+2344,too_short,,83,html
+2345,too_short,,83,html
+2349,ok,,50374,pdf
+2353,ok,,47018,pdf
+2355,error_fetch,HTTP Error 403: Forbidden,0,
+2357,error_fetch,<urlopen error timed out>,0,
+2367,ok,,14505,html
+2368,error_fetch,HTTP Error 504: Gateway Time-out,0,
+2372,ok,,33179,pdf
+2383,ok,,52879,pdf
+2385,ok,,75797,pdf
+2386,too_short,,83,html
+2388,too_short,,11,html
+2390,error_fetch,HTTP Error 403: Forbidden,0,
+2391,ok,,91854,pdf
+2392,ok,,53036,pdf
+2395,ok,,21050,html
+2396,too_short,,11,html
+2397,ok,,16041,pdf
+2399,error_fetch,HTTP Error 403: Forbidden,0,
+2400,ok,,56655,pdf
+2401,ok,,51921,pdf
+2402,ok,,44981,pdf
+2403,ok,,31477,pdf
+2404,ok,,57629,pdf
+2405,ok,,96195,pdf
+2406,ok,,44746,pdf
+2407,ok,,97373,pdf
+2408,ok,,64973,pdf
+2409,ok,,55570,pdf
+2410,ok,,53474,pdf
+2411,ok,,51190,pdf
+2412,ok,,20704,pdf
+2413,ok,,63027,pdf
+2414,ok,,94068,pdf
+2415,ok,,53752,pdf
+2416,ok,,82378,pdf
+2417,ok,,47864,pdf
+2418,ok,,45762,pdf
+2419,ok,,24635,pdf
+2421,ok,,46367,pdf
+2422,ok,,48490,pdf
+2423,ok,,80244,pdf
+2424,ok,,33286,pdf
+2425,ok,,82967,pdf
+2428,ok,,83272,pdf
+2429,ok,,58438,pdf
+2430,ok,,84878,pdf
+2431,ok,,99337,pdf
+2432,ok,,55984,pdf
+2433,ok,,40258,pdf
+2434,ok,,94029,pdf
+2435,ok,,91521,pdf
+2436,ok,,96193,pdf
+2437,ok,,36637,pdf
+2438,ok,,56059,pdf
+2439,ok,,21572,pdf
+2440,ok,,144412,pdf
+2441,ok,,59664,pdf
+2442,ok,,68331,pdf
+2443,ok,,44443,pdf
+2444,ok,,68851,pdf
+2445,ok,,47952,pdf
+2446,ok,,60648,pdf
+2447,ok,,61835,pdf
+2448,ok,,74048,pdf
+2449,ok,,66613,pdf
+2450,ok,,33805,pdf
+2451,ok,,83291,pdf
+2452,ok,,46847,pdf
+2453,ok,,59022,pdf
+2454,ok,,83983,pdf
+2455,ok,,96804,pdf
+2456,ok,,42943,pdf
+2457,ok,,55855,pdf
+2458,ok,,79039,pdf
+2459,ok,,48110,pdf
+2460,ok,,157736,pdf
+2461,ok,,68482,pdf
+2462,ok,,64991,pdf
+2463,ok,,78975,pdf
+2464,ok,,180944,pdf
+2465,error_fetch,HTTP Error 403: Forbidden,0,
+2466,ok,,44582,pdf
+2467,ok,,61047,pdf
+2468,ok,,103358,pdf
+2469,ok,,88191,pdf
+2470,ok,,72152,pdf
+2471,ok,,96244,pdf
+2472,ok,,114597,pdf
+2473,ok,,142778,pdf
+2474,ok,,64030,pdf
+2475,ok,,16997,pdf
+2476,ok,,70055,pdf
+2477,ok,,42987,pdf
+2478,ok,,45672,pdf
+2479,ok,,84549,pdf
+2481,ok,,67040,pdf
+2482,ok,,52634,pdf
+2483,ok,,73650,pdf
+2484,ok,,49722,pdf
+2485,ok,,96666,pdf
+2486,ok,,78745,pdf
+2487,ok,,59837,pdf
+2489,ok,,68397,pdf
+2491,ok,,99461,pdf
+2492,ok,,69744,pdf
+2493,ok,,52641,pdf
+2494,ok,,65231,pdf
+2496,ok,,32143,pdf
+2497,ok,,129350,pdf
+2498,ok,,27486,pdf
+2499,ok,,62558,pdf
+2500,ok,,90682,pdf
+2501,ok,,122375,pdf
+2502,ok,,90397,pdf
+2503,ok,,104597,pdf
+2504,ok,,99457,pdf
+2505,ok,,15683,pdf
+2506,ok,,72695,pdf
+2508,ok,,134444,pdf
+2509,ok,,57391,pdf
+2510,ok,,56270,pdf
+2511,ok,,42314,pdf
+2514,ok,,40966,pdf
+2515,ok,,93915,pdf
+2516,ok,,50751,pdf
+2517,ok,,148245,pdf
+2518,ok,,46266,pdf
+2520,ok,,78404,pdf
+2521,ok,,79434,pdf
+2522,ok,,28843,pdf
+2523,ok,,105187,pdf
+2525,ok,,56480,pdf
+2526,ok,,79286,pdf
+2528,ok,,122778,pdf
+2529,ok,,41161,pdf
+2532,ok,,67321,pdf
+2533,ok,,114906,pdf
+2534,ok,,70225,pdf
+2535,ok,,65594,pdf
+2536,ok,,43986,pdf
+2537,ok,,55385,pdf
+2539,ok,,69840,pdf
+2540,ok,,13050,pdf
+2541,ok,,60876,pdf
+2543,ok,,55572,pdf
+2544,ok,,81359,pdf
+2545,ok,,54122,pdf
+2546,ok,,62766,pdf
+2547,ok,,39059,pdf
+2549,ok,,77811,pdf
+2550,ok,,40084,pdf
+2551,ok,,44892,pdf
+2552,ok,,97029,pdf
+2554,ok,,60282,pdf
+2555,ok,,88269,pdf
+2556,ok,,160666,pdf
+2557,ok,,49744,pdf
+2558,ok,,47695,pdf
+2559,error_fetch,HTTP Error 403: Forbidden,0,
+2560,ok,,76267,pdf
+2561,ok,,110832,pdf
+2562,ok,,35956,pdf
+2563,ok,,88477,pdf
+2565,ok,,51199,pdf
+2566,ok,,31730,pdf
+2567,ok,,59484,pdf
+2570,ok,,66496,pdf
+2571,ok,,62187,pdf
+2572,ok,,76794,pdf
+2573,ok,,93072,pdf
+2574,ok,,75460,pdf
+2575,ok,,41425,pdf
+2576,ok,,24763,pdf
+2577,ok,,77634,pdf
+2579,ok,,53776,pdf
+2581,ok,,83448,pdf
+2582,ok,,68797,pdf
+2583,ok,,67069,pdf
+2584,ok,,64355,pdf
+2585,ok,,41712,pdf
+2586,ok,,111555,pdf
+2588,ok,,169287,pdf
+2589,ok,,134383,pdf
+2590,ok,,112496,pdf
+2591,ok,,46187,pdf
+2592,ok,,133048,pdf
+2594,ok,,70828,pdf
+2599,ok,,65275,pdf
+2600,ok,,150550,pdf
+2601,ok,,136352,pdf
+2604,ok,,71038,pdf
+2605,ok,,50277,pdf
+2606,ok,,46356,pdf
+2614,ok,,120866,pdf
+2615,ok,,56789,pdf
+2616,ok,,106012,pdf
+2617,ok,,84920,pdf
+2618,ok,,63011,pdf
+2619,ok,,115045,pdf
+2620,ok,,38758,pdf
+2621,ok,,142887,pdf
+2622,ok,,42004,pdf
+2623,ok,,40788,pdf
+2624,ok,,76543,pdf
+2625,ok,,48380,pdf
+2626,ok,,105687,pdf
+2627,ok,,84086,pdf
+2628,ok,,47018,pdf
+2629,ok,,46652,pdf
+2630,ok,,107879,pdf
+2631,ok,,118346,pdf
+2632,ok,,54460,pdf
+2633,ok,,70414,pdf
+2634,ok,,96897,pdf
+2635,ok,,51426,pdf
+2636,ok,,22388,pdf
+2637,ok,,64355,pdf
+2638,ok,,81022,pdf
+2639,ok,,80771,pdf
+2640,ok,,42574,pdf
+2641,ok,,130145,pdf
+2642,ok,,82676,pdf
+2643,ok,,151910,pdf
+2645,ok,,47384,pdf
+2646,ok,,62986,pdf
+2647,ok,,103421,pdf
+2648,error_fetch,HTTP Error 403: Forbidden,0,
+2649,ok,,110773,pdf
+2650,ok,,74253,pdf
+2651,ok,,75463,pdf
+2652,ok,,74559,pdf
+2653,ok,,79677,pdf
+2654,ok,,123905,pdf
+2655,ok,,69853,pdf
+2656,ok,,120455,pdf
+2657,ok,,50058,pdf
+2658,ok,,50761,pdf
+2659,ok,,97737,pdf
+2660,ok,,85211,pdf
+2661,ok,,24989,pdf
+2662,ok,,14290,pdf
+2663,ok,,63578,pdf
+2664,ok,,105202,pdf
+2665,ok,,79299,pdf
+2666,ok,,86351,pdf
+2667,ok,,141164,pdf
+2668,ok,,91859,pdf
+2669,ok,,33362,pdf
+2670,ok,,59577,pdf
+2671,ok,,41434,pdf
+2672,ok,,72414,pdf
+2673,ok,,50163,pdf
+2674,ok,,103670,pdf
+2675,ok,,66703,pdf
+2676,ok,,76326,pdf
+2677,ok,,78113,pdf
+2678,ok,,84739,pdf
+2679,ok,,100197,pdf
+2680,ok,,146261,pdf
+2681,ok,,60720,pdf
+2682,ok,,53059,pdf
+2683,ok,,62159,pdf
+2684,ok,,77701,pdf
+2685,ok,,76164,pdf
+2686,ok,,34695,pdf
+2687,ok,,62242,pdf
+2688,ok,,74221,pdf
+2689,ok,,38515,pdf
+2691,ok,,134482,pdf
+2692,ok,,66630,pdf
+2693,ok,,41310,pdf
+2694,ok,,48596,pdf
+2695,ok,,120080,pdf
+2696,ok,,58337,pdf
+2697,ok,,99670,pdf
+2698,ok,,119217,pdf
+2699,ok,,67165,pdf
+2700,ok,,85145,pdf
+2701,ok,,124919,pdf
+2702,ok,,97148,pdf
+2703,ok,,110485,pdf
+2704,ok,,45255,pdf
+2705,ok,,39626,pdf
+2706,ok,,87678,pdf
+2707,ok,,41823,pdf
+2708,ok,,51186,pdf
+2709,ok_dudoso_corto,,2372,html
+2710,ok,,78890,pdf
+2711,ok,,122746,pdf
+2712,ok,,96430,pdf
+2713,ok,,171878,pdf
+2714,ok,,74041,pdf
+2715,ok,,61268,pdf
+2716,ok,,80255,pdf
+2717,ok,,104415,pdf
+2718,ok,,56669,pdf
+2719,ok,,55410,pdf
+2720,ok,,154304,pdf
+2721,ok,,62154,pdf
+2722,ok,,60774,pdf
+2725,ok,,59247,pdf
+2726,ok,,30419,pdf
+2727,ok,,82195,pdf
+2728,ok,,32624,pdf
+2729,ok,,109587,pdf
+2730,error_fetch,HTTP Error 404: Not Found,0,
+2731,ok,,39679,pdf
+2733,ok,,33328,pdf
+2734,ok,,43955,pdf
+2736,ok,,28832,pdf
+2738,ok,,25014,pdf
+2739,ok,,78650,pdf
+2740,ok,,117683,pdf
+2742,ok,,33179,pdf
+2743,ok,,54314,pdf
+2744,ok,,78100,pdf
+2747,error_fetch,<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Missing Subject Key Identifier (_ssl.c:1028)>,0,
+2749,ok,,49971,pdf
+2750,ok,,34170,pdf
+2751,ok,,103953,pdf
+2752,ok,,108349,pdf
+2754,ok,,92191,pdf
+2755,ok,,101668,pdf
+2756,ok,,88985,pdf
+2757,ok,,19774,html
+2760,ok,,78276,pdf
+2761,ok,,63747,pdf
+2762,ok,,58387,pdf
+2763,ok,,63877,pdf
+2764,ok,,39497,pdf
+2765,ok,,79544,pdf
+2766,ok,,27745,pdf
+2767,ok,,72342,pdf
+2768,ok,,37941,pdf
+2769,ok,,113433,pdf
+2770,ok,,38821,pdf
+2771,ok,,130793,pdf
+2772,ok,,81779,pdf
+2773,ok,,16041,pdf
+2774,ok,,59659,pdf
+2775,ok,,36034,pdf

@@ -168,6 +168,106 @@ modificar + 115 verificados por el usuario):**
    arXiv, préstamo interbibliotecario/CEDIA, contacto con autor) — pendiente
    de definir el procedimiento exacto para la Etapa 2.
 
-## 7.3 Etapa 2 — Texto completo — pendiente
+## 7.3 Etapa 2 — Texto completo — ⏳ en curso (triage de acceso, 2026-09-09)
+
+**Punto de partida:** los 2347 ítems incluidos en §7.2.
+
+### Triage de acceso (I5) antes de leer texto completo
+
+Con el catálogo limitado de la biblioteca de Yachay Tech (misma limitación
+ya documentada en `fuentes_informacion.md` para la Fase 4), aplicar I5
+directamente habría descartado una fracción grande sin agotar vías
+razonables. En vez de eso, se corrió un chequeo automatizado de acceso
+abierto legal sobre los 2347 (script `screening/check_oa_access.py`,
+salida `screening/oa_status.csv`):
+
+1. **Unpaywall** (`api.unpaywall.org`, por DOI) — agrega copias legales
+   alojadas por el autor/repositorio/editor: **986 con OA confirmado**.
+2. **Semantic Scholar** (`openAccessPdf`) como fallback sobre lo que
+   Unpaywall no resolvió: **123 más**.
+3. **Detección de URL de arXiv** en los ítems sin DOI (335 de 423):
+   ya son de acceso abierto por naturaleza aunque el registro no tenga DOI.
+
+**Resultado: 1444/2347 (61.5%) con acceso abierto legal ya confirmado.**
+Los 903 restantes (815 con DOI sin OA detectado + 88 sin DOI ni arXiv)
+quedan **pausados, no excluidos** — I5 todavía no se ha aplicado sobre
+ellos, a la espera de que el usuario confirme con la biblioteca de Yachay
+Tech si hay préstamo interbibliotecario o acceso vía **CEDIA** (consorcio
+ecuatoriano de bibliotecas académicas). Solo se registrará una exclusión
+por I5 sobre un ítem de este grupo tras agotar esa vía (y, si aplica,
+contacto directo con el autor) — no antes.
+
+**Decisión del usuario (2026-09-09):** avanzar ya con la lectura de texto
+completo sobre los **1444 con acceso confirmado**, dejando los 903
+pendientes en paralelo mientras se resuelve el tema bibliotecario.
+
+### Obtención automática de texto completo (2026-09-10)
+
+Script `screening/fetch_fulltext.py` (fetch por la URL de OA, extracción de
+texto de PDF con `pypdf` o de HTML con `BeautifulSoup`; caché local en
+`screening/fulltext_cache/`, **no versionado** — contenido con derechos de
+autor). Resultado sobre los 1444:
+
+| Categoría | n |
+|---|---|
+| Texto completo real obtenido | **761** (52.7%) |
+| Bloqueado por editorial (403/404/timeout — Elsevier, Wiley, MDPI, SAGE) | 383 |
+| Vacío / dependiente de JavaScript | 265 |
+| Muro anti-bot explícito (Cloudflare/Anubis) | 20 |
+| Solo página de metadatos de repositorio | 15 |
+
+No se intentó evadir los muros anti-bot de las editoriales. Los 683 no
+obtenidos (1444 − 761) se suman a los 903 sin OA → **1586 ítems pendientes
+de obtención de texto completo por otra vía** (descarga manual del usuario
+en su navegador, préstamo interbibliotecario / CEDIA, o contacto con autor).
+
+### Cribado de texto completo asistido (IA) — subconjunto de 761
+
+De cada texto obtenido se armó un extracto acotado (introducción ~6000
+car. + conclusión ~3000 car., cuerpo intermedio omitido) —
+`screening/build_fulltext_excerpts.py` → `screening/fulltext_excerpts.json`.
+Se clasificaron los 761 en 16 lotes en paralelo (forks) contra I1–I5/E1–E6,
+con I5 ya satisfecho por construcción. Resultado consolidado (761/761,
+cobertura verificada, `screening/ft_decisions_master.csv`):
+
+| Decisión | n |
+|---|---|
+| **Incluye** | **700** |
+| **Excluye** | **61** |
+
+Motivos de exclusión: I1=30 · E4=22 · E1=8 · E3=1.
+
+Distribución de confianza: alta=468, media=278, baja=15.
+**215/761 marcados `extracto_truncado_relevante=si`** — el cuerpo intermedio
+omitido (donde suele estar la discusión sustantiva de la base, clave para
+E1/E4) limitó la certeza, o el extracto resultó ser una página de aterrizaje
+en vez del cuerpo real. Todos esos casos se resolvieron a favor de la
+inclusión ("ante la duda, incluye").
+
+### Pendiente de verificación humana antes de cerrar §7.3 (subconjunto de 761)
+
+`screening/ft_revision_prioritaria.csv` — **66 ids**:
+- **Las 61 exclusiones**, con foco en las 41 hechas sobre extracto truncado
+  (mayor riesgo de descartar algo cuya justificación estaría en la sección
+  de Métodos omitida).
+- **id 1350** — contradice la verificación de Etapa 1 del usuario (lo había
+  promovido de exclude/I1 → include; el texto completo indica E1, aplicación
+  a política de defensa/demografía japonesa sin discusión de base). Decisión
+  del usuario requerida.
+- **id 1347** — el fetch trajo el PDF de OTRO artículo (mercado del petróleo
+  en vez del precio de electricidad colombiano). Decisión tomada solo por el
+  título; re-descargar el correcto.
+- **ids 348 / 2491** — ambos "Factor-augmented model for functional data",
+  ambos `include`; su variante id 2495 ("...Smoothing Model...") ya se
+  excluyó como E3 en Etapa 1. Posible triplete — verificar en Zotero.
+- **ids 2367, 2757** — el fork anotó que el extracto podría no ser el cuerpo
+  real del artículo; quedaron `include`, verificar.
+
+### Estado global de §7.3
+
+- 2347 pasaron la Etapa 1.
+- **700 confirmados `include`** tras cribado de texto completo (subconjunto accesible).
+- 61 excluidos en texto completo (pendiente verificación humana de los 66 prioritarios).
+- **1586 pendientes** de obtención de texto completo por otra vía (bloqueados en el fetch + sin OA detectado).
 
 ## 7.4 Control de consistencia intra-evaluador / auditoría del director — pendiente

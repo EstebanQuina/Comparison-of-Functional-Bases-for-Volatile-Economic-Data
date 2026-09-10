@@ -1,0 +1,51 @@
+id,title_short,decision,reason_code,confidence,rationale,extracto_truncado_relevante
+703,Spatio-temporal functional data analysis for wireless sensor networks data,include,none,media,FPCA con suavizado espaciotemporal; solo boilerplate PMC visible,si
+717,Restricted likelihood ratio tests for linearity in scalar-on-function regression,include,none,alta,Metodologia central FDA (FGAM); prueba de linealidad en regresion funcional,no
+725,Sparse functional principal component analysis via regularized basis expansions,include,none,alta,FPCA con bases gaussianas regularizadas y penalizacion explicita,no
+742,Robust adaptive functional regression in functional mixed model framework,include,none,alta,Modelo mixto funcional wavelet (WFMM) bayesiano robusto,no
+744,Optimally weighted L2 distance for functional data,include,none,media,Distancia basada en representacion spline; solo boilerplate PMC visible,si
+746,Identifying Differentially Expressed Genes for Time-course Microarray Data through FDA,include,E4-exception,alta,Discusion sustantiva de bases ortogonales estimadas de los datos pese a dominio genomico,no
+755,A Bayesian regression model for multivariate functional data,include,none,media,Regresion bayesiana funcional multivariada; solo boilerplate PMC visible,si
+758,Functional principal component analysis via regularized Gaussian basis expansions and unbalanced data,include,none,alta,FPCA con bases gaussianas regularizadas explicitas,no
+774,Regularized 3D functional regression for brain image data via Haar wavelets,include,E4-exception,alta,Regresion 3D regularizada con wavelets de Haar; discusion metodologica sustantiva de base,no
+778,Preprocessing of centred logratio transformed density functions using smoothing splines,include,none,alta,Splines de suavizado para preprocesamiento de funciones de densidad,no
+780,A marginal approach to reduced-rank penalized spline smoothing with application to multilevel functional data,include,none,media,Suavizado spline penalizado de rango reducido; solo boilerplate PMC visible,si
+782,Recent history functional linear models for sparse longitudinal data,include,none,media,Modelo lineal funcional de ventana deslizante; solo boilerplate PMC visible,si
+793,Dynamic retrospective regression for functional data,include,none,alta,Registro de curvas y splines de Hermite en regresion funcional dinamica,no
+813,3D face recognition by functional data analysis,include,E4-exception,alta,Expansion explicita en bases funcionales para representar superficies 3D,no
+825,Semiparametric mixed models for nested repeated measures applied to ambulatory blood pressure,include,none,baja,Posible modelo semiparametrico con splines; metodologia no visible en el extracto,si
+844,Multichannel deconvolution with long-range dependence: A minimax study,include,none,media,Estimador wavelet adaptativo minimax; teoria de bases wavelet relevante a PR4,no
+852,Common functional implied volatility analysis,include,none,alta,Aplicacion financiera directa (PR5) con reduccion de dimensionalidad funcional,no
+861,Corrected Confidence Bands for Functional Data Using Principal Components,include,none,media,Bandas de confianza via FPCA; solo boilerplate PMC visible,si
+866,The analysis of two-way functional data using two-way regularized singular value decompositions,include,none,alta,Extension de FPCA con penalizacion y expansion en base explicita,no
+867,Functional data analysis and characterisation of temperature and rainfall patterns in Peninsular Malaysia,include,none,media,Suavizado y registro de curvas; abstract cortado antes de detallar la base usada,si
+868,Functional maximum-likelihood estimation of ARH(p) models,include,none,media,Modelo ARH con descomposicion espectral/Fourier; paywall tras el resumen,si
+870,Assessing time-dependent association between scalp EEG and muscle activation,include,none,media,Modelo de efectos aleatorios funcionales; solo boilerplate PMC visible,si
+873,Some pitfalls in application of functional data analysis approach to association studies,include,E4-exception,alta,Discusion metodologica central sobre eleccion y tipo de funciones base,no
+875,IGS: An IsoGeometric approach for smoothing on surfaces,include,none,media,Suavizado con representacion NURBS; familia de base adyacente a las del protocolo,no
+876,Consistency of functional learning methods based on derivatives,include,none,alta,Splines de suavizado y teoria de consistencia asintotica para FDA,no
+877,Functional Soft Sensor Based on Spectra Data for Predicting Multiple Quality Variables,include,none,baja,Sensor funcional industrial; abstract y metodologia no visibles en extracto,si
+879,Analysis of the functional regression problem of temperature on Ozone concentration,include,none,baja,Extraccion de texto de baja calidad (pagina con ruido de sugerencias); tema ambiental E4,si
+884,Cubic spline for the functional treatment of the global solar radiation,include,E4-exception,alta,Splines cubicos en espacio funcional normado; autores ecuatorianos (ESPOCH) relevante PR5,no
+885,First-passage-based boundary estimation in functional data,include,none,alta,Metodologia central de estimacion de frontera en FDA,no
+889,Bayesian functional regression in high-throughput phenotyping of modern agriculture,include,none,baja,Fetch devolvio pagina de inicio de la revista en vez del articulo; decision por titulo/etapa1,si
+890,Smoothing wind and rainfall data through functional data analysis technique,include,E4-exception,alta,Keywords explicitas: basis function/roughness penalty/Fourier basis,no
+893,The effect of vaccine on COVID-19 spread by function-on-scalar regression model,include,E4-exception,alta,Suavizado B-spline explicito para funcion-en-escalar bayesiana,no
+894,Use of Functional Data to Model the Trajectory of an IMU for Motor Impairment,include,none,media,FDA para extraer coeficientes de funcion como features; discusion de base no confirmada,si
+900,Functional principal component analysis for identifying the child growth pattern,include,none,alta,FPCA como tecnica central del estudio longitudinal,no
+901,Applications of functional data analysis: A systematic review,include,none,alta,Revision sistematica que tabula uso de B-spline/FPCA en la literatura; posible referencia clave para la sintesis,no
+908,Rolled-upness: Phenotyping leaf rolling in cereals using computer vision and FDA,include,none,media,Uso de FDA para cuantificar curvatura; discusion de base no confirmada en el extracto,si
+910,Trends in stratospheric ozone profiles using functional mixed models,include,E4-exception,alta,Aproximacion explicita de perfiles mediante una base apropiada,no
+911,Functional Availability Modelling of CNC Machine Tools,exclude,I1,media,"""Functional"" en sentido de ingenieria de confiabilidad, no de analisis de datos funcionales",no
+918,Contrasting pre-vaccine COVID-19 waves in Italy through functional data analysis,include,E4-exception,alta,Smoothing splines y registro de landmarks explicitos,no
+920,Nasal coarticulation in Bininj Kunwok: An aerodynamic analysis,include,none,baja,Sin abstract visible en el extracto; conexion FDA no confirmada,si
+923,Spatial prediction of soil penetration resistance using functional geostatistics,include,E4-exception,alta,B-splines de 18 funciones explicitas para geoestadistica funcional,no
+925,Penalized Partial Least Squares with applications to B-spline transformations and functional data,include,none,alta,Titulo confirma PLS penalizado con transformaciones B-spline (Kramer/Boulesteix/Tutz); texto extraido con errores de codificacion de fuente,si
+929,Unveiling air pollution patterns in Yemen: a spatial-temporal functional data analysis,include,E4-exception,alta,Fourier y B-spline con GCV explicitos para suavizado,no
+935,Functional data analysis of sleeping energy expenditure,include,E4-exception,alta,Smoothing spline y FPCA como metodologia central pese a dominio medico,no
+948,Uncovering regional climate patterns in Turkey using multivariate functional data analysis,include,E4-exception,alta,Expansion en base de Fourier con control de rugosidad y GCV explicitos,no
+958,Utilizing BIC for the intelligent selection of functional data with principal components,include,none,alta,Seleccion de dimension/modelo via BIC en FPCA; relevante PR2/PR3,no
+959,Exploring functional data analysis and wavelet principal component analysis on ecstasy (MDMA) wastewater data,include,none,alta,Comparacion directa Fourier vs B-spline vs wavelet en FPCA; muy relevante para PR2/PR4,no
+963,Trajectories of mHealth-Tracked Mental Health and Their Predictors in Female Chronic Pelvic Pain Disorders,include,none,baja,Sin mencion explicita de FDA en el extracto disponible; posible falso positivo,si
+964,High resolution temperature forecasting using functional time series decomposition,include,none,alta,Descomposicion de series temporales funcionales; relevante PR4/PR5,no
+966,A multi-country comparison of stochastic models of breast cancer mortality with P-splines smoothing approach,include,E4-exception,alta,P-splines explicitos comparados contra modelos Lee-Carter,no
