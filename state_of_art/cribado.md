@@ -280,11 +280,38 @@ Motivos de exclusión: I1=30 · E4=21 · E1=9 · E3=2.
 Artefacto final: `screening/ft_decisions_master.csv`
 (`revisado_manualmente=si` marca los 66 ids verificados).
 
+### Decisión de alcance: solo acceso abierto (2026-09-12)
+
+El autor consultó con su director de tesis: dado el volumen de literatura
+que ya superó el cribado título/resumen (2347 ítems), **se acuerda
+restringir la revisión a literatura de acceso abierto**, sin perseguir
+préstamo interbibliotecario, CEDIA ni contacto con autores para el resto.
+Formalizado como **I5 v1.1** en `criterios_elegibilidad.md` §3.5 — "acceso
+abierto" se define por el **estatus legal/de licencia** (Unpaywall/
+Semantic Scholar/arXiv), no por si la descarga automática tuvo éxito.
+
+**Consecuencia aplicada:**
+- **903 ítems sin OA confirmado → excluidos por I5**, formalmente
+  (`screening/excluidos_I5_no_oa.csv`). Dejan de estar "pausados" — quedan
+  fuera de la revisión.
+- **684 ítems con OA confirmado pero sin texto utilizable** (683 bloqueados
+  por muro anti-bot editorial en el fetch automático + id 1187, cuyo
+  extracto tampoco resultó utilizable) **permanecen en el alcance** —
+  siguen siendo de acceso abierto por definición, solo falta que el autor
+  los abra manualmente en su navegador (sin el bloqueo que sí afecta a un
+  script). Lista de trabajo generada y ordenada por dominio para facilitar
+  el acceso por lotes: `screening/pendientes_acceso_manual.csv`. Dominios
+  con más ítems: doi.org (145, redirecciones — el dominio real variará),
+  projecteuclid.org (90), sciencedirect.com (74), mdpi.com (56),
+  ncbi.nlm.nih.gov (50), wiley.com (48), hdl.handle.net (42),
+  academic.oup.com (27), figshare.com (26), tandfonline.com (17).
+
 ### Estado global de §7.3
 
 - 2347 pasaron la Etapa 1.
-- **698 confirmados `include`** tras cribado de texto completo (subconjunto accesible, verificado por el usuario).
+- **698 confirmados `include`** tras cribado de texto completo (subconjunto ya accesible, verificado por el usuario).
 - 62 excluidos en texto completo (verificados).
-- **1587 pendientes** de obtención de texto completo por otra vía: 903 sin OA detectado + 683 bloqueados en el fetch + 1 (id 1187) que el usuario no pudo abrir. Se destraban en parte según lo que resuelva el usuario con la biblioteca de Yachay Tech / CEDIA.
+- **903 excluidos por I5** (sin acceso abierto confirmado).
+- **684 pendientes de acceso manual** por el usuario (de acceso abierto confirmado, descarga automática bloqueada) — una vez conseguido el texto, se criban con el mismo procedimiento (extracto + lote de IA + verificación humana dirigida).
 
 ## 7.4 Control de consistencia intra-evaluador / auditoría del director — pendiente

@@ -2,7 +2,7 @@
 
 **Protocolo de referencia:** `protocolo_estado_del_arte.md`, §3
 **Preguntas de revisión:** `preguntas_revision.md` (PR1–PR5)
-**Estado:** v1.0 — aprobado con modificaciones respecto al borrador del protocolo
+**Estado:** v1.1 — aprobado con modificaciones respecto al borrador del protocolo
 
 ## 3.1 Criterios de inclusión
 
@@ -14,7 +14,7 @@
   arXiv con calidad verificable.
 - **I3.** Ventana temporal: **1997–2026, sin excepciones.**
 - **I4.** Idiomas: inglés, español, portugués, francés.
-- **I5.** Texto completo accesible.
+- **I5.** Texto completo de **acceso abierto** (ver nota v1.1 abajo).
 
 ## 3.2 Criterios de exclusión
 
@@ -54,6 +54,32 @@ Marx 1996) **no se incluyen en la revisión del estado del arte.** Se ubican
 en el Marco Teórico (`chapters/fundamentals.tex`), donde corresponden
 conceptualmente.
 
+## 3.5 Restricción de I5 a acceso abierto (v1.1)
+
+**I5 se restringe a acceso abierto legal** (Unpaywall/Semantic Scholar
+confirmando `is_oa=true`, o preprint de arXiv): dado el volumen de
+literatura ya disponible tras la Fase 5 §7.2 (2347 ítems que superaron el
+cribado título/resumen, muy por encima de lo manejable en una tesis de
+pregrado), el autor y su director acordaron **no perseguir texto completo
+por vías de acceso restringido** (préstamo interbibliotecario, CEDIA,
+contacto con autores) — la biblioteca de Yachay Tech ya tiene cobertura
+limitada (`fuentes_informacion.md`), y la literatura de acceso abierto
+alcanza para sustentar la revisión.
+
+**Precisión importante:** "acceso abierto" se define por el **estatus
+legal/de licencia** del trabajo (confirmado por Unpaywall/Semantic
+Scholar/arXiv), no por si la descarga automatizada tuvo éxito. Un ítem OA
+cuya descarga automática falló por un muro anti-bot editorial (Elsevier,
+Wiley, MDPI, SAGE, etc. — ver `cribado.md` §7.3) sigue siendo elegible;
+simplemente requiere que el autor lo abra manualmente en su navegador. Solo
+los ítems sin estatus de acceso abierto confirmado se excluyen por I5.
+
+**Consecuencia para el cribado ya ejecutado:** los 903 ítems de §7.3 sin
+OA detectado quedan excluidos por I5. Los 683 ítems con OA confirmado pero
+bloqueados en la descarga automática (más el id 1187, con el mismo
+estatus) permanecen en alcance, pendientes de acceso manual por el autor.
+Detalle completo en `cribado.md` §7.3.
+
 ## Cambios respecto al borrador del protocolo
 
 - **I3**: se eliminó la excepción para trabajos fundacionales pre-1997; la
@@ -62,9 +88,12 @@ conceptualmente.
   exclusión total de fuentes latinoamericanas no indexadas.
 - **E6** (nuevo): codifica explícitamente la exclusión de §3.3 para que
   quede registrada en el cribado (Fase 5) con su propio código de motivo.
+- **I5** (v1.1): restringido a acceso abierto legal, no a "accesible por
+  cualquier vía" — ver §3.5.
 
 ## Historial de versiones
 
 | Versión | Fecha | Cambio | Motivo |
 |---|---|---|---|
 | 1.0 | 2026-08-28 | Versión inicial, adaptada del protocolo con dos modificaciones (I3 sin excepciones; exclusión total de fuentes regionales no indexadas) | Decisión del autor: separar fundamentos teóricos del estado del arte, y restringir el estado del arte a literatura indexada |
+| 1.1 | 2026-09-12 | I5 restringido a acceso abierto legal (no persigue préstamo interbibliotecario/CEDIA/contacto con autores) | Decisión conjunta del autor y su director de tesis, dado el gran volumen de literatura ya disponible tras §7.2 (2347 ítems) |
