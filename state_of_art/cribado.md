@@ -306,12 +306,48 @@ Semantic Scholar/arXiv), no por si la descarga automática tuvo éxito.
   ncbi.nlm.nih.gov (50), wiley.com (48), hdl.handle.net (42),
   academic.oup.com (27), figshare.com (26), tandfonline.com (17).
 
-### Estado global de §7.3
+### Cribado manual de los 684 de acceso bloqueado (2026-09-16)
 
-- 2347 pasaron la Etapa 1.
-- **698 confirmados `include`** tras cribado de texto completo (subconjunto ya accesible, verificado por el usuario).
-- 62 excluidos en texto completo (verificados).
-- **903 excluidos por I5** (sin acceso abierto confirmado).
-- **684 pendientes de acceso manual** por el usuario (de acceso abierto confirmado, descarga automática bloqueada) — una vez conseguido el texto, se criban con el mismo procedimiento (extracto + lote de IA + verificación humana dirigida).
+El usuario abrió y leyó **cada uno de los 684** ítems de
+`pendientes_acceso_manual.csv` por su cuenta (sin asistencia de IA — el
+cribado más directo de todo el proceso) y registró su veredicto en
+`pendientes_acceso_manual.numbers` (columnas `Decisión`, `Motivo`). Leído
+programáticamente igual que los archivos anteriores (`numbers-parser`).
+
+**Resultado (los 684, todos decididos):**
+
+| Decisión | n |
+|---|---|
+| Include | 61 |
+| Exclude | 623 |
+
+Motivos de exclusión: **E1**=325 · **E4**=154 · **I5**=109 · **I1**=32 · I3=1 · E5=1 · E6=1.
+
+**Nota metodológica:** 109 de las 623 exclusiones son **I5** — el usuario
+confirmó manualmente que, pese a que Unpaywall/Semantic Scholar los había
+marcado como de acceso abierto, en la práctica no pudo acceder al texto
+(enlace roto, muro de pago real, etc.). Esto implica una tasa de falsos
+positivos de ~16% en la detección automática de OA usada en este proceso
+— documentar como limitación en la sección de metodología.
+
+Artefacto: `screening/manual_access_decisions_master.csv` (684 filas,
+`revisado_manualmente=si`).
+
+### Estado global de §7.3 — ✅ COMPLETA (2026-09-16)
+
+| | n |
+|---|---|
+| Pasaron la Etapa 1 | 2347 |
+| Excluidos por I5 (sin acceso abierto confirmado) | 903 |
+| Incluidos y excluidos en texto completo, subconjunto auto-accesible (761: 698 incl. / 62 excl.) | 760 |
+| Incluidos y excluidos en texto completo, subconjunto de acceso manual (684: 61 incl. / 623 excl.) | 684 |
+| **Total incluidos tras Etapa 2 (texto completo)** | **759** (698 + 61) |
+| **Total excluidos tras Etapa 2** (incl. los 903 de I5) | **1588** (903 + 62 + 623) |
+
+759 + 1588 = 2347 ✓ — cuadra exactamente, sin ítems sin resolver.
+
+**Estos 759 ítems son el conjunto incluido por búsqueda sistemática**, listo
+para Fase 6 (snowballing) y luego Fase 7-8 (valoración Q1–Q4, matriz de
+extracción).
 
 ## 7.4 Control de consistencia intra-evaluador / auditoría del director — pendiente

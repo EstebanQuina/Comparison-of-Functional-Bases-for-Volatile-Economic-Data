@@ -1,0 +1,685 @@
+id,title,year,doi,dominio,decision,reason_code,revisado_manualmente
+0,Model-based Fréchet regression in (quotient) metric spaces with a focus on elastic curves,2026.0,10.1016/j.jmva.2025.105515,doi.org,exclude,E1,si
+6,L1-regularized functional support vector machine*,2024.0,10.4310/22-SII773,arxiv.org,exclude,I5,si
+8,A sandwich smoother for spatio-temporal functional data,2021.0,10.1016/j.spasta.2020.100413,doi.org,exclude,I5,si
+10,Principal Component Analysis of Two-dimensional Functional Data with Serial Correlation,2024.0,10.1007/s13253-023-00585-8,oaktrust.library.tamu.edu,exclude,E1,si
+15,Tensor product splines and functional principal components,2020.0,10.1016/j.jspi.2019.10.006,www.sciencedirect.com,include,I1,si
+19,Statistical Depth for Text Data: An Application to the Classification of Healthcare Data,2023.0,10.3390/math11010228,www.mdpi.com,exclude,E1,si
+21,Semiparametric Functional Factor Models with Bayesian Rank Selection*,2023.0,10.1214/23-BA1410,projecteuclid.org,exclude,E1,si
+22,Continuous-Time Multivariate Analysis,2025.0,10.1080/10618600.2024.2374570,doi.org,exclude,E1,si
+23,Functional Multivariable Logistic Regression With an Application to HIV Viral Suppression Prediction,2024.0,10.1002/bimj.202300081,onlinelibrary.wiley.com,exclude,E4,si
+24,New modeling approaches based on varimax rotation of functional principal components,2020.0,10.3390/math8112085,www.mdpi.com,exclude,E1,si
+25,High-Dimensional Statistics: Non-Parametric Generalized Functional Partially Linear Single-Index Model,2022.0,10.3390/math10152704,www.mdpi.com,exclude,E1,si
+26,Morning surge in blood pressure using a random-effects multiple-component cosinor model,2018.0,10.1002/sim.7607,onlinelibrary.wiley.com,exclude,E4,si
+27,Three-part joint modeling methods for complex functional data mixed with zero-and-one–inflated proportions and zero-inflated continuous outcomes with skewness,2018.0,10.1002/sim.7534,www.ncbi.nlm.nih.gov,exclude,E4,si
+29,Partially Linear Functional Additive Models for Multivariate Functional Data,2019.0,10.1080/01621459.2017.1411268,lib.dr.iastate.edu,exclude,E1,si
+32,Linear-Phase-Type probability modelling of functional PCA with applications to resistive memories,2021.0,10.1016/j.matcom.2020.07.006,www.sciencedirect.com,exclude,E1,si
+35,Quadratic inference with dense functional responses,2025.0,10.1016/j.jmva.2024.105400,pmc.ncbi.nlm.nih.gov,exclude,E1,si
+36,Dynamic Regression Models for Time-Ordered Functional Data,2021.0,10.1214/20-BA1213,projecteuclid.org,exclude,E1,si
+39,Variation pattern classification of functional data,2023.0,10.1002/cjs.11738,hdl.handle.net,exclude,E1,si
+40,The investigation of temperature data in Turkey’s Black Sea Region using functional data analysis,2022.0,10.1080/02664763.2021.1896683,www.ncbi.nlm.nih.gov,exclude,E4,si
+46,Surface temperature monitoring in liver procurement via functional variance change-point analysis,2020.0,10.1214/19-AOAS1297,projecteuclid.org,exclude,I1,si
+48,Model-based clustering of multiple images incorporating covariates,2026.0,10.1177/09622802251393631,journals.sagepub.com,exclude,I5,si
+53,Predicting the onset of breast cancer using mammogram imaging data with irregular boundary,2023.0,10.1093/biostatistics/kxab032,pmc.ncbi.nlm.nih.gov,exclude,E4,si
+55,Semiparametric function-on-function quantile regression model with dynamic single-index interactions,2023.0,10.1016/j.csda.2023.107727,pmc.ncbi.nlm.nih.gov,exclude,E1,si
+56,Short-term electricity demand forecasting using a functional state space model,2018.0,10.3390/en11051120,www.mdpi.com,exclude,E1,si
+57,Repeated measures in functional logistic regression,2024.0,10.1016/j.matcom.2024.05.002,doi.org,exclude,E1,si
+64,Robust estimation for varying coefficient partially functional linear regression models based on exponential squared loss function,2022.0,10.1515/math-2022-0501,www.degruyter.com,exclude,E1,si
+70,Nonlinear mixed effects modeling and warping for functional data using B-splines,2021.0,10.1214/21-EJS1917,projecteuclid.org,exclude,E1,si
+71,Simultaneous confidence band for stationary covariance function of dense functional data,2020.0,10.1016/j.jmva.2019.104584,doi.org,exclude,E1,si
+79,Functional Continuum Regression Approach to Wavelet Transformation Data in a Non-Invasive Glucose Measurement Calibration Model,2024.0,10.13189/ms.2024.120110,www.hrpub.org,exclude,I1,si
+84,Bayesian Deep Gaussian Processes for Correlated Functional Data: a Case Study in Cosmological Matter Power Spectra,2026.0,10.1080/26941899.2026.2685315,doi.org,exclude,E4,si
+92,Regional and temporal patterns of influenza: Application of functional data analysis,2021.0,10.1016/j.idm.2021.08.006,www.sciencedirect.com,exclude,E4,si
+94,"Cross-Validation, Information Theory, or Maximum Likelihood? A Comparison of Tuning Methods for Penalized Splines",2021.0,10.3390/stats4030042,www.mdpi.com,include,I1,si
+98,Mixture inner product spaces and their application to functional data analysis,2018.0,10.1214/17-AOS1553,projecteuclid.org,exclude,E1,si
+99,Testing relevant hypotheses in functional variance function via self-normalization,2025.0,10.1111/sjos.12788,onlinelibrary.wiley.com,exclude,I5,si
+102,Bayesian Function-on-Scalars Regression for High-Dimensional Data,2020.0,10.1080/10618600.2019.1710837,figshare.com,exclude,E1,si
+103,Functional kernel density estimation: Point and fourier approaches to time series anomaly detection,2020.0,10.3390/e22121363,doi.org,exclude,E4,si
+104,Estimation for Partial Functional Multiplicative Regression Model,2025.0,10.3390/math13030471,www.mdpi.com,exclude,E1,si
+107,Asymptotic properties of penalized splines for functional data,2020.0,10.3150/20-BEJ1209,projecteuclid.org,exclude,E1,si
+116,Functional Neural Networks for High-Dimensional Genetic Data Analysis,2024.0,10.1109/TCBB.2024.3364614,pmc.ncbi.nlm.nih.gov,exclude,I1,si
+120,Bayesian Dependent Functional Mixture Estimation for Area and Time-Indexed Data: An Application for the Prediction of Monthly County Employment,2022.0,10.1214/21-BA1274,projecteuclid.org,exclude,E1,si
+122,Dynamic prediction in functional concurrent regression with an application to child growth,2018.0,10.1002/sim.7582,onlinelibrary.wiley.com,exclude,E4,si
+123,Survival on Image Regression With Application to Partially Functional Distributional Representation of Physical Activity,2026.0,10.1002/sam.70068,onlinelibrary.wiley.com,exclude,E4,si
+125,Functional data analysis to describe and classify southern resident killer whale calls,2024.0,10.1016/j.ecoinf.2024.102841,doi.org,exclude,E4,si
+129,Bayesian estimation of principal components for functional data,2017.0,10.1214/16-BA1003,projecteuclid.org,exclude,E1,si
+137,clusterMLD: An Efficient Hierarchical Clustering Method for Multivariate Longitudinal Data,2023.0,10.1080/10618600.2022.2149540,pmc.ncbi.nlm.nih.gov,exclude,E1,si
+145,Functional principal component analysis with informative observation times,2025.0,10.1093/biomet/asae055,academic.oup.com,exclude,E1,si
+146,Pseudo-quantile functional data clustering,2020.0,10.1016/j.jmva.2020.104626,www.sciencedirect.com,exclude,E1,si
+149,Partially Linear Single-Index Models and Functional Principal Component Analysis of Spatially and Temporally Indexed Point Processes,2025.0,10.1080/07350015.2025.2475950,doi.org,exclude,E1,si
+154,"Joint analysis of multivariate longitudinal, imaging, and time-to-event data",2024.0,10.1093/jrsssc/qlae018,academic.oup.com,exclude,E4,si
+157,Multivariate analysis of variance for functional data,2017.0,10.1080/02664763.2016.1247791,figshare.com,exclude,I5,si
+160,Learning Block Structured Graphs in Gaussian Graphical Models,2024.0,10.1080/10618600.2023.2210184,figshare.com,exclude,I5,si
+170,"Multivariate functional response regression, with application to fluorescence spectroscopy in a cervical pre-cancer study",2017.0,10.1016/j.csda.2017.02.004,www.ncbi.nlm.nih.gov,exclude,E4,si
+177,Integrated Model Selection and Scalability in Functional Data Analysis Through Bayesian Learning,2025.0,10.3390/a18050254,doi.org,include,I1,si
+181,Dynamic predictions in Bayesian functional joint models for longitudinal and time-to-event data: An application to Alzheimer’s disease,2019.0,10.1177/0962280217722177,www.ncbi.nlm.nih.gov,exclude,E4,si
+182,Semiparametric mixture regression for asynchronous longitudinal data using multivariate functional principal component analysis,2025.0,10.1093/biostatistics/kxaf008,doi.org,exclude,E4,si
+186,Novel whitening approaches in functional settings,2023.0,10.1002/sta4.516,onlinelibrary.wiley.com,exclude,E1,si
+187,A Study on the Functional Gaussian Process Regression Model Based on Neural Networks,2026.0,10.1145/3796731.3796763,doi.org,exclude,E4,si
+190,A nonparametric test of group distributional differences for hierarchically clustered functional data,2023.0,10.1111/biom.13846,onlinelibrary.wiley.com,exclude,I5,si
+192,Quantile Function on Scalar Regression Analysis for Distributional Data,2020.0,10.1080/01621459.2019.1609969,www.ncbi.nlm.nih.gov,include,I1,si
+199,Data driven orthogonal basis selection for functional data analysis,2022.0,10.1016/j.jmva.2021.104868,www.sciencedirect.com,include,I1,si
+201,Measurement and Analysis of High Frequency Assert Volatility Based on Functional Data Analysis,2022.0,10.3390/math10071140,www.mdpi.com,include,I1,si
+202,An application of functional multivariate regression model to multiclass classification,2017.0,10.21307/stattrans-2016-079,doi.org,exclude,E1,si
+204,Partial functional partially linear single-index models,2021.0,10.5705/ss.202018.0316,doi.org,exclude,E1,si
+212,Linear mixed-effects model for longitudinal complex data with diversified characteristics,2020.0,10.1016/j.jmse.2019.11.001,www.sciencedirect.com,exclude,E1,si
+213,Correcting Measurement Error and Zero Inflation in Functional Covariates for Scalar-on-Function Quantile Regression,2026.0,10.1002/sim.70598,pmc.ncbi.nlm.nih.gov,exclude,E4,si
+214,Latent factor model for multivariate functional data,2023.0,10.1111/biom.13924,onlinelibrary.wiley.com,exclude,E1,si
+215,Robust joint modelling of sparsely observed paired functional data,2024.0,10.1002/cjs.11796,onlinelibrary.wiley.com,exclude,E1,si
+216,Bayesian classification of multiclass functional data,2018.0,10.1214/18-EJS1522,doi.org,exclude,E1,si
+218,Partially functional linear additive model for censored data with heavy-tailed distributions,2026.0,10.1080/02664763.2026.2695855,doi.org,exclude,E1,si
+222,Bivariate Functional Quantile Envelopes With Application to Radiosonde Wind Data,2021.0,10.1080/00401706.2020.1769734,repository.kaust.edu.sa,exclude,E1,si
+224,Functional Data Regression on Distribution-Valued Data via Logarithm Derivative Quantile Transformation,2025.0,10.1002/asmb.70059,doi.org,exclude,E1,si
+225,A Functional Joint Model for Survival and Multivariate Sparse Functional Data in Multi-Cohort Alzheimer's Disease Study,2026.0,10.1002/sim.70442,doi.org,exclude,E4,si
+227,Wavelet power spectral domain functional principal component analysis for feature extraction of epileptic eegs,2021.0,10.3390/computation9070078,www.mdpi.com,include,I1,si
+234,Additive Function-on-Function Regression,2018.0,10.1080/10618600.2017.1356730,www.ncbi.nlm.nih.gov,exclude,E1,si
+243,Fast stable parameter estimation for linear dynamical systems,2021.0,10.1016/j.csda.2020.107124,www.sciencedirect.com,exclude,E1,si
+246,Wavelet analysis of variance box plot,2022.0,10.1080/02664763.2021.1951685,www.ncbi.nlm.nih.gov,exclude,E1,si
+249,SIMULTANEOUS FUNCTIONAL QUANTILE REGRESSION,2024.0,10.5705/ss.202021.0248,doi.org,exclude,E1,si
+250,Dynamic Survival Prediction Using Sparse Longitudinal Images via Multi-Dimensional Functional Principal Component Analysis,2024.0,10.1080/10618600.2024.2335182,figshare.com,exclude,I5,si
+252,Semiparametric distributed lag quantile regression for modeling time-dependent exposure mixtures,2023.0,10.1111/biom.13702,pmc.ncbi.nlm.nih.gov,exclude,E1,si
+254,Joint estimation of monotone curves via functional principal component analysis,2022.0,10.1016/j.csda.2021.107343,www.ncbi.nlm.nih.gov,exclude,E1,si
+255,Cross-Validated Functional Generalized Partially Linear Single-Functional Index Model,2024.0,10.3390/math12172649,www.mdpi.com,exclude,E1,si
+257,Supervised Functional Principal Component Analysis Under the Mixture Cure Rate Model: An Application to Alzheimer'S Disease,2025.0,10.1002/sim.10324,doi.org,exclude,E4,si
+260,Semi-supervised approach to event time annotation using longitudinal electronic health records,2022.0,10.1007/s10985-022-09557-5,pmc.ncbi.nlm.nih.gov,exclude,E4,si
+261,Sieve bootstrap for functional time series,2018.0,10.1214/17-AOS1667,projecteuclid.org,exclude,E1,si
+264,Estimation of sparse functional quantile regression with measurement error: a SIMEX approach,2022.0,10.1093/biostatistics/kxac017,academic.oup.com,exclude,E1,si
+278,Estimation and Identification of a Varying-Coefficient Additive Model for Locally Stationary Processes,2019.0,10.1080/01621459.2018.1482753,figshare.com,exclude,I5,si
+287,Estimating a smooth covariance for functional data,2026.0,10.1016/j.csda.2025.108255,doi.org,exclude,E1,si
+289,Partially Linear Generalized Single Index Models for Functional Data (PLGSIMF),2021.0,10.3390/stats4040047,www.mdpi.com,exclude,E1,si
+290,Wavelet Feature Screening,2024.0,10.1080/10618600.2024.2342984,www.tandfonline.com,exclude,I1,si
+291,Function-on-Function Partial Quantile Regression,2022.0,10.1007/s13253-021-00477-9,hdl.handle.net,exclude,I5,si
+300,Joint Component Estimation for Electricity Price Forecasting Using Functional Models,2024.0,10.3390/en17143461,doi.org,include,I1,si
+311,Covariance parameter estimation of Gaussian processes with approximated functional inputs,2025.0,10.1016/j.jmva.2024.105380,hal.science,exclude,E1,si
+312,Robust estimation for partial functional linear regression models based on FPCA and weighted composite quantile regression,2021.0,10.1515/math-2021-0095,doi.org,exclude,E1,si
+313,Functional data analysis with covariate-dependent mean and covariance structures,2023.0,10.1111/biom.13744,hdl.handle.net,exclude,E1,si
+316,Flexible quantile contour estimation for multivariate functional data: Beyond convexity,2022.0,10.1016/j.csda.2021.107400,hdl.handle.net,exclude,E1,si
+321,Trend filtering for functional data,2023.0,10.1002/sta4.590,onlinelibrary.wiley.com,exclude,E1,si
+323,Longitudinal dynamic functional regression,2020.0,10.1111/rssc.12376,www.ncbi.nlm.nih.gov,exclude,E1,si
+324,Wavelet Density and Regression Estimators for Continuous Time Functional Stationary and Ergodic Processes,2022.0,10.3390/math10224356,www.mdpi.com,exclude,E1,si
+328,Dissimilarity for functional data clustering based on smoothing parameter commutation,2018.0,10.1177/0962280217710050,journals.sagepub.com,exclude,E1,si
+330,Prediction intervals and bands with improved coverage for functional data under noisy discrete observation,2025.0,10.1080/02664763.2024.2420223,hal.science,exclude,E1,si
+334,Bivariate functional archetypoid analysis: An application to financial time series,2018.0,10.1007/978-3-319-89824-7_84,hdl.handle.net,exclude,E1,si
+335,Bi-smoothed functional independent component analysis for eeg artifact removal,2021.0,10.3390/math9111243,www.mdpi.com,exclude,E1,si
+342,Variable selection in the functional linear concurrent model,2017.0,10.1002/sim.7254,www.ncbi.nlm.nih.gov,exclude,E4,si
+346,Variable Selection for Fixed and Random Effects in Multilevel Functional Mixed Effects Models,2026.0,10.1002/sim.70694,onlinelibrary.wiley.com,exclude,E1,si
+351,Inference for dependent error functional data: Covariance function,2025.0,10.1214/25-EJS2458,projecteuclid.org,exclude,E1,si
+353,Joint analysis of longitudinal and recurrent event data: A functional regression approach with autoregressive frailty,2026.0,10.1177/09622802261457281,doi.org,exclude,E1,si
+355,Semiparametric local variable selection under misspecification,2025.0,10.1093/biomet/asae068,academic.oup.com,exclude,E1,si
+357,Simultaneous inference for covariance function of next-generation functional data,2025.0,10.1214/25-EJS2410,projecteuclid.org,exclude,E1,si
+359,Efficient spline orthogonal basis for representation of density functions,2026.0,10.1080/02664763.2025.2532621,doi.org,include,I1,si
+361,A Wavelet-Based Independence Test for Functional Data With an Application to MEG Functional Connectivity,2023.0,10.1080/01621459.2021.2020126,figshare.com,exclude,I5,si
+362,Anomaly Detection and Correction in Dense Functional Data Within Electronic Medical Records,2024.0,10.1002/sim.10209,onlinelibrary.wiley.com,exclude,E4,si
+365,Functional principal component models for sparse and irregularly spaced data by Bayesian inference,2024.0,10.1080/02664763.2023.2197587,pmc.ncbi.nlm.nih.gov,exclude,E1,si
+366,A new approach to varying-coefficient additive models with longitudinal covariates,2020.0,10.1016/j.csda.2020.106912,www.sciencedirect.com,exclude,E1,si
+368,Estimation of trace-variogram using Legendre–Gauss quadrature,2022.0,10.1214/22-BJPS536,doi.org,exclude,E1,si
+372,Robust functional regression with discretely sampled predictors,2026.0,10.1016/j.csda.2025.108308,doi.org,exclude,E1,si
+374,Hybrid principal components analysis for region-referenced longitudinal functional EEG data,2020.0,10.1093/biostatistics/kxy034,www.ncbi.nlm.nih.gov,exclude,E4,si
+377,Traffic signal detection from in-vehicle GPS speed profiles using functional data analysis and machine learning,2020.0,10.1007/s41060-019-00197-x,hal.science,include,E4,si
+378,An Analytical Approach for Temporal Infection Mapping and Composite Index Development,2023.0,10.3390/math11204358,www.mdpi.com,exclude,I1,si
+381,Forecasting high-dimensional functional time series with dual-factor structures,2026.0,10.1093/jrsssa/qnaf144,doi.org,exclude,E1,si
+382,Estimation of a clustering model for non Gaussian functional data,2024.0,10.1080/03610926.2023.2246089,figshare.com,exclude,I5,si
+383,Fast Bayesian Functional Principal Components Analysis,2026.0,10.1080/10618600.2025.2592768,www.tandfonline.com,exclude,E1,si
+386,Functional data analysis for longitudinal data with informative observation times,2023.0,10.1111/biom.13646,onlinelibrary.wiley.com,exclude,E1,si
+387,"Functional multiple indicators, multiple causes measurement error models",2018.0,10.1111/biom.12706,www.ncbi.nlm.nih.gov,exclude,E4,si
+389,Testing for stationarity of functional time series in the frequency domain,2020.0,10.1214/19-AOS1895,projecteuclid.org,exclude,E1,si
+396,Predicting graphical models based on functional data,2025.0,10.1016/j.ijar.2025.109493,doi.org,exclude,I5,si
+397,Robust multivariate functional discriminant coordinates,2020.0,10.1080/03610918.2019.1580731,figshare.com,exclude,I5,si
+408,Contagion Patterns Classification in Stock Indices: A Functional Clustering Analysis Using Decision Trees,2023.0,10.3390/math11132961,www.mdpi.com,include,I1,si
+410,A two-population extension of the exponential smoothing state space model with a smoothing penalisation scheme,2020.0,10.3390/risks8030067,www.mdpi.com,exclude,E1,si
+413,Derivative estimation for longitudinal data analysis: Examining features of blood pressure measured repeatedly during pregnancy,2018.0,10.1002/sim.7694,onlinelibrary.wiley.com,exclude,E4,si
+414,Fast covariance estimation for multivariate sparse functional data,2020.0,10.1002/sta4.245,doi.org,exclude,E1,si
+415,Elastic analysis of irregularly or sparsely sampled curves,2023.0,10.1111/biom.13706,onlinelibrary.wiley.com,exclude,E1,si
+418,Modeling the evolution of deaths from infectious diseases with functional data models: The case of COVID-19 in Brazil,2023.0,10.1002/sim.9654,onlinelibrary.wiley.com,exclude,I5,si
+420,Clustering Functional Data With Measurement Errors: A Simulation-Based Approach,2024.0,10.1002/sim.10238,pmc.ncbi.nlm.nih.gov,exclude,E4,si
+424,A Methodological Framework for Analyzing and Differentiating Daily Physical Activity Across Groups Using Digital Biomarkers from the Frequency Domain,2025.0,10.3390/math13223616,www.mdpi.com,exclude,E4,si
+428,Functional nonlinear principal component analysis,2025.0,10.1016/j.csda.2025.108169,doi.org,exclude,E1,si
+434,Elastic functional Cox regression model with shape predictors,2026.0,10.1080/02664763.2026.2680085,doi.org,exclude,E1,si
+442,Functional response regression analysis,2019.0,10.1016/j.jmva.2018.09.009,doi.org,exclude,E1,si
+444,Detection of Unknown Functional Departure in Generalized Functional Regression,2025.0,10.1002/sam.70013,doi.org,exclude,E4,si
+449,COVID-19 data imputation by multiple function-on-function principal component regression,2021.0,10.3390/math9111237,www.mdpi.com,exclude,E4,si
+450,Clustering acoustic emission signals by mixing two stages dimension reduction and nonparametric approaches,2019.0,10.1007/s00180-018-00864-w,hal.science,exclude,E1,si
+452,Robust estimation with modified Huber's function for functional linear models,2020.0,10.1080/02331888.2020.1862114,figshare.com,exclude,I5,si
+453,Automatic Variable Selection for Partially Linear Functional Additive Model and Its Application to the Tecator Data Set,2018.0,10.1155/2018/5683539,downloads.hindawi.com,exclude,E4,si
+459,Simulation studies to compare bayesian wavelet shrinkage methods in aggregated functional data,2023.0,10.29220/CSAM.2023.30.3.311,www.csam.or.kr,exclude,I5,si
+468,Bayesian covariance regression in functional data analysis with applications to functional brain imaging,2025.0,10.1515/ijb-2023-0029,pmc.ncbi.nlm.nih.gov,exclude,E4,si
+471,smoothEM: A new approach for the simultaneous assessment of smooth patterns and spikes,2025.0,10.1214/25-EJS2428,doi.org,include,I1,si
+472,Density ratio model with data-adaptive basis function,2022.0,10.1016/j.jmva.2022.105043,eprints.gla.ac.uk,exclude,I5,si
+477,Robust estimation for functional logistic regression models,2025.0,10.1214/25-EJS2350,doi.org,exclude,E1,si
+480,Bayesian functional data analysis over dependent regions and its application for identification of differentially methylated regions,2023.0,10.1111/biom.13902,onlinelibrary.wiley.com,exclude,I5,si
+484,Functional Regression for Densely Observed Data With Novel Regularization,2021.0,10.1080/10618600.2020.1807994,figshare.com,exclude,I5,si
+489,Generalized partial functional linear regression for network-linked data,2026.0,10.1080/00949655.2026.2613297,www.tandfonline.com,exclude,E1,si
+503,Two-step estimation of functional linear models with applications to longitudinal data,2000.0,10.1111/1467-9868.00233,cdr.lib.unc.edu,exclude,I5,si
+505,Reduced rank regression models with latent variables in Bayesian functional data analysis,2011.0,10.1214/11-BA603,projecteuclid.org,exclude,E1,si
+512,Functional Regression,2015.0,10.1146/annurev-statistics-010814-020413,www.annualreviews.org,exclude,I5,si
+515,A multiresolution approach to time warping achieved by a Bayesian prior-posterior transfer fitting strategy,2010.0,10.1111/j.1467-9868.2010.00752.x,doi.org,exclude,E1,si
+520,Robust regularized singular value decomposition with application to mortality data,2013.0,10.1214/13-AOAS649,projecteuclid.org,exclude,E1,si
+521,On rates of convergence in functional linear regression,2007.0,10.1016/j.jmva.2006.10.004,doi.org,exclude,E1,si
+522,Wavelet-Based Weighted LASSO and Screening Approaches in Functional Linear Regression,2015.0,10.1080/10618600.2014.925458,figshare.com,exclude,I5,si
+524,Wavelet-Based Nonparametric Modeling of Hierarchical Functions in Colon Carcinogenesis,2003.0,10.1198/016214503000000422,citeseerx.ist.psu.edu,exclude,I5,si
+528,Emulation of multivariate simulators using thin-plate splines with application to atmospheric dispersion,2016.0,10.1137/140970148,doi.org,exclude,E1,si
+530,Computer model validation with functional output,2007.0,10.1214/009053607000000163,projecteuclid.org,exclude,E1,si
+531,Quantifying the lifetime circadian rhythm of physical activity: A covariate-dependent functional approach,2015.0,10.1093/biostatistics/kxu045,academic.oup.com,exclude,E4,si
+532,Identifiability in penalized function-on-function regression models,2016.0,10.1214/16-EJS1123,doi.org,exclude,E1,si
+534,Comparative study of different B-spline approaches for functional data,2013.0,10.1016/j.mcm.2013.04.007,www.sciencedirect.com,include,I1,si
+539,Adaptive basis selection for functional data analysis via stochastic penalization,2005.0,10.1590/S0101-82052005000200004,www.scielo.br,exclude,E6,si
+541,Modelling three-dimensional trajectories by using Bézier curves with application to hand motion,2007.0,10.1111/j.1467-9876.2007.00592.x,academic.oup.com,exclude,E4,si
+546,Potential applications of functional data analysis in chemometrics,2008.0,10.1002/cem.1129,onlinelibrary.wiley.com,exclude,E4,si
+558,Continuous time-varying kriging for spatial prediction of functional data: An environmental application,2010.0,10.1007/s13253-009-0012-z,hdl.handle.net,exclude,E4,si
+563,Lack of fit in self modeling regression: Application to pulse waveforms,2010.0,10.2202/1557-4679.1190,www.degruyter.com,exclude,E4,si
+572,Efficient Bayesian hierarchical functional data analysis with basis function approximations using Gaussian–Wishart processes,2017.0,10.1111/biom.12705,www.ncbi.nlm.nih.gov,include,I1,si
+573,Cramér-Karhunen-Loève representation and harmonic principal component analysis of functional time series,2013.0,10.1016/j.spa.2013.03.015,www.sciencedirect.com,exclude,E1,si
+574,Wavelet-based LASSO in functional linear regression,2012.0,10.1080/10618600.2012.679241,www.ncbi.nlm.nih.gov,exclude,E4,si
+578,Hierarchical clustering of spatially correlated functional data,2012.0,10.1111/j.1467-9574.2012.00522.x,hdl.handle.net,exclude,E1,si
+579,A recursive local polynomial approximation method using dirichlet clouds and radial basis functions,2016.0,10.1137/15M1008592,optimallearning.princeton.edu,exclude,I1,si
+582,Functional Generalized Structured Component Analysis,2016.0,10.1007/s11336-016-9521-1,escholarship.mcgill.ca,exclude,I5,si
+585,Bayesian analysis of mass spectrometry proteomic data using wavelet-based functional mixed models,2008.0,10.1111/j.1541-0420.2007.00895.x,www.ncbi.nlm.nih.gov,exclude,E1,si
+586,Generalized functional linear models with semiparametric single-index interactions,2010.0,10.1198/jasa.2010.tm09313,www.ncbi.nlm.nih.gov,exclude,E1,si
+589,A simultaneous confidence corridor for varying coefficient regression with sparse functional data,2014.0,10.1007/s11749-014-0392-4,doi.org,exclude,E1,si
+591,Flexible estimation of covariance function by penalized spline with application to longitudinal family data,2011.0,10.1002/sim.4236,www.ncbi.nlm.nih.gov,exclude,E4,si
+592,Bayesian Latent Factor Regression for Functional and Longitudinal Data,2012.0,10.1111/j.1541-0420.2012.01788.x,www.ncbi.nlm.nih.gov,exclude,E1,si
+593,Curve registration,1998.0,10.1111/1467-9868.00129,academic.oup.com,exclude,I3,si
+600,Functional data classification: a wavelet approach,2014.0,10.1007/s00180-014-0503-4,www.ncbi.nlm.nih.gov,exclude,E1,si
+604,Wavelet-based genetic association analysis of functional phenotypes arising from high-throughput sequencing assays,2015.0,10.1214/14-AOAS776,projecteuclid.org,exclude,E4,si
+607,Multivariate functional clustering for the morphological analysis of electrocardiograph curves,2013.0,10.1111/j.1467-9876.2012.01062.x,academic.oup.com,exclude,I5,si
+611,Sampled forms of functional PCA in reproducing kernel hilbert spaces,2012.0,10.1214/12-AOS1033,projecteuclid.org,exclude,E1,si
+612,A powerful test based on tapering for use in functional data analysis,2008.0,10.1214/08-EJS172,projecteuclid.org,exclude,E1,si
+619,Consistent variable selection for functional regression models,2016.0,10.1016/j.jmva.2015.06.007,www.sciencedirect.com,exclude,E1,si
+620,Methodology and theory for partial least squares applied to functional data,2012.0,10.1214/11-AOS958,projecteuclid.org,exclude,E1,si
+630,Description length and dimensionality reduction in functional data analysis,2013.0,10.1016/j.csda.2011.03.018,figshare.com,exclude,I5,si
+634,A Functional Approach to Deconvolve Dynamic Neuroimaging Data,2016.0,10.1080/01621459.2015.1060241,www.tandfonline.com,exclude,E4,si
+635,"Massively parallel nonparametric regression, with an application to developmental brain mapping",2014.0,10.1080/10618600.2012.733549,www.ncbi.nlm.nih.gov,exclude,E4,si
+636,"Automated analysis of quantitative image data using isomorphic functional mixed models, with application to proteomics data",2011.0,10.1214/10-AOAS407,projecteuclid.org,exclude,E4,si
+638,Joint modeling of longitudinal drug using pattern and time to first relapse in cocaine dependence treatment data,2015.0,10.1214/15-AOAS852,projecteuclid.org,exclude,E4,si
+640,Sparse estimation in functional linear regression,2012.0,10.1016/j.jmva.2011.08.005,www.sciencedirect.com,exclude,E1,si
+643,Functional principal components analysis via penalized rank one approximation,2008.0,10.1214/08-EJS218,projecteuclid.org,exclude,E1,si
+645,Penalized spline approaches for functional logit regression,2013.0,10.1007/s11749-012-0307-1,hdl.handle.net,exclude,E1,si
+647,Functional clustering by Bayesian wavelet methods,2006.0,10.1111/j.1467-9868.2006.00545.x,academic.oup.com,exclude,I5,si
+650,Wavelet-based functional mixed models,2006.0,10.1111/j.1467-9868.2006.00539.x,academic.oup.com,exclude,I5,si
+653,Spatial spline regression models,2013.0,10.1111/rssb.12009,academic.oup.com,exclude,I5,si
+658,A Bayesian model for sparse functional data,2008.0,10.1111/j.1541-0420.2007.00829.x,www.ncbi.nlm.nih.gov,include,I1,si
+662,Penalized PCA approaches for B-spline expansions of smooth functional data,2013.0,10.1016/j.amc.2013.02.009,www.sciencedirect.com,include,I1,si
+667,Stochastic functional data analysis: A diffusion model-based approach,2011.0,10.1111/j.1541-0420.2011.01591.x,hdl.handle.net,include,I1,si
+669,Functional Mixed Effects Model for Small Area Estimation,2016.0,10.1111/sjos.12218,www.ncbi.nlm.nih.gov,exclude,E1,si
+672,Wavelet-based scalar-on-function finite mixture regression models,2016.0,10.1016/j.csda.2014.11.017,www.ncbi.nlm.nih.gov,exclude,E4,si
+673,Reduced rank mixed effects models for spatially correlated hierarchical functional data,2010.0,10.1198/jasa.2010.tm08737,www.ncbi.nlm.nih.gov,exclude,E1,si
+675,Bayesian clustering of functional data using local features,2016.0,10.1214/14-BA925,projecteuclid.org,exclude,E1,si
+677,Bootstrap-based inference on the difference in the means of two correlated functional processes,2012.0,10.1002/sim.5439,www.ncbi.nlm.nih.gov,exclude,E1,si
+680,A Bayesian hierarchical model for classification with selection of functional predictors,2010.0,10.1111/j.1541-0420.2009.01283.x,www.ncbi.nlm.nih.gov,exclude,E1,si
+682,Modeling continuous shape change for facial animation,2004.0,10.1023/B:STCO.0000039485.52129.ed,hdl.handle.net,exclude,E4,si
+683,Functional data clustering: A survey,2014.0,10.1007/s11634-013-0158-y,hdl.handle.net,exclude,E1,si
+686,Continuously additive models for nonlinear functional regression,2013.0,10.1093/biomet/ast004,academic.oup.com,exclude,E1,si
+687,Feature extraction in signal regression: A boosting technique for functional data regression,2010.0,10.1198/jcgs.2009.07176,doi.org,exclude,I5,si
+693,On convergence rates equivalency and sampling strategies in functional deconvolution models,2010.0,10.1214/09-AOS767,projecteuclid.org,exclude,E1,si
+695,Structured penalties for functional linear models-partially empirical eigenvectors for regression,2012.0,10.1214/12-EJS676,projecteuclid.org,exclude,E1,si
+699,Simultaneous confidence bands for derivatives of dependent functional data,2015.0,10.1214/14-EJS967,projecteuclid.org,exclude,E1,si
+702,Functional mixed-effects model for periodic data,2006.0,10.1093/biostatistics/kxj003,academic.oup.com,exclude,I5,si
+705,Bayesian Modeling in the Wavelet Domain,2005.0,10.1016/S0169-7161(05)25011-3,www.sciencedirect.com,exclude,E1,si
+706,A wavelet-based filtering approach to functional bipartite ranking,2011.0,10.1109/SSP.2011.5967819,telecom-paris.hal.science,exclude,E1,si
+707,Fast bivariate P-splines: The sandwich smoother,2013.0,10.1111/rssb.12007,academic.oup.com,exclude,E1,si
+708,Generalized multilevel function-on-scalar regression and principal component analysis,2015.0,10.1111/biom.12278,www.ncbi.nlm.nih.gov,exclude,E1,si
+709,Functional zoning for air quality,2013.0,10.1007/s10651-012-0210-7,hdl.handle.net,exclude,E4,si
+711,Penalized spline models for functional principal component analysis,2006.0,10.1111/j.1467-9868.2005.00530.x,academic.oup.com,exclude,E1,si
+713,Cokriging for spatial functional data,2010.0,10.1016/j.jmva.2009.03.005,doi.org,include,I1,si
+715,Functional CAR Models for Large Spatially Correlated Functional Datasets,2016.0,10.1080/01621459.2015.1042581,www.ncbi.nlm.nih.gov,exclude,E1,si
+721,Joint modelling of paired sparse functional data using principal components,2008.0,10.1093/biomet/asn035,www.ncbi.nlm.nih.gov,exclude,E1,si
+722,Functional Principal Component Analysis of Spatiotemporal Point Processes With Applications in Disease Surveillance,2014.0,10.1080/01621459.2014.885434,www.ncbi.nlm.nih.gov,exclude,E4,si
+724,Recovering gradients from sparsely observed functional data,2013.0,10.1111/biom.12011,www.ncbi.nlm.nih.gov,exclude,E1,si
+729,Computational considerations in functional principal component analysis,2007.0,10.1007/s00180-007-0051-2,hdl.handle.net,exclude,E1,si
+730,Forecasting age-specific breast cancer mortality using functional data models,2007.0,10.1002/sim.2306,figshare.com,exclude,I5,si
+741,Marginal Functional Regression Models for Analyzing the Feeding Behavior of Pigs,2015.0,10.1007/s13253-015-0212-7,www4.stat.ncsu.edu,exclude,I5,si
+749,A functional multiple imputation approach to incomplete longitudinal data,2011.0,10.1002/sim.4201,onlinelibrary.wiley.com,exclude,I5,si
+753,Joint Modeling and Clustering Paired Generalized Longitudinal Trajectories With Application to Cocaine Abuse Treatment Data,2014.0,10.1080/01621459.2014.957286,figshare.com,exclude,I5,si
+754,Locally Sparse Estimator for Functional Linear Regression Models,2017.0,10.1080/10618600.2016.1195273,figshare.com,exclude,I5,si
+759,Functional generalized additive models,2014.0,10.1080/10618600.2012.729985,www.ncbi.nlm.nih.gov,exclude,E1,si
+763,A hierarchical functional data analytic approach for analyzing physiologically based pharmacokinetic models,2013.0,10.1002/env.2198,www.ncbi.nlm.nih.gov,exclude,E4,si
+768,Functional Additive Mixed Models,2015.0,10.1080/10618600.2014.901914,www.ncbi.nlm.nih.gov,include,I1,si
+769,Linear transformations and the k-means clustering algorithm: Applications to clustering curves,2007.0,10.1198/000313007X171016,www.ncbi.nlm.nih.gov,include,I1,si
+770,Using Bagidis in nonparametric functional data analysis: Predicting from curves with sharp local features,2013.0,10.1016/j.jmva.2012.10.013,hdl.handle.net,exclude,E1,si
+771,Continuously dynamic additive models for functional data,2016.0,10.1016/j.jmva.2016.05.003,www.sciencedirect.com,exclude,E1,si
+775,Optimal estimation of the mean function based on discretely sampled functional data: Phase transition,2011.0,10.1214/11-AOS898,projecteuclid.org,exclude,E1,si
+776,Functional Wavelet-Based Modelling of Dependence Between Lupus and Stress,2015.0,10.1007/s11009-014-9424-5,hdl.handle.net,include,I1,si
+781,Functional statistical techniques applied to vine leaf water content determination,2010.0,10.1016/j.mcm.2010.03.008,doi.org,exclude,E4,si
+783,Fast function-on-scalar regression with penalized basis expansions,2010.0,10.2202/1557-4679.1246,www.degruyter.com,exclude,E1,si
+784,Detecting and Localizing Differences in Functional Time Series Dynamics: A Case Study in Molecular Biophysics,2016.0,10.1080/01621459.2016.1147355,doi.org,exclude,E4,si
+786,Smoothed functional canonical correlation analysis of humidity and temperature data,2015.0,10.1080/02664763.2015.1019842,figshare.com,exclude,I5,si
+789,Structured functional additive regression in reproducing kernel Hilbert spaces,2014.0,10.1111/rssb.12036,academic.oup.com,exclude,E1,si
+794,Model-based clustering of time series in group-specific functional subspaces,2011.0,10.1007/s11634-011-0095-6,hdl.handle.net,exclude,E5,si
+795,Feature extraction and quantification for mass spectrometry in biomedical applications using the mean spectrum,2005.0,10.1093/bioinformatics/bti254,academic.oup.com,exclude,E4,si
+798,Series expansion for functional sufficient dimension reduction,2014.0,10.1016/j.jmva.2013.10.019,doi.org,include,I1,si
+800,Functional deconvolution in a periodic setting: Uniform case,2009.0,10.1214/07-AOS552,projecteuclid.org,exclude,E1,si
+801,Gaussian process functional regression modeling for batch data,2007.0,10.1111/j.1541-0420.2007.00758.x,onlinelibrary.wiley.com,exclude,I5,si
+802,Functional PCA and Base-Line Logit Models,2014.0,10.1007/s00357-014-9162-y,hdl.handle.net,exclude,E1,si
+804,Localized Functional Principal Component Analysis,2015.0,10.1080/01621459.2015.1016225,www.ncbi.nlm.nih.gov,include,I1,si
+809,Test of significance when data are curves,1998.0,10.1080/01621459.1998.10473763,www.tandfonline.com,exclude,I5,si
+812,Using wavelet-based functional mixed models to characterize population heterogeneity in accelerometer profiles: A case study,2006.0,10.1198/016214506000000465,www.ncbi.nlm.nih.gov,exclude,E4,si
+814,A transformation approach for incorporating monotone or unimodal constraints,2005.0,10.1093/biostatistics/kxi020,biostatistics.oxfordjournals.org,exclude,I5,si
+820,Quasi-interpolation for linear functional data,2012.0,10.1016/j.cam.2012.02.028,www.sciencedirect.com,exclude,E1,si
+827,Convolutional autoregressive models for functional time series,2016.0,10.1016/j.jeconom.2016.05.006,www.sciencedirect.com,exclude,E1,si
+828,Methods to assess an exercise intervention trial based on 3-level functional data,2015.0,10.1093/biostatistics/kxv015,academic.oup.com,exclude,E4,si
+835,"Efficient estimation of three-dimensional curves and their derivatives by free-knot regression splines, applied to the analysis of inner carotid artery centrelines",2009.0,10.1111/j.1467-9876.2008.00653.x,academic.oup.com,exclude,E4,si
+836,Clustering of time-course gene expression data using functional data analysis,2007.0,10.1016/j.compbiolchem.2007.05.006,www.ncbi.nlm.nih.gov,exclude,E4,si
+841,A simultaneous confidence band for sparse longitudinal regression,2012.0,10.5705/ss.2010.034,www.ncbi.nlm.nih.gov,exclude,E1,si
+843,Local linear regression for functional predictor and scalar response,2009.0,10.1016/j.jmva.2008.03.008,www.sciencedirect.com,exclude,E1,si
+847,Bayesian generalized monotonic functional mixed models for the effects of radiation dose histograms on normal tissue complications,2007.0,10.1002/sim.2887,onlinelibrary.wiley.com,exclude,I5,si
+848,Semiparametric regression during 2003–2007*,2009.0,10.1214/09-EJS525,projecteuclid.org,exclude,E1,si
+850,Bayesian function-on-function regression for multilevel functional data,2015.0,10.1111/biom.12299,www.ncbi.nlm.nih.gov,exclude,E1,si
+851,Generalized monotonic functional mixed models with application to modelling normal tissue complications,2008.0,10.1111/j.1467-9876.2007.00606.x,onlinelibrary.wiley.com,exclude,I5,si
+854,Wavelet-based functional linear mixed models: An application to measurement error-corrected distributed lag models,2010.0,10.1093/biostatistics/kxq003,www.ncbi.nlm.nih.gov,exclude,E1,si
+856,Penalized functional regression,2011.0,10.1198/jcgs.2010.10007,www.ncbi.nlm.nih.gov,exclude,E1,si
+872,Spline and Wavelet Smoothing Techniques for Functional Data,2024.0,10.1145/3694875.3694882,doi.org,include,I1,si
+874,Function-on-function regression with mode-sparsity regularization,2018.0,10.1145/3178113,dl.acm.org,exclude,E1,si
+886,A quadriparametric model to describe the diversity of waves applied to hormonal data,2018.0,10.3414/ME17-01-0102,www.thieme-connect.de,exclude,I1,si
+887,Runoff potentiality of a watershed through SCS and functional data analysis technique,2014.0,10.1155/2014/379763,downloads.hindawi.com,exclude,E4,si
+888,Past and projected trends of body mass index and weight status in South Australia: 2003 to 2019,2015.0,10.1111/1753-6405.12442,www.sciencedirect.com,exclude,E4,si
+891,Prediction of functional data with spatial dependence: a penalized approach,2017.0,10.1007/s00477-016-1216-8,hdl.handle.net,exclude,E1,si
+899,A comparison of seed germination coefficients using functional regression,2020.0,10.1002/aps3.11366,bsapubs.onlinelibrary.wiley.com,exclude,E4,si
+902,Ridge regression with adaptive additive rectangles and other piecewise functional templates,2022.0,10.1016/j.neucom.2022.03.003,hdl.handle.net,exclude,I5,si
+915,Functional Mixed-Effects Modeling of Longitudinal Duchenne Muscular Dystrophy Electrical Impedance Myography Data Using State-Space Approach,2019.0,10.1109/TBME.2018.2879227,www.ncbi.nlm.nih.gov,exclude,E1,si
+917,Derivation of machine learning brain aging biomarkers for a set of forty thousand functional connectomes,2026.0,10.1016/j.brainresbull.2026.111815,doi.org,exclude,E4,si
+924,Mixed modeling for irregularly sampled and correlated functional data: Speech science applications,2017.0,10.1121/1.4998555,doi.org,exclude,E1,si
+928,Functional principal component analysis for global sensitivity analysis of model with spatial output,2021.0,10.1016/j.ress.2021.107522,www.sciencedirect.com,exclude,I5,si
+932,Circadian intraocular pressure fluctuation and disease progression in primary angle closure glaucoma,2015.0,10.1167/iovs.15-17245,iovs.arvojournals.org,exclude,E4,si
+934,Machine learning based on functional principal component analysis to quantify the effects of the main drivers of wheat yields,2024.0,10.1016/j.eja.2024.127254,doi.org,exclude,E4,si
+936,Penalized versions of functional PLS regression,2016.0,10.1016/j.chemolab.2016.03.013,www.sciencedirect.com,exclude,I5,si
+937,Functional relevance learning in generalized learning vector quantization,2012.0,10.1016/j.neucom.2011.11.029,www.sciencedirect.com,exclude,I5,si
+938,Smoothing and differentiation of kinematic data using functional data analysis approach: An application of automatic and subjective methods,2020.0,10.3390/app10072493,www.mdpi.com,include,I1,si
+942,Beyond Static Assessment: A Proof-of-Concept Evaluation of Functional Data Analysis for Assessing Physiological Responses to High-Intensity Effort,2026.0,10.3390/jfmk11020151,www.mdpi.com,exclude,E4,si
+944,Bayesian functional data clustering for temporal microarray data,2008.0,10.1155/2008/231897,downloads.hindawi.com,exclude,I1,si
+945,"Growth curves of wild Mallard, based on functional analysis of capture–recapture data",2017.0,10.1080/03078698.2017.1332299,www.tandfonline.com,exclude,E4,si
+949,Sex Differences in the ECG Interpretation: A Functional Data Analysis Perspective,2021.0,10.1109/RTSI50628.2021.9597363,hdl.handle.net,exclude,I5,si
+950,Linking demography with drivers: Climate and competition,2016.0,10.1111/2041-210X.12486,besjournals.onlinelibrary.wiley.com,exclude,E4,si
+954,Filling missing data and smoothing altered data in satellite imagery with a spatial functional procedure,2019.0,10.1007/s00477-019-01711-0,academica-e.unavarra.es,exclude,I5,si
+955,Classification of ADNI PET images via regularized 3D functional data analysis,2017.0,10.1080/24709360.2017.1280213,www.tandfonline.com,exclude,E4,si
+956,Long-term changes in the zooplankton community of Lake Maggiore in response to multiple stressors: A functional principal components analysis,2019.0,10.3390/w11050962,www.mdpi.com,exclude,E4,si
+961,Functional data analysis of weather variables linked to Fusarium head blight epidemics in the United States,2019.0,10.1094/PHYTO-11-17-0386-R,apsjournals.apsnet.org,exclude,E4,si
+962,An improved representation of regional boundaries on parcellated morphological surfaces,2011.0,10.1016/j.compmedimag.2010.11.002,www.ncbi.nlm.nih.gov,exclude,E4,si
+965,Determining optimum wavelengths for leaf water content estimation from reflectance: A distance correlation approach,2018.0,10.1016/j.chemolab.2017.12.001,hdl.handle.net,exclude,I5,si
+967,Smoothing spline analysis of variance models: A new tool for the analysis of cyclic biomechanical data,2016.0,10.1016/j.jbiomech.2016.07.035,www.sciencedirect.com,exclude,E4,si
+971,Study on the Influence of Air Pressure and Temperature on PM2.5 by Multivariate Functional Linear Regression Model,2020.0,10.1051/e3sconf/202019405009,www.e3s-conferences.org,exclude,E4,si
+1004,Functional extreme rainfall data in Petaling Jaya,2017.0,10.1063/1.4982842,psasir.upm.edu.my,exclude,I5,si
+1026,Classifying infinite-dimensional data with unified basis functions: An effective machine learning approach,2025.0,10.1016/j.neucom.2024.129245,doi.org,exclude,E1,si
+1039,Extracting MRS discriminant functional features of brain tumors,2013.0,10.1002/nbm.2895,riunet.upv.es,exclude,I5,si
+1040,Music Genre Classification Based on Functional Data Analysis,2024.0,10.1109/ACCESS.2024.3512874,doi.org,exclude,E4,si
+1041,Using basis expansions for estimating functional PLS regression. Applications with chemometric data.,2010.0,10.1016/j.chemolab.2010.09.007,doi.org,exclude,I5,si
+1059,A Fast Weighted Fuzzy C-Medoids Clustering for Time Series Data Based on P-Splines,2022.0,10.3390/s22166163,doi.org,exclude,E1,si
+1062,2D Time-varying functional modeling framework for multi-scale solar irradiance forecasting,2026.0,10.1016/j.neunet.2025.108443,doi.org,exclude,E4,si
+1063,"Air Quality Research Based on B-Spline Functional Linear Model: A Case Study of Fujian Province, China",2023.0,10.3390/app132011206,www.mdpi.com,exclude,E4,si
+1071,Prediction of working memory ability based on EEG by functional data analysis,2020.0,10.1016/j.jneumeth.2019.108552,www.sciencedirect.com,exclude,E4,si
+1072,Wavelet analysis of MR functional data from the cerebellum,2014.0,10.1063/1.4901390,pubs.aip.org,exclude,I1,si
+1074,Machine-Learning-Based Functional Time Series Forecasting: Application to Age-Specific Mortality Rates,2022.0,10.3390/forecast4010022,www.mdpi.com,exclude,E4,si
+1078,Kernel-Based Independence Tests for Causal Structure Learning on Functional Data,2023.0,10.3390/e25121597,www.mdpi.com,exclude,E1,si
+1081,Functional Data Approach for Short-Term Electricity Demand Forecasting,2022.0,10.1155/2022/6709779,downloads.hindawi.com,include,I1,si
+1083,Identifying and responding to outlier demand in revenue management,2021.0,10.1016/j.ejor.2021.01.002,www.sciencedirect.com,exclude,E1,si
+1084,Random-Splitting Random Forest with Multiple Mixed-Data Covariates,2023.0,10.18502/jbe.v9i1.13974,doi.org,exclude,E4,si
+1087,Scalar-on-Function Relative Error Regression for Weak Dependent Case,2023.0,10.3390/axioms12070613,www.mdpi.com,exclude,E1,si
+1089,On optimal regression trees to detect critical intervals for multivariate functional data,2023.0,10.1016/j.cor.2023.106152,doi.org,exclude,E4,si
+1090,Nonparametric depth and quantile regression for functional data,2019.0,10.3150/17-BEJ991,projecteuclid.org,exclude,E1,si
+1102,Monitoring panels of sparse functional data,2026.0,10.1111/jtsa.12796,onlinelibrary.wiley.com,include,I1,si
+1107,Multivariate functional data clustering using adaptive density peak detection,2023.0,10.1002/sim.9687,onlinelibrary.wiley.com,exclude,E1,si
+1110,Hybrid Forecasting for Functional Time Series of Dissolved Oxygen Profiles,2023.0,10.1080/26941899.2022.2152401,www.tandfonline.com,exclude,E4,si
+1116,Analysis of electric vehicle charging behavior patterns with function principal component analysis approach,2020.0,10.1155/2020/8850654,downloads.hindawi.com,exclude,E4,si
+1118,A Study of the Colombian Stock Market with Multivariate Functional Data Analysis (FDA),2025.0,10.3390/math13050858,doi.org,include,E1,si
+1120,Tempered functional time series,2023.0,10.1111/jtsa.12667,rss.onlinelibrary.wiley.com,exclude,E4,si
+1131,The functional distance-based approach: An application on long-term Metropolitan Development,2024.0,10.1016/j.seps.2024.101917,doi.org,exclude,E4,si
+1134,EXPLORING SPATIOTEMPORAL VARIATION IN COVID-19 WAVES: NON-EUCLIDEAN SPATIALLY AWARE FUNCTIONAL REGISTRATION,2025.0,10.1214/25-AOAS2077,doi.org,exclude,E4,si
+1135,A Functional Principal Component Analysis Framework for Vibration-Based Structural Condition Assessment of Highway Bridge Spans,2026.0,10.1002/env.70124,doi.org,exclude,E4,si
+1137,Spatio-Temporal Dynamics of European Innovation—An Exploratory Approach via Multivariate Functional Data Cluster Analysis,2022.0,10.3390/joitmc8010006,www.mdpi.com,exclude,E4,si
+1141,Developing a functional index to dynamically examine the spatio-temporal disparities of China's inclusive green growth,2022.0,10.1016/j.ecolind.2022.108861,www.sciencedirect.com,exclude,E4,si
+1142,Functional data analysis: An application to COVID-19 data in the United States in 2020,2022.0,10.15302/J-QB-022-0300,doi.org,exclude,E4,si
+1144,Sparsely observed functional time series: Estimation and prediction,2020.0,10.1214/20-EJS1690,projecteuclid.org,exclude,E1,si
+1150,Weakly stationary stochastic processes valued in a separable Hilbert space: Gramian-cramér representations and applications,2023.0,10.1051/ps/2023014,www.esaim-ps.org,exclude,E1,si
+1151,Forecasting Day-Ahead Traffic Flow Using Functional Time Series Approach,2022.0,10.3390/math10224279,www.mdpi.com,exclude,E4,si
+1154,Functional Time Series Analysis and Visualization Based on Records,2025.0,10.1080/10618600.2024.2374578,www.tandfonline.com,exclude,E4,si
+1156,kNN local linear estimation of the conditional cumulative distribution function: Dependent functional data case,2018.0,10.1016/j.crma.2018.09.001,comptes-rendus.academie-sciences.fr,exclude,E1,si
+1157,Multilevel Longitudinal Functional Principal Component Model,2024.0,10.1002/sim.10207,onlinelibrary.wiley.com,exclude,E4,si
+1158,On changepoint detection in functional data using empirical energy distance,2025.0,10.1016/j.jeconom.2025.106023,doi.org,exclude,E1,si
+1159,Prediction theory for stationary functional time series,2022.0,10.1214/20-PS360,projecteuclid.org,exclude,E1,si
+1162,Functional data analysis in the banach space of continuous functions,2020.0,10.1214/19-AOS1842,projecteuclid.org,exclude,E1,si
+1164,Global sensitivity and domain-selective testing for functional-valued responses: An application to climate economy models,2024.0,10.1002/env.2866,onlinelibrary.wiley.com,exclude,E1,si
+1167,Two-sample and change-point inference for non-Euclidean valued time series,2024.0,10.1214/24-EJS2218,projecteuclid.org,exclude,E1,si
+1169,Reexamining Spatiotemporal Disparities of Financial Development in China Based on Functional Data Analysis,2021.0,10.1155/2021/5539035,downloads.hindawi.com,include,I1,si
+1171,Construction of Development Momentum Index of Financial Technology by Principal Component Analysis in the Era of Digital Economy,2022.0,10.1155/2022/2244960,downloads.hindawi.com,include,I1,si
+1172,Volatility estimation in a nonlinear heteroscedastic functional regression model with martingale difference errors,2019.0,10.1016/j.jmva.2018.11.008,www.sciencedirect.com,exclude,E1,si
+1173,Nonparametric Expectile Shortfall Regression for Complex Functional Structure,2024.0,10.3390/e26090798,www.mdpi.com,exclude,E1,si
+1174,Constructing prediction intervals for the age distribution of deaths,2026.0,10.1080/03461238.2025.2544265,doi.org,exclude,I1,si
+1175,Crop Yield Prediction Using Bayesian Spatially Varying Coefficient Models with Functional Predictors,2023.0,10.1080/01621459.2022.2123333,figshare.com,exclude,I5,si
+1176,Empirical Bayes Derivative Estimates,2020.0,10.1080/00273171.2019.1642729,figshare.com,exclude,I5,si
+1183,Functional Linear Regression: Dependence and Error Contamination,2022.0,10.1080/07350015.2020.1832503,researchonline.lse.ac.uk,include,I1,si
+1186,Wildfires vegetation recovery through satellite remote sensing and functional data analysis,2021.0,10.3390/math9111305,www.mdpi.com,exclude,E4,si
+1187,Exploring COVID-19 in mainland China during the lockdown of Wuhan via functional data analysis,2022.0,10.29220/CSAM.2022.29.1.103,www.csam.or.kr,exclude,I5,si
+1189,An LM-Type Unit Root Test for Functional Time Series,2026.0,10.3390/math14050916,www.mdpi.com,exclude,E1,si
+1190,Functional Subspace Variational Autoencoder for Domain-Adaptive Fault Diagnosis,2023.0,10.3390/math11132910,www.mdpi.com,exclude,E1,si
+1192,Stopping time detection of wood panel compression: A functional time-series approach,2022.0,10.1111/rssc.12572,doi.org,exclude,E4,si
+1198,Comparing risk profiles of international stock markets as functional data: COVID-19 versus the global financial crisis,2024.0,10.1002/asmb.2879,doi.org,include,I1,si
+1202,On functional processes with multiple discontinuities,2022.0,10.1111/rssb.12493,academic.oup.com,exclude,E1,si
+1204,Forecasting Age- and Sex-Specific Survival Functions: Application to Annuity Pricing,2024.0,10.3390/risks12070117,doi.org,exclude,E4,si
+1206,Frequency domain theory for functional time series: Variance decomposition and an invariance principle,2020.0,10.3150/20-BEJ1199,projecteuclid.org,exclude,E1,si
+1212,Nonlinear prediction of functional time series,2023.0,10.1002/env.2792,doi.org,include,I1,si
+1213,Comparative Study of FDA and Time Series Approaches for Seabed Classification from Acoustic Curves,2020.0,10.1007/s11004-019-09807-7,hdl.handle.net,exclude,I5,si
+1218,Forecasting Canadian Age-Specific Mortality Rates: Application of Functional Time Series Analysis,2023.0,10.3390/math11183808,www.mdpi.com,exclude,E4,si
+1219,Multipopulation mortality modelling and forecasting: the weighted multivariate functional principal component approaches,2023.0,10.1080/02664763.2022.2104228,www.tandfonline.com,exclude,E1,si
+1224,A novel hybrid algorithm to forecast functional time series based on pattern sequence similarity with application to electricity demand,2019.0,10.3390/en12010094,www.mdpi.com,exclude,E1,si
+1226,Uniform in Number of Neighbor Consistency and Weak Convergence of k-Nearest Neighbor Single Index Conditional Processes and k-Nearest Neighbor Single Index Conditional U-Processes Involving Functional Mixing Data,2024.0,10.3390/sym16121576,www.mdpi.com,exclude,E1,si
+1228,Choosing the right norm for change point detection in functional data,2025.0,10.1214/25-EJS2451,doi.org,exclude,E1,si
+1229,Estimating the conditional distribution in functional regression problems,2022.0,10.1214/22-EJS2067,projecteuclid.org,exclude,E1,si
+1231,A scenario analysis of future Hong Kong age and labour force profiles and its implications,2019.0,10.1111/rssa.12428,onlinelibrary.wiley.com,exclude,I5,si
+1232,Forecasting u.S. aggregate stock market excess return: Do functional data analysis add economic value?,2020.0,10.3390/math8112042,doi.org,include,I1,si
+1234,Coherent mortality forecasting by the weighted multilevel functional principal component approach,2019.0,10.1080/02664763.2019.1572718,figshare.com,exclude,I5,si
+1235,Testing covariance separability for continuous functional data,2025.0,10.1111/jtsa.12764,onlinelibrary.wiley.com,exclude,E1,si
+1236,Different PCA approaches for vector functional time series with applications to resistive switching processes,2024.0,10.1016/j.matcom.2024.04.017,doi.org,exclude,E1,si
+1237,Nonparametric estimation of functional dynamic factor model,2022.0,10.1080/10485252.2022.2080825,www.tandfonline.com,exclude,E1,si
+1238,A Novel Curve Clustering Method for Functional Data: Applications to COVID-19 and Financial Data,2023.0,10.3390/analytics2040041,www.mdpi.com,exclude,E1,si
+1239,A weak law of large numbers for realised covariation in a Hilbert space setting,2022.0,10.1016/j.spa.2021.12.011,www.sciencedirect.com,exclude,E1,si
+1240,"Variable Selection for the Prediction of C[0,1]-Valued Autoregressive Processes using Reproducing Kernel Hilbert Spaces",2019.0,10.1080/00401706.2018.1505660,mediatum.ub.tum.de,exclude,E1,si
+1242,An autocovariance-based learning framework for high-dimensional functional time series,2024.0,10.1016/j.jeconom.2023.01.007,doi.org,exclude,E1,si
+1243,Forecasting the old-age dependency ratio to determine a sustainable pension age,2021.0,10.1111/anzs.12330,figshare.com,exclude,I5,si
+1244,The Functional Delta Method for Deriving Asymptotic Distributions,2026.0,10.1002/wics.70053,doi.org,exclude,I1,si
+1249,Functional forecasting of dissolved oxygen in high-frequency vertical lake profiles,2023.0,10.1002/env.2765,onlinelibrary.wiley.com,exclude,E4,si
+1253,Embedding and learning with signatures,2021.0,10.1016/j.csda.2020.107148,hal.science,exclude,I1,si
+1254,Bootstrap prediction intervals for the age distribution of life-table death counts,2025.0,10.1080/08898480.2025.2539229,www.tandfonline.com,exclude,E4,si
+1259,Spatiotemporal factor models for functional data with application to population map forecast,2024.0,10.1016/j.spasta.2024.100849,doi.org,exclude,E4,si
+1273,Functional Principal Component Analysis as an Alternative to Mixed-Effect Models for Describing Sparse Repeated Measures in Presence of Missing Data,2024.0,10.1002/sim.10214,onlinelibrary.wiley.com,exclude,E4,si
+1277,Bayesian functional forecasting with locally-autoregressive dependent processes,2019.0,10.1214/18-BA1140,doi.org,exclude,I1,si
+1279,Time series of functional data with application to yield curves,2019.0,10.1002/asmb.2443,mediatum.ub.tum.de,exclude,E1,si
+1280,Forecasting a time series of Lorenz curves: one-way functional analysis of variance,2025.0,10.1080/02664763.2025.2490093,doi.org,exclude,E1,si
+1287,Outlier detection for multivariate time series: A functional data approach[Formula presented],2021.0,10.1016/j.knosys.2021.107527,doi.org,exclude,E1,si
+1288,Cross-validation model averaging for generalized functional linear model,2020.0,10.3390/econometrics8010007,www.mdpi.com,exclude,E1,si
+1293,Asymptotic Distribution of the Functional Modal Regression Estimator,2025.0,10.3390/math13223637,www.mdpi.com,exclude,E1,si
+1295,TWO-SAMPLE TESTS FOR RELEVANT DIFFERENCES IN THE EIGENFUNCTIONS OF COVARIANCE OPERATORS,2023.0,10.5705/ss.202020.0365,doi.org,exclude,E1,si
+1297,Dependence-Based Fuzzy Clustering of Functional Time Series,2025.0,10.1080/10618600.2025.2489537,www.tandfonline.com,exclude,E4,si
+1299,High-dimensional functional time series forecasting: An application to age-specific mortality rates,2019.0,10.1016/j.jmva.2018.10.003,www.sciencedirect.com,exclude,E4,si
+1306,Application of an Intensive Longitudinal Functional Model with Multiple Time Scales in Objectively Measured Children’s Physical Activity,2023.0,10.3390/math11081973,www.mdpi.com,exclude,E4,si
+1311,Region-referenced spectral power dynamics of EEG signals: A hierarchical modeling approach,2020.0,10.1214/20-AOAS1374,projecteuclid.org,exclude,E4,si
+1312,Resampling-free inference for time series via rkhs embedding,2026.0,10.1214/26-EJS2488,projecteuclid.org,exclude,E1,si
+1316,Nonparametric testing for differences in electricity prices: The case of the fukushima nuclear accident,2019.0,10.1214/18-AOAS1230,projecteuclid.org,exclude,I1,si
+1318,Conformal prediction bands for two-dimensional functional time series,2023.0,10.1016/j.csda.2023.107821,doi.org,exclude,E1,si
+1319,Statistical Learning of Conditional Single-Index U-Processes Under Local Stationarity and Missing-At-Random Functional Responses,2026.0,10.3390/math14122112,www.mdpi.com,exclude,E1,si
+1320,Dynamic Value at Risk Estimation in Multi-Functional Volterra Time-Series Model (MFVTSM),2025.0,10.3390/sym17081207,www.mdpi.com,exclude,E1,si
+1329,Hidden Markov Mixture of Gaussian Process Functional Regression: Utilizing Multi-Scale Structure for Time Series Forecasting,2023.0,10.3390/math11051259,www.mdpi.com,exclude,E1,si
+1331,On the Exact Asymptotic Error of the Kernel Estimator of the Conditional Hazard Function for Quasi-Associated Functional Variables,2025.0,10.3390/math13132172,doi.org,exclude,E1,si
+1333,CLUSTERING AND FORECASTING MULTIPLE FUNCTIONAL TIME SERIES,2022.0,10.1214/22-AOAS1602,projecteuclid.org,exclude,E1,si
+1339,White noise testing for functional time series,2023.0,10.1214/23-SS143,projecteuclid.org,exclude,E1,si
+1340,Recent developments in complex and spatially correlated functional data,2020.0,10.1214/20-BJPS466,projecteuclid.org,exclude,E1,si
+1341,Nonparametric expectile shortfall regression for functional data,2025.0,10.1515/dema-2025-0125,www.degruyterbrill.com,exclude,E1,si
+1346,Permutation-based inference for function-on-scalar regression with an application in PET brain imaging,2023.0,10.1080/10485252.2023.2206926,pmc.ncbi.nlm.nih.gov,exclude,E4,si
+1351,Functional Time Series Analysis Using Single-Index L1-Modal Regression,2025.0,10.3390/sym17030460,doi.org,exclude,E1,si
+1352,A goodness-of-fit test for functional time series with applications to Ornstein-Uhlenbeck processes,2025.0,10.1016/j.csda.2024.108092,doi.org,exclude,E1,si
+1354,Describing the concentration of income populations by functional principal component analysis on Lorenz curves,2019.0,10.1016/j.jmva.2018.09.005,www.sciencedirect.com,include,I1,si
+1358,Intraday volatility analysis of CSI 300 index futures: a dependent functional data method,2023.0,10.1080/1331677X.2022.2076144,www.tandfonline.com,include,I1,si
+1359,Empirical Asset Pricing with Functional Factors,2023.0,10.1093/jjfinec/nbac003,doi.org,exclude,E1,si
+1361,Visualization and assessment of spatio-temporal covariance properties,2019.0,10.1016/j.spasta.2017.11.004,www.sciencedirect.com,exclude,E1,si
+1364,Detection and localization of changes in a panel of densities,2025.0,10.1016/j.jmva.2024.105374,doi.org,exclude,I5,si
+1365,Dynamically Consistent Analysis of Realized Covariations in Term Structure Models,2026.0,10.1111/mafi.70011,onlinelibrary.wiley.com,exclude,E1,si
+1366,Selection of number of clusters and warping penalty in clustering functional electrocardiogram,2024.0,10.1002/sim.10192,onlinelibrary.wiley.com,exclude,E4,si
+1371,Ornstein–Uhlenbeck processes in Hilbert space and autoregressive moving-average time series,2025.0,10.1080/17442508.2024.2422122,www.tandfonline.com,exclude,E1,si
+1372,Bayesian Spatial Homogeneity Pursuit of Functional Data: An Application to the U.S. Income Distribution,2023.0,10.1214/22-BA1320,projecteuclid.org,exclude,E1,si
+1373,Functional arch and garch models: A yule-walker approach,2020.0,10.1214/20-EJS1778,doi.org,include,I1,si
+1374,Shape-based outlier detection in multivariate functional data,2020.0,10.1016/j.knosys.2020.105960,www.sciencedirect.com,exclude,E1,si
+1375,Recursive Estimation of the Expectile-Based Shortfall in Functional Ergodic Time Series,2024.0,10.3390/math12243956,www.mdpi.com,exclude,E1,si
+1378,Forecasting intraday financial time series with sieve bootstrapping and dynamic updating,2023.0,10.1002/for.3000,onlinelibrary.wiley.com,exclude,I1,si
+1379,Estimation of total electricity consumption curves by sampling in a finite population when some trajectories are partially unobserved,2019.0,10.1002/cjs.11473,onlinelibrary.wiley.com,exclude,I5,si
+1380,A robust spatial autoregressive scalar-on-function regression with t-distribution,2021.0,10.1007/s11634-020-00384-w,cnam.hal.science,exclude,I5,si
+1382,Intraday Functional PCA Forecasting of Cryptocurrency Returns,2026.0,10.1002/for.70127,doi.org,include,I1,si
+1384,Pivotal tests for relevant differences in the second order dynamics of functional time series,2022.0,10.3150/21-BEJ1418,hdl.handle.net,exclude,I5,si
+1386,Nonparametric Estimation of the Expected Shortfall Regression for Quasi-Associated Functional Data,2022.0,10.3390/math10234508,www.mdpi.com,exclude,E1,si
+1389,Functional Vašiček Model,2025.0,10.1111/jtsa.70024,doi.org,exclude,E1,si
+1392,A similarity measure for second order properties of non-stationary functional time series with applications to clustering and testing,2021.0,10.3150/20-BEJ1246,projecteuclid.org,exclude,E1,si
+1395,Weighted compositional functional data analysis for modeling and forecasting life-table death counts,2024.0,10.1002/for.3171,onlinelibrary.wiley.com,exclude,E1,si
+1396,A Hotelling spatial scan statistic for functional data: Application to economic and climate data,2025.0,10.1016/j.spasta.2025.100888,doi.org,exclude,E1,si
+1400,Functional data analysis of the relationship between electricity consumption and climate change drivers,2023.0,10.1080/02664763.2022.2108773,pmc.ncbi.nlm.nih.gov,exclude,E4,si
+1403,Regression estimation for continuous-time functional data processes with missing at random response,2025.0,10.1080/10485252.2024.2332686,doi.org,exclude,I1,si
+1405,Identifying the Dynamic Influence of Economic Policy Uncertainty on Enterprise Investment Using Functional Data Analysis,2022.0,10.1155/2022/7822710,downloads.hindawi.com,include,I1,si
+1409,Efficient Bayesian functional principal component analysis of irregularly-observed multivariate curves,2025.0,10.1016/j.csda.2024.108094,doi.org,exclude,E1,si
+1411,Local polynomial estimation of regression operators from functional data with correlated errors,2019.0,10.1016/j.jmva.2018.10.008,www.sciencedirect.com,exclude,E4,si
+1414,Forecasting the Age Structure of the Scientific Workforce in Australia,2026.0,10.1111/anzs.70043,doi.org,exclude,E4,si
+1416,Kolmogorov Entropy for Convergence Rate in Incomplete Functional Time Series: Application to Percentile and Cumulative Estimation in High Dimensional Data,2023.0,10.3390/e25071108,www.mdpi.com,exclude,E1,si
+1421,Functional Mixed-type Clustering of Investors' Daily Returns During a Market Shock Change-point and Recovery,2024.0,10.1145/3677052.3698633,doi.org,include,I1,si
+1424,Parameter clustering in Bayesian functional principal component analysis of neuroscientific data,2021.0,10.1002/sim.8768,onlinelibrary.wiley.com,exclude,E4,si
+1428,Tests for conditional heteroscedasticity of functional data,2020.0,10.1111/jtsa.12532,onlinelibrary.wiley.com,exclude,E1,si
+1432,Robust depth-based estimation of the functional autoregressive model,2019.0,10.1016/j.csda.2018.06.003,hdl.handle.net,exclude,E4,si
+1434,Uncertainty Quantification of Complex Weather Dynamics Using a Novel Functional Autoregressive Model,2026.0,10.3390/math14050835,www.mdpi.com,exclude,E4,si
+1439,Functional spherical autocorrelation: A robust estimate of the autocorrelation of a functional time series,2023.0,10.1214/23-EJS2112,projecteuclid.org,include,I1,si
+1442,Bootstrapping Long-Run Covariance of Stationary Functional Time Series,2024.0,10.3390/forecast6010008,www.mdpi.com,exclude,E1,si
+1443,Robust archetypoids for anomaly detection in big functional data,2021.0,10.1007/s11634-020-00412-9,hdl.handle.net,exclude,E1,si
+1451,Decomposing anomalies,2021.0,10.1016/j.econlet.2021.109835,hal.science,exclude,E1,si
+1455,A FEASIBLE CENTRAL LIMIT THEOREM FOR REALISED COVARIATION OF SPDES IN THE CONTEXT OF FUNCTIONAL DATA,2024.0,10.1214/23-AAP2019,projecteuclid.org,exclude,E1,si
+1460,A review study of functional autoregressive models with application to energy forecasting,2021.0,10.1002/wics.1525,ink.library.smu.edu.sg,include,I1,si
+1464,Conditional Density Kernel Estimation Under Random Censorship for Functional Weak Dependence Data,2025.0,10.1155/jom/2159604,onlinelibrary.wiley.com,exclude,E1,si
+1471,Detecting structural breaks in eigensystems of functional time series,2021.0,10.1214/20-EJS1796,projecteuclid.org,include,I1,si
+1474,Robust multivariate and functional archetypal analysis with application to financial time series analysis,2019.0,10.1016/j.physa.2018.12.036,hdl.handle.net,exclude,E4,si
+1475,Fractionally integrated curve time series with cointegration,2024.0,10.1214/24-EJS2290,doi.org,exclude,E1,si
+1476,Bayesian variable selection in distributed lag models: a focus on binary quantile and count data regressions,2026.0,10.1080/03610918.2025.2458578,www.tandfonline.com,exclude,E1,si
+1481,Classification of social media users with generalized functional data analysis,2023.0,10.1016/j.csda.2022.107647,www.sciencedirect.com,exclude,E4,si
+1483,Convolution-based linear discriminant analysis for functional data classification,2021.0,10.1016/j.ins.2021.09.057,doi.org,exclude,I5,si
+1488,Frequency modulation increases the specificity of time-resolved connectivity: A resting-state fMRI study,2024.0,10.1162/netn_a_00372,direct.mit.edu,exclude,E4,si
+1489,Inference and Computation for Sparsely Sampled Random Surfaces,2022.0,10.1080/10618600.2022.2034640,doi.org,exclude,E1,si
+1490,Scalar-on-Function Mode Estimation Using Entropy and Ergodic Properties of Functional Time Series Data,2025.0,10.3390/e27060552,www.mdpi.com,exclude,E1,si
+1491,Functional GARCH models: The quasi-likelihood approach and its applications,2019.0,10.1016/j.jeconom.2019.01.006,mpra.ub.uni-muenchen.de,exclude,I5,si
+1493,Second-Generation Functional Data,2023.0,10.1146/annurev-statistics-032921-033726,www.annualreviews.org,exclude,E4,si
+1494,"Trading signal, functional data analysis and time series momentum",2021.0,10.1016/j.frl.2021.101933,hal.science,include,I1,si
+1498,Functional data analysis approach for mapping change in time series: A case study using bicycle ridership patterns,2023.0,10.1016/j.trip.2022.100752,doi.org,exclude,E4,si
+1501,The consistency and asymptotic normality of the kernel type expectile regression estimator for functional data,2021.0,10.1016/j.jmva.2020.104673,www.sciencedirect.com,exclude,E4,si
+1502,A New Approach to Statistical Inference for Functional Time Series,2026.0,10.1111/jtsa.70007,onlinelibrary.wiley.com,exclude,E1,si
+1504,Nonparametric Functional Times Series Data Analysis by kNN–Local Linear M-Regression,2026.0,10.3390/math14091455,www.mdpi.com,exclude,E1,si
+1506,Finite sample theory for high-dimensional functional/scalar time series with applications,2022.0,10.1214/21-EJS1960,projecteuclid.org,exclude,E1,si
+1507,"Volatility and dynamic dependence modeling: Review, applications, and financial risk management",2022.0,10.1002/wics.1567,onlinelibrary.wiley.com,exclude,I1,si
+1511,On consistency and sparsity for high-dimensional functional time series with application to autoregressions,2023.0,10.3150/22-BEJ1464,projecteuclid.org,include,I1,si
+1516,Generalized dynamic semi-parametric factor models for high-dimensional non-stationary time series,2014.0,10.1111/ectj.12024,academic.oup.com,include,I1,si
+1517,On the concept of depth for functional data,2009.0,10.1198/jasa.2009.0108,hdl.handle.net,exclude,E1,si
+1520,Bayesian functional data modeling for heterogeneous volatility,2017.0,10.1214/16-BA1004,projecteuclid.org,exclude,E1,si
+1526,Nonstationarity in time series of state densities,2016.0,10.1016/j.jeconom.2015.06.025,www.sciencedirect.com,exclude,E1,si
+1536,Functional data analysis for optimizing strategies of cash-flow management,2017.0,10.1007/978-3-319-55723-6_17,ifcs.boku.ac.at,exclude,I5,si
+1542,Forecasting Generalized Quantiles of Electricity Demand: A Functional Data Approach,2017.0,10.1080/01621459.2016.1219259,sfb649.wiwi.hu-berlin.de,exclude,I5,si
+1543,Analysis of non-stationary dynamics in the financial system,2013.0,10.1016/j.econlet.2013.09.026,papers.ssrn.com,include,I1,si
+1544,Asymptotic normality of the principal components of functional time series,2013.0,10.1016/j.spa.2012.12.011,www.sciencedirect.com,exclude,E1,si
+1548,Adaptive bandwidth selection in the long run covariance estimator of functional time series,2016.0,10.1016/j.csda.2014.06.008,www.sciencedirect.com,exclude,E1,si
+1550,Testing for periodicity in functional time series,2018.0,10.1214/17-AOS1645,projecteuclid.org,exclude,E1,si
+1551,Functional methods for time series prediction: A nonparametric approach,2011.0,10.1002/for.1169,www.eco.uc3m.es,exclude,I5,si
+1555,Detecting trends in time series of functional data: A study of Antarctic climate change,2014.0,10.1002/cjs.11231,ri.conicet.gov.ar,exclude,I5,si
+1557,Testing the stability of the functional autoregressive process,2010.0,10.1016/j.jmva.2008.12.008,doi.org,exclude,E4,si
+1564,A semiparametric factor model for CDO surfaces dynamics,2016.0,10.1016/j.jmva.2015.09.002,doi.org,exclude,I1,si
+1568,Mortality and life expectancy forecasting for a group of populations in developed countries: A multilevel functional data method,2016.0,10.1214/16-AOAS953,projecteuclid.org,exclude,E4,si
+1570,FUNNEL-GSEA: FUNctioNal ELastic-net regression in time-course gene set enrichment analysis,2017.0,10.1093/bioinformatics/btx104,academic.oup.com,exclude,E4,si
+1572,The discriminative functional mixture model for a comparative analysis of bike sharing systems,2015.0,10.1214/15-AOAS861,projecteuclid.org,exclude,E4,si
+1573,Multivariate functional time series forecasting: Application to age-specific mortality rates,2017.0,10.3390/risks5020021,www.mdpi.com,exclude,E4,si
+1574,An innovations algorithm for the prediction of functional linear processes,2017.0,10.1016/j.jmva.2017.01.005,www.sciencedirect.com,exclude,E1,si
+1576,Forecasting binary longitudinal data by a functional PC-ARIMA model,2008.0,10.1016/j.csda.2007.09.015,www.sciencedirect.com,exclude,E1,si
+1577,Bootstrap for dependent Hilbert space-valued random variables with application to von Mises statistics,2015.0,10.1016/j.jmva.2014.09.011,www.sciencedirect.com,exclude,E1,si
+1582,An extension of the classical distance correlation coefficient for multivariate functional data with applications,2016.0,10.21307/stattrans-2016-032,sciendo.com,exclude,E1,si
+1585,Whole-volume clustering of time series data from zebrafish brain calcium images via mixture modeling,2018.0,10.1002/sam.11366,www.ncbi.nlm.nih.gov,exclude,E4,si
+1589,Common functional principal components,2009.0,10.1214/07-AOS516,projecteuclid.org,exclude,E1,si
+1590,Two sample inference for the second-order property of temporally dependent functional data,2015.0,10.3150/13-BEJ592,projecteuclid.org,exclude,E1,si
+1593,Inference for the autocovariance of a functional time series under conditional heteroscedasticity,2017.0,10.1016/j.jmva.2017.08.004,www.sciencedirect.com,include,I1,si
+1602,Locally stationary functional time series,2018.0,10.1214/17-EJS1384,projecteuclid.org,exclude,E1,si
+1610,Efficiency in multivariate functional nonparametric models with autoregressive errors,2016.0,10.1016/j.jmva.2016.01.007,www.sciencedirect.com,exclude,E1,si
+1620,Bayesian nonparametric forecasting of monotonic functional time series,2016.0,10.1214/16-EJS1190,projecteuclid.org,exclude,E1,si
+1622,Conditional estimation for dependent functional data,2013.0,10.1016/j.jmva.2013.04.009,doi.org,exclude,E1,si
+1623,Canonical correlation for stochastic processes,2008.0,10.1016/j.spa.2007.10.006,www.sciencedirect.com,exclude,E1,si
+1626,Introduction to Functional Data Analysis,2017.0,10.1201/9781315117416,digitool.Library.McGill.CA:80,exclude,E1,si
+1631,FuncICA for time series pattern discovery,2009.0,10.1137/1.9781611972795.7,epubs.siam.org,exclude,I5,si
+1632,Varying coefficient functional autoregressive model with application to the U.S. treasuries,2017.0,10.1016/j.jmva.2017.05.003,www.sciencedirect.com,exclude,E1,si
+1635,Robust Functional Supervised Classification for Time Series,2014.0,10.1007/s00357-014-9163-x,hdl.handle.net,exclude,E1,si
+1638,Best estimation of functional linear models,2016.0,10.1016/j.jmva.2016.07.005,www.sciencedirect.com,exclude,E1,si
+1651,Nonparametric time series prediction: A semi-functional partial linear modeling,2008.0,10.1016/j.jmva.2007.04.010,www.sciencedirect.com,exclude,E1,si
+1654,Relative-error prediction in nonparametric functional statistics: Theory and practice,2016.0,10.1016/j.jmva.2015.09.019,www.sciencedirect.com,exclude,E1,si
+1657,Weakly dependent functional data,2010.0,10.1214/09-AOS768,projecteuclid.org,exclude,E1,si
+1659,Estimation of the mean of functional time series and a two-sample problem,2013.0,10.1111/j.1467-9868.2012.01032.x,academic.oup.com,exclude,E1,si
+1660,Functional factor analysis for periodic remote sensing data,2012.0,10.1214/11-AOAS518,projecteuclid.org,exclude,E1,si
+1663,Optimal prediction for additive function-on-function regression,2018.0,10.1214/18-EJS1505,projecteuclid.org,exclude,E1,si
+1671,Strong uniform consistency rates of conditional quantile estimation in the single functional index model under random censorship,2018.0,10.1515/demo-2018-0013,www.degruyter.com,exclude,E1,si
+1672,Robust forecasting of mortality and fertility rates: A functional data approach,2007.0,10.1016/j.csda.2006.07.028,figshare.com,exclude,I5,si
+1674,Modeling and forecasting electricity spot prices: A functional data perspective,2013.0,10.1214/13-AOAS652,projecteuclid.org,include,I1,si
+1677,Discussion of different logistic models with functional data. Application to Systemic Lupus Erythematosus,2008.0,10.1016/j.csda.2008.07.001,www.sciencedirect.com,exclude,I5,si
+1678,"Nonparametric estimation of correlation functions in longitudinal and spatial data, with application to colon carcinogenesis experiments",2007.0,10.1214/009053607000000082,projecteuclid.org,exclude,E4,si
+1679,Local half-region depth for functional data,2018.0,10.1016/j.jmva.2017.10.004,www.sciencedirect.com,exclude,E1,si
+1682,Testing the structural stability of temporally dependent functional observations and application to climate projections,2011.0,10.1214/11-EJS655,projecteuclid.org,exclude,E4,si
+1691,Clustering chlorophyll-a satellite data using quantiles,2016.0,10.1214/16-AOAS923,projecteuclid.org,exclude,I1,si
+1692,On the asymptotic normality of kernel estimators of the long run covariance of functional time series,2016.0,10.1016/j.jmva.2015.11.005,www.sciencedirect.com,exclude,E1,si
+1694,Functional principal components analysis of shanghai stock exchange 50 index,2014.0,10.1155/2014/365204,downloads.hindawi.com,include,I1,si
+1700,Pairwise comparison of treatment levels in functional analysis of variance with application to erythrocyte hemolysis,2014.0,10.1214/14-AOAS723,projecteuclid.org,exclude,E4,si
+1702,Predicting rainfall and irrigation requirements of corn in Ecuador,2023.0,10.1016/j.heliyon.2023.e18334,www.cell.com,exclude,E4,si
+1706,Comparison of Positivity in Two Epidemic Waves of COVID-19 in Colombia with FDA,2022.0,10.3390/stats5040059,www.mdpi.com,exclude,E4,si
+1730,Optimizing Sowing Calendars for Climate-Resilient Common Bean Production in Central-Southern Brazil: A Functional Data Analysis Approach,2026.0,10.3390/resources15030040,www.mdpi.com,exclude,E4,si
+1731,Mapping price dynamics across electricity market designs: A functional data approach with STL decomposition,2026.0,10.1016/j.apenergy.2026.127390,doi.org,include,I1,si
+1741,Uncovering temporal and spatial patterns in public transport demand: A functional data analysis of smart card transactions in Bogotá,2026.0,10.1016/j.jtrangeo.2026.104704,doi.org,exclude,E4,si
+1743,Disjoint and functional principal component analysis for infected cases and deaths due to covid-19 in south american countries with sensor-related data,2021.0,10.3390/s21124094,www.mdpi.com,exclude,E4,si
+1749,Swimming in an ocean of curves: A functional approach to understanding elephant seal habitat use in the Argentine Basin,2023.0,10.1016/j.pocean.2023.103120,www.sciencedirect.com,exclude,E4,si
+1753,Sustainable visual analysis for bank non-performing loans and government debt distress,2020.0,10.3390/SU12010131,www.mdpi.com,exclude,E1,si
+1754,Residual kriging for functional spatial prediction of salinity curves,2015.0,10.1080/03610926.2012.753087,hdl.handle.net,exclude,E4,si
+1755,Weather-Driven Ensemble Logistic Models for Predicting Fusarium Head Blight of Wheat in Brazil,2026.0,10.1111/ppa.70173,doi.org,exclude,E4,si
+1756,Spatio-temporal characterization of long-term solar resource using spatial functional data analysis: Understanding the variability and complementarity of global horizontal irradiance in Ecuador,2022.0,10.1016/j.renene.2022.03.049,www.sciencedirect.com,exclude,I5,si
+1760,PDE-regularised spatial quantile regression,2025.0,10.1016/j.jmva.2024.105381,doi.org,exclude,I1,si
+1762,Local Correlation Integral Approach for Anomaly Detection Using Functional Data,2023.0,10.3390/math11040815,www.mdpi.com,exclude,E4,si
+1763,A Two-Stage GMFAMM Approximation for Joint Bias Correction of NASA POWER Hydroclimatic Data: The ColClim Web Application,2026.0,10.3390/s26134301,doi.org,exclude,I1,si
+1765,A Bayesian Spatiotemporal Functional Model for Data With Block Structure and Repeated Measures,2026.0,10.1002/env.70071,doi.org,exclude,I1,si
+1770,Acoustic seascape partitioning through functional data analysis,2023.0,10.1111/jbi.14534,onlinelibrary.wiley.com,exclude,E4,si
+1778,Spatial functional data analysis for regionalizing precipitation seasonality and intensity in a sparsely monitored region: Unveiling the spatio-temporal dependencies of precipitation in Ecuador,2018.0,10.1002/joc.5504,rmets.onlinelibrary.wiley.com,exclude,I5,si
+1790,Constructing a control chart using functional data,2020.0,10.3390/math8010058,doi.org,exclude,E4,si
+1791,Case study of anomaly detection and quality control of energy efficiency and hygrothermal comfort in buildings,2019.0,10.5220/0007839701450151,doi.org,exclude,I5,si
+1798,Short-Term Electricity Prices Forecasting Using Functional Time Series Analysis,2022.0,10.3390/en15093423,www.mdpi.com,exclude,E1,si
+1803,Optimal transport convergence of conditional distribution estimation for single-indexed locally stationary functional time series,2026.0,10.1016/j.rinam.2026.100709,doi.org,exclude,E1,si
+1806,"A comparative analysis of forecasting models for air temperature: Classical time series, machine learning, and functional approaches",2026.0,10.1016/j.kjs.2025.100529,doi.org,exclude,E4,si
+1812,Functional Stochastic Volatility in Financial Option Surfaces,2022.0,10.1080/26941899.2022.2152764,doi.org,exclude,I1,si
+1814,Forecasting High-Dimensional Financial Functional Time Series: An Application to Constituent Stocks in Dow Jones Index,2021.0,10.3390/jrfm14080343,www.mdpi.com,include,I1,si
+1815,Testing for independence between functional time series,2015.0,10.1016/j.jeconom.2015.03.030,manuscript.elsevier.com,exclude,I5,si
+1816,Simultaneous inference of the mean of functional time series,2015.0,10.1214/15-EJS1052,projecteuclid.org,include,I1,si
+1821,Functional volatility forecasting,2024.0,10.1002/for.3170,onlinelibrary.wiley.com,exclude,I5,si
+1822,Modeling Functional Time Series and Mixed-Type Predictors With Partially Functional Autoregressions,2024.0,10.1080/07350015.2021.2011299,figshare.com,exclude,I5,si
+1823,Functional Conditional Volatility Modeling With Missing Data: Inference and Application to Energy Commodities,2025.0,10.1155/jom/8695947,onlinelibrary.wiley.com,exclude,E1,si
+1826,Development of Functional Quantile Autoregressive Model for River Flow Curve Forecasting,2024.0,10.1029/2024EA003564,doi.org,exclude,E4,si
+1836,Advancing Economic Forecasting With Hybrid Time Series and Functional Models: Evidence From Electricity Demand Data,2025.0,10.1109/ACCESS.2025.3631725,doi.org,include,I1,si
+1837,Exploring volatility of crude oil intraday return curves: A functional GARCH-X model,2023.0,10.1016/j.jcomm.2023.100361,doi.org,include,I1,si
+1847,Inference in functional factor models with applications to yield curves,2022.0,10.1111/jtsa.12642,onlinelibrary.wiley.com,exclude,E1,si
+1848,A randomness test for functional panels,2016.0,10.1016/j.jmva.2016.07.002,www.sciencedirect.com,exclude,E1,si
+1850,Functional Ergodic Time Series Analysis Using Expectile Regression,2022.0,10.3390/math10203919,www.mdpi.com,exclude,E1,si
+1852,Fourier-type tests of mutual independence between functional time series,2022.0,10.1016/j.jmva.2021.104873,doi.org,exclude,E1,si
+1854,Functional linear models with latent factors,2026.0,10.5705/ss.202024.0028,dx.doi.org,exclude,I5,si
+1856,Stagewise crop yield prediction with multisource functional indices,2026.0,10.1002/cjs.70043,doi.org,exclude,I1,si
+1858,Simultaneous inference for the distribution of functional principal component scores,2026.0,10.5705/ss.202023.0246,doi.org,exclude,I5,si
+1875,Robust functional principal component analysis for non-Euclidean random objects,2025.0,10.1093/biomet/asaf040,academic.oup.com,exclude,E1,si
+1878,Tutorial on Bayesian functional regression using Stan,2025.0,10.1002/sim.70265,doi.org,exclude,E1,si
+1879,Statistical inference for multivariate functional panel data,2025.0,10.5705/ss.202023.0146,doi.org,exclude,I5,si
+1880,Statistical inference for mean functions of complex 3D objects,2025.0,10.5705/ss.202023.0071,doi.org,exclude,I5,si
+1882,Adaptive nonparametric estimation in the functional linear model with functional output,2025.0,10.1214/25-EJS2400,projecteuclid.org,exclude,E1,si
+1883,Bayesian functional region selection,2025.0,10.1002/sta4.70047,onlinelibrary.wiley.com,exclude,E1,si
+1889,Enhanced structural break detection in functional means,2025.0,10.5705/ss.202022.0312,doi.org,exclude,E1,si
+1894,Functional PLS logit regression model,2007.0,10.1016/j.csda.2006.08.011,hdl.handle.net,exclude,E1,si
+1897,Dynamic prediction of disease progression for leukemia patients by functional principal component analysis of longitudinal expression levels of an oncogene,2017.0,10.1214/17-AOAS1050,projecteuclid.org,exclude,E4,si
+1899,Hypotheses testing of functional principal components,2025.0,10.5705/ss.202022.0309,doi.org,include,I1,si
+1911,Clustering functional data into groups by using projections,2019.0,10.1111/rssb.12310,minerva-access.unimelb.edu.au,exclude,I5,si
+1915,Functional linear models for the analysis of similarity of waveforms,2023.0,10.1007/978-3-031-15885-8_9,hdl.handle.net,exclude,I5,si
+1925,Functional data analysis for density functions by transformation to a Hilbert space,2016.0,10.1214/15-AOS1363,projecteuclid.org,exclude,E1,si
+1929,A universal kriging predictor for spatially dependent functional data of a Hilbert space,2013.0,10.1214/13-EJS843,projecteuclid.org,exclude,E1,si
+1934,Robust functional linear regression based on splines,2013.0,10.1016/j.csda.2011.11.014,www.sciencedirect.com,exclude,I5,si
+1935,Weighted least squares methods for prediction in the functional data linear model,2009.0,10.1214/09-EJS379,projecteuclid.org,exclude,E1,si
+1936,Functional estimation of the random rate of a Cox process,2012.0,10.1007/s11009-010-9173-z,hdl.handle.net,exclude,E1,si
+1937,A topologically valid definition of depth for functional data,2016.0,10.1214/15-STS532,hdl.handle.net,exclude,E1,si
+1947,Statistics of time warpings and phase variations,2014.0,10.1214/14-EJS901,projecteuclid.org,exclude,E1,si
+1949,Statistical analysis of temporal evolution in single-neuron firing rates,2002.0,10.1093/biostatistics/3.1.1,academic.oup.com,exclude,I5,si
+1951,Compositional regression with functional response,2018.0,10.1016/j.csda.2018.01.018,hdl.handle.net,exclude,E1,si
+1952,Geodesic PCA in the Wasserstein space by convex PCA,2017.0,10.1214/15-AIHP706,hal.science,exclude,E1,si
+1960,Statistical inference for functional time series,2023.0,10.5705/ss.202021.0107,doi.org,exclude,E1,si
+1963,Parseval inequalities and lower bounds for variance-based sensitivity indices,2020.0,10.1214/19-EJS1673,projecteuclid.org,exclude,E1,si
+1965,Dyadic diagonalization of positive definite band matrices and efficient \(B\)-spline orthogonalization,2022.0,10.1016/j.cam.2022.114444,www.sciencedirect.com,exclude,I1,si
+1966,A ridge estimator of the drift from discrete repeated observations of the solution of a stochastic differential equation,2021.0,10.3150/21-BEJ1327,projecteuclid.org,exclude,E1,si
+1968,Testing for the rank of a covariance operator,2022.0,10.1214/22-AOS2238,infoscience.epfl.ch,exclude,I5,si
+1970,Some first inferential tools for spatial regression with differential regularization,2022.0,10.1016/j.jmva.2021.104866,hdl.handle.net,exclude,E1,si
+1972,Nonparametric clustering of functional data using pseudo-densities,2016.0,10.1214/16-EJS1198,doi.org,exclude,E1,si
+1975,Log-contrast regression with functional compositional predictors: linking preterm infants' gut microbiome trajectories to neurobehavioral outcome,2020.0,10.1214/20-AOAS1357,projecteuclid.org,exclude,E4,si
+1981,Modeling spatially dependent functional data via regression with differential regularization,2019.0,10.1016/j.jmva.2018.09.006,www.sciencedirect.com,exclude,E1,si
+1990,Gaussian tree constraints applied to acoustic linguistic functional data,2017.0,10.1016/j.jmva.2016.09.015,doi.org,exclude,E4,si
+1991,A roughness penalty approach to estimate densities over two-dimensional manifolds,2022.0,10.1016/j.csda.2022.107527,hdl.handle.net,exclude,E1,si
+1993,Penalized spline estimation for functional coefficient regression models,2010.0,10.1016/j.csda.2009.09.036,www.ncbi.nlm.nih.gov,exclude,E1,si
+1998,Nonparametric pointwise estimation for a regression model with multiplicative noise,2021.0,10.1155/2021/1599286,downloads.hindawi.com,exclude,E1,si
+2004,Functional archetype and archetypoid analysis,2016.0,10.1016/j.csda.2016.06.007,www.sciencedirect.com,exclude,I5,si
+2007,Principal components analysis and cyclostationarity,2022.0,10.1016/j.jmva.2021.104875,www.sciencedirect.com,exclude,E1,si
+2009,Functional data analysis in an operator-based mixed-model framework,2013.0,10.3150/11-BEJ389,projecteuclid.org,exclude,E1,si
+2010,Simulation of fuzzy random variables,2009.0,10.1016/j.ins.2008.10.018,hdl.handle.net,exclude,I5,si
+2027,Mixture of segmentation for heterogeneous functional data,2024.0,10.1214/24-EJS2286,doi.org,exclude,E4,si
+2030,High-dimensional functional graphical model structure learning via neighborhood selection approach,2024.0,10.1214/24-EJS2219,projecteuclid.org,include,I1,si
+2034,Local optimization of black-box functions with high or infinite-dimensional inputs: application to nuclear safety,2018.0,10.1007/s00180-017-0751-1,hal.science,exclude,E4,si
+2036,Posterior concentration for a misspecified Bayesian regression model with functional covariates,2020.0,10.1016/j.jspi.2020.01.008,www.sciencedirect.com,exclude,E1,si
+2038,Multivariate functional response low-rank regression with an application to brain imaging data,2021.0,10.1002/cjs.11604,escholarship.org,exclude,I5,si
+2049,Functional horseshoe smoothing for functional trend estimation,2024.0,10.5705/ss.202022.0297,doi.org,include,I1,si
+2052,Double-wavelet transform for multisubject task-induced functional magnetic resonance imaging data,2019.0,10.1111/biom.13055,www.ncbi.nlm.nih.gov,exclude,I1,si
+2055,Functional classification of ornamental stone using machine learning techniques,2010.0,10.1016/j.cam.2010.01.054,www.sciencedirect.com,exclude,E4,si
+2061,Functional experiment design for the analysis of colour changes in granite using new functional colour coordinates,2011.0,10.1016/j.cam.2010.08.005,www.sciencedirect.com,exclude,E4,si
+2067,Principal component estimation of functional logistic regression: discussion of two different approaches,2004.0,10.1080/10485250310001624738,hera.ugr.es,exclude,I5,si
+2076,Functional Mixed Effects Clustering with Application to Longitudinal Urologic Chronic Pelvic Pain Syndrome Symptom Data,2022.0,10.1080/01621459.2022.2066536,www.ncbi.nlm.nih.gov,exclude,E4,si
+2078,Generalized spatial regression with differential regularization,2016.0,10.1080/00949655.2016.1182532,hdl.handle.net,exclude,I5,si
+2079,"Bayesian Framework for Simultaneous Registration and Estimation of Noisy, Sparse, and Fragmented Functional Data",2022.0,10.1080/01621459.2021.1893179,doi.org,exclude,E1,si
+2082,Bayesian Multiscale Modeling of Closed Curves in Point Clouds,2014.0,10.1080/01621459.2014.934825,www.ncbi.nlm.nih.gov,exclude,E4,si
+2086,A median test for functional data,2022.0,10.1080/10485252.2022.2064997,hal.archives-ouvertes.fr,exclude,E1,si
+2092,Network Functional Varying Coefficient Model,2022.0,10.1080/01621459.2021.1901718,figshare.com,exclude,I5,si
+2095,Index Models for Sparsely Sampled Functional Data,2015.0,10.1080/01621459.2014.931859,researchonline.lse.ac.uk,exclude,E1,si
+2099,Conditional VAR and Expected Shortfall: A New Functional Approach,2016.0,10.1080/07474938.2013.807107,hal.archives-ouvertes.fr,exclude,I5,si
+2101,Principal Component Analysis of Spatially Indexed Functions,2021.0,10.1080/01621459.2020.1732395,figshare.com,exclude,I5,si
+2102,Detecting the complexity of a functional time series,2024.0,10.1080/10485252.2023.2234507,figshare.com,exclude,I5,si
+2105,A comparison study of control charts for statistical monitoring of functional data,2010.0,10.1080/00207540802662888,hal.science,exclude,I5,si
+2110,Nonparametric Causal Inference with Functional Covariates,2026.0,10.1080/07350015.2025.2501563,doi.org,exclude,E1,si
+2112,Simplicial principal component analysis for density functions in Bayes spaces,2016.0,10.1016/j.csda.2015.07.007,www.sciencedirect.com,exclude,I5,si
+2115,Predictive functional linear models with diverging number of semiparametric single-index interactions,2022.0,10.1016/j.jeconom.2021.03.010,www.ncbi.nlm.nih.gov,exclude,E1,si
+2127,On the evolution of the united kingdom price distributions,2018.0,10.1214/18-AOAS1172,projecteuclid.org,exclude,E4,si
+2130,Functional principal component analysis for cointegrated functional time series,2024.0,10.1111/jtsa.12707,onlinelibrary.wiley.com,exclude,E1,si
+2148,Dependent functional data,2012.0,10.5402/2012/958254,downloads.hindawi.com,exclude,E1,si
+2149,On functional data analysis and related topics,2022.0,10.1016/j.jmva.2021.104861,manuscript.elsevier.com,exclude,I5,si
+2151,Functional data analysis in electronic commerce research,2006.0,10.1214/088342306000000132,projecteuclid.org,exclude,E4,si
+2155,Change point analysis for functional data using empirical characteristic functionals,2026.0,10.1111/jtsa.12828,doi.org,exclude,E1,si
+2159,Analysis of spatio-temporal mobile phone data: a case study in the metropolitan area of Milan,2015.0,10.1007/s10260-014-0294-3,hdl.handle.net,exclude,I5,si
+2160,"Estimation of eigenvalues, eigenvectors and scores in FDA models with dependent errors",2016.0,10.1016/j.jmva.2016.02.002,www.sciencedirect.com,exclude,E1,si
+2161,Detecting relevant changes in the spatiotemporal mean function,2023.0,10.1111/jtsa.12674,onlinelibrary.wiley.com,exclude,E1,si
+2163,Change point tests in functional factor models with application to yield curves,2017.0,10.1111/ectj.12075,academic.oup.com,exclude,E1,si
+2165,"Time-warped growth processes, with applications to the modeling of boom-bust cycles in house prices",2014.0,10.1214/14-AOAS740,projecteuclid.org,exclude,E4,si
+2171,Functional response additive model estimation with online virtual stock markets,2014.0,10.1214/14-AOAS781,projecteuclid.org,exclude,E4,si
+2172,Curve forecasting by functional autoregression,2008.0,10.1016/j.jmva.2008.03.001,doi.org,exclude,I1,si
+2176,Gradual changes in functional time series,2026.0,10.1111/jtsa.12809,doi.org,exclude,E1,si
+2181,Extremal dependence measure for functional data,2022.0,10.1016/j.jmva.2021.104887,doi.org,exclude,E1,si
+2185,"Estimating causal effects in studies of human brain function: new models, methods and estimands",2020.0,10.1214/19-AOAS1316,projecteuclid.org,exclude,I1,si
+2187,Detecting and estimating changes in dependent functional data,2012.0,10.1016/j.jmva.2012.03.006,www.sciencedirect.com,exclude,E1,si
+2190,The Granger-Johansen representation theorem for integrated time series on Banach space,2025.0,10.1111/jtsa.12766,doi.org,exclude,E1,si
+2191,Modeling on-line art auction dynamics using functional data analysis,2006.0,10.1214/088342306000000196,projecteuclid.org,exclude,E4,si
+2193,Test of independence for functional data,2013.0,10.1016/j.jmva.2013.02.005,www.sciencedirect.com,exclude,E1,si
+2206,Statistical inference for the slope parameter in functional linear regression,2022.0,10.1214/22-EJS2078,projecteuclid.org,exclude,E1,si
+2211,A conformal approach for distribution-free prediction of functional data,2020.0,10.1007/978-3-030-47756-1_12,hdl.handle.net,exclude,I5,si
+2214,Template based functional prediction with applications to noninvasive mechanical ventilation and surface EMG techniques,2026.0,10.1016/j.jspi.2026.106375,doi.org,exclude,E4,si
+2216,Consistency of the regression estimator with functional data under long memory conditions,2008.0,10.1016/j.spl.2007.11.011,hal.science,exclude,E1,si
+2217,Confidence surfaces for the mean of locally stationary functional time series,2026.0,10.5705/ss.202023.0150,doi.org,exclude,I5,si
+2220,Seasonal functional autoregressive models,2022.0,10.1111/jtsa.12608,figshare.com,exclude,I5,si
+2221,On distributional autoregression and iterated transportation,2024.0,10.1111/jtsa.12736,doi.org,exclude,I1,si
+2224,Functional sieve bootstrap for the partial sum process with an application to change-point detection,2026.0,10.1111/jtsa.12852,doi.org,exclude,E1,si
+2225,Shape-preserving prediction for stationary functional time series,2021.0,10.1214/21-EJS1882,projecteuclid.org,exclude,E1,si
+2226,On the rate of convergence for the autocorrelation operator in functional autoregression,2022.0,10.1016/j.spl.2022.109575,www.sciencedirect.com,exclude,E1,si
+2229,Varying coefficient models for sparse noise-contaminated longitudinal data,2011.0,10.5705/ss.2009.328,doi.org,exclude,I1,si
+2233,Surface functional models,2020.0,10.1016/j.jmva.2020.104664,www.sciencedirect.com,exclude,E1,si
+2234,Parametric conditional mean inference with functional data applied to lifetime income curves,2022.0,10.1111/iere.12548,eprints.soton.ac.uk,exclude,E1,si
+2238,Detecting changes in functional linear models,2012.0,10.1016/j.jmva.2012.04.007,doi.org,exclude,E1,si
+2250,The ARHD model,2007.0,10.1016/j.jspi.2005.12.006,hal.science,exclude,E1,si
+2251,Preprocessing noisy functional data: a multivariate perspective,2022.0,10.1214/22-EJS2083,projecteuclid.org,exclude,E1,si
+2257,Instrumental variable estimation in functional linear models,2015.0,10.1016/j.jeconom.2015.02.020,hdl.handle.net,exclude,E4,si
+2265,Efficient estimation of integrated volatility functionals under general volatility dynamics,2021.0,10.1017/S0266466620000274,ink.library.smu.edu.sg,include,I1,si
+2276,Estimating lagged (cross-)covariance operators of \(L^p\)-\(m\)-approximable processes in Cartesian product Hilbert spaces,2025.0,10.1111/jtsa.12772,doi.org,exclude,E1,si
+2284,On projection methods for functional time series forecasting,2022.0,10.1016/j.jmva.2021.104890,www.sciencedirect.com,exclude,E1,si
+2289,A class of functional partially linear single-index models,2017.0,10.1016/j.jmva.2017.07.004,www.sciencedirect.com,exclude,E1,si
+2297,A new approach to bootstrap inference in functional coefficient models,2009.0,10.1016/j.csda.2008.09.014,www.econstor.eu,exclude,E1,si
+2300,Adaptive estimation for weakly dependent functional times series,2026.0,10.1111/jtsa.70006,doi.org,exclude,E1,si
+2303,Nonparametric multivariate \(L_{1}\)-median regression estimation with functional covariates,2013.0,10.1214/13-EJS812,projecteuclid.org,exclude,E1,si
+2307,Testing a parametric function against a non-parametric alternative in IV and GMM settings,2012.0,10.1111/j.1368-423X.2012.00382.x,hermes-ir.lib.hit-u.ac.jp,exclude,I5,si
+2317,Bayes Hilbert space additive density-on-scalar regression based on individual observations,2025.0,10.1007/978-3-031-92383-8_42,infoscience.epfl.ch,exclude,E1,si
+2333,Lasso estimation for spherical autoregressive processes,2021.0,10.1016/j.spa.2021.03.009,www.sciencedirect.com,exclude,E1,si
+2344,On partial-sum processes of ARMAX residuals,2019.0,10.1214/18-AOS1776,projecteuclid.org,exclude,E1,si
+2345,A signature-based functional spatial autoregressive model,2025.0,10.1214/25-EJS2445,projecteuclid.org,exclude,E1,si
+2355,A quantitative comparison of stochastic mortality models on Italian population data,2017.0,10.1016/j.csda.2017.03.012,www.sciencedirect.com,exclude,I5,si
+2357,Test of partial separability for multivariate functional data,2025.0,10.5705/ss.202022.0370,doi.org,exclude,I5,si
+2368,On a state-space modelling for functional data,2007.0,10.1007/s00180-007-0049-9,hdl.handle.net,exclude,E1,si
+2386,Modeling seasonality and serial dependence of electricity price curves with warping functional autoregressive dynamics,2019.0,10.1214/18-AOAS1234,projecteuclid.org,include,I1,si
+2388,Forecasting age distribution of deaths: cumulative distribution function transformation,2025.0,10.1016/j.insmatheco.2025.03.007,doi.org,exclude,I1,si
+2390,Influence of forecasting electricity prices in the optimization of complex hydrothermal systems,2009.0,10.1016/j.cam.2009.06.007,www.sciencedirect.com,exclude,E1,si
+2396,The influence of fiscal and monetary policies on the shape of the yield curve,2026.0,10.1016/j.jedc.2026.105276,doi.org,exclude,I1,si
+2399,A bootstrap-based KPSS test for functional time series,2019.0,10.1016/j.jmva.2019.104535,www.sciencedirect.com,exclude,E1,si
+2465,Nonparametric Transient Classification using Adaptive Wavelets,2015.0,10.1093/mnras/stv1816,academic.oup.com,include,E4,si
+2559,Minimum regularized covariance trace estimator and outlier detection for functional data,2023.0,10.1080/00401706.2024.2336542,www.tandfonline.com,exclude,E1,si
+2648,River flow modelling using nonparametric functional data analysis,2024.0,10.1111/jfr3.12282,onlinelibrary.wiley.com,exclude,I5,si
+2709,Can you always reap what you sow? Network and functional data analysis of VC investments in health-tech companies,2021.0,10.1007/978-3-030-93409-5_61,openportal.isti.cnr.it,exclude,E4,si
+2730,Market competition and poverty dynamics: Short and long run effects across financial development levels,2025.0,,arxiv.org,exclude,I5,si
+2747,Variable Selection and Minimax Prediction in High-dimensional Functional Linear Model,2023.0,10.5705/ss.202025.0151,doi.org,exclude,E1,si
