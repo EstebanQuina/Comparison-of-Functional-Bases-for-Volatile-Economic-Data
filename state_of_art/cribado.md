@@ -333,21 +333,101 @@ positivos de ~16% en la detección automática de OA usada en este proceso
 Artefacto: `screening/manual_access_decisions_master.csv` (684 filas,
 `revisado_manualmente=si`).
 
-### Estado global de §7.3 — ✅ COMPLETA (2026-09-16)
+### Re-revisión humana completa de los 698 incluidos por IA (2026-09-27)
+
+El usuario notó que su tasa de inclusión en el lote de acceso manual
+(61/684 = 8.9%) era drásticamente menor que la tasa de inclusión de la IA
+en el lote auto-accesible (698/761 = 91.7%), y consideró 759 referencias
+desmesurado para una tesis de pregrado. Decidió **releer él mismo, sin
+asistencia de IA, los 698 ítems que la IA había incluido**
+(`screening/revision_manual_incluidos_ia.csv` → `..._ia.numbers`),
+aplicando el mismo criterio estricto que ya había usado en el lote de
+acceso manual. Esto es exactamente el tipo de control que motivaba §7.4
+(aunque no es la relectura ciega de una muestra del 10% que pide el
+protocolo — es una relectura completa y dirigida sobre el subconjunto que
+generaba más dudas).
+
+**Resultado (698, todos decididos):**
+
+| Decisión | n |
+|---|---|
+| Include | 60 |
+| Exclude | 638 |
+
+Motivos de exclusión: **E1**=468 · E4=102 · I5=45 · I1=19 · E6=2 · E5=1 · E2=1.
+(Nota: `I1` en una exclusión significa que el trabajo no cumple I1 —
+ni siquiera trata de FDA — no que I1 sea el motivo de inclusión.)
+
+La IA había sobre-incluido masivamente en el lote auto-accesible: de 698
+que marqué `include`, el usuario confirmó solo 60 (8.6%) tras leer el
+texto completo él mismo. La causa más probable es la regla "ante la duda,
+incluye" aplicada de forma demasiado generosa en el cribado de texto
+completo asistido por IA (§7.3, sección "Cribado de texto completo
+asistido"), agravada por la pérdida de información del extracto truncado
+(215/761 casos ya se habían marcado como decisión basada en info parcial).
+**Esto se documenta como limitación real del método y como justificación
+de por qué la verificación humana final fue necesaria** — no se puede
+confiar en el veredicto de IA sobre texto completo sin verificación,
+incluso con alta confianza reportada.
+
+Artefacto: `screening/revision_manual_incluidos_ia_final.csv` (698 filas).
+
+### Estado global de §7.3 — ✅ COMPLETA (2026-09-27)
+
+Fuente única consolidada: `screening/etapa2_final_master.csv` (2347 filas,
+sin duplicados, columna `source` indica el origen de cada veredicto).
 
 | | n |
 |---|---|
 | Pasaron la Etapa 1 | 2347 |
 | Excluidos por I5 (sin acceso abierto confirmado) | 903 |
-| Incluidos y excluidos en texto completo, subconjunto auto-accesible (761: 698 incl. / 62 excl.) | 760 |
-| Incluidos y excluidos en texto completo, subconjunto de acceso manual (684: 61 incl. / 623 excl.) | 684 |
-| **Total incluidos tras Etapa 2 (texto completo)** | **759** (698 + 61) |
-| **Total excluidos tras Etapa 2** (incl. los 903 de I5) | **1588** (903 + 62 + 623) |
+| Excluidos por IA sin reto (lote auto-accesible, no fueron cuestionados) | 62 |
+| Incluidos/excluidos por el usuario, lote auto-accesible (698: 60 incl. / 638 excl.) | 698 |
+| Incluidos/excluidos por el usuario, lote de acceso manual (684: 61 incl. / 623 excl.) | 684 |
+| **Total incluidos tras Etapa 2 (texto completo)** | **121** (60 + 61) |
+| **Total excluidos tras Etapa 2** | **2226** (903 + 62 + 638 + 623) |
 
-759 + 1588 = 2347 ✓ — cuadra exactamente, sin ítems sin resolver.
+121 + 2226 = 2347 ✓ — cuadra exactamente, sin ítems sin resolver.
 
-**Estos 759 ítems son el conjunto incluido por búsqueda sistemática**, listo
-para Fase 6 (snowballing) y luego Fase 7-8 (valoración Q1–Q4, matriz de
-extracción).
+### Segunda pasada del usuario sobre los 121 incluidos (2026-09-27)
+
+Antes de dar la Etapa 2 por cerrada, el usuario pidió una lista aparte solo
+con los 121 incluidos (`screening/incluidos_final_121.csv`, con autores,
+revista, DOI y enlace) para una relectura final de control de calidad —
+en la práctica, esta es la sustancia del control §7.4 aunque no tome la
+forma exacta que describe el protocolo (relectura ciega de una muestra
+aleatoria del 10 %; aquí fue una segunda lectura completa y dirigida del
+conjunto de incluidos). Registró su veredicto en
+`incluidos_final_121_revisado.numbers`: **casilla en blanco = confirma la
+inclusión (no cambia su decisión anterior)**, y solo escribió algo cuando
+decidía excluir.
+
+**Resultado: 30 de los 121 pasan a excluidos** en esta segunda lectura
+(Motivo: E1=25, E4=3, I5=2) — **quedan 91 incluidos finales.**
+
+Artefactos: `screening/incluidos_final_91.csv` (lista final, con autores/
+revista/DOI/enlace) y `screening/etapa2_final_master.csv` actualizado
+(columna `source=segunda_revision_usuario_incluidos` marca estos 30 casos).
+
+### Estado global de §7.3 — ✅ COMPLETA (2026-09-27, cierre final)
+
+| | n |
+|---|---|
+| Pasaron la Etapa 1 | 2347 |
+| Excluidos por I5 (sin acceso abierto confirmado) | 903 |
+| Excluidos por IA sin reto (lote auto-accesible, no fueron cuestionados) | 62 |
+| Excluidos por el usuario, primera lectura (698 auto-accesible + 684 acceso manual) | 1261 |
+| Excluidos por el usuario, segunda lectura (de los 121 incluidos) | 30 |
+| **Total incluidos tras Etapa 2 (texto completo)** | **91** |
+| **Total excluidos tras Etapa 2** | **2256** |
+
+91 + 2256 = 2347 ✓ — cuadra exactamente, sin ítems sin resolver.
+
+**Estos 91 ítems son el conjunto final incluido por búsqueda sistemática**
+(`screening/incluidos_final_91.csv`) — encaja bien con la extensión
+orientativa del protocolo para una tesis de pregrado (§12.4: 60–90
+referencias finales), incluso antes de sumar lo que aporte el snowballing
+de la Fase 6. Listo para Fase 6 y luego Fase 7-8 (valoración Q1–Q4, matriz
+de extracción).
 
 ## 7.4 Control de consistencia intra-evaluador / auditoría del director — pendiente
