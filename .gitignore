@@ -18,6 +18,9 @@ state_of_art/screening/fulltext_cache/
 state_of_art/screening/fulltext_excerpts.json
 state_of_art/screening/ft_batch_*.json
 
+# Full documents of the 92 included works (Fase 7-9) — copyrighted, local-only per user decision
+state_of_art/fulltext_md/
+
 # LaTeX build artifacts
 *.aux
 *.bbl

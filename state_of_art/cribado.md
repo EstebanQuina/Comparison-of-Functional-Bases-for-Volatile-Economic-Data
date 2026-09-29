@@ -426,8 +426,41 @@ revista/DOI/enlace) y `screening/etapa2_final_master.csv` actualizado
 **Estos 91 ítems son el conjunto final incluido por búsqueda sistemática**
 (`screening/incluidos_final_91.csv`) — encaja bien con la extensión
 orientativa del protocolo para una tesis de pregrado (§12.4: 60–90
-referencias finales), incluso antes de sumar lo que aporte el snowballing
-de la Fase 6. Listo para Fase 6 y luego Fase 7-8 (valoración Q1–Q4, matriz
-de extracción).
+referencias finales).
+
+## 7.5 Cierre de la búsqueda: Fase 6 diferida, #10 añadido manualmente (2026-09-29)
+
+**Decisión del director y codirector de tesis:** dar por finalizada la
+búsqueda de literatura con los 91 ítems de §7.3, **sin ejecutar la Fase 6
+(snowballing)**. La búsqueda exhaustiva con snowballing completo queda
+diferida para el desarrollo posterior y exclusivo de un artículo de
+revisión bibliográfica independiente de esta tesis — no para esta tesis
+de pregrado. Es una desviación explícita y deliberada del protocolo
+(§8), igual de documentada que las anteriores (`criterios_elegibilidad.md`
+§3.4, I3 sin excepciones; §3.3, fuentes regionales; §3.5, I5 solo acceso
+abierto).
+
+**Consecuencia:** el estado del arte de la tesis se basa exclusivamente en
+búsqueda sistemática (Scopus + zbMATH Open + arXiv, Fase 4) con cribado en
+dos etapas (Fase 5) — sin verificación de saturación por referencias
+citadas/citantes. Esto debe declararse explícitamente como limitación en
+la sección de metodología (mismo criterio de transparencia ya aplicado a
+las demás desviaciones).
+
+**Ítem #10 del conjunto oro añadido manualmente:** Padilla-Segarra,
+González-Villacorte, Amaro & Infante — el artículo que motiva la tesis —
+nunca apareció en los resultados de Fase 4 (no indexado en Scopus/zbMATH/
+arXiv, confirmado ya en `cadenas_scopus.md` y `cadenas_zbmath.md`) y por
+tanto tampoco en ningún cribado posterior. El usuario posee el documento
+completo directamente (no vía acceso abierto). Se incorpora **fuera de la
+búsqueda sistemática**, por ser la obra que define la pregunta de
+investigación y el vacío que la tesis atiende — no un hallazgo incidental
+sujeto a los mismos criterios de una revisión sistemática de literatura de
+fondo. Queda marcado con `origen=motivador_no_sistematico` para que el
+diagrama de flujo (Anexo C) distinga los 91 de búsqueda sistemática de
+este añadido manual.
+
+**Conjunto final: 92 ítems** (91 sistemáticos + 1 motivador). Pendiente:
+generar `screening/incluidos_final_92.csv` una vez incorporado el ítem 10.
 
 ## 7.4 Control de consistencia intra-evaluador / auditoría del director — pendiente
