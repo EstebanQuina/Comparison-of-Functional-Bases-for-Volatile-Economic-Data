@@ -460,7 +460,52 @@ fondo. Queda marcado con `origen=motivador_no_sistematico` para que el
 diagrama de flujo (Anexo C) distinga los 91 de búsqueda sistemática de
 este añadido manual.
 
-**Conjunto final: 92 ítems** (91 sistemáticos + 1 motivador). Pendiente:
-generar `screening/incluidos_final_92.csv` una vez incorporado el ítem 10.
+**Conjunto final: 92 ítems** (91 sistemáticos + 1 motivador). Listado
+completo: `screening/incluidos_final_92.csv`.
+
+## 7.6 Recolección de texto completo en Markdown (2026-09-29/30)
+
+Para las Fases 7–9, el usuario pidió tener copia local del texto completo
+de los 92 ítems, en Markdown. Decisiones y resultado:
+
+- **Almacenamiento local, no versionado** (`state_of_art/fulltext_md/`,
+  en `.gitignore`) — la mayoría de las fuentes no tiene licencia que
+  permita redistribuir el texto completo en un repositorio público
+  (verificado por licencia de Unpaywall: solo ~30 % `cc-by`).
+- **Herramienta de conversión:** se probó `markitdown` (conversor PDF con
+  mala calidad — confunde el layout de dos columnas con tablas espurias y
+  pierde espacios entre palabras), se comparó con **`pymupdf4llm`**
+  (mucho más limpio: encabezados correctos, tablas reales, OCR automático
+  vía Tesseract en páginas escaneadas) y se descartó **Marker** (modelos
+  pesados, no terminó de descargar en varios minutos, ganancia marginal
+  para el uso de esta revisión). Se adoptó pymupdf4llm para PDF y
+  markitdown para HTML.
+- **Descarga automática:** 48/91 obtenidos vía las URL de acceso abierto
+  ya identificadas (`screening/fetch_and_convert_md.py`).
+- **Descarga manual del usuario:** los 43 restantes (bloqueados por
+  muro anti-bot editorial) más el artículo de Padilla-Segarra los
+  descargó el usuario directamente. Los archivos llegaron con nombres
+  arbitrarios (PII de editorial, ID de arXiv, nombres genéricos como
+  "Download.pdf") — se identificaron por contenido (título/autores en la
+  primera página, script `screening/match_downloaded_files.py`) y se
+  renombraron a `<id>.pdf` en `fulltext_md/raw/`. Se corrigieron 6 casos
+  donde el emparejamiento automático por palabras clave fallaba (títulos
+  demasiado genéricos coincidían con varios candidatos) verificando el
+  contenido real de cada PDF antes de aceptar el emparejamiento.
+- **Falso positivo detectado por el usuario:** revisando la calidad de
+  los 48 convertidos automáticamente, encontró que el id 958 solo tenía
+  la página de resumen de IOPscience, no el artículo completo — mi
+  detector de "página de aterrizaje" no lo había atrapado (frases
+  específicas de ese sitio no estaban en la lista de patrones). Corregido
+  tras ampliar el detector y confirmarlo manualmente.
+- **id 1939** ("Functional data analysis by matrix completion", Descary &
+  Panaretos, *Annals of Statistics*) es el mismo trabajo que el id 2440
+  (preprint de arXiv) — nunca se fusionaron como duplicados en fases
+  anteriores. El usuario decidió usar el texto del preprint (2440) para
+  cubrir también el 1939, en vez de perseguir la versión de revista.
+
+**Resultado: 92/92 ítems con texto completo en Markdown**, listos para la
+Fase 7 (valoración Q1–Q4). Metadatos completos (autores, año, revista,
+DOI, origen) en el encabezado de cada archivo `.md`.
 
 ## 7.4 Control de consistencia intra-evaluador / auditoría del director — pendiente
