@@ -1,0 +1,279 @@
+{
+ "fam_counter": {
+  "sin_dato": 9,
+  "wavelet": 2,
+  "B-spline": 30,
+  "MÚLTIPLE (comparación explícita)": 25,
+  "empírica": 12,
+  "otra": 5,
+  "RBF": 2,
+  "Fourier": 5,
+  "P-spline": 1
+ },
+ "crit_counter": {
+  "otro criterio propio": 8,
+  "validación cruzada / bootstrap": 8,
+  "GCV": 22,
+  "no reportado/confirmado": 13,
+  "no aplica": 13,
+  "bayesiano": 6,
+  "AIC/BIC/GIC": 10,
+  "fijo/arbitrario/manual": 9,
+  "umbral de varianza explicada": 2
+ },
+ "tabla_b": {
+  "sin_dato||otro criterio propio": 1,
+  "wavelet||validación cruzada / bootstrap": 1,
+  "B-spline||validación cruzada / bootstrap": 1,
+  "MÚLTIPLE (comparación explícita)||GCV": 9,
+  "sin_dato||GCV": 2,
+  "B-spline||otro criterio propio": 2,
+  "empírica||no reportado/confirmado": 4,
+  "B-spline||no aplica": 4,
+  "MÚLTIPLE (comparación explícita)||otro criterio propio": 3,
+  "otra||bayesiano": 2,
+  "RBF||GCV": 1,
+  "MÚLTIPLE (comparación explícita)||bayesiano": 3,
+  "MÚLTIPLE (comparación explícita)||AIC/BIC/GIC": 6,
+  "wavelet||otro criterio propio": 1,
+  "B-spline||fijo/arbitrario/manual": 8,
+  "B-spline||GCV": 8,
+  "B-spline||no reportado/confirmado": 6,
+  "MÚLTIPLE (comparación explícita)||no aplica": 1,
+  "B-spline||AIC/BIC/GIC": 1,
+  "sin_dato||no aplica": 5,
+  "RBF||AIC/BIC/GIC": 1,
+  "MÚLTIPLE (comparación explícita)||validación cruzada / bootstrap": 1,
+  "empírica||validación cruzada / bootstrap": 3,
+  "MÚLTIPLE (comparación explícita)||fijo/arbitrario/manual": 1,
+  "Fourier||AIC/BIC/GIC": 1,
+  "P-spline||GCV": 1,
+  "otra||validación cruzada / bootstrap": 1,
+  "sin_dato||validación cruzada / bootstrap": 1,
+  "otra||no aplica": 1,
+  "Fourier||GCV": 1,
+  "empírica||otro criterio propio": 1,
+  "MÚLTIPLE (comparación explícita)||no reportado/confirmado": 1,
+  "empírica||umbral de varianza explicada": 2,
+  "Fourier||no aplica": 2,
+  "empírica||AIC/BIC/GIC": 1,
+  "otra||no reportado/confirmado": 1,
+  "empírica||bayesiano": 1,
+  "Fourier||no reportado/confirmado": 1
+ },
+ "multi_fam_items": [
+  [
+   "45",
+   "perezplaza_network_2018",
+   [
+    "Fourier",
+    "P-spline"
+   ]
+  ],
+  [
+   "58",
+   "magistris_adaptive_2025",
+   [
+    "B-spline",
+    "P-spline"
+   ]
+  ],
+  [
+   "131",
+   "gataric_high_2021",
+   [
+    "Fourier",
+    "empírica",
+    "wavelet"
+   ]
+  ],
+  [
+   "135",
+   "yang_feature_2022",
+   [
+    "empírica",
+    "wavelet"
+   ]
+  ],
+  [
+   "168",
+   "beyaztas_comparison_2022",
+   [
+    "B-spline",
+    "Fourier",
+    "RBF"
+   ]
+  ],
+  [
+   "191",
+   "nassar_empirically_2021",
+   [
+    "B-spline",
+    "Fourier",
+    "empírica"
+   ]
+  ],
+  [
+   "199",
+   "basna_driven_2022",
+   [
+    "B-spline",
+    "Fourier",
+    "empírica",
+    "wavelet"
+   ]
+  ],
+  [
+   "205",
+   "sousa_bayesian_2024",
+   [
+    "B-spline",
+    "Fourier"
+   ]
+  ],
+  [
+   "300",
+   "lisi_joint_2024",
+   [
+    "B-spline",
+    "empírica"
+   ]
+  ],
+  [
+   "534",
+   "aguilera_comparative_2013",
+   [
+    "B-spline",
+    "P-spline"
+   ]
+  ],
+  [
+   "725",
+   "kayano_sparse_2010",
+   [
+    "RBF",
+    "empírica"
+   ]
+  ],
+  [
+   "769",
+   "tarpey_linear_2007",
+   [
+    "B-spline",
+    "Fourier"
+   ]
+  ],
+  [
+   "872",
+   "eslami_spline_2024",
+   [
+    "B-spline",
+    "P-spline",
+    "wavelet"
+   ]
+  ],
+  [
+   "958",
+   "yu_utilizing_2024",
+   [
+    "B-spline",
+    "empírica"
+   ]
+  ],
+  [
+   "959",
+   "salvatore_exploring_2016",
+   [
+    "B-spline",
+    "Fourier",
+    "wavelet"
+   ]
+  ],
+  [
+   "1044",
+   "svishcheva_region_2015",
+   [
+    "B-spline",
+    "Fourier"
+   ]
+  ],
+  [
+   "1460",
+   "chen_review_2021",
+   [
+    "B-spline",
+    "Fourier",
+    "empírica"
+   ]
+  ],
+  [
+   "1562",
+   "aue_generalized_2017",
+   [
+    "B-spline",
+    "Fourier",
+    "empírica",
+    "wavelet"
+   ]
+  ],
+  [
+   "1840",
+   "horvath_time_2020",
+   [
+    "B-spline",
+    "empírica"
+   ]
+  ],
+  [
+   "1939",
+   "descary_matrix_2019",
+   [
+    "B-spline",
+    "Fourier",
+    "empírica"
+   ]
+  ],
+  [
+   "2410",
+   "hu_sparse_2020",
+   [
+    "B-spline",
+    "Fourier",
+    "empírica"
+   ]
+  ],
+  [
+   "2415",
+   "jiao_filtrated_2021",
+   [
+    "Fourier",
+    "empírica"
+   ]
+  ],
+  [
+   "2423",
+   "cruz_fast_2024",
+   [
+    "B-spline",
+    "Fourier"
+   ]
+  ],
+  [
+   "2440",
+   "descary_matrix_2016",
+   [
+    "B-spline",
+    "Fourier",
+    "empírica"
+   ]
+  ],
+  [
+   "2475",
+   "sartini_sufficient_2026",
+   [
+    "B-spline",
+    "empírica"
+   ]
+  ]
+ ]
+}
