@@ -46,68 +46,6 @@ bayesiano (3): cuando un trabajo sí compara familias, casi siempre (18/25,
 72%) también aplica un criterio formal de selección de dimensión, no un
 valor fijo arbitrario.
 
-## Verificación del vacío candidato (condición de validez, §11.3)
-
-El protocolo exige comprobar el vacío contra la matriz antes de afirmarlo.
-Se cruzó el grupo `MÚLTIPLE` (25 ítems) contra `preguntas_que_responde` y
-`dominio_aplicacion`:
-
-- **Solo 5/25 (20%) tocan PR5** (aplicación económica/financiera): ids 300
-  (precios eléctricos, mercado italiano IPEX), 959 (epidemiología de aguas
-  residuales — PR5 marginal), 1460 (flujos de gas natural, Alemania), 1562
-  (FGARCH sobre retornos intradía del ETF SPY), 1840 (curvas forward de
-  materias primas, índice S&P GSCI).
-- **Ninguno de esos 5 aísla el efecto de la familia de bases del efecto del
-  régimen de suavizado/penalización** como contribución metodológica
-  explícita — reportan comparaciones o extensiones de modelo, no un diseño
-  que controle ambos factores por separado.
-- **El único ítem que sí separa explícitamente familia vs. método de
-  estimación** (id 168, Beyaztas et al. — "compara sistemáticamente 3
-  familias de base y 2 métodos de estimación") es sobre **datos climáticos
-  semanales**, no económicos/financieros.
-- **Ninguno de los 91 ítems aplica a datos latinoamericanos o ecuatorianos**
-  — consistente con la escasez ya documentada en la búsqueda sistemática
-  (Fase 4/5, cadenas C6).
-
-**Conclusión de la verificación:** el vacío candidato del protocolo **se
-sostiene, pero debe formularse con más precisión** — no es que la
-comparación sistemática de bases sea inexistente en FDA (25/91, 27.5%, y al
-menos un caso separa explícitamente familia de método), sino que esa
-comparación **no se ha hecho para series económicas/financieras volátiles**,
-y mucho menos con aislamiento del efecto de suavizado o con datos
-latinoamericanos.
-
-## Formulación del vacío en tres movimientos (borrador para revisión del usuario)
-
-**1. Lo consolidado.** La representación de datos funcionales mediante
-expansión en bases está bien establecida (B-spline domina con 30/91 usos
-como familia única, seguida de bases empíricas/FPCA con 12/91), y los
-criterios de selección de la dimensión de la base son maduros y de uso
-extendido (GCV, AIC/BIC, validación cruzada aparecen en la mayoría de los
-ítems que reportan un criterio).
-
-**2. Lo fragmentario.** La comparación sistemática *entre* familias de
-bases no es infrecuente en la literatura FDA general — 25/91 ítems (27.5%)
-comparan explícitamente ≥2 familias, y al menos uno (id 168) aísla
-formalmente el efecto de la familia de bases del efecto del método de
-estimación. Pero esta literatura comparativa está concentrada en dominios
-ajenos a la economía y las finanzas (clima, genética, espectroscopía,
-geodesia, EEG): solo 5 de esos 25 trabajos tocan series económicas o
-financieras, y ninguno de ellos separa el efecto de la familia del efecto
-del régimen de suavizado.
-
-**3. Lo ausente.** No existe, en la literatura revisada, una comparación
-sistemática y controlada de familias de bases funcionales para la
-representación por FPCA de series económicas o financieras volátiles que
-aísle el efecto de la elección de base del efecto de la penalización o el
-régimen de suavizado — y no existe ninguna aplicación de este tipo a datos
-latinoamericanos o ecuatorianos. Este es precisamente el punto donde se
-detuvo Padilla-Segarra et al. (el artículo que motiva esta tesis): usaron
-únicamente B-splines sin comparación, sin penalización, y su propio trabajo
-futuro propuesto pide explícitamente **"considering different approximation
-basis"** — confirmación textual, desde dentro de la propia literatura del
-campo, del vacío exacto que esta tesis atiende.
-
 ## Eje 1 — Fundamentos de FDA y representación en bases (PR1)
 
 *Borrador para calibrar tono/profundidad — 34 antecedentes directos de PR1
@@ -391,15 +329,79 @@ dentro de este corpus, vacía.
 La formulación completa del vacío de investigación, apoyada en la
 evidencia de los cinco ejes, se desarrolla en la sección siguiente.
 
-## Pendiente
+## Verificación del vacío candidato (condición de validez, §11.3)
 
-1. **Redacción de los 5 ejes temáticos** (§11.1 del protocolo, uno por
-   pregunta de revisión) — síntesis argumentativa en prosa a partir de la
-   matriz, no un catálogo. Por definición del protocolo (§0.1, §12.2) esto
-   es trabajo de argumentación que debe reflejar la voz del autor, no un
-   listado generado automáticamente — pendiente de decidir con el usuario
-   cómo dividir el trabajo (borrador completo para editar / esquema y
-   evidencia para que el usuario escriba directamente / mixto por eje).
-2. Revisión del usuario de las Tablas A y B y de la formulación del vacío
-   arriba (borrador, no definitiva).
-3. Después: Fase 10 (redacción final de la sección).
+El protocolo exige comprobar el vacío contra la matriz antes de afirmarlo.
+Se cruzó el grupo `MÚLTIPLE` (25 ítems, Tabla B) contra `preguntas_que_responde`
+y `dominio_aplicacion`:
+
+- **Solo 5/25 (20%) tocan PR5** (aplicación económica/financiera): ids 300
+  (precios eléctricos, mercado italiano IPEX), 959 (epidemiología de aguas
+  residuales — PR5 marginal), 1460 (flujos de gas natural, Alemania), 1562
+  (FGARCH sobre retornos intradía del ETF SPY), 1840 (curvas forward de
+  materias primas, índice S&P GSCI).
+- **Ninguno de esos 5 aísla el efecto de la familia de bases del efecto del
+  régimen de suavizado/penalización** como contribución metodológica
+  explícita — reportan comparaciones o extensiones de modelo, no un diseño
+  que controle ambos factores por separado.
+- **El único ítem que sí separa explícitamente familia vs. método de
+  estimación** (id 168, Beyaztas et al. — "compara sistemáticamente 3
+  familias de base y 2 métodos de estimación") es sobre **datos climáticos
+  semanales**, no económicos/financieros.
+- **Ninguno de los 91 ítems aplica a datos latinoamericanos o ecuatorianos**
+  — consistente con la escasez ya documentada en la búsqueda sistemática
+  (Fase 4/5, cadenas C6) y confirmada en el Eje 5.
+
+**Conclusión de la verificación:** el vacío candidato del protocolo se
+sostiene, pero debe formularse con más precisión. No es que la comparación
+sistemática de bases sea inexistente en FDA (25/91, 27.5%, y al menos un
+caso separa explícitamente familia de método), sino que esa comparación no
+se ha hecho para series económicas o financieras volátiles, y mucho menos
+con aislamiento del efecto de suavizado o con datos latinoamericanos.
+
+## Formulación del vacío en tres movimientos (borrador para revisión del usuario)
+
+**1. Lo consolidado.** La representación de datos funcionales mediante
+expansión en bases está bien establecida (B-spline domina con 30/91 usos
+como familia única, seguida de bases empíricas/FPCA con 12/91), y los
+criterios de selección de la dimensión de la base son maduros y de uso
+extendido (GCV, AIC/BIC, validación cruzada aparecen en la mayoría de los
+ítems que reportan un criterio).
+
+**2. Lo fragmentario.** La comparación sistemática entre familias de bases
+no es infrecuente en la literatura FDA general — 25/91 ítems (27.5%)
+comparan explícitamente dos o más familias, y al menos uno (id 168) aísla
+formalmente el efecto de la familia de bases del efecto del método de
+estimación. Pero esta literatura comparativa está concentrada en dominios
+ajenos a la economía y las finanzas (clima, genética, espectroscopía,
+geodesia, EEG): solo 5 de esos 25 trabajos tocan series económicas o
+financieras, y ninguno de ellos separa el efecto de la familia del efecto
+del régimen de suavizado.
+
+**3. Lo ausente.** No existe, en la literatura revisada, una comparación
+sistemática y controlada de familias de bases funcionales para la
+representación por FPCA de series económicas o financieras volátiles que
+aísle el efecto de la elección de base del efecto de la penalización o el
+régimen de suavizado, y no existe ninguna aplicación de este tipo a datos
+latinoamericanos o ecuatorianos. Este es precisamente el punto en el que
+se detiene Padilla-Segarra et al. (el artículo que motiva esta tesis):
+usan únicamente B-splines sin comparación, sin penalización, y su propio
+trabajo futuro propuesto pide explícitamente "considering different
+approximation basis" — confirmación textual, desde dentro de la propia
+literatura del campo, del vacío exacto que esta tesis atiende.
+
+## Estado
+
+Los 5 ejes temáticos (§11.1), la verificación del vacío candidato (§11.3)
+y la formulación del vacío en tres movimientos están redactados y
+**aprobados por el usuario** (2026-09-30), uno a la vez con revisión
+inmediata. Tablas A y B generadas y verificadas contra la matriz.
+
+**Pendiente:**
+1. Aprobación final de la formulación del vacío en tres movimientos
+   (redactada antes de completar los 5 ejes; revisar si sigue siendo
+   consistente ahora que los ejes están terminados, o si amerita algún
+   ajuste menor).
+2. Fase 10 (redacción final de la sección de estado del arte) — integrar
+   esta síntesis en el documento de tesis, con la estructura de embudo
+   que propone el protocolo (§12.1).
