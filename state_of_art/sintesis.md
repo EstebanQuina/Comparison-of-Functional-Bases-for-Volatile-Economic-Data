@@ -225,6 +225,69 @@ series económicas volátiles (ver Eje 5). Esta misma tensión entre
 seleccionar automáticamente la dimensión o desacoplarla del suavizado se
 presenta también, de otra manera, en el Eje 3.
 
+## Eje 3 — Suavizado, penalización y selección de parámetros (PR3)
+
+*Borrador — 21 antecedentes directos de PR3 en la matriz.*
+
+La separación entre el efecto de la familia de bases y el efecto del
+régimen de suavizado, que PR3 plantea como pregunta abierta, sí tiene
+antecedentes dentro de una misma familia. Aguilera & Aguilera-Morillo
+(2013) mantienen fija la familia B-spline y varían únicamente el tipo de
+penalización —ninguna (regression splines), continua (smoothing splines)
+y discreta (P-splines)— encontrando que ambos enfoques penalizados
+reducen el error cuadrático medio de forma sustancial frente al caso sin
+penalizar. Gao et al. (2024) llevan esta separación más lejos: fijan una
+dimensión K grande y controlan la suavidad exclusivamente mediante el
+parámetro de penalización, en lugar de seleccionar K por un criterio como
+GCV. En ambos casos la familia de bases permanece constante; lo que varía
+es el régimen de suavizado, y el efecto es medible y sustancial. Es
+exactamente el tipo de diseño que PR3 pide, pero aplicado dentro de una
+sola familia, no como comparación entre familias distintas, y no sobre
+series económicas o financieras.
+
+Cuando se examina cómo se selecciona en la práctica el parámetro de
+suavizado (lambda), el criterio automático más citado, la validación
+cruzada generalizada, no siempre funciona como se espera. Zin et al.
+(2020) documentan un caso en el que ni GCV ni la validación cruzada
+ordinaria produjeron un valor de lambda razonable, y los autores debieron
+recurrir a una evaluación subjetiva del ajuste. Este resultado es
+relevante para PR3 porque señala un límite práctico: si el criterio
+automático de selección de lambda puede fallar, cualquier comparación
+entre familias de bases que dependa de una selección automática y no
+verificada del parámetro de suavizado corre el riesgo de confundir el
+efecto de la familia con un artefacto de una mala selección de lambda.
+Beyaztas & Shang (2022) son, dentro del corpus, quienes más se aproximan
+a controlar ambas fuentes de variación a la vez: comparan tres familias de
+base y, para cada una, cuatro criterios distintos de selección (GCV, GIC,
+MAIC, GBIC), lo que permite separar en el análisis qué parte de la
+diferencia observada proviene de la familia y qué parte del criterio de
+selección. El dominio de aplicación es climático, no económico.
+
+Un grupo más reciente de trabajos evita el problema en lugar de
+resolverlo: en vez de seleccionar primero la dimensión de la base y luego,
+por separado, el parámetro de suavizado, formulan ambas decisiones como
+un único problema de inferencia bayesiana. Sousa et al. (2024), Wakayama &
+Sugasawa (2022), Cruz et al. (2024) y Tao et al. (2025) usan priors de
+contracción (horseshoe, spike-and-slab, priors dispersos vía inferencia
+variacional) que seleccionan qué funciones de base retener y qué tanto
+penalizarlas en el mismo paso de estimación. Esta unificación resuelve el
+problema práctico de tener que ajustar dos parámetros por separado, pero
+no responde a PR3 en el sentido que interesa a esta tesis: al fundir
+ambas decisiones en un solo mecanismo, no permite aislar cuánto del
+resultado se explica por la familia de bases elegida y cuánto por el
+régimen de suavizado aplicado sobre ella.
+
+De los 21 antecedentes directos de PR3, solo uno trabaja con series
+económicas o financieras: Rice et al. (2023), sobre la volatilidad
+funcional de futuros de petróleo crudo. Pero su forma de regularizar no es
+la penalización de rugosidad que discuten los demás trabajos de este eje,
+sino una restricción de no negatividad sobre bases construidas a partir de
+los datos. Ningún antecedente de este corpus aplica a series económicas o
+financieras el tipo de separación explícita entre familia de bases y
+régimen de suavizado que sí existe, dentro de una sola familia, en
+Aguilera & Aguilera-Morillo (2013) y Gao et al. (2024). El Eje 5 retoma
+este punto.
+
 ## Pendiente
 
 1. **Redacción de los 5 ejes temáticos** (§11.1 del protocolo, uno por
