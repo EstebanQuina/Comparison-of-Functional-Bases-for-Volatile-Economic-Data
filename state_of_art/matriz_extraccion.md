@@ -55,15 +55,32 @@ complete directamente si lo desea, es un campo de uso personal).
 
 Distribución de `familia_base` (top): B-spline 28, empírica (FPCA) 19,
 otra 9, Fourier 8, N/A 6, combinaciones (B-spline y Fourier) 4, wavelet 3,
-P-spline 2. **43/91 (47.3%) antecedentes directos** (igual que en Fase 7,
-sin cambios).
+P-spline 2. **44/91 (48.4%) antecedentes directos** (tras la corrección de
+los ids 74 y 1731 documentada abajo).
+
+- **Nota adicional — id 1731 (Yu & Sibbertsen, "Mapping price dynamics
+  across electricity market designs"):** el lote que lo procesó encontró
+  en el texto completo una justificación empírica explícita de la
+  elección de base ("we chose Fourier basis over B-splines primarily
+  because they yield smoother residuals for our type of data") que, bajo
+  el rubric de Fase 7, correspondería a Q1=2, no Q1=0 como quedó
+  puntuado originalmente.
+
+**Corrección aplicada (2026-09-30):** se re-puntuaron los ids 74 y 1731
+con lectura completa dirigida (ver `valoracion.md`, sección de
+corrección). Resultado: 74 pasa de total=4 a **total=5** (Q1: 1→2);
+1731 pasa de total=1 a **total=6** (Q1: 0→2, Q2: 0→2, Q4: 0→1) y **ahora
+es antecedente directo**. Ambos valores ya están actualizados en
+`f8_matriz_extraccion.csv` y `fase7/f7_scores_master.csv`. Total de
+antecedentes directos: **44/91**, no 43.
 
 ## Pendiente
 
 Verificación humana completa de la matriz por el usuario, con atención
 prioritaria a:
 1. El caso del id 74 señalado arriba.
-2. Los 7 registros reconstruidos manualmente tras el problema de formato CSV
+2. El caso del id 1731 señalado arriba.
+3. Los 7 registros reconstruidos manualmente tras el problema de formato CSV
    (ids 15, 31, 45, 58, 74, 1354, 1373) — mismo contenido derivado del texto
    fuente, pero vale la pena una doble verificación dado el origen del
    problema.

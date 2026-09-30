@@ -71,9 +71,21 @@ Artefacto: `fase7/f7_scores_master.csv`
 ## Verificación humana — ✅ COMPLETA (2026-09-30)
 
 El usuario revisó `fase7/f7_scores_master.csv` completo y confirmó las
-puntuaciones **sin cambios**, incluyendo los puntos de atención señalados
-abajo (lote 07 y los demás casos de lectura parcial). Queda como versión
-definitiva para la Fase 8.
+puntuaciones sin cambios, incluyendo los puntos de atención señalados
+abajo (lote 07 y los demás casos de lectura parcial).
+
+**Corrección posterior (2026-09-30, durante Fase 8):** al leer el texto
+completo con más detalle para la matriz de extracción, se detectaron dos
+puntuaciones que no reflejaban evidencia real en el texto — corregidas y
+propagadas a `fase7/f7_scores_master.csv` y `fase8/f8_matriz_extraccion.csv`:
+
+| id | antes | después | motivo |
+|---|---|---|---|
+| 74 | Q1=1, total=4 | **Q1=2, total=5** | texto cacheado original estaba dañado (solo navegación PMC); re-descargado y re-puntuado. Q2-Q4 se sostuvieron sin cambio. |
+| 1731 | Q1=0,Q2=0,Q4=0, total=1 | **Q1=2,Q2=2,Q4=1, total=6** | el texto sí justifica Fourier sobre B-splines explícitamente y reporta K/lambda vía GCV — se había subestimado. Pasa a ser antecedente directo (antes no lo era). |
+
+**Total de antecedentes directos: 44/91 (48.4%)**, no 43 como se reportó
+inicialmente.
 
 Puntos de atención que se habían señalado para esta revisión (ya
 contemplados en la verificación anterior):
