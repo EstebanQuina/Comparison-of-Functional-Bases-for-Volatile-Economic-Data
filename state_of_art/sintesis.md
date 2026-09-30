@@ -108,6 +108,72 @@ futuro propuesto pide explícitamente **"considering different approximation
 basis"** — confirmación textual, desde dentro de la propia literatura del
 campo, del vacío exacto que esta tesis atiende.
 
+## Eje 1 — Fundamentos de FDA y representación en bases (PR1)
+
+*Borrador para calibrar tono/profundidad — 34 antecedentes directos de PR1
+en `fase8/f8_matriz_extraccion.csv` filtrando por `PR1` en
+`preguntas_que_responde` y `es_antecedente_directo=si`.*
+
+La literatura revisada converge de forma marcada hacia las bases B-spline
+como opción por defecto para representar datos funcionales: 30 de los 91
+trabajos que usan una sola familia la eligen, frente a 5 que optan por
+Fourier y solo 2 por wavelets. Pero esa convergencia numérica esconde una
+tensión que los propios autores del campo señalan de manera explícita.
+Basna et al. (2022) describen la práctica habitual como "una elección más
+bien ad hoc" entre Fourier, wavelets o splines, y Eslami (2024) constata
+que "persiste un vacío notable en la literatura respecto a comparaciones
+exhaustivas entre estas metodologías" — dos trabajos de este mismo corpus,
+separados por dos años, formulan casi la misma objeción: la base no se
+elige, se hereda.
+
+Cuando los trabajos sí ofrecen una justificación teórica para su elección,
+esta suele apoyarse en una propiedad estructural reconocible de los datos,
+no en una comparación empírica. Shackleton et al. (2024) son explícitos al
+respecto: prefieren B-splines sobre Fourier "debido a la aperiodicidad de
+los datos", mientras que la literatura general reserva Fourier
+precisamente para el caso contrario, señales periódicas (Nassar &
+Podgórski, 2021). Las bases wavelet, por su parte, se justifican no por
+periodicidad sino por localidad: Yang et al. (2022) y Amato et al. (2025)
+las emplean específicamente para capturar discontinuidades o
+características locales que una base global suaviza en exceso. Esta
+correspondencia —periodicidad→Fourier, suavidad global→B-spline,
+localidad/discontinuidad→wavelet— es el argumento teórico disponible en el
+campo, pero rara vez se aplica de forma sistemática: la mayoría de los 91
+trabajos revisados simplemente adopta B-spline sin discutir si la serie en
+cuestión cumple la condición que en teoría la favorecería.
+
+La minoría de trabajos que sí comparan familias de base directamente
+(25/91, ver Tabla B) muestra que esta elección no es cosmética: los
+resultados dependen fuertemente del dominio y no se generalizan de una
+aplicación a otra. Kayano & Konishi (2009) encuentran que una base
+radial gaussiana regularizada supera a B-splines en error cuadrático medio
+para datos no balanceados; Pérez-Plaza et al. (2018) encuentran lo
+contrario para curvas geodésicas GPS, donde P-splines superan a Fourier en
+dos de tres componentes; Amato et al. (2025) reportan una brecha aún mayor
+en clasificación de espectros, donde un método wavelet alcanza un índice
+de Rand ajustado de 0.901 frente a apenas 0.320 de k-means sobre bases
+B-spline. Esta heterogeneidad de resultados —ninguna familia domina de
+forma universal— es precisamente lo que hace insostenible extrapolar la
+conveniencia de B-spline (u otra familia) de un dominio a otro sin
+evidencia propia: si el criterio de elección fuera trivial, los 25
+trabajos comparativos no encontrarían ganadores distintos en cada
+aplicación.
+
+Una segunda línea de respuesta al mismo problema, más reciente (2018-2024),
+no intenta elegir mejor entre las familias clásicas sino evitar la
+elección: los métodos de completado de matrices de Descary & Panaretos
+(2016, 2019) y las bases "splinets" de Nassar, Podgórski y Basna
+(2021-2024) estiman una base ortonormal directamente de los datos, en
+lugar de fijarla de antemano. Aguilera & Aguilera-Morillo (2013), en un
+registro más cercano al de esta tesis, muestran que penalizar la base
+(P-splines) importa tanto o más que la familia elegida, reduciendo el MSE
+drásticamente frente a splines de regresión sin penalizar dentro de la
+misma familia B-spline — un resultado que ya anticipa la Fase 3 del
+argumento de esta síntesis: el efecto de la familia y el efecto del
+régimen de suavizado no son la misma pregunta, y la literatura general de
+FDA los empieza a separar. Lo que no hace, como se muestra en el Eje 5, es
+separarlos para series económicas o financieras.
+
 ## Pendiente
 
 1. **Redacción de los 5 ejes temáticos** (§11.1 del protocolo, uno por
