@@ -342,6 +342,55 @@ no negatividad, no mediante una base wavelet. La pregunta de PR4 no tiene,
 por tanto, respuesta empírica directa para el dominio económico-financiero
 dentro de la literatura revisada — otro punto que retoma el Eje 5.
 
+## Eje 5 — FDA en economía y finanzas; antecedentes latinoamericanos y ecuatorianos (PR5)
+
+*Borrador — 35 ítems tocan PR5; solo 11 (31%) son antecedentes directos.*
+
+El análisis de datos funcionales está bien establecido como herramienta
+aplicada en economía y finanzas: los 35 ítems de este eje cubren demanda
+eléctrica, índices bursátiles, tipos de cambio, materias primas,
+criptomonedas y distribución del ingreso. Pero esa amplitud de dominios
+contrasta con la profundidad metodológica: solo 11 de los 35 (31%)
+alcanzan el nivel de antecedente directo (Q3≥1 y Q4≥1), frente al 48% de
+antecedentes directos en el corpus completo. La mayoría de las 24
+aplicaciones restantes usa FDA como herramienta de análisis sin discutir
+la elección de la base ni evaluar la calidad de la representación
+obtenida —el mismo patrón de uso accesorio que ya se documentó como motivo
+de exclusión (E1) durante el cribado de la Fase 5—, con puntuaciones
+concentradas entre 0 y 4 sobre 8.
+
+Entre los 11 antecedentes directos, ninguno aplica a series económicas o
+financieras la separación entre efecto de familia y efecto de suavizado
+que sí existe, dentro de una sola familia, en Aguilera & Aguilera-Morillo
+(2013) y Gao et al. (2024) (Eje 3). Shackleton et al. (2024) justifican
+teóricamente su elección de B-spline por la aperiodicidad de la
+volatilidad realizada que estudian, pero no la comparan contra otra
+familia. Rodríguez-Cuadro (2025), sobre el mercado bursátil colombiano,
+combina P-splines con FPCA y clustering para caracterizar la correlación
+funcional entre 26 empresas y el precio del petróleo Brent, pero tampoco
+compara familias de base entre sí. Cada antecedente económico cumple
+alguno de los cuatro criterios de valoración —justificación teórica,
+parámetros reportados, evaluación de la representación—, pero ninguno
+cumple los cuatro a la vez de la forma en que sí lo hacen, fuera del
+dominio económico, Beyaztas & Shang (2022) o Aguilera & Aguilera-Morillo
+(2013).
+
+La cobertura regional es aún más limitada. De los 91 ítems del corpus,
+solo tres tienen algún vínculo con América Latina: Marín et al. (2023),
+sobre demanda eléctrica en Colombia; Rodríguez-Cuadro (2025), ya citado;
+y el propio Padilla-Segarra et al. (2020), sobre indicadores demográficos
+y económicos de la región. Ninguno de los 91 ítems recuperados por la
+búsqueda sistemática trabaja específicamente con datos ecuatorianos. Esta
+escasez no es un artefacto de las cadenas de búsqueda —la Fase 4 ya había
+anticipado un volumen bajo para la cadena C6 (región)— sino un patrón que
+se confirma ahora dentro del conjunto ya cribado y valorado por su
+calidad metodológica: la literatura latinoamericana sobre FDA existe, pero
+es escasa, y su intersección con la comparación de familias de bases es,
+dentro de este corpus, vacía.
+
+La formulación completa del vacío de investigación, apoyada en la
+evidencia de los cinco ejes, se desarrolla en la sección siguiente.
+
 ## Pendiente
 
 1. **Redacción de los 5 ejes temáticos** (§11.1 del protocolo, uno por
