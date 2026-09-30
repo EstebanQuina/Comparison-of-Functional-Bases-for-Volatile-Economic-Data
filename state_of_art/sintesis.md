@@ -288,6 +288,60 @@ régimen de suavizado que sí existe, dentro de una sola familia, en
 Aguilera & Aguilera-Morillo (2013) y Gao et al. (2024). El Eje 5 retoma
 este punto.
 
+## Eje 4 — Bases wavelet y procesos no suaves (PR4)
+
+*Borrador — 14 antecedentes directos de PR4 en la matriz.*
+
+PR4 pregunta por el desempeño de las bases wavelet frente a bases
+polinómicas o trigonométricas en procesos no suaves o no estacionarios,
+pero dentro de los 14 antecedentes directos de este eje, las aplicaciones
+que efectivamente usan una base wavelet son minoría: solo Amato et al.
+(2025) y Yang et al. (2022) la emplean como componente central de su
+método. La mayoría de los trabajos que abordan procesos irregulares
+responde a esa irregularidad sin recurrir a wavelets en absoluto, lo cual
+es en sí mismo un dato relevante para PR4: la wavelet no es, en la
+práctica reciente de este corpus, la respuesta por defecto a la falta de
+suavidad que la teoría sugeriría.
+
+Cuando la comparación directa sí se hace, el resultado no favorece a las
+wavelets de forma sistemática. Amato et al. (2025) encuentran una ventaja
+considerable del clustering basado en wavelets sobre bases B-spline
+(índice de Rand ajustado de 0.901 frente a 0.320), pero Salvatore et al.
+(2016) reportan lo contrario: un análisis con WPCA no reveló cambios
+temporales adicionales a los que una FPCA basada en Fourier con
+suavizado ya capturaba. Eslami (2024) describe splines y wavelets como
+"complementarios", con desempeño similar en error cuadrático medio en uno
+de sus casos de estudio, y señala explícitamente que la literatura carece
+de comparaciones exhaustivas entre ambas familias. El patrón es el mismo
+que en el Eje 1: ninguna familia domina de forma universal, y el resultado
+depende del tipo de irregularidad presente en los datos.
+
+La estrategia más frecuente entre los antecedentes de PR4 no es sustituir
+la base suave por una wavelet, sino adaptar la base suave a la
+irregularidad. Jiao et al. (2022) alinean la ubicación de las funciones de
+base con el punto de cambio que buscan detectar, en lugar de fijar su
+posición de antemano, y muestran que esa alineación mejora sustancialmente
+la potencia de detección frente a una FPCA estándar. Horváth et al. (2020)
+sustituyen la interpolación B-spline por polinomios cúbicos de Hermite
+para curvas forward de materias primas, que presentan quiebres en los
+puntos de vencimiento del contrato, y encuentran un mejor ajuste con esta
+alternativa, también no wavelet. Aguilera & Aguilera-Morillo (2013) y Gao
+et al. (2024), ya discutidos en el Eje 3, absorben la rugosidad mediante
+el parámetro de penalización dentro de la misma familia B-spline, en vez
+de cambiar de familia. Ninguna de estas tres estrategias usa wavelets;
+todas modifican una base suave para acomodar la irregularidad.
+
+Ninguno de los antecedentes de PR4 que comparan directamente wavelets
+contra otras familias trabaja con series económicas o financieras. Los
+dos antecedentes de este eje que sí lo hacen —Aue et al. (2017), sobre
+retornos intradía del SPY, y Rice et al. (2023), sobre la volatilidad de
+futuros de petróleo crudo— no ofrecen esa comparación: el primero
+menciona las wavelets solo como una alternativa típica no probada en el
+propio estudio, y el segundo regulariza mediante restricciones de
+no negatividad, no mediante una base wavelet. La pregunta de PR4 no tiene,
+por tanto, respuesta empírica directa para el dominio económico-financiero
+dentro de la literatura revisada — otro punto que retoma el Eje 5.
+
 ## Pendiente
 
 1. **Redacción de los 5 ejes temáticos** (§11.1 del protocolo, uno por
