@@ -392,16 +392,10 @@ literatura del campo, del vacío exacto que esta tesis atiende.
 
 ## Estado
 
-Los 5 ejes temáticos (§11.1), la verificación del vacío candidato (§11.3)
-y la formulación del vacío en tres movimientos están redactados y
-**aprobados por el usuario** (2026-09-30), uno a la vez con revisión
-inmediata. Tablas A y B generadas y verificadas contra la matriz.
+**Fase 9 completa y aprobada en su totalidad** (2026-09-30): los 5 ejes
+temáticos (§11.1), las Tablas A y B (§11.2), la verificación del vacío
+candidato y la formulación del vacío en tres movimientos (§11.3) — todo
+redactado, revisado y aprobado por el usuario, uno por uno.
 
-**Pendiente:**
-1. Aprobación final de la formulación del vacío en tres movimientos
-   (redactada antes de completar los 5 ejes; revisar si sigue siendo
-   consistente ahora que los ejes están terminados, o si amerita algún
-   ajuste menor).
-2. Fase 10 (redacción final de la sección de estado del arte) — integrar
-   esta síntesis en el documento de tesis, con la estructura de embudo
-   que propone el protocolo (§12.1).
+**Siguiente paso: Fase 10** (redacción final de la sección de estado del
+arte para el documento de tesis, §12 del protocolo).
