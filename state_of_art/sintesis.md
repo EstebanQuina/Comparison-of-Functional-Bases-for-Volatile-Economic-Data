@@ -117,14 +117,15 @@ en `fase8/f8_matriz_extraccion.csv` filtrando por `PR1` en
 La literatura revisada converge de forma marcada hacia las bases B-spline
 como opción por defecto para representar datos funcionales: 30 de los 91
 trabajos que usan una sola familia la eligen, frente a 5 que optan por
-Fourier y solo 2 por wavelets. Pero esa convergencia numérica esconde una
-tensión que los propios autores del campo señalan de manera explícita.
-Basna et al. (2022) describen la práctica habitual como "una elección más
-bien ad hoc" entre Fourier, wavelets o splines, y Eslami (2024) constata
-que "persiste un vacío notable en la literatura respecto a comparaciones
-exhaustivas entre estas metodologías" — dos trabajos de este mismo corpus,
-separados por dos años, formulan casi la misma objeción: la base no se
-elige, se hereda.
+Fourier y solo 2 por wavelets. Pero esa convergencia numérica no refleja
+un consenso metodológico: los propios autores del campo señalan
+explícitamente esta tensión. Basna et al. (2022) describen la práctica
+habitual como "una elección más bien ad hoc" entre Fourier, wavelets o
+splines, y Eslami (2024) constata que "persiste un vacío notable en la
+literatura respecto a comparaciones exhaustivas entre estas metodologías"
+— dos trabajos de este mismo corpus, separados por dos años, formulan casi
+la misma objeción: la elección de la base responde con más frecuencia a
+la convención que a una justificación explícita.
 
 Cuando los trabajos sí ofrecen una justificación teórica para su elección,
 esta suele apoyarse en una propiedad estructural reconocible de los datos,
@@ -168,11 +169,61 @@ lugar de fijarla de antemano. Aguilera & Aguilera-Morillo (2013), en un
 registro más cercano al de esta tesis, muestran que penalizar la base
 (P-splines) importa tanto o más que la familia elegida, reduciendo el MSE
 drásticamente frente a splines de regresión sin penalizar dentro de la
-misma familia B-spline — un resultado que ya anticipa la Fase 3 del
-argumento de esta síntesis: el efecto de la familia y el efecto del
+misma familia B-spline — un resultado que ya anticipa el Eje 3 de esta
+síntesis: el efecto de la familia y el efecto del
 régimen de suavizado no son la misma pregunta, y la literatura general de
 FDA los empieza a separar. Lo que no hace, como se muestra en el Eje 5, es
 separarlos para series económicas o financieras.
+
+## Eje 2 — FPCA: fundamento, estimación y criterios de truncamiento (PR2)
+
+*Borrador — 27 antecedentes directos de PR2 en la matriz.*
+
+La evidencia más directa de que la elección de base condiciona los
+resultados del FPCA no proviene de una comparación de familias en sí, sino
+de un experimento controlado previo al análisis: Tarpey et al. (2007) ajustan
+las mismas curvas con B-splines, Fourier y potencias, fijando la misma
+dimensión p=5 en los tres casos para aislar el efecto de la familia, y
+encuentran que "los resultados del agrupamiento k-means varían según cómo
+se ajustaron las curvas a los datos". Es la comprobación empírica más
+limpia del corpus de que PR2 tiene una respuesta afirmativa: no solo la
+familia de base afecta el ajuste, afecta el análisis posterior que se
+construye sobre ese ajuste. Una segunda fuente de variación, ortogonal a
+la familia, es la propia formulación del FPCA: Hörmann et al. (2012)
+muestran que una FPCA dinámica (en el dominio de la frecuencia) explica
+más varianza que la FPCA estática con la misma base subyacente (80% frente
+a 73% en su aplicación a contaminación por PM10) — el "cómo se calcula el
+FPCA" compite con el "en qué base se representa la curva" como fuente de
+diferencias en los resultados.
+
+Si en el Eje 1 la elección de familia mostraba una convergencia parcial
+hacia B-spline, el criterio para truncar esa base —cuántas funciones
+retener— no muestra ninguna convergencia comparable. El corpus documenta
+al menos ocho enfoques distintos en uso activo: GCV, AIC/BIC y sus
+variantes, criterios de información generalizados (GIC, MAIC, GBIC),
+selección bayesiana automática (variables latentes tipo Bernoulli en Sousa
+et al., 2024; priors dispersos/variacionales en Tao et al., 2025),
+criterios de razón de eigenvalores (Ahn & Horenstein, usado por Lin & Shang,
+2025), umbrales de varianza explicada acumulada, y procedimientos bootstrap
+a medida (Diks & Wouters, 2023). Beyaztas & Shang (2022) comparan
+directamente cuatro de estos criterios (GCV, GIC, MAIC, GBIC) dentro del
+mismo estudio y tratan la elección del criterio como una decisión de
+diseño tan relevante como la familia de base misma — un recordatorio de
+que "elegir bien la base" y "elegir bien cuántas funciones de esa base
+usar" son dos decisiones independientes que rara vez se estudian por
+separado.
+
+Un antecedente aísla explícitamente esa independencia de un modo que
+anticipa directamente el argumento central de esta tesis: Gao et al.
+(2024) fijan deliberadamente una dimensión K grande en su base B-spline y
+controlan la suavidad únicamente a través del parámetro de penalización,
+en vez de seleccionar K por un criterio como GCV. Es, dentro del corpus,
+el diseño metodológico más cercano a separar el efecto de la dimensión de
+la base del efecto del régimen de suavizado — pero lo hace dentro de una
+sola familia (B-spline), no como comparación entre familias, y no sobre
+series económicas volátiles (ver Eje 5). Esta misma tensión entre
+seleccionar automáticamente la dimensión o desacoplarla del suavizado se
+presenta también, de otra manera, en el Eje 3.
 
 ## Pendiente
 
