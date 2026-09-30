@@ -62,21 +62,21 @@ directo).
 |---|---|---|---|---|---|---|---|---|
 | 3 | 4 | 8 | 13 | 9 | 11 | 12 | 14 | 17 |
 
-**43/91 (47.3%) sugeridos como antecedente directo** (Q3≥1 y Q4≥1) —
-sugerencia mecánica de la IA, **pendiente de verificación humana** (ver
-abajo). El protocolo usa esta marca para priorizar la Tabla A de la
-síntesis (Fase 9).
+**43/91 (47.3%) sugeridos como antecedente directo** (Q3≥1 y Q4≥1). El
+protocolo usa esta marca para priorizar la Tabla A de la síntesis (Fase 9).
 
 Artefacto: `fase7/f7_scores_master.csv`
 (`id,title_short,Q1,Q1_evidencia,Q2,Q2_evidencia,Q3,Q3_evidencia,Q4,Q4_evidencia,puntuacion_total,es_antecedente_directo_sugerido`).
 
-## Pendiente de verificación humana
+## Verificación humana — ✅ COMPLETA (2026-09-30)
 
-Dado el patrón ya establecido en la Fase 5 (la IA sobre-incluyó
-masivamente en el cribado de texto completo hasta que el usuario re-revisó
-todo), la puntuación Q1–Q4 requiere la misma revisión completa del
-usuario antes de darla por definitiva para la Fase 8. Puntos de atención
-señalados por los propios lotes durante la ejecución:
+El usuario revisó `fase7/f7_scores_master.csv` completo y confirmó las
+puntuaciones **sin cambios**, incluyendo los puntos de atención señalados
+abajo (lote 07 y los demás casos de lectura parcial). Queda como versión
+definitiva para la Fase 8.
+
+Puntos de atención que se habían señalado para esta revisión (ya
+contemplados en la verificación anterior):
 
 - **Lote 07 (ids 2546, 2558, 2565, 2573, 2617, 2630, 270, 288): marcó 8/8
   como antecedente directo** — tasa sospechosamente alta, coincide con el
@@ -99,7 +99,4 @@ señalados por los propios lotes durante la ejecución:
 
 ## Próximo paso
 
-Verificación humana completa de `fase7/f7_scores_master.csv` (mismo
-procedimiento de trabajo que en Fase 5: exportar a `.numbers`, revisar,
-avisar cuando esté listo para consolidar). Después: Fase 8 (matriz de
-extracción de datos).
+Fase 8 (matriz de extracción de datos), §10 del protocolo.
