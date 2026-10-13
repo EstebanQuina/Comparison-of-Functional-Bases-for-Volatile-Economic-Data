@@ -66,36 +66,34 @@ $\gamma(s,t)$, rather than the letter $K$ used for this purpose in
 \section{Mathematical Preliminaries}
 \label{sec:preliminaries}
 
-This section collects, without proof, the elementary facts about metric,
+This section intents to provide a fast review of the elementary facts about metric,
 normed, Hilbert, and reproducing kernel Hilbert spaces, and about bounded
 linear operators, that are used throughout the rest of the chapter. All
 results in this section are standard; proofs may be found in
-\cite{hsingeubank2015}, Chapters~2--3, and the classical references cited
-therein (Luenberger, 1969; Rynne and Youngson, 2001).
+\cite{hsingeubank2015}, as well as in \cite{kreyszig1978introductory}, \cite{mayorga2025course}, and \cite{brezis2011functional}.
 
 \subsection{Metric, Normed, and Banach Spaces}
 
 \begin{definition}
 A \emph{metric} on a set $\mathbb{M}$ is a function $d:\mathbb{M}\times
-\mathbb{M}\to\mathbb{R}$ satisfying, for all $x_1,x_2,x_3\in\mathbb{M}$: (i)
-$d(x_1,x_2)\geq 0$ with equality iff $x_1=x_2$; (ii) $d(x_1,x_2) =
-d(x_2,x_1)$; (iii) $d(x_1,x_3)\leq d(x_1,x_2)+d(x_2,x_3)$ (triangle
-inequality). The pair $(\mathbb{M},d)$ is a \emph{metric space}. A sequence
-$\{x_n\}\subset\mathbb{M}$ is \emph{Cauchy} if
-$\sup_{m,n\geq N}d(x_m,x_n)\to 0$ as $N\to\infty$; $(\mathbb{M},d)$ is
-\emph{complete} if every Cauchy sequence converges, and \emph{separable} if
-it has a countable dense subset.
+\mathbb{M}\to\mathbb{R}$ satisfying, for all $x_1,x_2,x_3\in\mathbb{M}$:\\
+(i) $d(x_1,x_2)\geq 0$;\\ 
+(ii) $d(x_1,x_2)=0$ iff $x_1=x_2$;\\
+(iii) $d(x_1,x_2) = d(x_2,x_1)$; \\
+(iv) $d(x_1,x_3)\leq d(x_1,x_2)+d(x_2,x_3)$ (triangle inequality). \\
+The pair $(\mathbb{M},d)$ is called a \emph{metric space}. 
+\end{definition}
+From now on, we will denote a metric space simply by $\mathbb{M}$, with the metric $d$ understood. A sequence $\{x_n\}\subset\mathbb{M}$ converges to $x\in\mathbb{M}$ if $d(x_n,x)\to 0$ as $n\to\infty$.
+\begin{definition}
+A sequence $\{x_n\}\subset\mathbb{M}$ is \emph{Cauchy} if for each $\varepsilon>0$ there exists $N\in\mathbb{N}$ such that for all $m,n\ge N$, $d(x_m,x_n)<\varepsilon$. The metric space $(\mathbb{M},d)$ is \emph{complete} if every Cauchy sequence converges, and \emph{separable} if it has a countable dense subset.
 \end{definition}
 
 \begin{definition}
-A \emph{vector space} $\mathbb{V}$ over $\mathbb{R}$ is a set closed under
-addition and scalar multiplication satisfying the usual axioms of
-commutativity, associativity, distributivity, and the existence of a zero
-element and additive inverses. A \emph{norm} on $\mathbb{V}$ is a function
-$\|\cdot\|:\mathbb{V}\to\mathbb{R}$ such that $\|v\|\geq 0$ with equality
-iff $v=0$, $\|av\| = |a|\|v\|$, and $\|v_1+v_2\|\leq\|v_1\|+\|v_2\|$, for
-all $v,v_1,v_2\in\mathbb{V}$, $a\in\mathbb{R}$. Every norm induces a metric
-$d(x,y):=\|x-y\|$. A \emph{Banach space} is a normed vector space that is
+Let $\mathbb{V}$ be a vector space over $\mathbb{R}$. A \emph{norm} on $\mathbb{V}$ is a function $\|\cdot\|:\mathbb{V}\to\mathbb{R}$ such that forall $v,v_1,v_2\in\mathbb{V}$, $a\in\mathbb{R}$:\\ 
+(i) $\|v\|\geq 0$ with equality iff $v=0$;\\ 
+(ii) $\|av\| = |a|\|v\|$; and\\ 
+(iii) $\|v_1+v_2\|\leq\|v_1\|+\|v_2\|$. \\
+Every norm induces a metric $d(x,y):=\|x-y\|$. A \emph{Banach space} is a normed vector space that is
 complete under this metric.
 \end{definition}
 
@@ -107,9 +105,12 @@ equality $\mu$-a.e., of) measurable functions $f$ on $E$ with $\int_E
 |f|^p\,d\mu<\infty$, equipped with the norm $\|f\|_p =
 \big(\int_E|f|^p\,d\mu\big)^{1/p}$. When $E=[0,1]$, $\mathcal{B}$ is the
 Borel $\sigma$-field, and $\mu$ is Lebesgue measure, we write
-$\mathbb{L}^p[0,1]$. Each $\mathbb{L}^p(E,\mathcal{B},\mu)$, $p\geq 1$, is a
-Banach space (the Riesz--Fischer Theorem).
+$\mathbb{L}^p[0,1]$. 
 \end{definition}
+
+\begin{theorem}[Riesz--Fischer Theorem]
+    Each $\mathbb{L}^p(E,\mathcal{B},\mu)$, $p\geq 1$, is a Banach space.
+\end{theorem}
 
 \subsection{Hilbert Spaces and Orthonormal Bases}
 
@@ -120,11 +121,11 @@ symmetric, bilinear, and satisfies $\langle v,v\rangle\geq 0$ with equality
 iff $v=0$. It induces the norm $\|v\| = \langle v,v\rangle^{1/2}$, for which
 the Cauchy--Schwarz inequality $|\langle v_1,v_2\rangle|\leq
 \|v_1\|\|v_2\|$ holds. A \emph{Hilbert space} is a complete inner-product
-space. The space $\mathbb{L}^2(E,\mathcal{B},\mu)$ of Definition
-\ref{def:Lp} is a Hilbert space with $\langle f_1,f_2\rangle =
-\int_E f_1f_2\,d\mu$; this is the setting most relevant for FDA, with $E =
-[0,1]$ after rescaling of the observation window $\mathcal{T}$.
+space. 
 \end{definition}
+The space $\mathbb{L}^2(E,\mathcal{B},\mu)$ of Definition
+\ref{def:Lp} is a Hilbert space with $\langle f_1,f_2\rangle =
+\int_E f_1f_2\,d\mu$; this is the setting most relevant for FDA, with $E =[0,1]$ after rescaling of the observation window $\mathcal{T}$.
 
 \begin{definition}
 Elements $x_1,x_2$ of a Hilbert space are \emph{orthogonal} if
@@ -156,12 +157,13 @@ $\mathbb{H}$. For every $x\in\mathbb{H}$ there is a unique element
 $\hat{x}\in\mathbb{M}$, called the \emph{projection} of $x$ onto
 $\mathbb{M}$, minimizing $\|x-y\|$ over $y\in\mathbb{M}$; it is
 characterized by $\langle x-\hat{x},y\rangle = 0$ for all $y\in\mathbb{M}$.
+\end{theorem}
+
 Consequently, writing $\mathbb{M}^\perp := \{x\in\mathbb{H}:
 \langle x,y\rangle=0 \text{ for all } y\in\mathbb{M}\}$ for the orthogonal
 complement of $\mathbb{M}$, every $x\in\mathbb{H}$ decomposes uniquely as
 $x = x_1+x_2$ with $x_1\in\mathbb{M}$, $x_2\in\mathbb{M}^\perp$, written
 $\mathbb{H} = \mathbb{M}\oplus\mathbb{M}^\perp$.
-\end{theorem}
 
 \subsection{Reproducing Kernel Hilbert Spaces}
 \label{subsec:rkhs_prelim}
@@ -170,14 +172,17 @@ $\mathbb{H} = \mathbb{M}\oplus\mathbb{M}^\perp$.
 \label{def:rkhs}
 Let $\mathbb{H}$ be a Hilbert space of real-valued functions on a set $E$.
 A bivariate function $K$ on $E\times E$ is a \emph{reproducing kernel} for
-$\mathbb{H}$ if (i) $K(\cdot,t)\in\mathbb{H}$ for every $t\in E$, and (ii)
-$f(t) = \langle f,K(\cdot,t)\rangle$ for every $f\in\mathbb{H}$, $t\in E$
-(the reproducing property). A Hilbert space possessing a reproducing kernel
-is a \emph{reproducing kernel Hilbert space} (RKHS), denoted
-$\mathbb{H}(K)$. The evaluation functional $\mathcal{T}_t:f\mapsto f(t)$
+$\mathbb{H}$ if:\\ 
+(i) $K(\cdot,t)\in\mathbb{H}$ for every $t\in E$, and\\ 
+(ii)$f(t) = \langle f,K(\cdot,t)\rangle$ for every $f\in\mathbb{H}$, $t\in E$
+(the reproducing property).\\
+A Hilbert space possessing a reproducing kernel is a \emph{reproducing kernel Hilbert space} (RKHS), denoted
+$\mathbb{H}(K)$. 
+\end{definition}
+The evaluation functional $\mathcal{T}_t:f\mapsto f(t)$
 has representer $K(\cdot,t)$, and $\mathbb{H}$ is an RKHS if and only if
 every evaluation functional $\mathcal{T}_t$, $t\in E$, is bounded.
-\end{definition}
+
 
 A reproducing kernel is necessarily unique, symmetric, and nonnegative
 definite, i.e.\ $\sum_{i=1}^n\sum_{j=1}^n a_ia_jK(t_i,t_j)\geq 0$ for any
@@ -225,14 +230,15 @@ justification for the B-spline baseline of Section~\ref{subsec:bspline}.
 Let $\mathbb{X}_1,\mathbb{X}_2$ be normed vector spaces. A linear
 transformation $\mathcal{T}:\mathbb{X}_1\to\mathbb{X}_2$ is \emph{bounded}
 if there is a finite $C>0$ with $\|\mathcal{T}x\|_2\leq C\|x\|_1$ for all
-$x\in\mathbb{X}_1$; boundedness is equivalent to (uniform) continuity of
+$x\in\mathbb{X}_1$.
+\end{definition}
+Boundedness is equivalent to (uniform) continuity of
 $\mathcal{T}$. The set $\mathcal{B}(\mathbb{X}_1,\mathbb{X}_2)$ of bounded
-linear operators from $\mathbb{X}_1$ to $\mathbb{X}_2$ is itself a normed
+linear transformations from $\mathbb{X}_1$ to $\mathbb{X}_2$ is itself a normed
 space under the \emph{operator norm}
 $\|\mathcal{T}\| := \sup_{\|x\|_1=1}\|\mathcal{T}x\|_2$, and is a Banach
 space whenever $\mathbb{X}_2$ is. We write $\mathcal{B}(\mathbb{X})$ for
 $\mathcal{B}(\mathbb{X},\mathbb{X})$.
-\end{definition}
 
 \begin{theorem}[Adjoint operator]
 \label{thm:adjoint}
@@ -255,14 +261,16 @@ $\|\mathcal{T}^*\mathcal{T}\|=\|\mathcal{T}\|^2$.
 \label{def:nonneg_operator}
 A self-adjoint operator $\mathcal{T}\in\mathcal{B}(\mathbb{H})$ is
 \emph{nonnegative definite} if $\langle\mathcal{T}x,x\rangle\geq 0$ for all
-$x\in\mathbb{H}$. For any $\mathcal{T}\in\mathcal{B}(\mathbb{H}_1,
+$x\in\mathbb{H}$. 
+\end{definition}
+Note that for any $\mathcal{T}\in\mathcal{B}(\mathbb{H}_1,
 \mathbb{H}_2)$, the operator $\mathcal{T}^*\mathcal{T}$ is nonnegative
 definite on $\mathbb{H}_1$, since it is self-adjoint and
-$\langle\mathcal{T}^*\mathcal{T}x,x\rangle = \|\mathcal{T}x\|^2\geq 0$. This
-fact is the operator-theoretic reason that covariance operators
+$\langle\mathcal{T}^*\mathcal{T}x,x\rangle = \|\mathcal{T}x\|^2\geq 0$.
+
+This fact is the operator-theoretic reason that covariance operators
 (Section~\ref{sec:random_elements}), which have precisely this
 $\mathcal{T}^*\mathcal{T}$-type structure, are always nonnegative definite.
-\end{definition}
 
 \section{Spectral Theory of Compact Operators}
 \label{sec:spectral_theory}
@@ -275,7 +283,7 @@ what will let us pass, in Section~\ref{sec:random_elements}, from a
 covariance kernel $\gamma(s,t)$ to the eigenvalues/eigenfunctions that
 define FPCA. Throughout, all Hilbert spaces are assumed separable, which
 entails no loss of generality for compact operators (Theorem
-\ref{thm:compact_finite_approx} below). Proofs follow
+\ref{thm:compact_finite_approx} below). Definitions, theorems, and proofs follow
 \cite{hsingeubank2015}, Chapter~4.
 
 \subsection{Compact Operators}
@@ -325,10 +333,12 @@ for all $i\neq j$.
 \begin{theorem}
 \label{thm:compact_props}
 Let $\mathcal{T}$ be a compact operator between normed spaces
-$\mathbb{X}_1,\mathbb{X}_2$. Then: (1) $\overline{\mathrm{Im}(\mathcal{T})}$
-is separable; (2) any finite-rank bounded operator is compact; (3) the
-composition of two operators is compact if either factor is compact; (4)
-if $\mathbb{X}_2$ is a Banach space, the set of compact operators in
+$\mathbb{X}_1,\mathbb{X}_2$. Then: \\
+(1) $\overline{\mathrm{Im}(\mathcal{T})}$
+is separable; \\
+(2) any finite-rank bounded operator is compact; \\
+(3) the composition of two operators is compact if either factor is compact; \\
+(4) if $\mathbb{X}_2$ is a Banach space, the set of compact operators in
 $\mathcal{B}(\mathbb{X}_1,\mathbb{X}_2)$ is closed under the operator norm.
 \end{theorem}
 
@@ -378,29 +388,29 @@ so $\{\mathcal{T}x_{nk_n}\}$ converges and $\mathcal{T}$ is compact.
 \begin{theorem}
 \label{thm:compact_finite_approx}
 Let $\mathbb{H}_1,\mathbb{H}_2$ be Hilbert spaces and
-$\mathcal{T}\in\mathcal{B}(\mathbb{H}_1,\mathbb{H}_2)$. Then $\mathcal{T}$
-is compact if and only if there exist finite-rank operators $\mathcal{T}_n$
-with $\|\mathcal{T}_n-\mathcal{T}\|\to 0$; and $\mathcal{T}$ is compact if
-and only if $\mathcal{T}^*$ is compact.
+$\mathcal{T}\in\mathcal{B}(\mathbb{H}_1,\mathbb{H}_2)$. Then:\\
+(1) $\mathcal{T}$ is compact if and only if there exist a sequence offinite-rank operators $\{\mathcal{T}_n\}$
+with $\|\mathcal{T}_n-\mathcal{T}\|\to 0$ as $n\to\infty$; and\\
+(2)$\mathcal{T}$ is compact if and only if $\mathcal{T}^*$ is compact.
 \end{theorem}
 
 \begin{proof}
-Sufficiency of the finite-rank approximation follows from parts (2) and (4)
-of Theorem~\ref{thm:compact_props}. For necessity, part (1) of Theorem
+(1) ($\impliedby$) Assume there exists a sequence of finite-rank operators $\{\mathcal{T}_n\}$ with $\|\mathcal{T}_n-\mathcal{T}\|\to 0$ as $n\to\infty$. The result follows from parts (2) and (4) of Theorem~\ref{thm:compact_props}. 
+($\implies$) Assume $\mathcal{T}$ is compact. Part (1) of Theorem
 \ref{thm:compact_props} gives a CONS $\{e_j\}$ for
 $\overline{\mathrm{Im}(\mathcal{T})}$; define $\mathcal{T}_nx :=
 \sum_{j=1}^n\langle\mathcal{T}x,e_j\rangle_2 e_j = \mathcal{P}_n\mathcal{T}x$
 with $\mathcal{P}_n$ the projection onto $\mathrm{span}\{e_1,\dots,e_n\}$.
-If $\|\mathcal{T}_n-\mathcal{T}\|\not\to 0$, there is $\epsilon>0$ and
+By contradiction, suppose that $\|\mathcal{T}_n-\mathcal{T}\|\not\to 0$, then there is $\epsilon>0$ and
 unit-norm $\{x_{n'}\}$ with $\|(\mathcal{T}-\mathcal{T}_{n'})x_{n'}\|_2
 >\epsilon$. By compactness $\mathcal{T}x_{n''}\to y$ along a subsequence, and
 \[
 (\mathcal{T}-\mathcal{T}_{n''})x_{n''} = (I-\mathcal{P}_{n''})y +
 (I-\mathcal{P}_{n''})(\mathcal{T}x_{n''}-y) \to 0,
 \]
-a contradiction; hence $\|\mathcal{T}_n-\mathcal{T}\|\to 0$.
+a contradiction; hence $\|\mathcal{T}_n-\mathcal{T}\|\to 0$.\\
 
-For the adjoint claim: $\mathcal{T}_n^*$ is finite-rank (Theorem
+(2) $\mathcal{T}_n^*$ is finite-rank (Theorem
 \ref{thm:adjoint}) with $\|\mathcal{T}_n^*-\mathcal{T}^*\| =
 \|\mathcal{T}_n-\mathcal{T}\|$, so if $\mathcal{T}$ is compact, so is
 $\mathcal{T}^*$ by the first part of the theorem; apply this twice, using
@@ -410,51 +420,20 @@ $(\mathcal{T}^*)^*=\mathcal{T}$, for the converse.
 As a consequence of Theorem~\ref{thm:compact_finite_approx} and part (1) of
 Theorem~\ref{thm:compact_props}, for a compact
 $\mathcal{T}\in\mathcal{B}(\mathbb{H}_1,\mathbb{H}_2)$,
-$\mathrm{Im}(\mathcal{T}^*)$ is separable, and since $\mathbb{H}_1 =
-\mathrm{Ker}(\mathcal{T})\oplus\mathrm{Im}(\mathcal{T}^*)$ (Theorem
-\ref{thm:adjoint_properties} below), there is no loss of generality in
-assuming both $\mathbb{H}_1,\mathbb{H}_2$ separable, an assumption we
+$\overline{\mathrm{Im}(\mathcal{T}^*)}$ is separable, and since $\mathbb{H}_1 =
+\mathrm{Ker}(\mathcal{T})\oplus\overline{\mathrm{Im}(\mathcal{T}^*)}$, there is no loss of generality in
+assuming both $\mathbb{H}_1,\mathbb{H}_2$ are separable, an assumption we
 maintain throughout.
 
 \subsection{Spectral Decomposition of Compact Self-Adjoint Operators}
 \label{subsec:spectral_decomp}
 
-\begin{theorem}
-\label{thm:adjoint_properties}
-Let $\mathcal{T}\in\mathcal{B}(\mathbb{H}_1,\mathbb{H}_2)$. Then: (1)
-$\mathrm{Ker}(\mathcal{T}) = (\mathrm{Im}(\mathcal{T}^*))^\perp$; (2)
-$\mathrm{Ker}(\mathcal{T}^*\mathcal{T})=\mathrm{Ker}(\mathcal{T})$ and
-$\mathrm{Im}(\mathcal{T}^*\mathcal{T})=\mathrm{Im}(\mathcal{T}^*)$; (3)
-$\mathbb{H}_1 = \mathrm{Ker}(\mathcal{T})\oplus\mathrm{Im}(\mathcal{T}^*)$.
-\end{theorem}
-
-\begin{proof}
-(1) If $x_1\in\mathrm{Ker}(\mathcal{T})$ then $\langle x_1,\mathcal{T}^*
-x_2\rangle_1=\langle\mathcal{T}x_1,x_2\rangle_2=0$ for all $x_2$, so
-$x_1\in(\mathrm{Im}(\mathcal{T}^*))^\perp$. Conversely if
-$x_1\in(\mathrm{Im}(\mathcal{T}^*))^\perp$ then $\|\mathcal{T}x_1\|_2^2 =
-\langle x_1,\mathcal{T}^*\mathcal{T}x_1\rangle_1=0$ since
-$\mathcal{T}^*\mathcal{T}x_1\in\mathrm{Im}(\mathcal{T}^*)$.
-
-(2) If $x_1\in\mathrm{Ker}(\mathcal{T})$ then trivially
-$\mathcal{T}^*\mathcal{T}x_1=0$. Conversely if
-$\mathcal{T}^*\mathcal{T}x_1=0$ then $0 =
-\langle\mathcal{T}^*\mathcal{T}x_1,x_1\rangle_1 = \|\mathcal{T}x_1\|_2^2$,
-so $x_1\in\mathrm{Ker}(\mathcal{T})$; this proves the kernel identity, and
-the image identity follows from it together with part (1) and Theorem
-\ref{thm:projection}, part 3.
-
-(3) By Theorem~\ref{thm:projection}, $\mathbb{H}_1 = \mathrm{Ker}
-(\mathcal{T})\oplus(\mathrm{Ker}(\mathcal{T}))^\perp = \mathrm{Ker}
-(\mathcal{T})\oplus\mathrm{Im}(\mathcal{T}^*)$, using part (1).
-\end{proof}
-
 \begin{definition}
 \label{def:eigen}
-For $\mathcal{T}\in\mathcal{B}(\mathbb{H})$, a scalar $\lambda\in\mathbb{R}$
-and nonzero $e\in\mathbb{H}$ with $\mathcal{T}e=\lambda e$ are, respectively,
+Let $\mathcal{T}\in\mathcal{B}(\mathbb{H})$, $\lambda\in\mathbb{R}$
+and nonzero $e\in\mathbb{H}$ with $\mathcal{T}e=\lambda e$. Then $\lambda$ and $e$ are, respectively,
 an \emph{eigenvalue} and corresponding \emph{eigenvector} (or
-\emph{eigenfunction}, when $\mathbb{H}$ is a function space) of
+\emph{eigenfunction}) of
 $\mathcal{T}$. $\mathrm{Ker}(\mathcal{T}-\lambda I)$ is the
 \emph{eigenspace} of $\lambda$.
 \end{definition}
@@ -463,12 +442,13 @@ $\mathcal{T}$. $\mathrm{Ker}(\mathcal{T}-\lambda I)$ is the
 \label{thm:eigen_orthogonal}
 Let $\mathcal{T}\in\mathcal{B}(\mathbb{H})$ and $e_j\in\mathrm{Ker}
 (\mathcal{T}-\lambda_jI)$, $j=1,2,\dots$, with the $\lambda_j$ distinct and
-nonzero. Then: (1) the $e_j$ are linearly independent; (2) if $\mathcal{T}$
-is self-adjoint, the $e_j$ are mutually orthogonal.
+nonzero. Then:\\ 
+(1) the $e_j$ are linearly independent; \\
+(2) if $\mathcal{T}$ is self-adjoint, the $e_j$ are mutually orthogonal.\\
 \end{theorem}
 
 \begin{proof}
-(1) By induction on $n$. For $n=2$: if $c_1e_1+c_2e_2=0$ then also
+(1) We have to show that if there are scalars $c_1,\dots,c_n$ such that $\sum_{j=1}^n c_je_j=0$ and $\sum_{j=1}^n \lambda c_je_j=0$, then $c_j=0$ for all $j$. We proceed by induction on $n$. For $n=2$: if $c_1e_1+c_2e_2=0$ then also
 $\lambda_1c_1e_1+\lambda_2c_2e_2=0$, so $\lambda_1(c_1e_1+c_2e_2) -
 (\lambda_1c_1e_1+\lambda_2c_2e_2) = (\lambda_1-\lambda_2)c_2e_2=0$, forcing
 $c_2=0$ (as $\lambda_1\neq\lambda_2$) and then $c_1=0$. Assume the claim for
@@ -485,33 +465,34 @@ $\langle e_i,e_j\rangle=0$ since $\lambda_i\neq\lambda_j$.
 
 \begin{theorem}
 \label{thm:compact_eigen_finite}
-Let $\mathcal{T}\in\mathcal{B}(\mathbb{H})$ be compact. Then: (1)
-$\mathrm{Ker}(\mathcal{T}-\lambda I)$ is finite-dimensional for every
-$\lambda\neq 0$; (2) for every $\epsilon>0$, only finitely many distinct
-eigenvalues of $\mathcal{T}$ satisfy $|\lambda|\geq\epsilon$; (3) the set of
+Let $\mathcal{T}\in\mathcal{B}(\mathbb{H})$ be compact. Then: \\
+(1) $\mathrm{Ker}(\mathcal{T}-\lambda I)$ is finite-dimensional for every
+$\lambda\neq 0$; \\
+(2) for every $\epsilon>0$, only finitely many distinct
+eigenvalues of $\mathcal{T}$ satisfy $|\lambda|\geq\epsilon$; \\
+(3) the set of
 nonzero eigenvalues of $\mathcal{T}$ is countable.
 \end{theorem}
 
 \begin{proof}
-(1) If $\mathrm{Ker}(\mathcal{T}-\lambda I)$ were infinite-dimensional for
-some $\lambda\neq 0$, the construction of Theorem
+(1) By contradiction, suppose that $\mathrm{Ker}(\mathcal{T}-\lambda I)$ is infinite-dimensional for
+some $\lambda\neq 0$, then the construction of Theorem
 \ref{thm:identity_not_compact} yields unit-norm $\{e_j\}\subset\mathrm{Ker}
 (\mathcal{T}-\lambda I)$ with $\inf_{i\neq j}\|e_i-e_j\|>0$, so
 $\inf_{i\neq j}\|\mathcal{T}e_i-\mathcal{T}e_j\| = |\lambda|\inf_{i\neq j}
 \|e_i-e_j\|>0$, contradicting compactness.
 
-(2) Let $\lambda_1,\lambda_2,\dots$ be distinct eigenvalues with
-$|\lambda_j|\geq\lambda>0$, $e_j\in\mathrm{Ker}(\mathcal{T}-\lambda_jI)$,
-$\mathbb{M}_n=\mathrm{span}\{e_1,\dots,e_n\}$, $\mathbb{M}_0:=\{0\}$. By
+(2) By contradiction, suppose there are infinitely many distinct eigenvalues $\lambda_1,\lambda_2,\dots$ with
+$|\lambda_j|\geq\epsilon$, for any $\epsilon>0$. Denote $\mathbb{M}_n=\mathrm{span}\{e_1,\dots,e_n\}$ for $e_j\in\mathrm{Ker}(\mathcal{T}-\lambda_jI)$,
+$\mathbb{M}_0:=\{0\}$. By
 part (1) of Theorem~\ref{thm:eigen_orthogonal} the $e_j$ are linearly
 independent, so $\mathbb{M}_n\cap\mathbb{M}_{n-1}^\perp$ is
 one-dimensional; Gram--Schmidt produces an orthonormal sequence $\{x_n\}$
 with $x_n\in\mathrm{Ker}(\mathcal{T}-\lambda_nI)\cap\mathbb{M}_{n-1}^\perp$,
 and for $n>m$, $\|\mathcal{T}x_n-\mathcal{T}x_m\|^2 = \|\mathcal{T}x_n\|^2+
-\|\mathcal{T}x_m\|^2 \geq 2\lambda^2$, again contradicting compactness if
-there were infinitely many such $\lambda_j$.
+\|\mathcal{T}x_m\|^2 \geq 2\lambda^2$, which contradicts compactness.
 
-(3) Immediate from (2), taking $\epsilon\downarrow 0$ along a sequence.
+(3) Immediate from (2).
 \end{proof}
 
 We now state and prove the central result of this section: every compact

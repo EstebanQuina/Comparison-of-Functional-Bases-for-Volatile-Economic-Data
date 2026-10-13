@@ -1,1 +1,429 @@
-[State of the art]
+%---------------------------------------------------------
+\section{Overview}
+\label{sec:soa_overview}
+
+The representation of a discretely sampled trajectory as an element of a
+function space, obtained by expanding it in a finite system of basis
+functions, is the operation that everything else in functional data
+analysis is built on; \cite{ramsay2005} remains the reference work that
+establishes this operation and the analyses constructed on top of it,
+including FPCA. Chapter~\ref{chap:intro} argued that, in applications to
+volatile economic series, this operation is rarely treated as an object
+of empirical scrutiny in its own right, and Chapter~\ref{chap:theory}
+developed the operator-theoretic machinery that any basis expansion feeds
+into. This chapter reviews the literature that bears on that argument. A
+systematic search of the bibliographic databases, screened against
+explicit eligibility criteria, yielded 91 sources retained for full
+analysis, of which 44 qualify as direct antecedents: work that both
+justifies its choice of basis and evaluates the quality of the resulting
+representation.
+
+Section~\ref{sec:soa_basis_choice} reviews how functional basis families
+are chosen and justified in practice. Section~\ref{sec:soa_fpca} examines
+how that choice propagates into functional principal component analysis.
+Section~\ref{sec:soa_smoothing} turns to smoothing and penalization, and
+to the extent to which their effect on the fitted representation is
+disentangled from the effect of the basis family itself.
+Section~\ref{sec:soa_wavelets} reviews the use of wavelet bases for
+non-smooth or non-stationary processes. Section~\ref{sec:soa_economics}
+narrows the scope to economic and financial applications, with
+particular attention to Latin American and Ecuadorian antecedents.
+Section~\ref{sec:soa_gap} consolidates these five threads into a single
+methodological gap, and Section~\ref{sec:soa_positioning} positions the
+present thesis relative to it.
+
+%---------------------------------------------------------
+\section{Basis choice: how functional basis families are justified in
+practice}
+\label{sec:soa_basis_choice}
+
+The reviewed literature converges markedly on B-spline bases as the
+default choice for representing functional data: among the 91 reviewed
+works, 30 of those that adopt a single basis family choose B-splines,
+against 5 that choose Fourier and only 2 that choose wavelets. This
+numerical convergence does not reflect a methodological consensus;
+authors within the field state the underlying tension explicitly.
+\cite{basna_driven_2022} describe the prevailing practice as ``a rather
+ad hoc choice'' among Fourier, wavelet, or spline bases, and
+\cite{eslami_spline_2024} report that ``a notable gap persists in the
+literature regarding comprehensive comparisons between these
+methodologies'' -- two works in this same corpus, two years apart, state
+nearly the same objection: the choice of basis responds to convention
+more often than to an explicit justification.
+
+When a theoretical justification is offered, it typically rests on a
+structural property attributed to the data, not on an empirical
+comparison. \cite{shackleton_comparing_2024} are explicit on this point:
+they prefer B-splines over Fourier ``due to the aperiodicity of the
+data,'' while the general literature reserves Fourier bases precisely
+for the opposite case, periodic signals \cite{nassar_empirically_2021}.
+Wavelet bases, in turn, are justified not by periodicity but by
+locality: \cite{yang_feature_2022} and \cite{amato_unsupervised_2025}
+adopt them specifically to capture discontinuities or localized features
+that a global basis over-smooths. This correspondence -- periodicity to
+Fourier, global smoothness to B-splines, locality or discontinuity to
+wavelets -- is the theoretical argument available in the field, but it
+is rarely applied systematically: most of the 91 reviewed works simply
+adopt B-splines without discussing whether the series at hand satisfies
+the condition that would, in theory, favor that choice.
+
+The minority of works that directly compare basis families (25 of 91)
+shows that this choice is not cosmetic: results depend strongly on the
+application domain and do not generalize from one setting to another.
+\cite{kayano_principal_2009} find that a regularized Gaussian radial
+basis outperforms B-splines in mean squared error for unbalanced data;
+\cite{perezplaza_network_2018} find the opposite for GPS geodetic
+curves, where P-splines outperform Fourier in two of three components;
+\cite{amato_unsupervised_2025} report an even larger gap in spectral
+classification, where a wavelet-based method reaches an adjusted Rand
+index of 0.901 against only 0.320 for $k$-means on B-spline bases. This
+heterogeneity of outcomes -- no single family dominates universally --
+is precisely what makes it untenable to extrapolate the suitability of
+B-splines, or of any other family, from one domain to another without
+domain-specific evidence: if the choice of basis were immaterial, these
+25 comparative works would not report different winners across
+applications.
+
+A second, more recent line of work (2016--2024) responds to the same
+problem not by choosing more carefully among the classical families but
+by avoiding the choice altogether: the matrix-completion methods of
+\cite{descary_matrix_2016,descary_matrix_2019} and the orthonormal
+``splinet'' bases of
+\cite{nassar_empirically_2021,podgorski_splinets_2021,basna_spline_2024}
+estimate an orthonormal basis directly from the data instead of fixing
+one in advance. \cite{aguilera_comparative_2013}, in a register closer
+to that of this thesis, show that penalizing the basis (P-splines)
+matters as much as, or more than, the family chosen, reducing the mean
+squared error substantially relative to unpenalized regression splines
+within the same B-spline family -- a result that already anticipates
+Section~\ref{sec:soa_smoothing}: the effect of the basis family and the
+effect of the smoothing regime are not the same question, and the
+general FDA literature is beginning to separate them. What it does not
+do, as Section~\ref{sec:soa_economics} shows, is separate them for
+economic or financial series.
+
+%---------------------------------------------------------
+\section{FPCA: how basis choice propagates into estimation and
+truncation}
+\label{sec:soa_fpca}
+
+The most direct evidence that basis choice conditions the outcome of
+FPCA does not come from a comparison of basis families in itself, but
+from a controlled experiment that precedes it: \cite{tarpey_linear_2007}
+fits the same curves with B-spline, Fourier, and power bases, fixing the
+same dimension $p=5$ in all three cases to isolate the effect of the
+family, and finds that ``$k$-means clustering results vary depending on
+how the curves are fit to the data.'' This is the cleanest empirical
+check in the corpus that PR2 has an affirmative answer: the basis family
+not only affects the fit, it affects the downstream analysis built on
+top of that fit. A second source of variation, orthogonal to the family,
+lies in the formulation of FPCA itself: \cite{hormann_dynamic_2012} show
+that a dynamic FPCA, computed in the frequency domain, explains more
+variance than a static FPCA under the same underlying basis (80\% against
+73\% in their application to PM10 pollution data) -- how the FPCA itself
+is computed competes with the basis in which the curve is represented as
+a source of differences in the results.
+
+Where Section~\ref{sec:soa_basis_choice} found a partial convergence
+toward B-splines in the choice of family, the criterion used to truncate
+that basis -- how many basis functions to retain -- shows no comparable
+convergence. The corpus documents at least eight distinct approaches in
+active use: GCV, AIC/BIC and their variants, generalized information
+criteria (GIC, MAIC, GBIC), automatic Bayesian selection (Bernoulli-type
+latent variables in \cite{sousa_bayesian_2024}; sparse or variational
+priors in \cite{tao_integrated_2025}), an eigenvalue-ratio criterion, as
+used by \cite{linshang_nonstationary_2025}, cumulative explained-variance
+thresholds, and purpose-built bootstrap procedures \cite{diks_noise_2023}.
+\cite{beyaztas_comparison_2022} directly compare four of these criteria
+(GCV, GIC, MAIC, GBIC) within the same study and treat the choice of
+criterion as a design decision as consequential as the basis family
+itself -- a reminder that choosing the basis well and choosing how many
+functions of that basis to use are two independent decisions that are
+rarely studied separately.
+
+One antecedent isolates that independence explicitly, in a way that
+directly anticipates the central argument of this thesis:
+\cite{gao_factor_2024} deliberately fix a large dimension $K$ in their
+B-spline basis and control smoothness exclusively through the
+penalization parameter, instead of selecting $K$ by a criterion such as
+GCV. It is, within the corpus, the methodological design closest to
+separating the effect of basis dimension from the effect of the
+smoothing regime -- but it does so within a single family (B-splines),
+not as a comparison across families, and not on volatile economic series
+(Section~\ref{sec:soa_economics}). This same tension, between selecting
+the dimension automatically or decoupling it from smoothing, appears
+again, in a different form, in Section~\ref{sec:soa_smoothing}.
+
+%---------------------------------------------------------
+\section{Smoothing, penalization, and parameter selection}
+\label{sec:soa_smoothing}
+
+The separation between the effect of the basis family and the effect of
+the smoothing regime, which PR3 poses as an open question, does have
+antecedents within a single family. \cite{aguilera_comparative_2013} hold
+the B-spline family fixed and vary only the type of penalization -- none
+(regression splines), continuous (smoothing splines), and discrete
+(P-splines) -- finding that both penalized approaches reduce the mean
+squared error substantially relative to the unpenalized case.
+\cite{gao_factor_2024} take this separation further: they fix a large
+dimension $K$ and control smoothness exclusively through the
+penalization parameter, instead of selecting $K$ by a criterion such as
+GCV. In both cases the basis family is held constant; what varies is the
+smoothing regime, and the effect is measurable and substantial. This is
+exactly the type of design that PR3 calls for, but applied within a
+single family, not as a comparison across distinct families, and not on
+economic or financial series.
+
+When the practical selection of the smoothing parameter $\lambda$ is
+examined, the most commonly cited automatic criterion, generalized
+cross-validation, does not always perform as expected.
+\cite{zin_smoothing_2020} document a case in which neither GCV nor
+ordinary cross-validation produced a reasonable value of $\lambda$, and
+the authors had to fall back on a subjective assessment of the fit. This
+result is relevant to PR3 because it marks a practical limit: if the
+automatic criterion for selecting $\lambda$ can fail, any comparison
+between basis families that relies on an automatic, unverified selection
+of the smoothing parameter risks confounding the effect of the family
+with an artifact of a poor choice of $\lambda$.
+\cite{beyaztas_comparison_2022} come closest, within the corpus, to
+controlling both sources of variation at once: they compare three basis
+families and, for each, four distinct selection criteria (GCV, GIC,
+MAIC, GBIC), which allows the analysis to separate how much of the
+observed difference comes from the family and how much from the
+selection criterion. The application domain is climate, not economic.
+
+A more recent group of works avoids the problem rather than solving it:
+instead of first selecting the basis dimension and then, separately, the
+smoothing parameter, they formulate both decisions as a single Bayesian
+inference problem. \cite{sousa_bayesian_2024},
+\cite{wakayama_horseshoe_2024}, \cite{dacruz_fast_2026}, and
+\cite{tao_integrated_2025} use shrinkage priors (horseshoe,
+spike-and-slab, sparse priors via variational inference) that select
+which basis functions to retain and how much to penalize them within the
+same estimation step. This unification solves the practical problem of
+having to tune two parameters separately, but it does not answer PR3 in
+the sense that matters to this thesis: by merging both decisions into a
+single mechanism, it does not allow isolating how much of the result is
+explained by the chosen basis family and how much by the smoothing
+regime applied to it.
+
+Of the 21 direct antecedents of PR3, only one works with economic or
+financial series: \cite{rice_exploring_2023}, on the functional
+volatility of crude-oil futures. But its form of regularization is not
+the roughness penalization discussed by the other works in this section;
+it is a non-negativity constraint on data-driven bases. No antecedent in
+this corpus applies to economic or financial series the kind of explicit
+separation between basis family and smoothing regime that does exist,
+within a single family, in \cite{aguilera_comparative_2013} and
+\cite{gao_factor_2024}. Section~\ref{sec:soa_economics} returns to this
+point.
+
+%---------------------------------------------------------
+\section{Wavelet bases and non-smooth processes}
+\label{sec:soa_wavelets}
+
+PR4 asks how wavelet bases perform relative to polynomial or
+trigonometric bases for non-smooth or non-stationary processes, but
+among the 14 direct antecedents of this axis, applications that actually
+use a wavelet basis are a minority: only \cite{amato_unsupervised_2025}
+and \cite{yang_feature_2022} adopt one as the central component of their
+method. Most of the works that address irregular processes respond to
+that irregularity without resorting to wavelets at all, which is itself
+relevant to PR4: within the recent practice documented by this corpus,
+wavelets are not the default response to the lack of smoothness that
+theory would suggest.
+
+When the direct comparison is made, the result does not favor wavelets
+systematically. \cite{amato_unsupervised_2025} find a considerable
+advantage of wavelet-based clustering over B-spline bases (an adjusted
+Rand index of 0.901 against 0.320), but \cite{salvatore_exploring_2016}
+report the opposite: a wavelet-PCA analysis revealed no temporal changes
+beyond those already captured by a Fourier-based FPCA with smoothing.
+\cite{eslami_spline_2024} describe splines and wavelets as
+``complementary,'' with similar mean-squared-error performance in one of
+its case studies, and explicitly notes that the literature lacks
+comprehensive comparisons between the two families. The pattern is the
+same as in Section~\ref{sec:soa_basis_choice}: no single family
+dominates universally, and the outcome depends on the type of
+irregularity present in the data.
+
+The most frequent strategy among the antecedents of PR4 is not to
+replace the smooth basis with a wavelet, but to adapt the smooth basis
+to the irregularity. \cite{jiao_enhanced_2022} align the location of the
+basis functions with the change point they aim to detect, instead of
+fixing their position in advance, and show that this alignment
+substantially improves detection power relative to a standard FPCA.
+\cite{horvath_time_2020} replace B-spline interpolation with cubic
+Hermite polynomials for commodity forward curves, which exhibit breaks
+at contract expiry points, and find a better fit with this alternative,
+also non-wavelet. \cite{aguilera_comparative_2013} and
+\cite{gao_factor_2024}, already discussed in
+Section~\ref{sec:soa_smoothing}, absorb roughness through the
+penalization parameter within the same B-spline family, rather than
+switching families. None of these three strategies uses wavelets; all
+three modify a smooth basis to accommodate irregularity.
+
+None of the PR4 antecedents that directly compare wavelets against other
+families works with economic or financial series. The two antecedents
+of this axis that do -- \cite{aue_generalized_2017}, on intraday returns
+of the SPY ETF, and \cite{rice_exploring_2023}, on the volatility of
+crude-oil futures -- do not offer that comparison: the former mentions
+wavelets only as a typical alternative, untested in the study itself,
+and the latter regularizes through non-negativity constraints, not
+through a wavelet basis. The question posed by PR4 therefore has no
+direct empirical answer for the economic-financial domain within the
+reviewed literature -- another point that Section~\ref{sec:soa_economics}
+takes up.
+
+%---------------------------------------------------------
+\section{FDA in economics and finance; Latin American and Ecuadorian
+antecedents}
+\label{sec:soa_economics}
+
+Functional data analysis is well established as an applied tool in
+economics and finance: the 35 items in this axis cover electricity
+demand, stock indices, exchange rates, commodities, cryptocurrencies,
+and income distribution. But this breadth of domains contrasts with
+methodological depth: only 11 of the 35 (31\%) reach the level of a
+direct antecedent ($Q3\geq1$ and $Q4\geq1$), against 48\% of direct
+antecedents in the full corpus. Most of the remaining 24 applications
+use FDA as an analysis tool without discussing the choice of basis or
+evaluating the quality of the resulting representation -- the same
+pattern of incidental use already documented as a reason for exclusion
+(E1) during Phase 5 screening -- with scores concentrated between 0 and
+4 out of 8.
+
+Among the 11 direct antecedents, none applies to economic or financial
+series the separation between the effect of the basis family and the
+effect of smoothing that does exist, within a single family, in
+\cite{aguilera_comparative_2013} and \cite{gao_factor_2024}
+(Section~\ref{sec:soa_smoothing}). \cite{shackleton_comparing_2024}
+theoretically justify their choice of B-splines by the aperiodicity of
+the realized volatility they study, but do not compare it against
+another family. \cite{rodriguezcuadro_study_2025}, on the Colombian
+stock market, combine P-splines with FPCA and clustering to
+characterize the functional correlation between 26 companies and the
+price of Brent crude oil, but likewise do not compare basis families
+against each other. Each economic antecedent satisfies some subset of
+the four valuation criteria -- theoretical justification, reported
+parameters, evaluation of the representation -- but none satisfies all
+four at once the way \cite{beyaztas_comparison_2022} or
+\cite{aguilera_comparative_2013} do outside the economic domain.
+
+Regional coverage is even more limited. Of the 91 items in the corpus,
+only three have any connection to Latin America: \cite{marin_analyzing_2023},
+on electricity demand in Colombia; \cite{rodriguezcuadro_study_2025},
+already cited; and \cite{padilla2020} itself, on demographic and
+economic indicators for the region. None of the 91 items retrieved by
+the systematic search works specifically with Ecuadorian data. This
+scarcity is not an artifact of the search strings -- Phase 4 had already
+anticipated a low volume for the regional search string -- but a pattern
+that is now confirmed within the set already screened and scored for
+methodological quality: Latin American literature on FDA exists, but it
+is scarce, and its intersection with the comparison of basis families
+is, within this corpus, empty.
+
+%---------------------------------------------------------
+\section{Critical synthesis and the research gap}
+\label{sec:soa_gap}
+
+Before restating it as an actionable gap, the candidate gap must be
+checked against the extraction matrix itself rather than asserted from
+an impression of the five axes just reviewed. Cross-referencing the 25
+items that explicitly compare two or more basis families against the
+questions they address and their application domain narrows the picture
+considerably: only 5 of those 25 touch PR5, applied to electricity
+prices \cite{lisi_joint_2024}, wastewater epidemiology (a marginal
+connection to PR5) \cite{salvatore_exploring_2016}, natural gas flows
+\cite{chen_review_2021}, intraday returns of the SPY exchange-traded
+fund \cite{aue_generalized_2017}, and commodity forward curves
+\cite{horvath_time_2020}. None of these five isolates the effect of the
+basis family from the effect of the smoothing or penalization regime as
+an explicit methodological contribution; each reports model comparisons
+or extensions rather than a design that controls both factors
+separately. The only item in the corpus that does separate basis family
+from estimation method explicitly, \cite{beyaztas_comparison_2022},
+applies to weekly climate data, not to economic or financial series.
+And, consistent with the regional scarcity documented in
+Section~\ref{sec:soa_economics}, none of the 91 items applies to Latin
+American or Ecuadorian data. The candidate gap therefore holds, but it
+must be stated more precisely: the issue is not that systematic basis
+comparison is absent from FDA in general -- 25 of 91 items (27.5\%)
+perform one, and at least one isolates family from estimation method --
+but that this comparison has not been made for volatile economic or
+financial series, still less with the effect of smoothing isolated or
+with Latin American data.
+
+Three observations follow from the five axes reviewed above.
+\textbf{What is established.} Representing functional data through
+basis expansion is well established (B-splines dominate with 30 of 91
+single-family uses, followed by empirical/FPCA bases with 12 of 91), and
+the criteria for selecting basis dimension are mature and in widespread
+use (GCV, AIC/BIC, and cross-validation appear in most items that report
+a criterion). \textbf{What is fragmentary.} Systematic comparison across
+basis families is not uncommon in the general FDA literature -- 25 of 91
+items (27.5\%) explicitly compare two or more families, and at least one
+(\cite{beyaztas_comparison_2022}) formally isolates the effect of the
+basis family from the effect of the estimation method. But this
+comparative literature concentrates on domains outside economics and
+finance (climate, genetics, spectroscopy, geodesy, EEG): only 5 of those
+25 works touch economic or financial series, and none of them separates
+the effect of the family from the effect of the smoothing regime.
+\textbf{What is absent.} No work in the reviewed literature offers a
+systematic, controlled comparison of functional basis families for FPCA
+representation of volatile economic or financial series that isolates
+the effect of basis choice from the effect of penalization or the
+smoothing regime, and no application of this kind exists for Latin
+American or Ecuadorian data. This is precisely where \cite{padilla2020}
+-- the article that motivates this thesis -- stops: it uses B-splines
+exclusively, without comparison and without penalization, and its own
+proposed future work explicitly calls for ``considering different
+approximation basis, specifically for the case of GDP-GR'' -- textual
+confirmation, from within the field's own literature, of the exact gap
+this thesis addresses.
+
+%---------------------------------------------------------
+\section{Positioning of this thesis}
+\label{sec:soa_positioning}
+
+This thesis is designed to close the gap identified above on its
+narrowest and most defensible terms: a controlled comparison of
+functional basis families for volatile economic time series that
+isolates the effect of basis choice from the effect of the smoothing
+regime, applied to Latin American data. Chapter~\ref{chap:methods}
+extends the dataset of \cite{padilla2020} -- the study that motivates
+this work -- to an annual panel of GDP growth rates for 20 Latin
+American countries from 1960 to 2024, incorporating six years absent
+from the original study, among them the 2020 COVID-19 contraction and
+the region's heterogeneous post-pandemic recovery. Unlike the 25
+comparative works identified in Section~\ref{sec:soa_gap}, none of which
+applies to economic or financial data with the effect of smoothing
+controlled, the comparison here fixes reconstruction quality across
+families before comparing them: the wavelet threshold is calibrated, per
+country, to match the RMSE achieved by the B-spline fit, so that
+differences in sparsity and in the resulting FPCA are attributable to
+the basis family rather than to an uncontrolled difference in smoothing
+level. This design answers, for the economic-financial domain that
+Section~\ref{sec:soa_economics} found empty, the same question that
+\cite{aguilera_comparative_2013} and \cite{gao_factor_2024} answer only
+within a single basis family (Section~\ref{sec:soa_smoothing}): what is
+the effect of the basis family once the smoothing regime is no longer
+allowed to vary freely across it.
+
+The scope of this comparison is deliberately narrower than some of the
+alternatives reviewed in this chapter. It does not estimate a
+data-driven orthonormal basis, as the matrix-completion and splinet
+methods of Section~\ref{sec:soa_basis_choice} do, nor does it unify
+basis selection and penalization into a single Bayesian mechanism, as
+the shrinkage-prior methods of Section~\ref{sec:soa_smoothing} do; both
+choices would reintroduce, in a different form, the confound this thesis
+is designed to remove. It restricts the comparison to three classical,
+non-data-driven families -- B-spline, Fourier, and wavelet (Haar, DB2,
+Sym4) -- and evaluates them jointly on reconstruction fidelity,
+coefficient economy, and the interpretability of the resulting
+functional principal component analysis, directly extending the
+single-basis analysis of \cite{padilla2020} in the three directions its
+own proposed future work calls for. Within the literature reviewed in
+this chapter, it is, to the best of this review's knowledge, the first
+systematic comparison of this kind applied to Latin American economic
+data.
