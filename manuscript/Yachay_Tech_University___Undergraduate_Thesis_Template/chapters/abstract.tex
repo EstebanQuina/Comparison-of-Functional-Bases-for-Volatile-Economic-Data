@@ -1,4 +1,25 @@
-Es el mismo resumen, pero traducido al idioma inglés.\\
+In functional data analysis, discrete series are converted into functions
+through a basis expansion, a step whose effect on subsequent analyses is rarely
+examined in economic applications. This thesis compares B-spline, Fourier, and
+wavelet (Haar, Daubechies~2, Symlet~4) bases for representing the annual gross
+domestic product growth rates of 20 Latin American countries over 1960--2024,
+extending the dataset of a previous B-spline study to include the COVID-19
+contraction. The bases are compared through reconstruction error, the number of
+nonzero coefficients at matched error, and functional principal component
+analysis. The extended dataset reproduces the variance structure of the original
+study (47.2\% against 47.1\% for the first three components). At matched error,
+the adaptive B-spline uses fewer coefficients than the wavelets (19.5 knots
+against approximately 38 of 128 coefficients), and the two families distribute
+the error differently: B-splines follow large multi-year episodes but flatten
+isolated shocks, whereas thresholded wavelets retain some isolated shocks but
+shrink large episodes. The Fourier basis is the least suited, since the series
+show no clear periodicity and its approximations oscillate over stable periods.
+The wavelet energy decomposition identifies the time scales at which each
+country's variation is concentrated. The number of principal components required
+to explain 80\% of the variance ranges from three to eight depending on the basis
+and smoothing level, showing that the choice of basis is a modelling decision
+that conditions the results of functional principal component analysis.\\
 
 \noindent \textbf{Keywords}:\\
-Al final del resumen se deben usar palabras claves tomadas del texto, las cuales permiten la recuperación de la información, (Mínimo 3 y máximo 7 palabras, preferiblemente use lenguaje técnico-científico), en idioma inglés. No se deberá usar siglas, ni formulas con caracteres especiales.
+Functional data analysis, basis expansion, wavelets, B-splines, functional
+principal component analysis, economic growth, Latin America.

@@ -10,10 +10,12 @@ operator, spectral decomposition of the covariance operator, and asymptotic
 validation of the resulting estimators. The exposition follows
 \cite{hsingeubank2015}, whose treatment of functional data analysis through
 the lens of Hilbert space and linear operator theory provides, at present,
-the most complete rigorous account of this pipeline. Definitions, theorem
-statements, and proofs throughout this chapter are our own exposition of
-that material, adapted to the notation and scope of this thesis, with
-\cite{hsingeubank2015} cited at the relevant points.
+the most complete rigorous account of this pipeline. The basis systems
+compared in this thesis are developed from two further sources: the Fourier
+basis following \cite{ramsay2005}, and the wavelet basis following
+\cite{vidakovic1999}. Definitions, theorem statements, and proofs throughout
+this chapter are our own exposition of that material, adapted to the notation
+and scope of this thesis, with the sources cited at the relevant points.
 
 The chapter is organized to mirror the logical dependency of the FPCA
 pipeline rather than the chronological order in which a reader might first
@@ -29,30 +31,39 @@ develops perturbation bounds for the eigenvalues and eigenfunctions of a
 compact self-adjoint operator, which are the technical tool later used to
 transfer consistency of an estimated covariance operator into consistency
 of its estimated eigenelements. Section~\ref{sec:smoothing} treats
-smoothing and regularization, in particular smoothing splines, which
-underlie the adaptive B-spline basis used in Chapter~\ref{chap:methods}.
+smoothing and regularization, in particular smoothing splines, which are
+the theoretical counterpart of the adaptive B-spline fit used in
+Chapter~\ref{chap:methods}.
 Section~\ref{sec:random_elements} develops the probabilistic foundations of
 FDA: the mean element and covariance operator of a Hilbert-space-valued
 random element, and the Karhunen--Lo\`eve Theorem, which is the population
 version of FPCA. Section~\ref{sec:mean_cov_estimation} studies the large
 sample behavior of estimators of the mean function and covariance operator,
-and Section~\ref{sec:fpca_theory} closes the chapter with the asymptotic
-theory of the FPCA estimators themselves --- consistency and asymptotic
-normality of the estimated eigenvalues and eigenfunctions --- which is the
-theoretical justification for the FPCA results reported in
-Chapter~\ref{chap:results}.
+and Section~\ref{sec:fpca_theory} develops the asymptotic theory of the FPCA
+estimators themselves --- consistency and asymptotic normality of the
+estimated eigenvalues and eigenfunctions --- which provides the theoretical
+basis for the FPCA results reported in Chapter~\ref{chap:results}. Finally,
+Section~\ref{sec:basis_systems} treats the two basis systems compared against
+the B-spline baseline. Section~\ref{subsec:fourier_theory} develops the Fourier basis, its
+orthogonality on equally spaced grids, and the class of functions for which
+it is appropriate. Section~\ref{subsec:wavelet_theory} develops multiresolution
+analysis, the Daubechies and symmlet families, the characterization of Besov
+spaces by wavelet coefficients, the orthogonal matrix form of the discrete
+wavelet transform, and wavelet shrinkage with its minimax properties over
+Besov balls.
 
-A scope note is in order. The source \cite{hsingeubank2015} develops this
-entire pipeline for general basis systems and, concretely, for smoothing
-splines (equivalently, B-spline bases with a roughness penalty), which
-matches the adaptive B-spline smoothing used as the baseline in
-Section~\ref{subsec:bspline}. It does not, however, treat the Fourier or
-wavelet basis systems used as the comparison bases in this thesis. The
-theoretical treatment of those two basis systems --- in particular, the
-approximation-theoretic and minimax properties that motivate the use of
-wavelets for spatially inhomogeneous (Besov-space) signals such as the ones
-studied in Chapter~\ref{chap:results} --- will be added from a second
-source in a subsequent revision of this chapter.
+A scope note is in order. The source \cite{hsingeubank2015} develops the
+FPCA pipeline for general basis systems and, concretely, for smoothing
+splines (equivalently, B-spline bases with a roughness penalty), the
+penalized counterpart of the adaptive B-spline fit used as the baseline in
+Section~\ref{subsec:bspline}. It does not treat the Fourier or wavelet basis
+systems, which is why Section~\ref{sec:basis_systems} draws on
+\cite{ramsay2005} and \cite{vidakovic1999}. The asymptotic results of
+Sections~\ref{sec:mean_cov_estimation}--\ref{sec:fpca_theory} apply to any of
+the three representations once the fitted curves are treated as the sample of
+random functions; the basis-specific theory of
+Section~\ref{sec:basis_systems} concerns the step that precedes them, namely
+how each basis represents the discretely observed trajectories.
 
 Throughout, $\mathbb{H}$, $\mathbb{H}_1$, $\mathbb{H}_2$ denote real Hilbert
 spaces with inner products $\langle\cdot,\cdot\rangle$ (or
@@ -586,18 +597,18 @@ $\lambda_1^2\geq\lambda_2^2\geq\cdots$,
 \end{equation}
 \end{theorem}
 
-\begin{proof}
-For $e=\sum_{j\geq k}a_je_j\in\mathrm{span}\{e_1,\dots,e_{k-1}\}^\perp$,
-$\langle\mathcal{T}e,e\rangle/\|e\|^2 = \sum_{j\geq k}\lambda_ja_j^2\big/
-\sum_{j\geq k}a_j^2 \leq \lambda_k$ (as $\lambda_j\leq\lambda_k$ for
-$j\geq k$), with equality at $e=e_k$; this proves
-\eqref{eq:rayleigh_max}. For \eqref{eq:norm_eigenvalue}, apply
-\eqref{eq:rayleigh_max} to the nonnegative definite compact operator
-$\mathcal{T}^2$ (whose eigenpairs are $(\lambda_j^2,e_j)$, since $\mathcal{T}
-^2=\sum_j\lambda_j^2e_j\otimes e_j$ by \eqref{eq:spectral_decomp} applied
-twice) to get $\lambda_k^2 = \max_{e\perp\mathrm{span}\{e_1,\dots,e_{k-1}\}}
-\|\mathcal{T}e\|^2/\|e\|^2$, and take square roots.
-\end{proof}
+%\begin{proof}
+%For $e=\sum_{j\geq k}a_je_j\in\mathrm{span}\{e_1,\dots,e_{k-1}\}^\perp$,
+%$\langle\mathcal{T}e,e\rangle/\|e\|^2 = \sum_{j\geq k}\lambda_ja_j^2\big/
+%\sum_{j\geq k}a_j^2 \leq \lambda_k$ (as $\lambda_j\leq\lambda_k$ for
+%$j\geq k$), with equality at $e=e_k$; this proves
+%\eqref{eq:rayleigh_max}. For \eqref{eq:norm_eigenvalue}, apply
+%\eqref{eq:rayleigh_max} to the nonnegative definite compact operator
+%$\mathcal{T}^2$ (whose eigenpairs are $(\lambda_j^2,e_j)$, since $\mathcal{T}
+%^2=\sum_j\lambda_j^2e_j\otimes e_j$ by \eqref{eq:spectral_decomp} applied
+%twice) to get $\lambda_k^2 = \max_{e\perp\mathrm{span}\{e_1,\dots,e_{k-1}\}}
+%\|\mathcal{T}e\|^2/\|e\|^2$, and take square roots.
+%\end{proof}
 
 \begin{theorem}[Courant--Fischer minimax principle]
 \label{thm:courant_fischer}
@@ -712,7 +723,7 @@ $\{f_{2j}\}$ follows from Theorem~\ref{thm:eigen_orthogonal}(2) applied to
 $\mathcal{T}\mathcal{T}^*$. And $\mathcal{T}^*f_{2j} = \mathcal{T}^*
 \mathcal{T}f_{1j}/\lambda_j = \lambda_jf_{1j}$.
 
-For \eqref{eq:op_svd}: by Theorem~\ref{thm:adjoint_properties} and Theorem
+For \eqref{eq:op_svd}: by properties of the adjoint operator and Theorem
 \ref{thm:projection}, part 3 of Theorem~\ref{thm:projection}(applied twice)
 gives $(\mathrm{Ker}(\mathcal{T}))^\perp = (\mathrm{Ker}(\mathcal{T}^*
 \mathcal{T}))^\perp = (\mathrm{Im}(\mathcal{T}^*\mathcal{T}))^{\perp\perp} =
@@ -836,16 +847,18 @@ subtraction.
 
 \begin{definition}
 \label{def:hs_operator}
+Let $\{e_i\}$ be a CONS for $\mathbb{H}_1$. 
 $\mathcal{T}\in\mathcal{B}(\mathbb{H}_1,\mathbb{H}_2)$ is
-\emph{Hilbert--Schmidt} (HS) if, for some (any) CONS $\{e_i\}$ of
-$\mathbb{H}_1$, $\|\mathcal{T}\|_{HS}^2 := \sum_i\|\mathcal{T}e_i\|_2^2 <
-\infty$. The HS inner product of $\mathcal{T}_1,\mathcal{T}_2\in
+\emph{Hilbert--Schmidt} (HS) operator if $\|\mathcal{T}\|_{HS}^2 := \sum_i\|\mathcal{T}e_i\|_2^2 <
+\infty$. 
+\end{definition}
+We will denote the set of HS operators by $\mathcal{B}_{HS}(\mathbb{H}_1,\mathbb{H}_2)$.
+The HS inner product of $\mathcal{T}_1,\mathcal{T}_2\in
 \mathcal{B}_{HS}(\mathbb{H}_1,\mathbb{H}_2)$ is $\langle\mathcal{T}_1,
 \mathcal{T}_2\rangle_{HS} := \sum_i\langle\mathcal{T}_1e_i,\mathcal{T}_2e_i
 \rangle_2$. By Theorem~\ref{thm:hs_cons_independence}, choosing $\{e_i\}$
 to be the singular vectors $\{f_{1j}\}$ of a compact $\mathcal{T}$ gives
 $\|\mathcal{T}\|_{HS}^2 = \sum_j\lambda_j^2$.
-\end{definition}
 
 \begin{theorem}
 \label{thm:hs_compact}
@@ -948,8 +961,12 @@ $\|\mathcal{T}-\sum_{j=1}^k\lambda_jf_{1j}\otimes_1f_{2j}\|_{HS}^2 =
 \begin{definition}
 \label{def:trace_class}
 $\mathcal{T}\in\mathcal{B}(\mathbb{H}_1,\mathbb{H}_2)$ is \emph{trace
-class} if $\|\mathcal{T}\|_{TR} := \sum_j\langle(\mathcal{T}^*
-\mathcal{T})^{1/2}e_j,e_j\rangle_1 <\infty$ for some (any) CONS $\{e_j\}$ of
+class} if 
+\begin{equation*}
+    \|\mathcal{T}\|_{TR} := \sum_j\langle(\mathcal{T}^*
+\mathcal{T})^{1/2}e_j,e_j\rangle_1 <\infty
+\end{equation*}
+for some CONS $\{e_j\}$ of
 $\mathbb{H}_1$, where $(\mathcal{T}^*\mathcal{T})^{1/2}$ is the nonnegative
 self-adjoint square root furnished by Theorem~\ref{thm:spectral_theorem}
 applied with fractional powers of the eigenvalues. Equivalently,
@@ -1106,14 +1123,14 @@ by $e_j(t)=\lambda_j^{-1}\int_E\kappa(s,t)e_j(s)\,d\mu(s)$ (for
 $\lambda_j\neq 0$) is continuous, and we always adopt this continuous
 version.
 
-\begin{example}
-\label{ex:integral_operator_adjoint}
-For $\mathcal{K}$ as in \eqref{eq:integral_operator}, $\langle\mathcal{K}f,
-g\rangle = \iint\kappa(t,s)f(s)g(t)\,ds\,dt = \langle f,\int_E\kappa(t,
-\cdot)g(t)\,dt\rangle$, so $\mathcal{K}^*$ has kernel $\kappa(t,s)$
-(arguments reversed); $\mathcal{K}$ is self-adjoint exactly when $\kappa$
-is symmetric.
-\end{example}
+%\begin{example}
+%\label{ex:integral_operator_adjoint}
+%For $\mathcal{K}$ as in \eqref{eq:integral_operator}, $\langle\mathcal{K}f,
+%g\rangle = \iint\kappa(t,s)f(s)g(t)\,ds\,dt = \langle f,\int_E\kappa(t,
+%\cdot)g(t)\,dt\rangle$, so $\mathcal{K}^*$ has kernel $\kappa(t,s)$
+%(arguments reversed); $\mathcal{K}$ is self-adjoint exactly when $\kappa$
+%is symmetric.
+%\end{example}
 
 \begin{theorem}
 \label{thm:kernel_nonneg_def}
@@ -1156,9 +1173,11 @@ $\gamma(s,t)$ to the eigenfunctions that FPCA estimates.
 \label{lem:mercer_lemma}
 Let $\kappa$ be continuous, symmetric, and nonnegative definite, with
 $\mathcal{K}$ its integral operator and eigenpairs $\{(\lambda_j,e_j)\}$.
-Then: (1) $\sum_j\lambda_je_j^2(t)\leq\kappa(t,t)$ for all $t$; (2)
-$\sum_j|\lambda_je_j(s)e_j(t)|\leq\{\kappa(t,t)\kappa(s,s)\}^{1/2}$ for all
-$s,t$; (3) $\lim_{n\to\infty}\sup_{s,t}\sum_{j>n}|\lambda_je_j(s)e_j(t)|=0$;
+Then: \\
+(1) $\sum_j\lambda_je_j^2(t)\leq\kappa(t,t)$ for all $t$; \\
+(2) $\sum_j|\lambda_je_j(s)e_j(t)|\leq\{\kappa(t,t)\kappa(s,s)\}^{1/2}$ for all
+$s,t$; \\
+(3) $\lim_{n\to\infty}\sup_{s,t}\sum_{j>n}|\lambda_je_j(s)e_j(t)|=0$; \\
 (4) $\sum_j\lambda_je_j(s)e_j(t)$ is well defined, and converges absolutely
 and uniformly to a (uniformly) continuous function of $(s,t)$.
 \end{lemma}
@@ -3857,49 +3876,736 @@ via the sample covariance operator of the B-spline-smoothed country
 trajectories -- as consistent, asymptotically normal estimates of the
 population functional principal components of Latin American GDP growth.
 
-\section{Chapter Summary and Scope for the Remaining Bases}
+\section{Basis Systems for Functional Data}
+\label{sec:basis_systems}
+
+The preceding sections develop the FPCA pipeline for a general basis
+system and, concretely, for smoothing splines. This section treats the
+alternative basis systems compared in Chapter~\ref{chap:methods}. The
+exposition of the Fourier basis follows \cite[Ch.~3--4]{ramsay2005}, and that
+of the wavelet basis follows \cite{vidakovic1999};
+proofs are included only for the statements that these sources prove, and
+the results are adapted to the notation of this chapter.
+
+A \emph{basis function system} is a set of known functions $\phi_k$ that are
+linearly independent and such that any function in the space of interest can
+be approximated arbitrarily well by a linear combination of a sufficiently
+large number $K$ of them \cite[Sec.~3.3]{ramsay2005}. A function $x$ is then
+represented by the expansion
+\begin{equation}
+x(t) = \sum_{k=1}^{K} c_k\phi_k(t) = \mathbf{c}^\top\boldsymbol{\phi}(t),
+\label{eq:basis_expansion_theory}
+\end{equation}
+where $\mathbf{c} = (c_1,\dots,c_K)^\top$ is the coefficient vector and
+$\boldsymbol{\phi} = (\phi_1,\dots,\phi_K)^\top$ the vector of basis
+functions. The expansion maps the infinite-dimensional space of functions
+into the finite-dimensional space of coefficient vectors, but the result of
+any subsequent analysis depends on which basis system is chosen and not
+only on its dimension \cite[Sec.~3.3]{ramsay2005}.
+
+Given observations $y_j = x(t_j) + \varepsilon_j$, $j = 1,\dots,n$, collected
+in $\mathbf{y} = (y_1,\dots,y_n)^\top$, let $\boldsymbol{\Phi}$ denote the
+$n\times K$ matrix with entries $\boldsymbol{\Phi}_{jk} = \phi_k(t_j)$. The
+ordinary least-squares fit minimizes
+\begin{equation}
+\mathrm{SMSSE}(\mathbf{y}\,|\,\mathbf{c}) = \sum_{j=1}^{n}\Bigl[y_j -
+\sum_{k=1}^{K}c_k\phi_k(t_j)\Bigr]^2 = (\mathbf{y}-\boldsymbol{\Phi}
+\mathbf{c})^\top(\mathbf{y}-\boldsymbol{\Phi}\mathbf{c}),
+\label{eq:smsse}
+\end{equation}
+and its minimizer and the corresponding fitted values are
+\cite[Sec.~4.2.1]{ramsay2005}
+\begin{equation}
+\hat{\mathbf{c}} = (\boldsymbol{\Phi}^\top\boldsymbol{\Phi})^{-1}
+\boldsymbol{\Phi}^\top\mathbf{y}, \qquad \hat{\mathbf{y}} =
+\boldsymbol{\Phi}\hat{\mathbf{c}}.
+\label{eq:ols_basis}
+\end{equation}
+An exact representation, or interpolation, is achieved when $K = n$, in the
+sense that the coefficients can be chosen so that $\hat{x}(t_j) = y_j$ for
+each $j$; the degree to which the data are smoothed
+rather than interpolated is therefore controlled by $K$, which is treated as
+a parameter to be chosen according to the characteristics of the data
+\cite[Sec.~3.3]{ramsay2005}. For the same reason, a basis whose elements
+share the features of the functions being estimated achieves a satisfactory
+approximation with a comparatively small $K$, and no basis system is
+appropriate for every application \cite[Sec.~3.3]{ramsay2005}.
+
+\subsection{The Fourier Basis System}
+\label{subsec:fourier_theory}
+
+\begin{definition}[{\cite[Sec.~3.4]{ramsay2005}}]
+\label{def:fourier_basis}
+Let $\omega>0$. The \emph{Fourier basis} is the system of functions
+\begin{equation}
+\phi_0(t) = 1,\qquad \phi_{2r-1}(t) = \sin(r\omega t),\qquad
+\phi_{2r}(t) = \cos(r\omega t),\qquad r = 1,2,\dots,
+\label{eq:fourier_basis}
+\end{equation}
+and the corresponding Fourier series expansion is
+\begin{equation}
+\hat{x}(t) = c_0 + c_1\sin\omega t + c_2\cos\omega t + c_3\sin 2\omega t +
+c_4\cos 2\omega t + \cdots.
+\label{eq:fourier_expansion}
+\end{equation}
+\end{definition}
+
+The basis is periodic, and the parameter $\omega$ determines the period
+$2\pi/\omega$ \cite[Sec.~3.4]{ramsay2005}. It is the basis of choice for
+periodic data, that is, for functions that satisfy periodic boundary
+conditions, in which the value of the function at the beginning of the
+observation interval picks up smoothly from its value at the end
+\cite[Sec.~3.2.2, 3.3]{ramsay2005}.
+
+\begin{proposition}[{\cite[Sec.~3.4]{ramsay2005}}]
+\label{prop:fourier_discrete_orthogonality}
+If the arguments $t_j$, $j = 1,\dots,n$, are equally spaced on the
+observation interval and the period $2\pi/\omega$ equals the length of that
+interval, then the Fourier basis is orthogonal in the sense that the
+cross-product matrix $\boldsymbol{\Phi}^\top\boldsymbol{\Phi}$ is diagonal.
+It can be made equal to the identity by dividing the basis functions by
+$\sqrt{n}$ for the constant function and by $\sqrt{n/2}$ for all the others.
+\end{proposition}
+
+With this orthogonality, the Fast Fourier Transform (FFT) computes all the
+coefficients $c_k$ and all $n$ fitted values $\hat{x}(t_j)$ in $O(n\log n)$
+operations when $n$ is a power of two and the arguments are equally spaced.
+This is one of the features that made the Fourier series the traditional
+basis for long time series, although B-splines and wavelets can match and
+even exceed this computational efficiency \cite[Sec.~3.4]{ramsay2005}.
+
+\paragraph{Derivatives.} Derivative estimation in a Fourier basis is simple,
+since \cite[Sec.~3.4]{ramsay2005}
+\begin{equation}
+D\sin(r\omega t) = r\omega\cos(r\omega t),\qquad
+D\cos(r\omega t) = -r\omega\sin(r\omega t).
+\label{eq:fourier_derivatives}
+\end{equation}
+The Fourier expansions of $Dx$, $D^2x$, and higher derivatives are therefore
+obtained by multiplying the individual coefficients by suitable powers of
+$r\omega$, with sign changes and the interchange of sine and cosine
+coefficients as appropriate \cite[Sec.~3.4]{ramsay2005}. In general, a basis
+that works well for function estimation may give poor derivative estimates,
+because an accurate representation of the observations may force the fit to
+have small but high-frequency oscillations \cite[Sec.~3.3]{ramsay2005}.
+
+\paragraph{Scope of application.} \cite[Sec.~3.4]{ramsay2005} emphasize that
+the Fourier basis, despite its familiarity, should not be used uncritically.
+It is especially useful for stable functions, that is, functions without
+strong local features and whose curvature tends to be of the same order
+everywhere, and the periodicity of the Fourier series should ideally be
+reflected to some degree in the data. Fourier expansions are generally
+uniformly smooth, and they are to some degree inappropriate for data known
+or suspected to reflect discontinuities in the function itself or in its
+low-order derivatives. GDP growth series are not periodic and contain
+localized shocks (Section~\ref{sec:exploratory}); they therefore fall
+outside the class of functions for which \cite[Sec.~3.4]{ramsay2005}
+recommend the Fourier basis. The corresponding behaviour of the Fourier
+reconstructions is examined empirically in Section~\ref{subsec:gibbs_results}.
+
+\subsection{The Wavelet Basis System}
+\label{subsec:wavelet_theory}
+
+Wavelets provide a systematic way of producing local orthogonal bases
+\cite{vidakovic1999}, constructed from a multiresolution analysis of
+$\mathbb{L}^2(\mathbb{R})$. In function estimation, shrinking the
+coefficients of a non-local basis, such as the trigonometric basis, can
+affect the global shape of the reconstructed function and introduce
+unwanted artifacts, whereas for wavelets shrinkage is connected with
+smoothing, because the measures of smoothness of a function depend on the
+magnitudes of its wavelet coefficients \cite[Ch.~6]{vidakovic1999}. The exposition in this subsection follows
+\cite{vidakovic1999}; proofs are included only where the source gives one,
+and the notation is adapted to that of this chapter. Throughout, $\mathbb{L}^2(\mathbb{R})$ carries the inner
+product $\langle f,g\rangle = \int_{\mathbb{R}}f(x)g(x)\,dx$, and
+$\delta_l$ denotes the Kronecker delta.
+
+\subsubsection{Multiresolution Analysis}
+
+\begin{definition}[{\cite[Sec.~3.3]{vidakovic1999}}]
+\label{def:mra}
+A \emph{multiresolution analysis} (MRA) is a sequence of closed subspaces
+$\{V_j, j\in\mathbb{Z}\}$ of $\mathbb{L}^2(\mathbb{R})$ such that
+\begin{enumerate}
+\item $\cdots\subset V_{-1}\subset V_0\subset V_1\subset V_2\subset\cdots$;
+\item $\bigcap_jV_j = \{0\}$ and $\overline{\bigcup_jV_j} =
+\mathbb{L}^2(\mathbb{R})$;
+\item the spaces are self-similar: $f(2^jx)\in V_j$ if and only if
+$f(x)\in V_0$;
+\item there exists a \emph{scaling function} $\phi\in V_0$, with
+$\int\phi(x)\,dx\neq 0$, such that $\{\phi(\cdot-k), k\in\mathbb{Z}\}$ is an
+orthonormal basis of $V_0$.
+\end{enumerate}
+\end{definition}
+
+By self-similarity, for each fixed $j$ the family
+\begin{equation}
+\phi_{jk}(x) = 2^{j/2}\phi(2^jx-k),\qquad k\in\mathbb{Z},
+\label{eq:phi_jk}
+\end{equation}
+is an orthonormal basis of $V_j$, so that increasing $j$ corresponds to a
+finer resolution \cite[Sec.~3.3]{vidakovic1999}. Since $\phi\in V_0\subset
+V_1$, the scaling function can be expanded in the basis
+$\{\phi_{1k}\}$ of $V_1$:
+\begin{equation}
+\phi(x) = \sum_{k\in\mathbb{Z}}h_k\sqrt{2}\,\phi(2x-k).
+\label{eq:scaling_equation}
+\end{equation}
+Equation \eqref{eq:scaling_equation} is the \emph{scaling equation}, and the
+sequence $\mathbf{h} = \{h_k, k\in\mathbb{Z}\}$, with
+$h_k = \langle\phi,\phi_{1k}\rangle$, is the \emph{wavelet filter}
+\cite[Sec.~3.3]{vidakovic1999}. Several relevant properties of an MRA can be expressed as relations
+involving the coefficients of $\mathbf{h}$ \cite[Sec.~3.5.5]{vidakovic1999}.
+
+\begin{proposition}[{\cite[Sec.~3.3]{vidakovic1999}}]
+\label{prop:filter_properties}
+Let $\phi$ be the scaling function of an MRA, with $\phi$ integrable, and
+let $\mathbf{h}$ be its wavelet filter. Then
+\begin{equation}
+\sum_kh_k = \sqrt{2}\qquad\text{(normalization)},\qquad\qquad
+\sum_kh_kh_{k-2l} = \delta_l\quad\text{for all }l\in\mathbb{Z}
+\qquad\text{(orthogonality)}.
+\label{eq:filter_properties}
+\end{equation}
+In particular, $\sum_kh_k^2 = 1$.
+\end{proposition}
+
+\begin{proof}
+Integrating \eqref{eq:scaling_equation} term by term and substituting
+$u = 2x-k$,
+\begin{equation*}
+\int\phi(x)\,dx = \sqrt{2}\sum_kh_k\int\phi(2x-k)\,dx =
+\frac{\sqrt{2}}{2}\sum_kh_k\int\phi(u)\,du,
+\end{equation*}
+and dividing by $\int\phi\neq 0$ gives $\sum_kh_k = \sqrt{2}$. For the
+orthogonality relation, the scaling equation applied to $\phi(x)$ and to
+$\phi(x-l)$ gives
+\begin{equation*}
+\phi(x)\phi(x-l) = 2\sum_k\sum_mh_kh_m\,\phi(2x-k)\,\phi(2x-2l-m).
+\end{equation*}
+Integrating, and using that $\int\phi(2x-k)\phi(2x-2l-m)\,dx =
+\frac{1}{2}\delta_{k,2l+m}$ by the orthonormality of the integer
+translates of $\phi$, the left-hand side becomes
+$\langle\phi,\phi(\cdot-l)\rangle = \delta_l$ and the right-hand side
+becomes $\sum_k\sum_mh_kh_m\delta_{k,2l+m} = \sum_kh_kh_{k-2l}$. The case
+$l = 0$ gives $\sum_kh_k^2 = 1$.
+\end{proof}
+
+Let $W_j$ denote the orthogonal complement of $V_j$ in $V_{j+1}$, so that
+$V_{j+1} = V_j\oplus W_j$. The following theorem asserts that each
+$W_j$ is spanned by the dilations and translations of a single function
+derived from the filter $\mathbf{h}$.
+
+\begin{theorem}[{\cite[Sec.~3.3.1]{vidakovic1999}}]
+\label{thm:wavelet_existence}
+Let $\{V_j\}$ be an MRA with scaling function $\phi$ and wavelet filter
+$\mathbf{h}$, and define
+\begin{equation}
+g_k = (-1)^kh_{1-k},\qquad
+\psi(x) = \sum_{k\in\mathbb{Z}}g_k\sqrt{2}\,\phi(2x-k),\qquad
+\psi_{jk}(x) = 2^{j/2}\psi(2^jx-k).
+\label{eq:wavelet_def}
+\end{equation}
+Then, for each fixed $j$, $\{\psi_{jk}, k\in\mathbb{Z}\}$ is an orthonormal
+basis of $W_j$, and $\{\psi_{jk}, j,k\in\mathbb{Z}\}$ is an orthonormal basis
+of $\mathbb{L}^2(\mathbb{R})$.
+\end{theorem}
+
+The function $\psi$ is the \emph{wavelet function} (or mother wavelet),
+$\mathbf{g} = \{g_k\}$ is the associated high-pass filter, and the relation
+$g_k = (-1)^kh_{1-k}$ is the \emph{quadrature mirror relation}. The proof,
+which is carried out in the Fourier domain through the transfer function
+$m_0(\omega) = 2^{-1/2}\sum_kh_ke^{-\mathrm{i}k\omega}$, is given in
+\cite[Sec.~3.3.1]{vidakovic1999}. The high-pass filter may also be defined as $g_k = (-1)^kh_{1-k+M}$ for a
+shift constant $M$; such re-indexing affects only the location of the
+wavelet function \cite[Remark~3.3.4]{vidakovic1999}.
+
+Fixing a coarsest resolution level $j_0$ and iterating
+$V_{j+1} = V_j\oplus W_j$ gives the orthogonal decomposition
+$\mathbb{L}^2(\mathbb{R}) = V_{j_0}\oplus\bigoplus_{j\geq j_0}W_j$, and
+every $f\in\mathbb{L}^2(\mathbb{R})$
+has the representation \cite[Sec.~3.5.3]{vidakovic1999}
+\begin{equation}
+f(x) = \sum_kc_{j_0,k}\,\phi_{j_0,k}(x) + \sum_{j\geq j_0}\sum_k
+d_{jk}\,\psi_{jk}(x),\qquad c_{j_0,k} = \langle f,\phi_{j_0,k}\rangle,\quad
+d_{jk} = \langle f,\psi_{jk}\rangle.
+\label{eq:wavelet_expansion}
+\end{equation}
+The coefficients $c_{j_0,k}$ are the \emph{approximation} (or smooth)
+coefficients and the $d_{jk}$ are the \emph{detail} coefficients. The first sum in \eqref{eq:wavelet_expansion} is the orthogonal projection
+$\mathbf{P}_{j_0}f$ of $f$ onto $V_{j_0}$ \cite[Sec.~3.5.3]{vidakovic1999}.
+
+\begin{example}[Haar basis {\cite[Sec.~3.4.1]{vidakovic1999}}]
+\label{ex:haar}
+Let $\phi(x) = \mathbf{1}(0\leq x<1)$. Then $\phi(x) = \phi(2x)+\phi(2x-1)$,
+so the scaling equation \eqref{eq:scaling_equation} holds with
+$h_0 = h_1 = 1/\sqrt{2}$ and $h_k = 0$ otherwise. The quadrature mirror relation
+gives $g_0 = 1/\sqrt{2}$ and $g_1 = -1/\sqrt{2}$, and therefore
+\begin{equation*}
+\psi(x) = \phi(2x)-\phi(2x-1) = \mathbf{1}(0\leq x<1/2) -
+\mathbf{1}(1/2\leq x<1).
+\end{equation*}
+Haar wavelets have limited practical value, but they illustrate the
+general construction \cite[Sec.~3.4.1]{vidakovic1999}.
+\end{example}
+
+\subsubsection{Vanishing Moments, Daubechies Wavelets, and Symmlets}
+
+The regularity of a wavelet basis is related to the number of vanishing
+moments of its wavelet function \cite[Sec.~3.5.1]{vidakovic1999}.
+
+\begin{definition}[{\cite[Sec.~3.5.5]{vidakovic1999}}]
+\label{def:vanishing_moments}
+The wavelet function $\psi$ has $N$ \emph{vanishing moments} if
+\begin{equation}
+\int_{\mathbb{R}}x^k\psi(x)\,dx = 0,\qquad k = 0,1,\dots,N-1.
+\label{eq:vanishing_moments}
+\end{equation}
+\end{definition}
+
+The Haar wavelet has only the zeroth moment vanishing, which results in a
+discontinuous wavelet function \cite[Sec.~3.5.1]{vidakovic1999}. The
+magnitudes of the detail coefficients of a sampled function decrease as the
+levels become finer, and the more regular the function, the faster this
+decay; a few large detail coefficients at a given level indicate a local
+event \cite[Sec.~4.1]{vidakovic1999}.
+
+In terms of the filter, the conditions defining an orthonormal wavelet with
+$N$ vanishing moments and a filter $\mathbf{h} = (h_0,\dots,h_{2N-1})$ of
+length $2N$ are \cite[Sec.~3.5.5]{vidakovic1999}
+\begin{equation}
+\sum_{i=0}^{2N-1}h_i = \sqrt{2},\qquad
+\sum_{i=0}^{2N-1}(-1)^ii^kh_i = 0,\;\; k = 0,\dots,N-1,\qquad
+\sum_{i=0}^{2N-1}h_ih_{i+2k} = \delta_k,\;\; k = 0,\dots,N-1.
+\label{eq:daubechies_system}
+\end{equation}
+The first and third groups are the relations of
+Proposition~\ref{prop:filter_properties}, and the second expresses
+\eqref{eq:vanishing_moments} in terms of $\mathbf{h}$. The $2N+1$ equations
+are not linearly independent, and the system admits solutions.
+Daubechies' construction, based on a spectral factorization of
+$|m_0(\omega)|^2$, produces for each $N\geq 2$ an orthonormal wavelet with compact support,
+filter length $2N$, and $N$ vanishing moments
+\cite[Sec.~3.4.5]{vidakovic1999}.
+
+\begin{example}[Daubechies wavelet with $N = 2$ {\cite[Ex.~3.5.3]{vidakovic1999}}]
+\label{ex:db2}
+For $N = 2$, the system \eqref{eq:daubechies_system} reduces to
+\begin{equation*}
+h_0+h_1+h_2+h_3 = \sqrt{2},\quad h_0^2+h_1^2+h_2^2+h_3^2 = 1,\quad
+-h_1+2h_2-3h_3 = 0,\quad h_0h_2+h_1h_3 = 0,
+\end{equation*}
+whose solution is
+\begin{equation*}
+h_0 = \frac{1+\sqrt{3}}{4\sqrt{2}},\quad h_1 = \frac{3+\sqrt{3}}{4\sqrt{2}},
+\quad h_2 = \frac{3-\sqrt{3}}{4\sqrt{2}},\quad
+h_3 = \frac{1-\sqrt{3}}{4\sqrt{2}}.
+\end{equation*}
+This is the DB2 wavelet of Section~\ref{subsec:wavelets}: filter length 4 and
+two vanishing moments. As for every Daubechies wavelet other than Haar, its
+scaling and wavelet functions have no explicit closed-form expression and
+are evaluated numerically from the filter \cite[Sec.~3.5.4]{vidakovic1999};
+the DWT described below requires only the filter.
+\end{example}
+
+Compactly supported Daubechies wavelets cannot be symmetric, and the
+Daubechies construction yields the \emph{extremal
+phase} solution among the possible factorizations of $|m_0(\omega)|^2$. A
+different choice of the roots in that factorization yields, for the same
+$N$, the \emph{least asymmetric} wavelets, or \emph{symmlets}, which have the
+same support length $2N$ and the same number $N$ of vanishing moments but
+deviate less from symmetry \cite[Sec.~3.5.2]{vidakovic1999}. The Sym4
+wavelet of Section~\ref{subsec:wavelets} is the symmlet with $N = 4$, filter
+length 8, whose coefficients are tabulated in
+\cite[Table~3.4]{vidakovic1999}.
+
+\subsubsection{Characterization of Function Spaces}
+\label{subsubsec:besov}
+
+A central property of wavelet bases is that the regularity of a function
+can be read from the magnitude of its wavelet coefficients. For
+$f\in\mathbb{L}^p(I)$, the $r$-th difference is
+$\Delta_h^{(r)}f(t) = \sum_{k=0}^r\binom{r}{k}(-1)^kf(t+kh)$, and the
+$r$-th modulus of smoothness is $w_{r,p}(f;t) = \sup_{|h|\leq t}
+\|\Delta_h^{(r)}f\|_{\mathbb{L}^p(I_{rh})}$, where
+$I_{rh} = \{x\in I : x+rh\in I\}$.
+
+\begin{definition}[{\cite[Def.~2.5.1]{vidakovic1999}}]
+\label{def:besov}
+Let $\sigma>0$, $1\leq p,q\leq\infty$, and let $r$ be an integer with
+$r-1\leq\sigma\leq r$. The \emph{Besov seminorm} of $f\in\mathbb{L}^p(I)$ is
+\begin{equation*}
+|f|_{B^\sigma_{p,q}} = \Bigl[\int_0^\infty\bigl(h^{-\sigma}w_{r,p}(f;h)\bigr)^q
+\frac{dh}{h}\Bigr]^{1/q}\quad(q<\infty),\qquad
+|f|_{B^\sigma_{p,\infty}} = \sup_{h>0}h^{-\sigma}w_{r,p}(f;h),
+\end{equation*}
+the Besov norm is $\|f\|_{B^\sigma_{p,q}} = \|f\|_{\mathbb{L}^p(I)} +
+|f|_{B^\sigma_{p,q}}$, and the \emph{Besov space} $B^\sigma_{p,q}(I)$ is the
+set of functions with finite Besov norm. A \emph{Besov ball}
+$B^\sigma_{p,q}(M)$ is the set of functions whose Besov norm is bounded by
+$M$.
+\end{definition}
+
+Besov spaces contain the
+classical smoothness classes as special cases: the Sobolev space
+$\mathbb{W}^s_2$ coincides with $B^s_{2,2}$, and the H\"older space
+$C^s$ with $B^s_{\infty,\infty}$ \cite[Ex.~2.5.1]{vidakovic1999}. Besov
+spaces also include classes of functions with high spatial irregularity,
+such as the classes of functions of bounded variation
+\cite[Ex.~2.5.2]{vidakovic1999}.
+
+\begin{theorem}[{\cite[Sec.~3.5.3]{vidakovic1999}}]
+\label{thm:besov_characterization}
+Let the wavelet basis be generated by an MRA of regularity $r>\sigma$, and
+let $1\leq p,q\leq\infty$. A function $f$ with expansion
+\eqref{eq:wavelet_expansion} belongs to $B^\sigma_{p,q}$ if and only if
+\begin{equation*}
+\Bigl(\sum_k|c_{j_0,k}|^p\Bigr)^{1/p}<\infty\qquad\text{and}\qquad
+\Bigl\{2^{j(\sigma+1/2-1/p)}\Bigl(\sum_k|d_{jk}|^p\Bigr)^{1/p}\Bigr\}_{j\geq
+j_0}\in\ell^q.
+\end{equation*}
+Moreover, the Besov norm of $f$ is equivalent to the corresponding sequence
+norm of its wavelet coefficients. In particular, $f\in\mathbb{W}^s_2$ if and
+only if $\sum_{j,k}|d_{jk}|^2(1+2^{2js})<\infty$, and $f\in C^s$ if and only
+if $|c_{j_0,k}|\leq C$ and $|d_{jk}|\leq C\,2^{-j(s+1/2)}$ for some constant
+$C$.
+\end{theorem}
+
+For the proof, \cite[Sec.~3.5.3]{vidakovic1999} refers to the work of Meyer.
+Since the Besov norm is equivalent to the norm of the
+wavelet coefficients, the magnitudes of the wavelet coefficients provide
+smoothness characterizations of Besov spaces \cite[Sec.~6.4.1]{vidakovic1999}.
+Besov spaces are of special interest in function estimation because of their
+richness: they allow an efficient modeling of spatial inhomogeneities
+\cite[Sec.~6.4]{vidakovic1999}, and wavelets form unconditional bases for them
+\cite{donoho1998}.
+
+\subsubsection{The Discrete Wavelet Transform}
+
+For a fixed resolution level $j$, let $v_j = \sum_kc_{jk}\phi_{jk}\in V_j$.
+Since $V_j = V_{j-1}\oplus W_{j-1}$, the function decomposes uniquely as
+$v_j = \sum_lc_{j-1,l}\phi_{j-1,l} + \sum_ld_{j-1,l}\psi_{j-1,l}$. The
+scaling equations, rewritten at level $j$, read
+\cite[Sec.~4.2]{vidakovic1999}
+\begin{equation}
+\phi_{j-1,l}(x) = \sum_kh_{k-2l}\,\phi_{jk}(x),\qquad
+\psi_{j-1,l}(x) = \sum_kg_{k-2l}\,\phi_{jk}(x),
+\label{eq:scaling_level_j}
+\end{equation}
+which follow from \eqref{eq:scaling_equation} and \eqref{eq:wavelet_def}
+by a substitution of indices.
+
+\begin{proposition}[Mallat's cascade algorithm {\cite[Sec.~4.2]{vidakovic1999}}]
+\label{prop:cascade}
+The coefficients at consecutive levels are related by
+\begin{equation}
+c_{j-1,l} = \sum_kh_{k-2l}\,c_{jk},\qquad d_{j-1,l} = \sum_kg_{k-2l}\,c_{jk}
+\qquad\text{(decomposition)},
+\label{eq:cascade_decomposition}
+\end{equation}
+\begin{equation}
+c_{jk} = \sum_lc_{j-1,l}\,h_{k-2l} + \sum_ld_{j-1,l}\,g_{k-2l}
+\qquad\text{(reconstruction)}.
+\label{eq:cascade_reconstruction}
+\end{equation}
+\end{proposition}
+
+\begin{proof}
+Since $W_{j-1}\perp V_{j-1}$ and both systems are orthonormal,
+$c_{j-1,l} = \langle v_j,\phi_{j-1,l}\rangle$. By \eqref{eq:scaling_level_j}
+and the linearity of the inner product,
+$c_{j-1,l} = \sum_kh_{k-2l}\langle v_j,\phi_{jk}\rangle =
+\sum_kh_{k-2l}c_{jk}$; the expression for $d_{j-1,l}$ follows in the same
+way from the second identity in \eqref{eq:scaling_level_j}. Conversely,
+$c_{jk} = \langle v_j,\phi_{jk}\rangle = \sum_lc_{j-1,l}\langle\phi_{j-1,l},
+\phi_{jk}\rangle + \sum_ld_{j-1,l}\langle\psi_{j-1,l},\phi_{jk}\rangle$, and
+by \eqref{eq:scaling_level_j}, $\langle\phi_{j-1,l},\phi_{jk}\rangle =
+h_{k-2l}$ and $\langle\psi_{j-1,l},\phi_{jk}\rangle = g_{k-2l}$.
+\end{proof}
+
+The cascade algorithm relates the wavelet coefficients at different levels
+by filtering with $\mathbf{h}$ and $\mathbf{g}$; in operator notation, each
+step consists of a convolution with the filter followed by decimation, which
+retains every second value \cite[Sec.~4.3]{vidakovic1999}. In practice, a data vector
+$\mathbf{y} = (y_0,\dots,y_{n-1})^\top$ of length $n = 2^J$ is identified
+with the finest-level coefficients $c_{Jk}$, that is, with the function
+$\sum_ky_k\phi_{Jk}\in V_J$ \cite[Sec.~4.3]{vidakovic1999}. Applying
+\eqref{eq:cascade_decomposition} $m$ times yields the \emph{discrete wavelet
+transform} (DWT) curtailed at level $J-m$,
+\begin{equation}
+\mathbf{y}\mapsto\bigl(\mathbf{c}^{(J-m)},\mathbf{d}^{(J-m)},
+\mathbf{d}^{(J-m+1)},\dots,\mathbf{d}^{(J-1)}\bigr),
+\label{eq:dwt_vector}
+\end{equation}
+where $\mathbf{c}^{(j)}$ and $\mathbf{d}^{(j)}$ have $2^j$ entries each, so
+that the transformed vector again has length
+$2^{J-m}+\sum_{i=1}^m2^{J-i} = 2^J$ \cite[Sec.~4.3]{vidakovic1999}.
+
+A finite data vector has no values beyond its ends, so the sums in
+\eqref{eq:cascade_decomposition} must be defined at the boundaries. The
+periodic convention extends the data periodically, which corresponds to
+replacing the basis functions by their periodized versions
+$\phi^{per}_{jk}(x) = \sum_m\phi_{jk}(x-m)$ and
+$\psi^{per}_{jk}(x) = \sum_m\psi_{jk}(x-m)$, which are modifications of the standard wavelet bases constrained to
+$\mathbb{L}^2([0,1])$; unless $f$ is itself periodic, periodized wavelets
+introduce edge effects at the endpoints \cite[Sec.~5.6]{vidakovic1999}. Under this convention the DWT is a
+product of explicit matrices. For a filter $\mathbf{h} = (h_0,\dots,
+h_{2N-1})$, a high-pass filter $\mathbf{g}$ defined by the quadrature
+mirror relation with an appropriate shift, and the length
+$n_i = 2^{J-i+1}$ of the vector processed at step $i$, let $\mathbf{H}_i$ and $\mathbf{G}_i$ be the
+$(n_i/2)\times n_i$ matrices with entries
+\begin{equation}
+(\mathbf{H}_i)_{l,k} = h_{(k-2l)\bmod n_i},\qquad
+(\mathbf{G}_i)_{l,k} = g_{(k-2l)\bmod n_i},
+\label{eq:circulant_filters}
+\end{equation}
+where $h_s$ and $g_s$ are taken as zero outside $\{0,\dots,2N-1\}$. Each row
+is the previous one circularly shifted two positions to the right
+\cite[Sec.~4.3.1]{vidakovic1999}. The indexing in \eqref{eq:circulant_filters}
+is the one used in the implementation of this thesis; it differs from that of
+\cite[Sec.~4.3.1]{vidakovic1999} only by a shift.
+
+\begin{proposition}[{\cite[Sec.~4.3.1]{vidakovic1999}}]
+\label{prop:dwt_orthogonal}
+The matrix $\mathbf{A}_i = \begin{bmatrix}\mathbf{H}_i\\
+\mathbf{G}_i\end{bmatrix}$ is a basis-changing matrix in an
+$n_i$-dimensional space and is therefore orthogonal, so that
+\begin{equation*}
+\mathbf{H}_i\mathbf{H}_i^\top = \mathbf{I},\quad
+\mathbf{G}_i\mathbf{G}_i^\top = \mathbf{I},\quad
+\mathbf{G}_i\mathbf{H}_i^\top = \mathbf{H}_i\mathbf{G}_i^\top = \mathbf{0},
+\quad\mathbf{H}_i^\top\mathbf{H}_i+\mathbf{G}_i^\top\mathbf{G}_i =
+\mathbf{I}.
+\end{equation*}
+The DWT of $\mathbf{y}$ with $m$ steps is $\mathbf{d} =
+\mathbf{W}_m\mathbf{y}$, where
+\begin{equation}
+\mathbf{W}_1 = \begin{bmatrix}\mathbf{H}_1\\ \mathbf{G}_1\end{bmatrix},\qquad
+\mathbf{W}_2 = \begin{bmatrix}\begin{bmatrix}\mathbf{H}_2\\
+\mathbf{G}_2\end{bmatrix}\mathbf{H}_1\\ \mathbf{G}_1\end{bmatrix},\qquad
+\mathbf{W}_3 = \begin{bmatrix}\begin{bmatrix}\begin{bmatrix}\mathbf{H}_3\\
+\mathbf{G}_3\end{bmatrix}\mathbf{H}_2\\ \mathbf{G}_2\end{bmatrix}\mathbf{H}_1\\
+\mathbf{G}_1\end{bmatrix},\qquad\dots
+\label{eq:dwt_matrix}
+\end{equation}
+\end{proposition}
+
+When the DWT matrix is orthogonal, the transformation is a rotation in
+$\mathbb{R}^n$ and the energy (squared distance from the origin) of the data
+is preserved, $\|\mathbf{W}\mathbf{y}\|^2 = \|\mathbf{y}\|^2$
+\cite[Sec.~4.1]{vidakovic1999}, and the inverse transform is computed with
+the adjoint operators of $\mathbf{H}_i$ and $\mathbf{G}_i$, which is the
+operator form of \eqref{eq:cascade_reconstruction}
+\cite[Sec.~4.3]{vidakovic1999}. The wavelet energy distribution reported in
+Section~\ref{subsec:energy} is the share of $\|\mathbf{W}\mathbf{y}\|^2$
+carried by each decomposition level. Moreover, if $\mathbf{y} = \mathbf{f}+
+\sigma\boldsymbol{\varepsilon}$ with $\boldsymbol{\varepsilon}\sim
+\mathcal{N}(\mathbf{0},\mathbf{I}_n)$, then
+$\mathbf{W}\boldsymbol{\varepsilon}\sim\mathcal{N}(\mathbf{0},\mathbf{I}_n)$,
+by the orthogonality of $\mathbf{W}$ \cite[Sec.~6.1]{vidakovic1999}.
+
+\subsubsection{Wavelet Shrinkage}
+
+Consider the regression model \cite[Sec.~6.1]{vidakovic1999}
+\begin{equation}
+y_i = f(x_i)+\sigma\varepsilon_i,\qquad i = 1,\dots,n,
+\label{eq:wavelet_regression}
+\end{equation}
+with equally spaced $x_i$ and independent $\varepsilon_i\sim\mathcal{N}(0,1)$,
+and an estimator $\hat{\mathbf{f}}$ judged by its mean squared error
+$\mathrm{MSE}(\hat{\mathbf{f}},\mathbf{f}) =
+\frac{1}{n}E\|\hat{\mathbf{f}}-\mathbf{f}\|^2$. Applying the orthogonal
+DWT gives $\mathbf{d} = \mathbf{W}\mathbf{y} = \boldsymbol{\theta}+
+\sigma\boldsymbol{\varepsilon}'$, where $\boldsymbol{\theta} =
+\mathbf{W}\mathbf{f}$ and $\boldsymbol{\varepsilon}'\sim
+\mathcal{N}(\mathbf{0},\mathbf{I}_n)$, and, since $\mathbf{W}$ preserves
+norms, $\mathrm{MSE}(\hat{\mathbf{f}},\mathbf{f}) =
+\mathrm{MSE}(\hat{\boldsymbol{\theta}},\boldsymbol{\theta})$ for
+$\hat{\mathbf{f}} = \mathbf{W}^\top\hat{\boldsymbol{\theta}}$. The
+wavelet shrinkage procedure of Donoho and Johnstone consists of three steps
+\cite[Sec.~6.1]{vidakovic1999}: (i) transform the observations to the wavelet
+domain, $\mathbf{d} = \mathbf{W}\mathbf{y}$; (ii) shrink the detail
+coefficients toward zero, using an estimate of $\sigma$ to calibrate the
+shrinkage; and (iii) apply the inverse transform to the shrunk coefficients.
+
+The simplest shrinkage rules are thresholding rules, which set to zero the
+coefficients whose absolute value is below a threshold $\lambda\geq 0$. The
+two most common are the \emph{hard} and \emph{soft} thresholding rules
+\cite[Sec.~6.3]{vidakovic1999},
+\begin{equation}
+\delta^h(d,\lambda) = d\,\mathbf{1}(|d|>\lambda),\qquad
+\delta^s(d,\lambda) = \mathrm{sgn}(d)\,(|d|-\lambda)_+.
+\label{eq:hard_soft}
+\end{equation}
+Hard thresholding keeps or removes each coefficient, while soft thresholding
+also shrinks the retained coefficients by $\lambda$. Soft thresholding admits
+a variational characterization.
+
+\begin{proposition}[{\cite[Sec.~6.3.1]{vidakovic1999}}]
+\label{prop:soft_lasso}
+For $\mathbf{d}\in\mathbb{R}^n$ and $\lambda\geq 0$, the minimizer of
+\begin{equation}
+\frac{1}{2}\sum_{i=1}^n(d_i-\theta_i)^2+\lambda\sum_{i=1}^n|\theta_i|
+\label{eq:l1_criterion}
+\end{equation}
+is $\hat{\theta}_i = \delta^s(d_i,\lambda)$, $i = 1,\dots,n$.
+\end{proposition}
+
+This problem is related to the lasso method \cite[Sec.~6.3.1]{vidakovic1999}.
+Linear wavelet estimators can be derived in the context of regularization
+methods, of which smoothing splines are a popular example, but linear
+methods are not efficient when signals have considerable time
+inhomogeneity, such as varying degrees of smoothness; non-linear estimators,
+such as thresholding, can improve the efficiency and achieve better rates
+\cite[Sec.~6.2]{vidakovic1999}.
+
+The price of soft thresholding is bias: it shrinks large coefficients
+uniformly toward zero by $\lambda$, and therefore produces a larger bias
+than hard thresholding, which in turn has a larger variance because the rule
+is discontinuous \cite[Sec.~6.5.1]{vidakovic1999}. 
+
+\paragraph{Threshold selection.} If $\lambda$ is set to the
+\emph{universal threshold}
+\begin{equation}
+\lambda = \sqrt{2\log n}\,\hat{\sigma},
+\label{eq:universal_threshold}
+\end{equation}
+then, with high probability, no pure-noise coefficient survives
+thresholding, because the maximum of $n$ independent standard normal
+variables is of order $\sqrt{2\log n}$ \cite[Sec.~6.6]{vidakovic1999}. The
+noise level is estimated from the finest detail level, which for regular
+signals consists mainly of noise, by the robust estimator
+\begin{equation}
+\hat{\sigma} = \frac{1}{0.6745}\,\mathrm{MAD}\bigl(\mathbf{d}^{(J-1)}\bigr)
+= \frac{1}{0.6745}\,\mathrm{median}\bigl(\bigl|\mathbf{d}^{(J-1)}-
+\mathrm{median}(\mathbf{d}^{(J-1)})\bigr|\bigr),
+\label{eq:mad_sigma}
+\end{equation}
+where $0.6745$ is the third quartile of the standard normal distribution
+\cite[Sec.~6.6]{vidakovic1999}. The combination of the universal threshold
+and soft thresholding is the VisuShrink procedure; it produces noise-free
+reconstructions but tends to underfit, and for small to moderate sample
+sizes the optimal minimax threshold can be substantially smaller than the
+universal threshold \cite[Sec.~6.6]{vidakovic1999}.
+
+\paragraph{Optimality over Besov balls.} The theoretical justification of
+wavelet shrinkage is its behaviour uniformly over the Besov balls of
+Definition~\ref{def:besov}. Let $\mathcal{F}(M)$ denote a Besov ball and
+$R_n(\hat{f}_n,f) = E\|\hat{f}_n-f\|^2$ the risk of an estimator.
+
+\begin{theorem}[Donoho--Johnstone {\cite[Sec.~6.4]{vidakovic1999}}]
+\label{thm:wavelet_minimax}
+Let $\hat{f}^*_n$ be the wavelet shrinkage estimator on $[0,1]$ with soft
+thresholding and the universal threshold $\lambda = \sqrt{2\log n}\,\sigma$,
+computed with a wavelet with $N$ vanishing moments and H\"older regularity
+$r$, and let $\mathcal{C}(r,N)$ denote the scale of Besov spaces
+$B^\sigma_{p,q}$ with $1/p<\sigma<\min(r,N)$. Then:
+\begin{enumerate}
+\item (Smoothness.) There exist probabilities $\pi_n\to 1$ and a constant
+$C$, depending on the scale and the wavelet but not on $f$ or $n$, such that
+$P\bigl(\|\hat{f}^*_n\|_{\mathcal{F}}\leq C\|f\|_{\mathcal{F}}\ \text{for
+every}\ \mathcal{F}\in\mathcal{C}(r,N)\bigr)\geq\pi_n$.
+\item (Adaptation.) For every Besov ball $B^\sigma_{p,q}(M)$ arising from
+$\mathcal{C}(r,N)$, there is a constant $C$, depending on the space and the
+wavelet but not on $f$ or $n$, such that
+\begin{equation*}
+\sup_{f\in B^\sigma_{p,q}(M)}E\|\hat{f}^*_n-f\|^2\leq C\log(n)\,
+\inf_{\hat{f}}\sup_{f\in B^\sigma_{p,q}(M)}E\|\hat{f}-f\|^2.
+\end{equation*}
+\end{enumerate}
+\end{theorem}
+
+The proofs are given in \cite{donoho1998} and in the references cited in
+\cite[Sec.~6.4]{vidakovic1999}. The first statement asserts that, with probability increasing with $n$,
+the estimate is as smooth as $f$ in any space taken from the scale. The
+second asserts that the estimate is simultaneously minimax, within a
+logarithmic factor, over every Besov class in the range indicated
+\cite[Sec.~6.4]{vidakovic1999}; these include classes in which linear
+estimators do not achieve the minimax rate \cite[Sec.~6.1]{vidakovic1999}.
+
+\subsubsection{Relation to the Implementation of This Thesis}
+
+The wavelet representation of Section~\ref{subsec:wavelets} is the
+construction of this subsection specialized as follows.
+\begin{enumerate}
+\item The DWT is computed with the matrices \eqref{eq:circulant_filters} and
+\eqref{eq:dwt_matrix}, using the Haar, DB2, and Sym4 filters
+($N = 1, 2, 4$) and $g_s = (-1)^sh_{2N-1-s}$. For the Haar filter the opposite sign convention is used, and the Sym4
+filter is that of \cite[Table~3.4]{vidakovic1999} in reverse order, which yields the time-reversed wavelet.
+\item Each series of $T = 65$ observations is extended to length
+$n = 2^7 = 128$ by repeating its values from the beginning, and the periodic
+convention is then applied to the extended vector; the extended signal
+therefore contains two junctions between the end and the beginning of the
+series. Then $m = 4$ decomposition steps are applied. In the notation of \eqref{eq:dwt_vector},
+the coarsest approximation is $\mathbf{c}^{(3)}$ (8 coefficients), labelled
+$A_4$ in Chapter~\ref{chap:results}, and the detail levels
+$D_1,\dots,D_4$ correspond to $\mathbf{d}^{(6)},\dots,\mathbf{d}^{(3)}$, with
+64, 32, 16, and 8 coefficients, respectively. Since GDP growth series are not periodic, the periodization introduces edge
+effects at the endpoints \cite[Sec.~5.6]{vidakovic1999}.
+\item Soft thresholding \eqref{eq:hard_soft} is applied to the detail
+coefficients only, following \cite[Sec.~6.1]{vidakovic1999}. The threshold $\lambda$ is expressed directly
+in percentage points and is either calibrated per country or fixed across
+countries (Section~\ref{subsec:wavelets}), rather than set by the universal
+rule \eqref{eq:universal_threshold}; Theorem~\ref{thm:wavelet_minimax}
+therefore motivates the method but does not apply to the thresholds used
+here.
+\end{enumerate}
+
+\section{Chapter Summary}
 \label{sec:theory_summary}
 
-This chapter has developed, from first principles, the complete rigorous
-justification for the B-spline-based FPCA pipeline of
-Chapter~\ref{chap:methods}: Sections~\ref{sec:preliminaries}--
+This chapter has developed the theoretical foundations of the pipeline of
+Chapter~\ref{chap:methods}, from the representation of discretely observed
+trajectories in a basis to the asymptotic behaviour of the estimated
+functional principal components. Sections~\ref{sec:preliminaries}--%
 \ref{sec:spectral_theory} built the Hilbert-space and operator-theoretic
 machinery culminating in Mercer's Theorem, which identifies a covariance
-kernel with the eigen-decomposition FPCA estimates; Section
-\ref{sec:perturbation} showed that this eigen-decomposition depends
+kernel with the eigen-decomposition that FPCA estimates.
+Section~\ref{sec:perturbation} showed that this eigen-decomposition depends
 continuously, and to first order linearly, on the covariance operator
-itself; Section~\ref{sec:smoothing} established that the smoothing spline
-underlying the adaptive B-spline basis of Section~\ref{subsec:bspline} is
-both well defined (Theorem~\ref{thm:representer}) and, via the
-natural-spline optimality theorem, exactly computable in finite dimensions;
+itself. Section~\ref{sec:smoothing} established that the smoothing spline is
+well defined (Theorem~\ref{thm:representer}) and, via the natural-spline
+optimality theorem, exactly computable in finite dimensions.
 Section~\ref{sec:random_elements} gave the Karhunen--Lo\`eve Theorem, the
-population-level statement of FPCA; and Sections~\ref{sec:mean_cov_estimation}
---\ref{sec:fpca_theory} combined all of the above into consistency and
-asymptotic normality of the estimated FPCA eigenvalues and eigenfunctions
-themselves (Theorem~\ref{thm:fpca_simple_eigenvalue_clt}), the precise
-sense in which the empirical results of Chapter~\ref{chap:results} are
-statistically meaningful rather than merely descriptive.
+population-level statement of FPCA, and
+Sections~\ref{sec:mean_cov_estimation}--\ref{sec:fpca_theory} combined these
+results into consistency and asymptotic normality of the estimated FPCA
+eigenvalues and eigenfunctions (Theorem~\ref{thm:fpca_simple_eigenvalue_clt}).
+These results describe the conditions under which the empirical FPCA of
+Chapter~\ref{chap:results} estimates population quantities; their asymptotic
+character must be weighed against the sample of $N = 20$ trajectories
+analyzed there.
 
-As flagged in Section~\ref{sec:theory_overview}, \cite{hsingeubank2015}
-develops this pipeline for a general basis system and, concretely, for
-smoothing splines (B-splines with a roughness penalty) -- matching
-Section~\ref{subsec:bspline} of this thesis -- but does not treat the
-Fourier or wavelet basis systems that Chapter~\ref{chap:methods} compares
-against the B-spline baseline. The theory that would complete this
-chapter's coverage of those two bases includes: for the \textbf{Fourier
-basis}, classical approximation-theoretic results on the rate of trigonometric
-approximation for functions of bounded variation, and a rigorous account of
-the Gibbs phenomenon near jump discontinuities, explaining the artefacts
-documented empirically in Section~\ref{subsec:gibbs_results}; for the
-\textbf{wavelet basis}, the characterization of Besov spaces
-$B_{p,q}^s$ as the natural regularity classes for spatially inhomogeneous
-functions, the minimax theory of wavelet shrinkage of \cite{donoho1998}
-already cited in Section~\ref{subsec:wavelets}, and nonlinear $n$-term
-approximation theory establishing why a sparse wavelet representation can
-outperform any linear (fixed-basis) method, including B-splines and
-Fourier truncation, on functions with localized irregularities such as the
-crisis episodes analyzed in Chapter~\ref{chap:results}. This material will
-be incorporated from a dedicated approximation-theory source in a
-subsequent revision of this chapter.
+Section~\ref{sec:basis_systems} completed the treatment of the three basis
+systems compared in this thesis. For the Fourier basis
+(Section~\ref{subsec:fourier_theory}), the sampled basis is orthogonal on an
+equally spaced grid whose length equals the period
+(Proposition~\ref{prop:fourier_discrete_orthogonality}), which allows all
+coefficients to be computed by the FFT; the basis is recommended for stable
+functions whose periodicity is reflected in the data, and is to some degree
+inappropriate for functions with discontinuities in the function or its
+low-order derivatives. For the wavelet basis
+(Section~\ref{subsec:wavelet_theory}), multiresolution analysis provides local
+orthonormal bases generated by a single filter; the Daubechies and symmlet
+families combine compact support with a prescribed number of vanishing
+moments; and Besov spaces, which allow an efficient modeling of spatial
+inhomogeneities, are characterized by the magnitudes of the wavelet
+coefficients (Theorem~\ref{thm:besov_characterization}). The periodic
+discrete wavelet transform is an orthogonal matrix
+(Proposition~\ref{prop:dwt_orthogonal}), which makes the reconstruction exact
+and preserves energy across decomposition levels. Soft thresholding of the
+wavelet coefficients solves an $\ell^1$-penalized least-squares problem
+(Proposition~\ref{prop:soft_lasso}), and wavelet shrinkage is simultaneously
+minimax, within a logarithmic factor, over a scale of Besov balls
+(Theorem~\ref{thm:wavelet_minimax}), including classes in which linear
+estimators do not achieve the minimax rate.
+
+Taken together, the three basis systems encode different assumptions about
+the regularity of the underlying trajectories: uniform smoothness measured in
+a Sobolev norm for the smoothing spline, smoothness and periodicity for the
+Fourier basis, and spatially inhomogeneous regularity measured in a Besov
+norm for the wavelet basis. Chapter~\ref{chap:results} examines which of these
+assumptions is most consistent with the GDP growth trajectories of Latin
+American economies, and how the choice among them affects the resulting
+FPCA.
 
 %---------------------------------------------------------

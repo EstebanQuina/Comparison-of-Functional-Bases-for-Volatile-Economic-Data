@@ -1,4 +1,27 @@
-El resumen es una presentación abreviada. Se debe usar una extensión máxima de 250 palabras. Se recomienda que este resumen sea analítico, es decir que sea completo, con información cuantitativa y cualitativa.\\
+En el análisis de datos funcionales, las series se convierten en funciones
+mediante una expansión en bases, un paso cuyo efecto rara vez se examina en
+aplicaciones económicas. Esta tesis compara
+las bases B-spline, de Fourier y de ondículas (Haar, Daubechies~2, Symlet~4) para
+representar el crecimiento anual del producto interno bruto de 20 países
+latinoamericanos entre 1960 y 2024, extendiendo un estudio previo para incluir
+la contracción por COVID-19. Las bases se
+comparan mediante el error de reconstrucción, el número de coeficientes no nulos
+con error equivalente y el análisis de componentes principales funcionales. Los
+datos extendidos reproducen la varianza del estudio original (47.2\% frente a
+47.1\% en tres componentes). Con error
+equivalente, el B-spline adaptativo utiliza menos coeficientes que las ondículas
+(19.5 nodos frente a aproximadamente 38 de 128 coeficientes), y ambas familias
+distribuyen el error de forma distinta: los B-splines siguen los episodios
+prolongados pero suavizan los choques aislados, mientras que las ondículas
+umbralizadas conservan algunos choques aislados pero atenúan los episodios
+amplios. La base de Fourier es la menos adecuada, pues las series no muestran
+una periodicidad clara y sus aproximaciones oscilan en periodos estables. La
+energía por niveles de ondículas identifica las escalas de variación de cada
+país. El número de componentes necesario para explicar el
+80\% de la varianza varía entre tres y ocho según la base y el suavizado, lo que
+muestra que la elección de la base es una decisión de modelización que
+condiciona los resultados del análisis.\\
 
 \noindent \textbf{Palabras Clave}:\\
-Al final del resumen se deben usar palabras claves tomadas del texto, las cuales permiten la recuperación de la información, (Mínimo 3 y máximo 7 palabras, preferiblemente use lenguaje técnico-científico). No se deberá usar siglas, ni formulas con caracteres especiales.
+Análisis de datos funcionales, expansión en bases, ondículas, B-splines,
+componentes principales funcionales, crecimiento económico, América Latina.

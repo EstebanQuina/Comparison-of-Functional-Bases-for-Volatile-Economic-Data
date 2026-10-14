@@ -1,1 +1,277 @@
-[Your conclusions]
+% ============================================================
+% Chapter 6: Conclusions and Recommendations
+% File: chapters/conclusions.tex
+% ============================================================
+
+\section{Conclusions}
+\label{sec:conclusions}
+
+This thesis set out to evaluate, under a common and reproducible
+protocol, whether the choice of functional basis materially affects the
+representation of volatile economic time series and the functional
+principal component analysis computed from it. The central conclusion is
+that it does, and that the effect cannot be read from reconstruction
+error alone. On the extended panel of annual GDP growth rates for 20
+Latin American countries (1960--2024), the B-spline, Fourier, and
+wavelet families reach comparable mean reconstruction errors (2.51,
+2.65, and 2.52--2.53 percentage points, respectively;
+Table~\ref{tab:rmse_summary}), yet they differ in which features of the
+trajectories they retain, and these differences propagate directly into
+the number, shape, and economic interpretation of the estimated
+functional principal components. The basis expansion is therefore not a
+neutral preprocessing step: it is a modelling decision that determines
+which structure of the data is available to every subsequent analysis.
+
+The specific conclusions are organized below according to the specific
+objectives stated in Section~\ref{sec:objectives}.
+
+\subsection{Extension of the dataset}
+
+The annual GDP growth panel of \cite{padilla2020} was extended to
+1960--2024 for 20 Latin American countries using World Bank Open Data,
+incorporating the 2020 COVID-19 contraction and the subsequent recovery.
+The extended dataset preserves the variance structure of the original
+study: the FPCA of the unsmoothed data yields a cumulative variance of
+47.2\% for the first three components, against 47.1\% reported by
+\cite{padilla2020} (Table~\ref{tab:fpca_summary}). This agreement
+validates the computational pipeline and establishes that the
+differences reported for the alternative bases are attributable to the
+basis expansion and not to a change in the underlying data. The
+exploratory analysis further confirmed the three properties that
+motivate the comparison: time-varying cross-sectional volatility, with
+peaks around 1982 and 2020; strong heterogeneity in country-level
+volatility, with the standard deviation of Venezuela (8.76\%) more than
+three times that of Guatemala (2.40\%); and crisis episodes that differ
+across countries in timing, magnitude, and duration.
+
+\subsection{Implementation of the three basis families}
+
+B-spline, Fourier, and wavelet (Haar, DB2, Sym4) expansions were
+implemented within a single Python pipeline, with the discrete wavelet
+transform constructed from first principles as an explicit orthogonal
+matrix. This construction guarantees exact reconstruction at zero
+threshold and makes every step of the wavelet representation
+transparent and reproducible. A practical consequence of this design is
+that the soft-threshold parameter $\lambda$ defines a continuous family
+of representations, ranging from the observed data ($\lambda = 0$) to a
+smooth approximation as $\lambda$ increases, so that the degree of
+smoothing becomes an explicit and interpretable control rather than an
+implicit property of the basis.
+
+\subsection{Comparison metrics at matched reconstruction quality}
+
+Calibrating the wavelet threshold, country by country, to the
+reconstruction error of the B-spline fit proved necessary for a fair
+comparison: without it, the wavelet basis would trivially attain zero
+error, and any difference in sparsity or FPCA structure would confound
+the effect of the basis family with the effect of the smoothing level.
+Under this calibration, the wavelet representations require more
+nonzero coefficients than the B-spline fit (38.0 of 128 for Sym4 and
+38.8 of 128 for DB2, against 19.5 knots on average). The result
+therefore does not support the claim that wavelets are more economical
+than B-splines in absolute coefficient count on this dataset. What the
+calibration does show is that, at the same mean error, the two families
+distribute that error differently. Because the B-spline error target is
+proportional to each country's noise level, the coefficient count at matched
+error is a relative measure and does not by itself rank countries by
+regularity. The
+shape of the sparsity--fidelity curves (Figure~\ref{fig:sparsity_tradeoff})
+is consistent with the Besov-space characterization of spatially
+inhomogeneous regularity: the less volatile economies tolerate high
+compression with little increase in error, whereas the most volatile
+economies do not.
+
+\subsection{Preservation of crisis episodes and volatility structure}
+
+At matched reconstruction error, neither the B-spline nor the wavelet
+family uniformly preserves the crisis episodes. The B-spline follows large,
+multi-year episodes, such as the 2015--2020 contraction of Venezuela, but
+flattens isolated single-year shocks; the thresholded wavelets retain some
+of those isolated shocks in attenuated form, but soft thresholding also
+shrinks the large episodes, so that the Venezuelan contraction reaches about
+$-19\%$ against observed values near $-30\%$
+(Figure~\ref{fig:venezuela_comparison}). For Argentina, neither family
+recovers the 2002 and 2020 contractions at the matched error level. The
+Fourier basis is the least suited of the three to this dataset: the
+power spectrum shows no well-defined business-cycle periodicity
+(Figure~\ref{fig:fourier_spectrum}), and increasing the number of
+retained frequencies reduces the error at the cost of spurious
+oscillations over otherwise stable periods, of the type predicted by the
+Gibbs phenomenon. The wavelet energy decomposition adds information that
+neither global basis provides: Colombia concentrates approximately 72\%
+of its energy in the coarsest approximation level, Argentina places its
+largest share in the 16--32 year detail level, and Venezuela distributes it
+across several levels. The time scale at which each country's variability operates
+is thus an observable output of the representation and not an assumption
+imposed on it.
+
+\subsection{Effect of the basis on FPCA parsimony and interpretability}
+
+The parsimony of the FPCA depends strongly on the basis, ranging from
+three components for 80\% of the variance under B-spline smoothing to
+eight under the unsmoothed data (Table~\ref{tab:fpca_summary}). This
+parsimony must not be equated with quality. Under B-spline smoothing,
+the first component explains 53.5\% of the variance but reduces to the
+post-1980 growth slowdown, because the crisis variation has been removed
+before the decomposition. Under Sym4 thresholding at $\lambda = 5$, five
+components are required, and the first component (33.8\%) describes a
+pattern that can be read as a regional commodity cycle: expansion in the
+1970s, contraction during the 1982--1990 decade, recovery during the
+2000s commodity boom, and a sharp decline in 2020. Relative to
+\cite{padilla2020}, whose B-spline representation produced leading
+components that each explain less than 18\% of the variance, the
+thresholded wavelet representation yields fewer, more interpretable
+components without discarding the crisis episodes. The threshold
+$\lambda$ moves the FPCA continuously between these regimes, reaching the
+B-spline parsimony at $\lambda = 12$, which confirms that the differences
+observed across bases are largely differences in what each
+representation removes from the data.
+
+\subsection{General conclusion}
+
+For volatile and multiscale economic series such as Latin American GDP
+growth, a single global smoothness criterion is inadequate, and a low
+reconstruction error or a high proportion of variance explained by the
+first functional principal component is not, by itself, evidence of an
+adequate functional representation. Among the families compared, the
+wavelet basis at moderate thresholding provides the most informative
+representation: it retains localized shocks, exposes country-specific
+multiscale structure, and produces FPCA modes with a direct economic
+reading. The B-spline basis remains adequate for the more stable
+economies, whose trajectories are dominated by a smooth long-run
+component. The choice of basis should therefore be justified with
+respect to the regularity of the data and reported as part of the
+analysis, which is precisely the step that the reviewed literature
+(Section~\ref{sec:soa_gap}) and the original study of
+\cite{padilla2020} leave unexamined.
+
+%---------------------------------------------------------
+\section{Limitations}
+\label{sec:limitations}
+
+The conclusions above are subject to the following limitations, which
+delimit their scope.
+
+\begin{enumerate}
+    \item \textbf{Sample size.} The panel contains $N = 20$ trajectories.
+    The consistency and asymptotic normality results of
+    Section~\ref{sec:fpca_theory} justify FPCA as $N \to \infty$; with
+    twenty countries, the estimated eigenvalues and eigenfunctions,
+    particularly beyond the first two components, are subject to
+    substantial sampling variability that has not been quantified in
+    this thesis.
+
+    \item \textbf{Qualitative assessment of crisis preservation.} The
+    preservation or suppression of crisis episodes (specific objective 4)
+    was assessed through visual comparison of reconstructions and through
+    the energy decomposition, not through a dedicated quantitative metric.
+    The RMSE is computed over the full domain and does not distinguish
+    errors concentrated in crisis years from errors distributed over
+    stable periods.
+
+    \item \textbf{Boundary treatment.} Both the discrete Fourier
+    transform and the wavelet transform assume a periodic signal. The
+    wavelet transform is applied after extending each series of 65
+    observations circularly to length 128, so part of the 128
+    coefficients represents the periodic extension rather than observed
+    data, and the discontinuity between the first and last observations
+    may generate boundary artefacts in both families. The sparsity
+    figures should be read with this in mind.
+
+    \item \textbf{Smoothing parameter selection.} The B-spline smoothing
+    level was set by a rule proportional to a robust estimate of each
+    country's noise level, and the wavelet thresholds used for the FPCA
+    ($\lambda \in \{5, 12\}$) were fixed values common to all countries.
+    Neither was selected by a formal data-driven criterion such as
+    generalized cross-validation for splines or the SURE and universal
+    thresholds for wavelets.
+
+    \item \textbf{Scope of the comparison.} The comparison is restricted
+    to three classical, non-data-driven basis families and to a single
+    variable observed at annual frequency. Adaptive-knot splines,
+    data-driven orthonormal bases, and Bayesian shrinkage approaches,
+    reviewed in Chapter~\ref{chap:state_of_art}, were deliberately
+    excluded, and the conclusions do not extend to them.
+
+    \item \textbf{Missing data.} Missing values for the early years,
+    notably for Cuba (1960--1971) and El Salvador (1960--1965), were
+    imputed by interpolation before the basis expansion. Although the
+    reconstruction metrics exclude imputed points, the imputed values
+    enter the FPCA and may affect the estimated components in the early
+    part of the domain.
+\end{enumerate}
+
+%---------------------------------------------------------
+\section{Recommendations}
+\label{sec:recommendations}
+
+\subsection{Recommendations for the application of FDA to economic series}
+
+\begin{enumerate}
+    \item The basis system should be treated as a modelling decision and
+    justified with respect to the regularity of the data. Before fitting
+    a smooth global basis, a preliminary multiresolution or spectral
+    analysis, such as the wavelet energy decomposition and the power
+    spectrum used in Chapter~\ref{chap:results}, can indicate whether the
+    series are dominated by a smooth trend, by a periodic component, or by
+    localized shocks.
+
+    \item Basis families should be compared at matched reconstruction
+    quality. Comparisons made at the default settings of each method
+    conflate the effect of the basis family with the effect of the
+    smoothing level.
+
+    \item The proportion of variance explained by the leading functional
+    principal components should be reported together with the shape of
+    the corresponding eigenfunctions and with the smoothing level used,
+    since a high proportion of explained variance may result from the
+    removal of variation rather than from its efficient organization.
+
+    \item For panels with marked heterogeneity in volatility across
+    units, the smoothing level should be set per unit or chosen by a
+    spatially adaptive method, rather than through a single global
+    parameter.
+\end{enumerate}
+
+\subsection{Recommendations for future work}
+
+\begin{enumerate}
+    \item Define a quantitative crisis-preservation metric, for instance
+    the reconstruction error restricted to windows around documented
+    crisis years, or the detection rate of structural breaks in the
+    reconstructed series, so that specific objective 4 can be evaluated
+    formally.
+
+    \item Replace the circular extension with boundary-corrected wavelets
+    or symmetric extension, and evaluate the Fourier basis on detrended
+    or symmetrically extended series, in order to separate the Gibbs
+    oscillations due to interior structural breaks from those due to the
+    boundary.
+
+    \item Select smoothing parameters by data-driven criteria, such as
+    generalized cross-validation or restricted maximum likelihood for
+    penalized splines and SURE or level-dependent thresholds for
+    wavelets, and include translation-invariant (stationary) wavelet
+    transforms to remove the dependence of the reconstruction on the
+    alignment of the dyadic grid.
+
+    \item Strengthen the B-spline baseline with spatially adaptive
+    variants, such as free-knot or locally penalized splines, to
+    determine whether the advantages observed for wavelets derive from
+    multiresolution itself or from local adaptivity, which splines can
+    also provide.
+
+    \item Quantify the sampling variability of the FPCA results through
+    bootstrap confidence bands for the eigenvalues and eigenfunctions,
+    given the small number of trajectories in the panel.
+
+    \item Extend the analysis to quarterly data, to other macroeconomic
+    variables of the region (inflation, exchange rates, terms of trade),
+    and to a detailed study of the Ecuadorian economy, for which the
+    literature review found no functional data applications.
+
+    \item Use the thresholded wavelet representation as input to
+    functional clustering of countries, building on the tighter grouping
+    of the Central American economies observed in the score plots
+    (Section~\ref{subsec:score_plots}).
+\end{enumerate}

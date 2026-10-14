@@ -49,45 +49,72 @@ the baseline for comparison, replicating the approach of \cite{padilla2020}.
 
 GDP growth trajectories are assumed to belong to the Sobolev space
 $W_2^m(\mathcal{T})$, which requires that derivatives up to order $m$ be
-square-integrable. The smoothing spline is obtained by minimizing:
+square-integrable. The classical smoothing spline in this space is obtained by
+minimizing the penalized criterion
 \begin{equation}
     \sum_{j=1}^{T}\bigl(y_i(t_j) - X_i(t_j)\bigr)^2
     \;+\;
     \lambda\int_{\mathcal{T}}\bigl[X_i^{(m)}(t)\bigr]^2\,dt,
     \label{eq:smoothing_spline}
 \end{equation}
-where the smoothing parameter $\lambda$ controls the bias-variance tradeoff.
-In this work $\lambda$ is chosen adaptively per country via a robust noise
-estimate $\hat{\sigma}$, computed from the vector of first differences $\Delta y$
-as:
+where the smoothing parameter $\lambda$ controls the bias-variance tradeoff
+(Section~\ref{sec:smoothing}). The implementation used in this thesis
+(\texttt{scipy.interpolate.UnivariateSpline}, based on the FITPACK routine of
+Dierckx) solves a closely related but distinct problem. Instead of fixing the
+penalty weight $\lambda$, it fixes an upper bound $S$ on the residual sum of
+squares and fits a cubic ($p = 3$) spline with the smallest roughness, measured
+by the discontinuities of the third derivative at the knots, subject to
 \begin{equation}
-    \hat{\sigma} \;=\;
+    \sum_{j \in \mathcal{O}_i}\bigl(y_i(t_j) - X_i(t_j)\bigr)^2 \;\leq\; S_i,
+    \label{eq:smoothing_condition}
+\end{equation}
+adding knots until the condition is met. The number and location of the knots
+are therefore selected by the data, which is why this fit is referred to as the
+\emph{adaptive} B-spline throughout. The bound $S_i$ is set per country from a
+robust noise estimate $\hat{\sigma}_i$, computed from the vector of first
+differences $\Delta y$ of the observed values as
+\begin{equation}
+    \hat{\sigma}_i \;=\;
     \frac{\mathrm{median}\!\left(|\Delta y - \mathrm{median}(\Delta y)|\right)}
          {0.6745\,\sqrt{2}},
     \label{eq:sigma_est}
 \end{equation}
-and the smoothing parameter is set to $\lambda = n\,\hat{\sigma}^2$, where $n$
-is the number of observed points. This data-driven choice ensures that the
-smoothing level is proportional to each country's intrinsic volatility rather
-than fixed globally.
+and
+\begin{equation}
+    S_i \;=\; n_i\,\bigl(c\,\hat{\sigma}_i\bigr)^2,
+    \label{eq:s_bound}
+\end{equation}
+where $n_i = |\mathcal{O}_i|$ is the number of observed points and $c > 0$ is a
+smoothing factor. The value $c = 1$ is used for the basis comparison of
+Section~\ref{sec:basis_results}, and $c = 2$ (denoted ``smooth
+$\sigma\!\times\!2$'') for the FPCA of Section~\ref{sec:fpca_results}. This
+data-driven choice makes the admissible residual proportional to each
+country's intrinsic volatility rather than fixed globally. The B-spline is
+fitted only on observed points and evaluated on the full grid
+$\{1960,\dots,2024\}$.
 
 \subsection{Fourier Basis}
 \label{subsec:fourier}
 
 The Fourier basis consists of sinusoidal functions of increasing frequency and
-is optimal for functions in $L^2(\mathcal{T})$ that exhibit periodic or
-quasi-periodic behaviour. A Fourier approximation retaining $K$ frequency
-components is:
+is well suited to functions in $L^2(\mathcal{T})$ that exhibit periodic or
+quasi-periodic behaviour. Indexing the $T = 65$ annual observations by
+$t = 0, 1, \dots, T-1$, a Fourier approximation of order $K$ retains the
+constant term and the first $K-1$ harmonics:
 \begin{equation}
     X_i(t) \;=\; a_0
-    \;+\;\sum_{k=1}^{K}
+    \;+\;\sum_{k=1}^{K-1}
     \Bigl[a_k\cos\!\Bigl(\tfrac{2\pi k\,t}{T}\Bigr)
     +\; b_k\sin\!\Bigl(\tfrac{2\pi k\,t}{T}\Bigr)\Bigr],
     \label{eq:fourier}
 \end{equation}
-implemented via the Discrete Fourier Transform (DFT) by retaining the $K$
-lowest-frequency components and zeroing the remainder. Three levels are
-compared: $K \in \{5,\,10,\,15\}$.
+which involves $2K-1$ real coefficients. It is implemented via the Discrete
+Fourier Transform (DFT) of the gap-filled series by retaining the $K$
+lowest-frequency components (with their conjugate counterparts) and zeroing
+the remainder. Three levels are compared: $K \in \{5,\,10,\,15\}$, that is,
+9, 19, and 29 coefficients, respectively. Because the DFT treats the series
+as one period of a periodic signal, the representation implicitly joins the
+value of 2024 to that of 1960.
 
 A known limitation of the Fourier basis for economic data is the
 \emph{Gibbs phenomenon}: near discontinuities or structural breaks---such as
@@ -101,10 +128,11 @@ of the jump. This is examined empirically in Chapter~\ref{chap:results}.
 Wavelets provide an unconditional basis for Besov spaces
 $B_{p,q}^{s}(\mathcal{T})$, which measure regularity in a way that tolerates
 spatial inhomogeneity---that is, functions that are smooth over some time
-intervals yet exhibit sharp transitions in others \cite{donoho1998}. A function
-with a sparse wavelet representation belongs to a Besov ball of high regularity,
-whereas a function requiring many wavelet coefficients to represent accurately
-does not admit efficient approximation in either Sobolev or Fourier bases.
+intervals yet exhibit sharp transitions in others \cite{donoho1998}. Membership
+in a Besov ball is characterized by the decay of the wavelet coefficients
+across scales, so that functions with a sparse wavelet representation, in which
+few coefficients carry most of the energy, can be approximated accurately by
+retaining only those coefficients.
 
 A multi-level discrete wavelet transform (DWT) decomposes a signal $y$ into
 approximation and detail coefficients:
@@ -119,23 +147,34 @@ where $\phi_{J,k}$ and $\psi_{j,k}$ are translates of the scaling function and
 the mother wavelet at decomposition level $j$ and translation $k$, $J=4$ is the
 number of decomposition levels used throughout, $a_{J,k}$ are the approximation
 coefficients at the coarsest scale, and $d_{j,k}$ are the detail coefficients at
-scale $j$.
+scale $j$. With annual data, the detail level $D_j$ captures fluctuations with
+periods of approximately $2^{j}$ to $2^{j+1}$ years (2--4 years for $D_1$ up to
+16--32 years for $D_4$), and the approximation level $A_4$ captures variation
+at periods longer than about 32 years.
 
 The DWT is implemented as an explicit orthogonal matrix $\mathbf{W}$ constructed
 with circular (periodic) boundary conditions, so that
 $\mathbf{W}\mathbf{W}^{\!\top} = \mathbf{I}$ exactly. The inverse transform is
-then $\mathbf{W}^{\!\top}$, guaranteeing machine-precision round-trip fidelity
-independent of signal length. Three wavelet families of increasing smoothness
+then $\mathbf{W}^{\!\top}$, guaranteeing machine-precision round-trip fidelity.
+Since the matrix construction requires a dyadic length, each gap-filled series
+of $T = 65$ observations is extended circularly to length $128$ (the
+observations from 1960 onward are repeated after 2024) before the transform,
+and the reconstruction is truncated back to the original 65 points. Each
+representation therefore has $128$ coefficients in total, of which
+$128/2^{J} = 8$ are approximation coefficients.
+
+Three wavelet families of increasing smoothness
 order are compared:
 
 \begin{itemize}
     \item \textbf{Haar}: the simplest orthogonal wavelet, piecewise constant,
           with one vanishing moment. Suitable for detecting level shifts.
-    \item \textbf{Daubechies~2 (DB2)}: the shortest smooth orthogonal wavelet,
-          filter length 4, with one vanishing moment. Balances time and
+    \item \textbf{Daubechies~2 (DB2)}: the shortest continuous compactly
+          supported orthogonal wavelet after Haar, filter length 4, with two
+          vanishing moments. Balances time and
           frequency localisation.
     \item \textbf{Symlet~4 (Sym4)}: a nearly symmetric variant of Daubechies
-          wavelets, filter length 8, with three vanishing moments. Provides
+          wavelets, filter length 8, with four vanishing moments. Provides
           smoother reconstructions while maintaining compact support.
 \end{itemize}
 
@@ -151,7 +190,13 @@ where $\lambda \geq 0$ is the threshold parameter. The approximation
 coefficients $a_{J,k}$ are never thresholded. Setting $\lambda = 0$ yields
 lossless reconstruction; increasing $\lambda$ progressively removes fine-scale
 detail, interpolating continuously between the raw-data representation and a
-smooth approximation.
+smooth approximation. Since soft thresholding subtracts $\lambda$ from every
+retained coefficient, it also shrinks the amplitude of the features it keeps.
+The threshold is expressed in the units of the data (percentage points) and is
+used in two ways: in the basis comparison it is calibrated per country
+(Section~\ref{subsec:rmse}), searching the grid
+$\lambda \in \{0.5, 1.0, \dots, 15.0\}$; in the FPCA it is fixed at a common
+value for all countries, $\lambda \in \{5, 12\}$.
 
 \section{Comparison Metrics}
 \label{sec:metrics}
@@ -178,32 +223,45 @@ for country $i$.
 Because wavelets admit lossless reconstruction at $\lambda = 0$
 (giving $\mathrm{RMSE} = 0$), a direct RMSE comparison across bases is only
 meaningful at equivalent smoothing levels. The fair comparison strategy adopted
-here is: for each country, find the wavelet threshold $\lambda^*$ such that
-$\mathrm{RMSE}_i^{\mathrm{wav}}(\lambda^*) \approx \mathrm{RMSE}_i^{\mathrm{bsp}}$,
-and then count the number of nonzero coefficients required. This directly tests
-the Besov space hypothesis: at equivalent reconstruction quality, a sparser basis
-requires fewer nonzero coefficients.
+here is: for each country, find the wavelet threshold $\lambda^*$ on the grid
+such that $\mathrm{RMSE}_i^{\mathrm{wav}}(\lambda^*) \approx
+\mathrm{RMSE}_i^{\mathrm{bsp}}$, and then count the number of nonzero
+coefficients required. At equivalent reconstruction quality, a basis in which
+the data are sparser requires fewer nonzero coefficients. Since the B-spline
+RMSE is itself proportional to each country's noise level through
+\eqref{eq:s_bound}, the matched target is looser for more volatile countries.
+For the B-spline, the reported count is the number of knots returned by the
+fit, including the two boundary knots; a cubic spline with $m$ knots has $m+2$
+coefficients.
 
 \subsection{Sparsity}
 \label{subsec:sparsity_metric}
 
 The compression ratio under soft thresholding, defined as the fraction of wavelet
-coefficients set to zero:
+coefficients equal to zero:
 \begin{equation}
     \mathrm{Sparsity}(\lambda)
     \;=\;
-    1 - \frac{\|\hat{\mathbf{d}}(\lambda)\|_0}{|\mathbf{d}|},
+    1 - \frac{\|\mathbf{a}\|_0 + \|\hat{\mathbf{d}}(\lambda)\|_0}
+             {|\mathbf{a}| + |\mathbf{d}|},
     \label{eq:sparsity}
 \end{equation}
-where $|\mathbf{d}|$ denotes the total number of wavelet coefficients across all
-decomposition levels.
+where $\mathbf{a}$ and $\hat{\mathbf{d}}(\lambda)$ are the approximation and
+thresholded detail coefficients, $\|\cdot\|_0$ counts nonzero entries, and
+$|\mathbf{a}| + |\mathbf{d}| = 128$ is the total number of coefficients across
+all decomposition levels. Because the series is extended circularly before the
+transform, this total exceeds the 65 observations, and part of the coefficients
+describe the periodic extension.
 
 \subsection{FPCA Variance Explained}
 \label{subsec:fpca_metric}
 
 Functional Principal Component Analysis (FPCA) is applied to the matrix of
 functional reconstructions $\mathbf{X} \in \mathbb{R}^{N \times T}$
-(where $N = 20$ countries and $T = 65$ time points). The centred matrix
+(where $N = 20$ countries and $T = 65$ time points), each evaluated on the
+annual grid. The baseline denoted ``raw data'' is the gap-filled observed
+series without any basis expansion; since the wavelet transform is exactly
+invertible, it coincides with the wavelet representation at $\lambda = 0$. The centred matrix
 $\widetilde{\mathbf{X}} = \mathbf{X} - \mathbf{1}\bar{X}^{\!\top}$ is
 decomposed via the Singular Value Decomposition (SVD):
 \begin{equation}
